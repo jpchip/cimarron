@@ -1,0 +1,24 @@
+# Ren'Py compiled scripts
+game/*.rpyc
+game/**/*.rpyc
+
+# Ren'Py cache
+game/cache/
+
+# Save files
+game/saves/
+
+# Ren'Py logs
+log.txt
+errors.txt
+traceback.txt
+
+# Distribution builds
+*.zip
+*/renpy-*/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db

@@ -39,7 +39,6 @@ define config.default_music_volume = 0.6
 ## ─── Skip / Auto-Forward ─────────────────────────────────────────────────────
 
 define config.allow_skipping = True
-define config.skip_unseen_dialogue = False
 
 ## ─── Developer Mode ──────────────────────────────────────────────────────────
 # Set to False before final distribution.

@@ -2,7 +2,8 @@
 ## Defines all speaking characters for Cimarron: Chapter One.
 
 # Narrator — third-person literary voice (Ferber-style prose)
-define narrator = Character(None, kind=narrator)
+# Ren'Py provides a built-in narrator; unquoted strings use it automatically.
+# No definition needed here.
 
 # Sabra Cravat — the player character; her thoughts appear in italics
 define sabra = Character("Sabra", color="#8B4513", what_italic=True)
