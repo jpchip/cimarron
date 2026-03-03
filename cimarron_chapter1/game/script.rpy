@@ -419,7 +419,37 @@ label scene6_oklahoma_wigwam:
 
     yancey "Good. Because I need a compositor and I can't afford to hire one."
 
-    "She pulled on her apron, picked up a composing stick, and began to set the headline of the first edition."
+    "She pulled on her apron and looked at the scattered lead letters in the type case. Five of them, pulled out and waiting: the name of the town that was now her home."
+
+    yancey "Start with the headline. The name of the town — O, S, A, G, E. Simple enough."
+
+    "Simple enough. She picked up the composing stick."
+
+    ## ── Typesetting mini-game ─────────────────────────────────────────────
+    $ typeset_target    = "OSAGE"
+    $ typeset_placed    = []
+    $ typeset_available = ["G", "E", "S", "O", "A"]
+
+    call screen typesetting_minigame
+    $ typeset_result = _return
+
+    if typeset_result == "OSAGE":
+        $ sabra_direction += 2
+        $ sabra_stood_firm_danger = True
+        call screen typesetting_result(True) from _typeset_success
+        sabra "There."
+        yancey "Perfect. Every letter true."
+        "He looked at her with something new in his expression — a kind of pleased surprise, as if he had just remembered something he'd always known."
+        sabra "It's not so different from embroidery, really. Each piece in its proper place."
+        yancey "Ha! Don't tell the pressmen that. They'll never forgive you."
+    else:
+        call screen typesetting_result(False) from _typeset_fail
+        "She had the letters almost right. Yancey reached past her without a word and shifted two of them."
+        yancey "Like this. The eye reads left to right — so the type must be set left to right, exactly."
+        sabra "I'll remember."
+        yancey "You will. In about twenty minutes you won't be able to stop yourself."
+        "He was right."
+    ## ── End mini-game ─────────────────────────────────────────────────────
 
     "They worked through the afternoon. Yancey wrote. Sabra set type. Outside, Osage made its various noises."
 

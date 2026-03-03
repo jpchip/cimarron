@@ -18,16 +18,18 @@ A visual novel based on *Cimarron* by Edna Ferber (1929).
 ```
 cimarron_chapter1/
 ├── game/
-│   ├── script.rpy        ← All 7 scenes, dialogue, and choices
-│   ├── characters.rpy    ← Character definitions and colors
-│   ├── variables.rpy     ← Game state (relationship meter, character direction)
-│   ├── options.rpy       ← Project settings (title, screen size, transitions)
-│   ├── gui.rpy           ← Visual theme (colors, fonts, layout)
-│   ├── images/           ← Backgrounds and character sprites (add files here)
+│   ├── script.rpy                ← All 7 scenes, dialogue, and choices
+│   ├── characters.rpy            ← Character definitions and colors
+│   ├── variables.rpy             ← Game state (relationship meter, character direction)
+│   ├── options.rpy               ← Project settings (title, screen size, transitions)
+│   ├── gui.rpy                   ← Visual theme (colors, fonts, layout)
+│   ├── screens.rpy               ← UI screens (save/load, menus, quick bar)
+│   ├── minigame_typesetting.rpy  ← Scene 6 typesetting mini-game
+│   ├── images/                   ← Backgrounds and character sprites (add files here)
 │   │   └── sprites/
-│   ├── audio/            ← Music tracks (add .ogg files here)
-│   └── gui/              ← GUI images (textbox, buttons — add .png files here)
-└── README.md             ← This file
+│   ├── audio/                    ← Music tracks (add .ogg files here)
+│   └── gui/                      ← GUI images (textbox, buttons — add .png files here)
+└── README.md                     ← This file
 ```
 
 ---
@@ -121,18 +123,28 @@ Then uncomment the font lines in `game/gui.rpy`.
 - Summarize Sabra's emotional state in her own voice
 - Function as a recap and character development device
 
+### Typesetting Mini-Game (Scene 6)
+- Sabra sets the first headline for the *Oklahoma Wigwam*
+- Five scrambled lead-type tiles spell the town name: **O S A G E**
+- Click a tile to place it in the composing stick (left to right)
+- Click a placed tile to send it back to the tray (undo)
+- Hit **Set the Type** once all five slots are filled
+- **Correct order** → `sabra_direction +2`, Yancey is impressed
+- **Wrong order or Give Up** → Yancey quietly corrects it, neutral outcome
+- Implemented in `game/minigame_typesetting.rpy`
+
 ---
 
 ## Scenes
 
-| Scene | Location | Key Choice |
+| Scene | Location | Key Moment |
 |---|---|---|
 | 1. The Venable Home | Wichita parlor | How Sabra reacts to Yancey's storytelling |
 | 2. The Land Run | Flashback | Does she admire or fear his idealism? |
 | 3. The Decision | Venable dining room | Confront mother / stand behind Yancey / private doubt |
 | 4. The Journey West | Wagon trail | Does she open up to the frontier? |
 | 5. Arriving at Osage | Osage tent town | First confrontation with a rough frontier character |
-| 6. The Oklahoma Wigwam | Newspaper tent | How she responds to danger |
+| 6. The Oklahoma Wigwam | Newspaper tent | **Typesetting mini-game** + response to danger |
 | 7. End of Chapter | Osage / epilogue | Reflection — what was gained, what was lost |
 
 ---
