@@ -40,6 +40,8 @@ define config.default_music_volume = 0.6
 
 define config.allow_skipping = True
 
+## Tab toggles the quick menu bar (handled in screens.rpy quick_menu screen).
+
 ## ─── Developer Mode ──────────────────────────────────────────────────────────
 # Set to False before final distribution.
 define config.developer = True

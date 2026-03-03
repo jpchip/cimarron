@@ -10,66 +10,78 @@
 ################################################################################
 
 style default:
-    properties gui.text_properties()
+    color gui.text_color
+    size gui.text_size
     language gui.language
 
 style input:
-    properties gui.text_properties("input", accent=True)
+    color gui.accent_color
+    size gui.text_size
     adjust_spacing False
 
 style hyperlink_text:
-    properties gui.text_properties("hyperlink", accent=True)
+    color gui.accent_color
     hover_underline True
 
 style gui_text:
-    properties gui.text_properties("interface")
+    color gui.interface_text_color
+    size gui.interface_text_size
 
+## Base button — solid color backgrounds, no image files needed.
 style button:
-    properties gui.button_properties("button")
+    padding (6, 6)
+    background Frame("#2C1A0Ecc", Borders(6, 6, 6, 6))
+    hover_background Frame("#8B4513cc", Borders(6, 6, 6, 6))
+    selected_background Frame("#A0522Dcc", Borders(6, 6, 6, 6))
+    insensitive_background Frame("#1A0E0699", Borders(6, 6, 6, 6))
 
 style button_text is gui_text:
-    properties gui.text_properties("button")
+    color gui.interface_text_color
+    hover_color gui.hover_color
+    selected_color gui.selected_color
+    insensitive_color gui.insensitive_color
     yalign 0.5
 
 style label_text is gui_text:
-    properties gui.text_properties("label", accent=True)
+    color gui.accent_color
+    bold True
 
 style prompt_text is gui_text:
-    properties gui.text_properties("prompt")
+    color gui.interface_text_color
 
 style bar:
     ysize gui.bar_size
-    left_bar Frame("gui/bar/left.png", gui.bar_borders, tile=gui.bar_tile)
-    right_bar Frame("gui/bar/right.png", gui.bar_borders, tile=gui.bar_tile)
+    left_bar Frame("#8B4513", gui.bar_borders)
+    right_bar Frame("#3D2010", gui.bar_borders)
 
 style vbar:
     xsize gui.bar_size
-    top_bar Frame("gui/bar/top.png", gui.vbar_borders, tile=gui.bar_tile)
-    bottom_bar Frame("gui/bar/bottom.png", gui.vbar_borders, tile=gui.bar_tile)
+    top_bar Frame("#8B4513", gui.vbar_borders)
+    bottom_bar Frame("#3D2010", gui.vbar_borders)
 
 style scrollbar:
     ysize gui.scrollbar_size
-    base_bar Frame("gui/scrollbar/horizontal_[prefix_]bar.png", gui.scrollbar_borders, tile=gui.scrollbar_tile)
-    thumb Frame("gui/scrollbar/horizontal_[prefix_]thumb.png", gui.scrollbar_borders, tile=gui.scrollbar_tile)
+    base_bar Frame("#3D2010", gui.scrollbar_borders)
+    thumb Frame("#8B4513", gui.scrollbar_borders)
 
 style vscrollbar:
     xsize gui.scrollbar_size
-    base_bar Frame("gui/scrollbar/vertical_[prefix_]bar.png", gui.vscrollbar_borders, tile=gui.scrollbar_tile)
-    thumb Frame("gui/scrollbar/vertical_[prefix_]thumb.png", gui.vscrollbar_borders, tile=gui.scrollbar_tile)
+    base_bar Frame("#3D2010", gui.vscrollbar_borders)
+    thumb Frame("#8B4513", gui.vscrollbar_borders)
 
 style slider:
     ysize gui.slider_size
-    base_bar Frame("gui/slider/horizontal_[prefix_]bar.png", gui.slider_borders, tile=gui.slider_tile)
-    thumb "gui/slider/horizontal_[prefix_]thumb.png"
+    base_bar Frame("#3D2010", gui.slider_borders)
+    thumb Frame("#8B4513", gui.slider_borders)
 
 style vslider:
     xsize gui.slider_size
-    base_bar Frame("gui/slider/vertical_[prefix_]bar.png", gui.vslider_borders, tile=gui.slider_tile)
-    thumb "gui/slider/vertical_[prefix_]thumb.png"
+    base_bar Frame("#3D2010", gui.vslider_borders)
+    thumb Frame("#8B4513", gui.vslider_borders)
 
 style frame:
     padding gui.frame_borders.padding
-    background Frame("gui/frame.png", gui.frame_borders, tile=gui.frame_tile)
+    background Frame("#1A0E06e0", gui.frame_borders)
 
 
 ################################################################################
@@ -100,11 +112,12 @@ style say_window is default:
     xfill True
     yalign gui.textbox_yalign
     ysize gui.textbox_height
-    background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
-    padding gui.text_xpadding, gui.text_ypadding
+    background Frame("#1A0E06cc", Borders(0, 0, 0, 0))
+    padding (gui.text_xpadding, gui.text_ypadding)
 
 style say_text is default:
-    properties gui.text_properties("dialogue")
+    color gui.text_color
+    size gui.text_size
     xpos gui.dialogue_xpos
     xsize gui.dialogue_width
     ypos gui.dialogue_ypos
@@ -115,11 +128,12 @@ style namebox is default:
     xsize gui.namebox_width
     ypos gui.name_ypos
     ysize gui.namebox_height
-    background Frame("gui/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
+    background Frame("#2C1A0Ecc", gui.namebox_borders)
     padding gui.namebox_borders.padding
 
 style namebox_text is default:
-    properties gui.text_properties("name", accent=True)
+    color gui.accent_color
+    size gui.name_text_size
     xalign gui.name_xalign
     yalign 0.5
 
@@ -143,7 +157,8 @@ screen input(prompt):
 
 style input_prompt is default:
     xalign gui.dialogue_text_xalign
-    properties gui.text_properties("input_prompt")
+    color gui.interface_text_color
+    size gui.text_size
 
 style input is default:
     xalign gui.dialogue_text_xalign
@@ -168,10 +183,14 @@ style choice_vbox is vbox:
     spacing gui.choice_button_text_size + 10
 
 style choice_button is default:
-    properties gui.button_properties("choice_button")
+    padding (8, 8)
+    background Frame("#2C1A0Ecc", Borders(6,6,6,6))
+    hover_background Frame("#8B4513cc", Borders(6,6,6,6))
 
 style choice_button_text is default:
-    properties gui.text_properties("choice_button")
+    color gui.interface_text_color
+    hover_color gui.hover_color
+    size gui.choice_button_text_size
 
 
 ################################################################################
@@ -181,11 +200,14 @@ style choice_button_text is default:
 screen quick_menu():
     zorder 100
 
+    key "K_TAB" action ToggleVariable("quick_menu")
+
     if quick_menu:
         hbox:
             style_prefix "quick"
-            xalign 0.5
-            yalign 1.0
+            xalign 1.0
+            ypos 5
+            xoffset -10
 
             textbutton _("Back")    action Rollback()
             textbutton _("Skip")    action Skip() alternate Skip(fast=True, confirm=True)
@@ -196,10 +218,14 @@ screen quick_menu():
             textbutton _("Prefs")   action ShowMenu("preferences")
 
 style quick_button is default:
-    properties gui.button_properties("quick_button")
+    padding (6, 4)
+    background Frame("#2C1A0Ecc", Borders(4,4,4,4))
+    hover_background Frame("#8B4513cc", Borders(4,4,4,4))
 
 style quick_button_text is button_text:
-    properties gui.text_properties("quick_button")
+    color gui.interface_text_color
+    hover_color gui.hover_color
+    size 18
 
 init python:
     config.overlay_screens.append("quick_menu")
@@ -360,8 +386,9 @@ style game_menu_outer_frame:
 
 style navigation_button is gui_button
 style navigation_button_text is gui_button_text:
+    color gui.interface_text_color
+    hover_color gui.hover_color
     size gui.interface_text_size
-    properties gui.text_properties("navigation_button")
 
 
 ################################################################################
@@ -449,10 +476,13 @@ style page_button_hbox:
     xalign 0.5
 
 style slot_button is gui_button:
-    properties gui.button_properties("slot_button")
+    padding (10, 10)
+    background Frame("#2C1A0Ecc", Borders(6,6,6,6))
+    hover_background Frame("#8B4513cc", Borders(6,6,6,6))
 
 style slot_button_text is gui_button_text:
-    properties gui.text_properties("slot_button")
+    color gui.interface_text_color
+    size gui.slot_button_text_size
 
 style slot_time_text:
     size gui.interface_text_size
@@ -548,20 +578,28 @@ style radio_label is pref_label
 style radio_label_text is pref_label_text
 style radio_button is gui_button
 style radio_button_text is gui_button_text:
-    properties gui.text_properties("radio_button", accent=True)
+    color gui.accent_color
+    hover_color gui.hover_color
+    selected_color gui.selected_color
+    size gui.interface_text_size
 
 style check_label is pref_label
 style check_label_text is pref_label_text
 style check_button is gui_button
 style check_button_text is gui_button_text:
-    properties gui.text_properties("check_button", accent=True)
+    color gui.accent_color
+    hover_color gui.hover_color
+    selected_color gui.selected_color
+    size gui.interface_text_size
 
 style slider_label is pref_label
 style slider_label_text is pref_label_text
 style slider_slider is gui_slider
 style slider_button is gui_button
 style slider_button_text is gui_button_text:
-    properties gui.text_properties("slider_button")
+    color gui.interface_text_color
+    hover_color gui.hover_color
+    size gui.interface_text_size
 style slider_vbox is pref_vbox
 
 style mute_all_button is check_button
@@ -678,8 +716,6 @@ screen confirm(message, yes_action, no_action):
 
     style_prefix "confirm"
 
-    add "gui/overlay/confirm.png"
-
     frame:
         vbox:
             xalign .5
@@ -701,7 +737,7 @@ screen confirm(message, yes_action, no_action):
 
 
 style confirm_frame is gui_frame:
-    background Frame([ "gui/confirm_frame.png", "gui/frame.png"], gui.confirm_frame_borders, tile=gui.frame_tile)
+    background Frame("#1A0E06f0", gui.confirm_frame_borders)
     padding gui.confirm_frame_borders.padding
     xalign .5
     yalign .5
@@ -717,7 +753,9 @@ style confirm_prompt_text is gui_text:
 style confirm_button is gui_button
 
 style confirm_button_text is gui_button_text:
-    properties gui.text_properties("confirm_button", accent=True)
+    color gui.accent_color
+    hover_color gui.hover_color
+    size gui.interface_text_size
 
 
 ################################################################################
@@ -736,7 +774,7 @@ screen skip_indicator():
 
 style skip_frame is empty:
     ypos gui.skip_ypos
-    background Frame("gui/skip.png", gui.skip_frame_borders, tile=gui.frame_tile)
+    background Frame("#1A0E06cc", gui.skip_frame_borders)
     padding gui.skip_frame_borders.padding
 
 style skip_text is gui_text
@@ -767,11 +805,12 @@ transform notify_appear:
 
 style notify_frame is empty:
     ypos gui.notify_ypos
-    background Frame("gui/notify.png", gui.notify_frame_borders, tile=gui.frame_tile)
+    background Frame("#1A0E06cc", gui.notify_frame_borders)
     padding gui.notify_frame_borders.padding
 
 style notify_text is gui_text:
-    properties gui.text_properties("notify")
+    color gui.interface_text_color
+    size gui.notify_text_size
 
 
 ################################################################################
@@ -824,7 +863,7 @@ define gui.nvl_button_xanchor = 0.0
 style nvl_window is default:
     xfill True
     yfill True
-    background "gui/nvl.png"
+    background Frame("#1A0E06e0", gui.nvl_borders)
     padding gui.nvl_borders.padding
 
 style nvl_entry is default:
@@ -838,13 +877,15 @@ style nvl_namebox is namebox:
     ypos gui.nvl_name_ypos
 
 style nvl_name is default:
-    properties gui.text_properties("nvl_name", accent=True)
+    color gui.accent_color
+    size gui.name_text_size
     xalign gui.nvl_name_xalign
 
 style nvl_thought is nvl_dialogue
 
 style nvl_text is default:
-    properties gui.text_properties("nvl")
+    color gui.text_color
+    size gui.text_size
     xpos gui.nvl_text_xpos
     xanchor gui.nvl_text_xalign
     ypos gui.nvl_text_ypos

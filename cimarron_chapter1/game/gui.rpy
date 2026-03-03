@@ -17,13 +17,13 @@ define gui.idle_color            = "#A0522D"   # Sienna
 define gui.idle_small_color      = "#C4956A"   # Sandy
 define gui.hover_color           = "#D2691E"   # Chocolate
 define gui.selected_color        = "#F5DEB3"   # Wheat
-define gui.insensitive_color     = "#6B4423"   # Dark brown
-define gui.muted_color           = "#8B6914"
-define gui.hover_muted_color     = "#C4A052"
+define gui.insensitive_color     = "#A08060"   # Muted tan
+define gui.muted_color           = "#C4956A"   # Sandy
+define gui.hover_muted_color     = "#D4B07A"
 
-define gui.text_color            = "#2C1A0E"   # Near-black ink
-define gui.interface_text_color  = "#3D2010"   # Dark sepia
-define gui.sensitive_color       = "#2C1A0E"
+define gui.text_color            = "#F5DEB3"   # Wheat cream — readable on dark textbox
+define gui.interface_text_color  = "#E8D5A3"   # Pale gold — menus and UI
+define gui.sensitive_color       = "#F5DEB3"
 
 ## ─── Fonts ────────────────────────────────────────────────────────────────────
 ## Uncomment after placing .ttf files in game/fonts/:
@@ -42,24 +42,24 @@ define gui.title_text_size       = 56
 define gui.main_menu_text_size   = 26
 
 ## ─── Textbox (Dialogue Window) ────────────────────────────────────────────────
-define gui.textbox_height  = 185
+define gui.textbox_height  = 220
 define gui.textbox_yalign  = 1.0
 
-define gui.text_xpadding   = 268
-define gui.text_ypadding   = 15
+define gui.text_xpadding   = 30
+define gui.text_ypadding   = 12
 
-define gui.dialogue_xpos   = 268
-define gui.dialogue_ypos   = 50
-define gui.dialogue_width  = 744
+define gui.dialogue_xpos   = 30
+define gui.dialogue_ypos   = 10
+define gui.dialogue_width  = 1220
 define gui.dialogue_text_xalign = 0.0
 
 ## ─── Name Box ─────────────────────────────────────────────────────────────────
-define gui.name_xpos       = 360
-define gui.name_ypos       = -22
+define gui.name_xpos       = 30
+define gui.name_ypos       = -38
 define gui.name_xalign     = 0.0
-define gui.namebox_width   = 240
-define gui.namebox_height  = None
-define gui.namebox_borders = Borders(5, 5, 5, 5)
+define gui.namebox_width   = 280
+define gui.namebox_height  = 38
+define gui.namebox_borders = Borders(8, 5, 8, 5)
 define gui.namebox_tile    = False
 
 ## ─── Buttons ──────────────────────────────────────────────────────────────────
