@@ -300,3 +300,59 @@ Donna is fifteen. She wants to go east to school. Sabra has already arranged it.
 - [x] Cim established as college-age, oil-adjacent
 - [x] Donna's eastern education set up
 - [x] Yancey's absences continue without explanation
+
+---
+
+## Mini Game Spec: Trial Arguments (Scene 20)
+
+### Narrative Setup
+The night before the trial. Yancey spreads six slips of paper on the kitchen table — argument notes for his defense of Dixie Lee. "I can't use them all," he says. "Three is the number. Opening, middle, close. You know a good argument, Sabra. Which three?"
+
+He is asking her. She can't decide if this is an insult or a compliment.
+
+### The Six Arguments (fixed content)
+| # | Argument | Type |
+|---|---|---|
+| 1 | "She pays taxes — same as any merchant." | Legal / equality |
+| 2 | "These women came to Oklahoma the same as everyone else — to survive." | Sympathy / humanity |
+| 3 | "The ordinance is selectively enforced — only women are charged, not their customers." | Legal / hypocrisy |
+| 4 | "The territory has no jurisdiction to regulate private commerce of this kind." | Legal / jurisdictional |
+| 5 | "Half this jury has a standing account at the establishment in question." | Jury challenge (dramatic/risky) |
+| 6 | "A woman's livelihood cannot be taken without due process." | Constitutional |
+
+### Mechanic — Two Phases
+
+**Phase 1 — Select:**
+- 6 argument cards displayed
+- Player clicks 3 to select (selected cards glow/highlight); a brief tooltip shows likely effect on hover
+- "Proceed" button activates when exactly 3 are selected
+
+**Phase 2 — Order:**
+- The 3 selected cards move to a vertical stack with three labeled slots: OPENING / MIDDLE / CLOSING
+- Player clicks a card to place it in the next available slot; clicking a placed card returns it
+- "Present to Jury" button submits when all 3 slots are filled
+
+### Outcomes — Selection
+| Selection | Effect |
+|---|---|
+| Argument 2 selected | `yancey_relationship += 5` (she chose humanity over legalism; Yancey is moved) |
+| Argument 3 selected | `newspaper_stance += 1` (legal hypocrisy angle resonates with Sabra's journalism instincts) |
+| Argument 5 selected | `yancey_relationship += 3`, `community_standing -= 1` (bold; the jury is flustered) |
+| Argument 6 selected | `newspaper_stance += 1` (principled constitutional frame) |
+| Arguments 1 + 4 both selected | `newspaper_stance -= 1`, `yancey_relationship -= 3` (too dry; Yancey: "lawyerly mush") |
+
+### Outcomes — Order Bonus
+| Placement | Effect |
+|---|---|
+| Argument 2 in CLOSING slot | `yancey_relationship += 3` additional (emotional close lands hard) |
+| Argument 5 in OPENING slot | `community_standing -= 1` (aggressive opener; jury bristles immediately) |
+| Argument 6 in OPENING slot | `newspaper_stance += 1` (principled frame sets the right tone) |
+
+*The verdict is always not guilty — the story requires it. The mini game shapes the editorial Sabra writes afterward and the conversation she has with Yancey that night.*
+
+### Ren'Py Implementation Notes
+- Screen name: `trial_arguments_minigame`
+- Phase 1: 6 `button` widgets; `selected_args = []` list; `sensitive len(selected_args) < 3`; confirmed selection stored before phase 2
+- Phase 2: 3 slot `frame` widgets (OPENING / MIDDLE / CLOSING); adapt the TypesetPlace/TypesetRemove pattern from Ch 1 for argument objects instead of letter tiles
+- "Present to Jury" calls `Return((selected_args, ordered_args))`; outcome logic runs in calling label `scene20_trial_result`
+- Implementation file (when built): `minigame_trial.rpy`

@@ -298,3 +298,59 @@ Fallback to Branch 1 (the most forgiving path). This should be nearly impossible
 - [x] Cim/Ruby marriage (scene 24) is the pivotal gate for Branch 3
 - [x] All journal entries written or noted as silence
 - [x] New characters (Ruby, Tracy Wyatt, Krbecek) listed for characters.rpy
+
+---
+
+## Mini Game Spec: The Photograph Box (Scene 28)
+
+### Narrative Setup
+Krbecek sets down his teacup. "Before I go — you mentioned photographs. I should like to see them, if you don't mind. To understand the man. The statue is his body; I need the photographs for his face."
+
+Sabra goes to the parlor and opens the cedar box she has kept for forty years. Inside: six photographs. She will give him two.
+
+### The Six Photographs (fixed content)
+| # | Image Description | Caption | Chapter Reference |
+|---|---|---|---|
+| 1 | Yancey on horseback before the Run | "April 1889 — the morning of the Run" | Ch 1 |
+| 2 | The tent church, interior | "The first church of Osage, August 1890" | Ch 2 |
+| 3 | Sabra at the Wigwam printing press, alone | "Editing the Wigwam, c. 1896" | Ch 3 |
+| 4 | Yancey in his Rough Rider uniform | "Cuba, 1898 — before San Juan Hill" | Ch 4 |
+| 5 | The Kid's burial on the prairie | "Yancey reads the service, 1898" | Ch 3 |
+| 6 | Cim and Ruby Big Elk, seated | "Cim's family, c. 1912" | Ch 5 |
+
+### Mechanic
+- Six photo frames laid out in a 2×3 grid
+- Player clicks any photo to see it enlarged with its caption and a 2–3 line memory description
+- A "Select" button appears in the enlarged view; clicking it marks the photo (max 2)
+- Selected photos show a ribbon/checkmark overlay
+- "Give to Krbecek" button activates when exactly 2 are selected
+
+### Data Structures
+```python
+default selected_photos = []   # list of photo IDs (1–6), exactly 2 when submitted
+```
+
+### Outcomes — Ending Branch Weight
+Each photo pair nudges the final ending branch when accumulated variables are near a threshold.
+
+| Photos chosen | Ending nudge |
+|---|---|
+| Photo 1 (Run) + Photo 4 (Rough Rider) | `yancey_relationship += 3`; tips toward "She Was His Shadow" |
+| Photo 3 (Sabra at press) + Photo 2 (tent church) | `community_standing += 2`; tips toward "She Built It Herself" |
+| Photo 5 (Kid's burial) + Photo 6 (Cim/Ruby) | `indian_sympathy += 2`; tips toward "The Land Belongs to All" |
+| Any other combination | `yancey_relationship += 1` (mild pull toward shadow ending as default) |
+
+### Krbecek's Response (narration after selection, varies by pair)
+- Run + Uniform: *"Ah. A man in motion. Always motion. I think I understand now."*
+- Press + Church: *"He is not the center of these. She is. Interesting."* *(He looks at Sabra, not the photos.)*
+- Burial + Family: *"The land. And the people who came after. Yes. I see what to do."*
+- Other: *"Yes. A man of many faces. I will do my best."*
+
+### Ren'Py Implementation Notes
+- Screen name: `photograph_box_minigame`
+- Six `imagebutton` widgets in a 2×3 `grid`; clicking opens `show screen photo_detail(photo_id)` overlay
+- `photo_detail` screen shows enlarged frame + caption + 2-line memory text + Select / Close buttons
+- Track `selected_photos = []`; max 2; "Give to Krbecek" `sensitive len(selected_photos) == 2`
+- `Return(selected_photos)` to calling label; outcome logic runs in `scene28_photos_result` before monument reveal
+- Photo images at MVP: illustrated placeholder frames with text overlays — no actual photography assets required
+- Implementation file (when built): `minigame_photographs.rpy`

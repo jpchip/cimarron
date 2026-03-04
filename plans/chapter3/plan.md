@@ -259,3 +259,59 @@ Yancey is going. Sabra has learned, by now, what this look means.
 - [x] Dixie Lee appears without the trial (deferred to Ch 4)
 - [x] Yancey's two departures both present: Cherokee Strip (Ch 2) and War (this chapter)
 - [x] All journal entries written
+
+---
+
+## Mini Game Spec: Letters to the Editor (Scene 16)
+
+### Narrative Setup
+It's a Tuesday — press day minus two. The mail pouch has arrived and Sabra empties it onto the composing desk. Eight letters to the editor. She has space to print four. Jesse Rickey peers over her shoulder: "Don't print the one from Folsom. He still owes us for three months of advertising."
+
+### The Eight Letters (fixed content)
+| # | Sender | Position | Tags |
+|---|---|---|---|
+| 1 | A.J. Folsom, farmer | Against Indian land rights | anti-indian, conservative |
+| 2 | Pete Pitchlyn (Cherokee lawyer) | For consolidated statehood | pro-indian, progressive |
+| 3 | Mrs. Wyatt | Praise for women's club event | community, neutral |
+| 4 | Shanghai Wiley | Praise for Yancey's cattle article | yancey, neutral |
+| 5 | Anonymous | Rumor about Dixie Lee's establishment | gossip, community |
+| 6 | A Ponca farmer | Request for news about reservation conditions | pro-indian, progressive |
+| 7 | Oil Company Rep | Promotional letter for lease opportunities | oil, conservative |
+| 8 | Unknown settler | Letter praising law and order after the Kid | frontier, yancey |
+
+### Mechanic
+- 8 letter cards laid out in two rows of 4
+- Each card shows: sender name, one-line summary, a small tag icon
+- Player clicks a card to read the full text (3–4 lines)
+- After reading, player clicks PRINT (moves card to left "print" column) or SPIKE (moves to right "discard" bin)
+- Must print exactly 4; both columns have 4 slots
+- When all 8 are sorted, a "Go to Press" button appears
+
+### Data Structures
+```python
+default letters_printed = []   # list of letter IDs (1–8) selected for print column
+```
+
+### Outcomes (checked after submission, cumulative)
+| Condition | Effect |
+|---|---|
+| Letter 2 printed | `indian_sympathy += 1` |
+| Letter 6 printed | `indian_sympathy += 1` |
+| Letter 1 printed | `indian_sympathy -= 1` |
+| Letter 7 printed | `indian_sympathy -= 1` |
+| Letter 5 printed | `community_standing += 1` (readers love it) |
+| Letter 5 NOT printed | `community_standing += 1` (respectable paper doesn't print rumor) — same reward, different flavor text |
+| Letter 2 printed | `newspaper_stance += 1` |
+| Letter 7 printed | `newspaper_stance -= 1` |
+| Letter 4 or 8 printed | `yancey_relationship += 3` each (his name kept alive in print) |
+
+*Note: outcomes are cumulative; a player can earn both `indian_sympathy +2` and `newspaper_stance +1` by printing letters 2 and 6.*
+
+### Ren'Py Implementation Notes
+- Screen name: `letters_minigame`
+- Cards: `button` widgets with a backing frame; clicking opens `show screen letter_detail(letter_id)` overlay
+- `letter_detail` screen shows full text + PRINT / SPIKE buttons calling `Return("print")` or `Return("spike")`
+- Track state in `letters_printed` list; enforce 4-max with `sensitive len(letters_printed) < 4`
+- "Go to Press" button: `sensitive len(letters_printed) == 4`; calls `Return(letters_printed)`
+- Outcome logic runs in calling label `scene16_letters_result`
+- Implementation file (when built): `minigame_letters.rpy`

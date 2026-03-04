@@ -360,3 +360,39 @@ bg_osage_homestead_yard
 - [x] Dixie Lee introduced; trial deferred to Ch 4
 - [x] Donna born (scene 11); Ch 1 Cim established
 - [x] `yancey_mystery` flag planted in scene 13 for Ch 3 use
+
+---
+
+## Mini Game Spec: The Church Collection (Scene 8)
+
+### Narrative Setup
+Yancey declares from the pulpit: "Any miserable tightfisted skinflint putting in less than two bits will be thrown out by me personally." He deputizes Southwest Davis and Ike Bixler to pass two sombreros through the crowd. As Sabra watches from the front pew, she spots several faces that look … shifty.
+
+### Mechanic
+- 8 congregation members appear in a row, each holding a coin bag
+- A sombrero travels left-to-right across the row over 30 seconds
+- Three of the eight will try to drop in a penny or nothing (shown by a subtle tell: eyes averted, hand moving too quickly, coin bag suspiciously flat)
+- Player clicks a congregation member to flag them *before* the hat passes them; late flags don't count
+- Yancey calls out anyone flagged; they're escorted to the door
+
+### Data Structures
+```python
+default collection_caught = 0   # number of cheapskates correctly flagged
+default collection_total  = 0   # final collection amount (narrative only)
+```
+
+### Outcomes
+| Result | Effect |
+|---|---|
+| 3/3 caught | `community_standing += 2`; Yancey: "Best congregation I ever robbed." |
+| 2/3 caught | `community_standing += 1`; collection total "a little short of expected" |
+| 0–1 caught | `community_standing += 0`; one cheapskate later complains in the Wigwam letters column (sets flag for Ch 3 Letters game) |
+
+### Ren'Py Implementation Notes
+- Screen name: `church_collection_minigame`
+- Use a `timer` displayable (counts down 30 s) driving a Python variable for hat position
+- Congregation row: 8 `imagebutton` or `button` widgets in an `hbox`
+- The "tell" for each cheat: a visual state change (e.g. slightly different expression image) that appears briefly then disappears — timed with `renpy.show` / `renpy.hide` or ATL
+- The hat's position is an ATL `transform` moving across the hbox; when it passes member N, flagging member N is disabled
+- Result returned via `Return(collection_caught)` to the calling label; outcome logic runs in label `scene8_collection_result`
+- Implementation file (when built): `minigame_collection.rpy`
