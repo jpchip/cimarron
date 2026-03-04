@@ -301,6 +301,29 @@ Fallback to Branch 1 (the most forgiving path). This should be nearly impossible
 
 ---
 
+## Music
+
+| Filename | Used in | Mood |
+|---|---|---|
+| `kihekah_parlor.ogg` | Scenes 24, 26 (domestic scenes, Donna's wedding) | Warm but autumnal — chamber strings or piano, the sound of a well-lived life |
+| `congress_hall.ogg` | Scene 25 (Sabra in Congress) | Formal and measured — stately piano or sparse brass, quiet authority |
+| `bowlegs_field.ogg` | Scene 27 (Yancey's death) | Nearly silent — stark industrial drone, almost no melody; grief through absence of music |
+| `monument_shadow.ogg` | Branch 1 ending ("She Was His Shadow") | Romantic and swelling — full strings, unambiguously emotional |
+| `monument_builder.ogg` | Branch 2 ending ("She Built It Herself") | Resolute and clear — piano-led, forward motion, no sentimentality |
+| `monument_land.ogg` | Branch 3 ending ("The Land Belongs to All") | Open and elemental — sparse, wide, hint of Native American melodic color without pastiche |
+
+**Search terms (freemusicarchive.org / itch.io / opengameart.org):**
+- `kihekah_parlor`: "chamber strings americana" or "parlor music" / "warm strings RPG" / "strings nostalgic"
+- `congress_hall`: "formal piano instrumental" / "political drama RPG theme" / "stately piano theme"
+- `bowlegs_field`: "dark ambient drone" or "minimal ambient" / "dark ambient" / "ambient grief"
+- `monument_shadow`: "romantic strings" or "sweeping orchestral" / "emotional VN ending music" / "strings emotional"
+- `monument_builder`: "resolute piano" or "triumphant folk" / "empowerment theme RPG" / "triumphant piano"
+- `monument_land`: "native american flute ambient" or "wide open spaces" / "nature ambient folk" / "flute ambient nature"
+
+Place `.ogg` files in `game/audio/`. Convert from `.mp3` using Audacity (free).
+
+---
+
 ## Mini Game Spec: The Photograph Box (Scene 28)
 
 ### Narrative Setup

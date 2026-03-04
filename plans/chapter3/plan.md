@@ -262,6 +262,23 @@ Yancey is going. Sabra has learned, by now, what this look means.
 
 ---
 
+## Music
+
+| Filename | Used in | Mood |
+|---|---|---|
+| `five_years.ogg` | Scene 14 (five-year montage), Scenes 16–17 (Sabra at work) | Solo piano or solo fiddle — resolute and measured, not sad but not celebratory |
+| `kid_return.ogg` | Scene 15 (Yancey's homecoming and aftermath) | Bittersweet minor-key folk — slightly triumphant but undershadowed; two instruments at most |
+| `war_march.ogg` | Scene 18 (Yancey enlists, rides south) | Building march energy — fife or tin whistle driving rhythm, stirs the blood without glorifying |
+
+**Search terms (freemusicarchive.org / itch.io / opengameart.org):**
+- `five_years`: "solo piano americana" or "contemplative folk" / "emotional piano RPG" / "quiet piano"
+- `kid_return`: "minor folk guitar" or "appalachian fiddle" / "bittersweet folk" / "folk guitar sad"
+- `war_march`: "civil war fife" or "rough riders march" / "historical march RPG" / "military folk march"
+
+Place `.ogg` files in `game/audio/`. Convert from `.mp3` using Audacity (free).
+
+---
+
 ## Mini Game Spec: Letters to the Editor (Scene 16)
 
 ### Narrative Setup

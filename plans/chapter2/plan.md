@@ -363,6 +363,23 @@ bg_osage_homestead_yard
 
 ---
 
+## Music
+
+| Filename | Used in | Mood |
+|---|---|---|
+| `osage_sunday.ogg` | Scene 8 (church service), Scene 12 (women's club) | Frontier revival hymn — fiddle and banjo, energetic but raw, slightly chaotic |
+| `wigwam_press.ogg` | Scenes 9–10–12 (newspaper work, domestic scenes) | Steady and purposeful — solo guitar or quiet piano, workmanlike |
+| `cherokee_strip.ogg` | Scene 13 (Yancey leaves) | Wide and lonely — melancholy fiddle over open drone, no percussion |
+
+**Search terms (freemusicarchive.org / itch.io / opengameart.org):**
+- `osage_sunday`: "old time revival" or "shape note singing" / "americana folk RPG OST" / "frontier hymn"
+- `wigwam_press`: "acoustic fingerpicking" or "country blues" / "western town ambience" / "western acoustic"
+- `cherokee_strip`: "americana elegy" or "solo fiddle" / "melancholy folk" / "sad western"
+
+Place `.ogg` files in `game/audio/`. Convert from `.mp3` using Audacity (free).
+
+---
+
 ## Mini Game Spec: The Church Collection (Scene 8)
 
 ### Narrative Setup

@@ -303,6 +303,25 @@ Donna is fifteen. She wants to go east to school. Sabra has already arranged it.
 
 ---
 
+## Music
+
+| Filename | Used in | Mood |
+|---|---|---|
+| `hero_return.ogg` | Scene 19 (Yancey rides in to crowd) | Dusty, celebratory march — brass and fiddle, crowd energy; county fair not military parade |
+| `courthouse_quiet.ogg` | Scene 20 (Dixie Lee trial, mini game) | Tense and spare — single low guitar or solo strings, almost no melody, just weight |
+| `state_seal.ogg` | Scene 21 (statehood debate) | Civic and stately — measured piano, deliberate tempo, neither joyful nor grim |
+| `oil_derricks.ogg` | Scenes 22–23 (oil arrives, Yancey's letter) | Ominous and industrial — low drone underneath a folk melody that doesn't quite resolve |
+
+**Search terms (freemusicarchive.org / itch.io / opengameart.org):**
+- `hero_return`: "old time string band" or "jubilee" / "frontier celebration" / "western celebration"
+- `courthouse_quiet`: "sparse guitar ambient" or "tension underscore" / "suspense RPG music" / "tense strings"
+- `state_seal`: "ceremonial piano" or "americana instrumental" / "civic RPG theme" / "stately piano"
+- `oil_derricks`: "industrial ambient folk" or "drone americana" / "dark western ambient" / "ominous ambient"
+
+Place `.ogg` files in `game/audio/`. Convert from `.mp3` using Audacity (free).
+
+---
+
 ## Mini Game Spec: Trial Arguments (Scene 20)
 
 ### Narrative Setup
