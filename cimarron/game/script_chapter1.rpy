@@ -13,7 +13,7 @@
 
 ## ─── Entry Point ─────────────────────────────────────────────────────────────
 
-label start:
+label chapter1_start:
     $ renpy.block_rollback()
 
     scene black with fade

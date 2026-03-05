@@ -8,7 +8,7 @@ A visual novel based on *Cimarron* by Edna Ferber (1929).
 
 1. **Download Ren'Py** from https://www.renpy.org/ (free, Windows/Mac/Linux).
 2. Open the Ren'Py launcher.
-3. Click **"Open Project"** and navigate to this folder (`cimarron_chapter1/`).
+3. Click **"Open Project"** and navigate to this folder (`cimarron/`).
 4. Click **"Launch Project"** to play.
 
 ---
