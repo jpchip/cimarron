@@ -167,7 +167,7 @@ screen typesetting_minigame():
             button:
                 xsize 180
                 ysize 50
-                background "#8B4513cc" if len(typeset_placed) == len(typeset_target) else "#3D2010cc"
+                background ("#8B4513cc" if len(typeset_placed) == len(typeset_target) else "#3D2010cc")
                 hover_background "#D2691Ecc"
                 sensitive len(typeset_placed) == len(typeset_target)
                 action Return("".join(typeset_placed))

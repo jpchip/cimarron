@@ -47,4 +47,4 @@ define config.allow_skipping = True
 define config.developer = True
 
 ## ─── Save Directory ──────────────────────────────────────────────────────────
-define config.save_directory = "cimarron_chapter1-1.0"
+define config.save_directory = "cimarron-1.0"
