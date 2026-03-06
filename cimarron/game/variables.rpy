@@ -80,6 +80,23 @@ default isaiah_defended          = False  # defended Isaiah against the advertis
 default letters_printed = []
 default letters_spiked  = []
 
+# ─── Chapter 4 Flags ──────────────────────────────────────────────────────────
+default dixie_lee_editorial = "none"   # "support" / "oppose" / "neutral"
+default statehood_stance    = "none"   # "single" / "double" / "consult"
+
+# ─── Chapter 4 Journal Flags ──────────────────────────────────────────────────
+default journal_scene19 = False
+default journal_scene20 = False
+default journal_scene21 = False
+default journal_scene22 = False
+default journal_scene23 = False
+
+# ─── Trial Minigame State ─────────────────────────────────────────────────────
+# Reset before calling trial_arguments_minigame screen.
+default trial_sel   = []              # list of selected argument IDs
+default trial_ord   = [None, None, None]  # [opening_id, middle_id, closing_id]
+default trial_phase = 1               # 1 = selection, 2 = ordering
+
 # ─── Convenience helpers (read-only computed values) ─────────────────────────
 # Use these in conditional dialogue rather than raw numbers.
 # Example usage in script:  if yancey_relationship >= 65: ...

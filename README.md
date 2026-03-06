@@ -5,11 +5,12 @@ A visual novel adaptation of *Cimarron* by Edna Ferber (1929), built in Ren'Py.
 ![Main menu screenshot](screenshot_mainmenu.png)
 
 You play as **Sabra Cravat** — a refined Southern belle pulled into frontier life
-by her charismatic husband Yancey. The game currently covers three chapters:
+by her charismatic husband Yancey. The game currently covers four chapters:
 the Oklahoma Land Run of 1889 and the founding of Osage (Chapter One), the
 town's early years and Yancey's first long disappearance (Chapter Two, 1890–1893),
-and Yancey's five-year absence and Sabra's rise as editor and community leader
-(Chapter Three, 1893–1898).
+Yancey's five-year absence and Sabra's rise as editor and community leader
+(Chapter Three, 1893–1898), and the Rough Rider return, Dixie Lee's trial,
+statehood, and the first oil boom (Chapter Four, 1898–1907).
 
 ---
 
@@ -40,9 +41,11 @@ cimarron/
         ├── options.rpy               ← Project configuration
         ├── gui.rpy                   ← Visual theme (earth tones, fonts)
         ├── screens.rpy               ← UI screens (save/load, menus)
+        ├── script_chapter4.rpy       ← Scenes 19–23
         ├── minigame_typesetting.rpy  ← Scene 6 typesetting mini-game
         ├── minigame_collection.rpy   ← Scene 8 collection mini-game
         ├── minigame_letters.rpy      ← Scene 16 letters mini-game
+        ├── minigame_trial.rpy        ← Scene 20 trial arguments mini-game
         ├── images/                   ← Backgrounds and sprites (add your art here)
         └── audio/                    ← Music tracks (add .ogg files here)
 ```
@@ -124,6 +127,49 @@ You have 30 seconds. Score affects community standing.
 **Letters mini-game** in Scene 16: 8 letters arrive; Sabra must select exactly 4 to print.
 Each letter has a tag (pro-indian, anti-indian, gossip, oil, yancey, neutral, frontier).
 Which letters she prints shifts `newspaper_stance`, `indian_sympathy`, and `community_standing`.
+
+---
+
+## Chapter Four — War Hero, Statehood, Oil (1898–1907)
+
+**5 scenes** covering the Rough Rider return through Oklahoma statehood and the oil boom:
+
+19. The Rough Rider — Yancey returns from Cuba in uniform; public moment and private reunion
+20. Dixie Lee's Trial — Yancey defends Dixie Lee; **trial arguments mini-game**; editorial choice
+21. The Statehood Question — one state or two; Yancey's letter; statehood day
+22. The First Oil — the derricks rise; Tracy Wyatt arrives; Cim's future
+23. What Yancey Left — statehood day 1907; Yancey absent; Donna leaving; taking stock
+
+**~14 choice moments** — no new meters, but two new flag-tracked decisions:
+
+| Flag | Values | Effect |
+|---|---|---|
+| `dixie_lee_editorial` | support / oppose / neutral | Chapter summary reflects the Wigwam's public stance |
+| `statehood_stance` | single / double / consult | Chapter summary reflects the editorial position |
+
+**Trial arguments mini-game** in Scene 20: choose 3 of 6 legal arguments for Yancey to present,
+then arrange them as OPENING / MIDDLE / CLOSING. Selection and ordering both affect
+`yancey_relationship`, `newspaper_stance`, and `community_standing`.
+
+### Chapter 4 — New Assets Needed
+
+**Backgrounds:**
+- `bg_osage_street_1900` — main street, slightly more developed than 1895 version
+- `bg_courthouse_interior` — territorial courtroom, wood benches, judge's bench
+- `bg_civic_hall` — town meeting hall, chairs and a raised platform
+- `bg_oil_derrick_distant` — Oklahoma plains with derricks on the horizon
+- `bg_wigwam_modern` — the Wigwam pressroom in 1907, more equipment, settled
+
+**Audio:**
+- `hero_return.ogg` — triumphant but understated; brass with frontier undertones
+- `courthouse_quiet.ogg` — tense, minimal; low strings
+- `state_seal.ogg` — civic, measured; a sense of mixed feeling
+- `oil_derricks.ogg` — industrial rhythm; something new arriving
+
+**New Characters:**
+- `tracy` — Tracy Wyatt, oil investor; needs `tracy_neutral.png`
+- `cim` — Cim Cravat as a young man; needs `cim_neutral.png`
+- `donna` — Donna Cravat as a teenager; needs `donna_neutral.png`
 
 ---
 

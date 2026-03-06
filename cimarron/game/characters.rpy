@@ -45,3 +45,14 @@ define pete  = Character("Pete Pitchlyn",     color="#6B8E23")
 
 # The Kid — a young gunman whose name no one quite knows
 define kid   = Character("The Kid",           color="#444444")
+
+# ── Chapter 4 characters ──────────────────────────────────────────────────────
+
+# Tracy Wyatt — a Tulsa oil investor; charming, calculating, modern
+define tracy = Character("Tracy Wyatt",  color="#5F4F3B")
+
+# Cim Cravat — Sabra and Yancey's son, grown into a young man
+define cim   = Character("Cim Cravat",   color="#6B4B2B")
+
+# Donna Cravat — Sabra and Yancey's daughter, growing up fast
+define donna = Character("Donna Cravat", color="#9B7E6A")

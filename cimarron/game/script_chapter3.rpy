@@ -716,9 +716,3 @@ label chapter3_summary:
     jump chapter4_start
 
 
-## ─── Chapter 4 placeholder ───────────────────────────────────────────────────
-
-label chapter4_start:
-    scene black
-    "Chapter Four is not yet written."
-    return
