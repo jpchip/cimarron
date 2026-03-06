@@ -1,6 +1,6 @@
 # Cimarron — Ren'Py Visual Novel
 
-A visual novel based on *Cimarron* by Edna Ferber (1929). Currently covers **Chapters One through Three** (Scenes 1–18, 1889–1898).
+A visual novel based on *Cimarron* by Edna Ferber (1929). Currently covers **Chapters One through Four** (Scenes 1–23, 1889–1907).
 
 ---
 
@@ -22,6 +22,7 @@ cimarron/
 │   ├── script_chapter1.rpy       ← Scenes 1–7, Chapter 1 summary
 │   ├── script_chapter2.rpy       ← Scenes 8–13, Chapter 2 summary
 │   ├── script_chapter3.rpy       ← Scenes 14–18, Chapter 3 summary
+│   ├── script_chapter4.rpy       ← Scenes 19–23, Chapter 4 summary
 │   ├── characters.rpy            ← All character definitions and colors
 │   ├── variables.rpy             ← Game state (all meters and flags)
 │   ├── options.rpy               ← Project settings (title, screen size, transitions)
@@ -30,6 +31,7 @@ cimarron/
 │   ├── minigame_typesetting.rpy  ← Scene 6 typesetting mini-game
 │   ├── minigame_collection.rpy   ← Scene 8 church collection mini-game
 │   ├── minigame_letters.rpy      ← Scene 16 letters-to-the-editor mini-game
+│   ├── minigame_trial.rpy        ← Scene 20 trial arguments mini-game
 │   ├── images/                   ← Backgrounds and character sprites (add files here)
 │   │   └── sprites/
 │   ├── audio/                    ← Music tracks (add .ogg files here)
@@ -146,6 +148,20 @@ Then uncomment the font lines in `game/gui.rpy`.
 - Negative = conservative (advertiser-friendly, civic respectability)
 - Influenced by Sabra's editorial choices and which letters she prints
 
+### Chapter 4 Flags
+- `dixie_lee_editorial` — how the Wigwam covered the Dixie Lee verdict: `"support"` / `"oppose"` / `"neutral"`
+- `statehood_stance` — the Wigwam's position on Oklahoma statehood: `"single"` / `"double"` / `"consult"`
+- Both appear in the Chapter 4 summary
+
+### Trial Arguments Mini-Game (Scene 20)
+- Yancey defends Dixie Lee on a charge of keeping a disorderly house
+- **Phase 1** — six argument cards; click to select/deselect (max 3); "Proceed to Ordering" activates at exactly 3 selected
+- **Phase 2** — place the three arguments into labeled slots: OPENING / MIDDLE / CLOSING; click a filled slot to view and remove its argument; "Present to Jury" activates when all three slots are filled
+- Returns `([selected_ids], [opening_id, middle_id, closing_id])`
+- Selection bonuses: sympathy arg → `yancey_relationship +5`; hypocrisy arg → `newspaper_stance +1`; jury challenge → `yancey_relationship +3`, `community_standing -1`; due process → `newspaper_stance +1`; equality + jurisdictional together → `newspaper_stance -1`, `yancey_relationship -3`
+- Order bonuses: sympathy arg in CLOSING → `yancey_relationship +3`; jury challenge in OPENING → `community_standing -1`; due process in OPENING → `newspaper_stance +1`
+- Implemented in `game/minigame_trial.rpy`
+
 ### Typesetting Mini-Game (Scene 6)
 - Sabra sets the first headline for the *Oklahoma Wigwam*
 - Five scrambled lead-type tiles spell the town name: **O S A G E**
@@ -204,6 +220,16 @@ Then uncomment the font lines in `game/gui.rpy`.
 | 16. Running the Paper | Wigwam office | Sabra as editor; Indian allotment editorial; **letters mini-game** |
 | 17. Isaiah | Wigwam office | Isaiah reads type; defended against an advertiser; his death planted |
 | 18. The War | Editorial office | Yancey enlists for Spanish-American War; Dixie Lee at the door |
+
+### Chapter Four — War Hero, Statehood, Oil (1898–1907)
+
+| Scene | Location | Key Moment |
+|---|---|---|
+| 19. The Rough Rider | Osage main street / Wigwam | Yancey returns from Cuba; public moment + private reunion |
+| 20. Dixie Lee's Trial | Courthouse | Night-before choice; **trial mini-game**; editorial; hallway |
+| 21. The Statehood Question | Civic hall / Wigwam | One state vs. two; Yancey's letter; statehood day, Nov 16 1907 |
+| 22. The First Oil | Wigwam / oil fields | Derricks rising; Tracy Wyatt in town; Cim's future |
+| 23. What Yancey Left | Wigwam (1907) | Yancey absent; a letter; Donna leaving; Sabra takes stock |
 
 ---
 
@@ -300,6 +326,54 @@ mini-game uses styled text cards. The 8 letter senders and their tag categories 
 | A Ponca farmer | pro-indian | `newspaper_stance +2`, `indian_sympathy +1` |
 | Oil Company Rep | oil | `newspaper_stance -1` (applied in result) |
 | Name Withheld | frontier | Special narrative beat if printed |
+
+---
+
+## Chapter 4 Assets
+
+### Additional Backgrounds
+
+| Filename | Description | AI Prompt Suggestion |
+|---|---|---|
+| `bg_osage_street_1900.jpg` | Osage main street circa 1900 — frame buildings, some brick, boardwalks | "Oklahoma small town main street 1900, frame and brick storefronts, boardwalk, a crowd gathered, painted illustration" |
+| `bg_courthouse_interior.jpg` | Territorial courtroom — wood-paneled bench, gallery pews, high windows | "1890s Oklahoma territorial courthouse interior, wood benches, judge's bench, afternoon light, painted illustration" |
+| `bg_civic_hall.jpg` | Town meeting hall — rows of chairs, a raised platform, American flags | "1900s small-town civic hall interior, folding chairs, platform with podium, bunting, painted illustration" |
+| `bg_oil_derrick_distant.jpg` | Oklahoma plains with oil derricks on the horizon at dawn | "Oklahoma plains 1905, oil derricks on distant horizon against dawn sky, red clay, sparse grass, painted illustration" |
+| `bg_wigwam_modern.jpg` | The Wigwam pressroom in 1907 — more equipment, settled, Sabra's own | "1907 Oklahoma newspaper pressroom, letterpress machinery, woman's personal items, evening lamp, painted illustration" |
+
+### Additional Audio
+
+| Filename | Mood |
+|---|---|
+| `hero_return.ogg` | Triumphant but understated — brass with frontier undertones, a crowd's warmth |
+| `courthouse_quiet.ogg` | Tense, minimal — low strings, something unresolved |
+| `state_seal.ogg` | Civic, measured — a sense of mixed feeling; something ending as something begins |
+| `oil_derricks.ogg` | Industrial rhythm — something new and mechanical arriving on the prairie |
+
+### Additional Sprites
+
+| Filename | Character |
+|---|---|
+| `tracy_neutral.png` | Tracy Wyatt — modern Tulsa oil investor; well-tailored, self-assured, mid-40s |
+| `cim_neutral.png` | Cim Cravat — Sabra's son as a young man (~17); his father's frame, quieter manner |
+| `donna_neutral.png` | Donna Cravat — Sabra's daughter as a teenager (~16); sharp-eyed, opinionated |
+
+### Trial Mini-Game (Scene 20)
+
+The mini-game uses styled text cards — no sprite replacements needed. The six argument
+cards and their selection/ordering effects are:
+
+| Argument | Type | Selection Bonus | Order Bonus |
+|---|---|---|---|
+| She pays taxes | Legal / Equality | — | — |
+| Came to survive | Sympathy | `yancey_relationship +5` | +3 more if placed in CLOSING |
+| Selective enforcement | Legal / Hypocrisy | `newspaper_stance +1` | — |
+| No jurisdiction | Jurisdictional | — | — |
+| Challenge the jury | Jury Challenge | `yancey_relationship +3`, `community_standing -1` | -1 more `community_standing` if in OPENING |
+| Due process | Constitutional | `newspaper_stance +1` | +1 more `newspaper_stance` if in OPENING |
+
+Selecting both **She pays taxes** and **No jurisdiction** together applies a penalty:
+`newspaper_stance -1`, `yancey_relationship -3` (redundant legal strategy).
 
 ---
 
