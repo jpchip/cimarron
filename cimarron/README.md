@@ -1,6 +1,6 @@
 # Cimarron — Ren'Py Visual Novel
 
-A visual novel based on *Cimarron* by Edna Ferber (1929). Currently covers **Chapters One through Four** (Scenes 1–23, 1889–1907).
+A visual novel based on *Cimarron* by Edna Ferber (1929). Covers **all five chapters** — the complete game (Scenes 1–28, 1889–1931).
 
 ---
 
@@ -23,6 +23,7 @@ cimarron/
 │   ├── script_chapter2.rpy       ← Scenes 8–13, Chapter 2 summary
 │   ├── script_chapter3.rpy       ← Scenes 14–18, Chapter 3 summary
 │   ├── script_chapter4.rpy       ← Scenes 19–23, Chapter 4 summary
+│   ├── script_chapter5.rpy       ← Scenes 24–28, three ending branches (final chapter)
 │   ├── characters.rpy            ← All character definitions and colors
 │   ├── variables.rpy             ← Game state (all meters and flags)
 │   ├── options.rpy               ← Project settings (title, screen size, transitions)
@@ -32,6 +33,7 @@ cimarron/
 │   ├── minigame_collection.rpy   ← Scene 8 church collection mini-game
 │   ├── minigame_letters.rpy      ← Scene 16 letters-to-the-editor mini-game
 │   ├── minigame_trial.rpy        ← Scene 20 trial arguments mini-game
+│   ├── minigame_photographs.rpy  ← Scene 28 photograph box mini-game
 │   ├── images/                   ← Backgrounds and character sprites (add files here)
 │   │   └── sprites/
 │   ├── audio/                    ← Music tracks (add .ogg files here)
@@ -374,6 +376,84 @@ cards and their selection/ordering effects are:
 
 Selecting both **She pays taxes** and **No jurisdiction** together applies a penalty:
 `newspaper_stance -1`, `yancey_relationship -3` (redundant legal strategy).
+
+---
+
+## Chapter 5 Assets
+
+### Scenes
+
+| Scene | Location | Key Moment |
+|---|---|---|
+| 24. Cim Brings Ruby Home | Kihekah Street parlor | Cim marries Ruby Big Elk; Sabra meets her daughter-in-law |
+| 25. The Congresswoman | Washington / Osage | Sabra runs for and serves in Congress; chooses her platform |
+| 26. Donna's Wedding | Kihekah Street parlor | Donna marries Tracy Wyatt; Sabra's five private minutes |
+| 27. The Word from Bowlegs | Bowlegs oil field | Nitroglycerin catch; Yancey's death; the Peer Gynt line |
+| 28. The Monument | Ceremony square | **Photograph mini-game**; monument unveiled; ending branch |
+
+### Ending Branches
+
+| Branch | Name | Condition | Music |
+|---|---|---|---|
+| 1 | She Was His Shadow | `sabra_independence ≤ 4` AND `yancey_relationship ≥ 65` | `monument_shadow.ogg` |
+| 2 | She Built It Herself | `sabra_independence ≥ 8` AND `community_standing ≥ 8` | `monument_builder.ogg` |
+| 3 | The Land Belongs to All | `indian_sympathy ≥ 7` AND (`sabra_independence ≥ 5` OR `yancey_relationship ≥ 50`) | `monument_land.ogg` |
+
+Branches checked in order: 3 → 2 → 1. Branch 1 is the fallback.
+
+### Additional Backgrounds
+
+| Filename | Description | AI Prompt Suggestion |
+|---|---|---|
+| `bg_kihekah_house_parlor.jpg` | The Cravat house on Kihekah Street, now comfortable: old mahogany, polished floor | "1910s Oklahoma small-town parlor, mahogany furniture, embroidered antimacassars, afternoon light, painted illustration" |
+| `bg_washington_dc_hall.jpg` | A congressional hallway — marble, hushed, 1920s | "1920s US congressional hallway, marble columns, afternoon light through tall windows, painted illustration" |
+| `bg_oil_field_bowlegs.jpg` | The raw Bowlegs oil field, 1930 — mud, derricks, tin shacks, workers | "Oklahoma oil field 1930, wooden derricks, mud, workers, raw industrial landscape, painted illustration" |
+| `bg_monument_ceremony.jpg` | Ceremony square, covered statue, crowd, Oklahoma sky | "1931 Oklahoma public square, covered monument, large crowd, bright sky, civic ceremony, painted illustration" |
+
+### Additional Audio
+
+| Filename | Used in | Mood |
+|---|---|---|
+| `kihekah_parlor.ogg` | Scenes 24, 26, 28 (opening) | Warm but autumnal — chamber strings or piano, a well-lived life |
+| `congress_hall.ogg` | Scene 25 | Formal and measured — stately piano or sparse brass |
+| `bowlegs_field.ogg` | Scenes 26 (transition), 27 | Nearly silent — stark industrial drone, grief through absence |
+| `monument_shadow.ogg` | Branch 1 ending | Romantic and swelling — full strings, unambiguously emotional |
+| `monument_builder.ogg` | Branch 2 ending | Resolute and clear — piano-led, forward motion |
+| `monument_land.ogg` | Branch 3 ending | Open and elemental — sparse, wide, hint of Native melodic color |
+
+### Additional Sprites
+
+| Filename | Character |
+|---|---|
+| `ruby_neutral.png` | Ruby Big Elk — young Osage woman, composed, direct, watchful |
+| `krbecek_neutral.png` | Masja Krbecek — small Polish sculptor in round glasses; precise, observant |
+
+### Chapter 5 Flags
+
+| Variable | Values | Set in |
+|---|---|---|
+| `ruby_welcomed` | True/False | Scene 24 — chose "Welcome to our family" |
+| `ruby_time_needed` | True/False | Scene 24 — chose "I need time" |
+| `congress_issue` | `"indian"` / `"oil_law"` / `"education"` | Scene 25 |
+| `donna_wedding_advice` | `"chose_well"` / `"cravat_stock"` / `"be_happy"` | Scene 26 |
+
+### Photograph Mini-Game (Scene 28)
+
+Krbecek asks Sabra for photographs before the monument ceremony. She selects 2 of 6 from the cedar box she has kept for forty years.
+
+- Six photo cards in a 2×3 grid; click to see caption, chapter reference, and memory text
+- Select/Deselect buttons in the detail overlay; max 2 selected
+- "Give to Krbecek" activates when exactly 2 are selected
+- Each photo pair nudges the ending branch when meters are near a threshold:
+
+| Photos | Ending Nudge |
+|---|---|
+| 1 (Run) + 4 (Rough Rider) | `yancey_relationship +3` — tips toward Branch 1 |
+| 3 (Sabra at press) + 2 (tent church) | `community_standing +2` — tips toward Branch 2 |
+| 5 (Kid's burial) + 6 (Cim/Ruby) | `indian_sympathy +2` — tips toward Branch 3 |
+| Any other pair | `yancey_relationship +1` (mild default) |
+
+Implemented in `game/minigame_photographs.rpy`.
 
 ---
 

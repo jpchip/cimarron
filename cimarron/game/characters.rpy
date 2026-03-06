@@ -56,3 +56,11 @@ define cim   = Character("Cim Cravat",   color="#6B4B2B")
 
 # Donna Cravat — Sabra and Yancey's daughter, growing up fast
 define donna = Character("Donna Cravat", color="#9B7E6A")
+
+# ── Chapter 5 characters ──────────────────────────────────────────────────────
+
+# Ruby Big Elk — Cim's wife; young Osage woman; composed, direct, watchful
+define ruby    = Character("Ruby Big Elk",  color="#8B6914")
+
+# Masja Krbecek — the Polish sculptor commissioned for the monument
+define krbecek = Character("Masja Krbecek", color="#888888")

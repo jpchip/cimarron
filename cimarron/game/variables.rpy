@@ -97,6 +97,22 @@ default trial_sel   = []              # list of selected argument IDs
 default trial_ord   = [None, None, None]  # [opening_id, middle_id, closing_id]
 default trial_phase = 1               # 1 = selection, 2 = ordering
 
+# ─── Chapter 5 Flags ──────────────────────────────────────────────────────────
+default ruby_welcomed        = False   # welcomed Ruby with genuine warmth (scene24)
+default ruby_time_needed     = False   # said "I need time" — neutral arc (scene24)
+default congress_issue       = "none"  # "indian" / "oil_law" / "education" (scene25)
+default donna_wedding_advice = "none"  # "chose_well" / "cravat_stock" / "be_happy" (scene26)
+
+# ─── Chapter 5 Journal Flags ──────────────────────────────────────────────────
+default journal_scene24 = False
+default journal_scene25 = False
+default journal_scene26 = False
+# journal_scene27: no journal (scene ends in silence)
+default journal_scene28 = False   # set inside whichever ending branch fires
+
+# ─── Photograph Minigame State ────────────────────────────────────────────────
+default selected_photos = []    # list of 2 photo IDs; reset before calling screen
+
 # ─── Convenience helpers (read-only computed values) ─────────────────────────
 # Use these in conditional dialogue rather than raw numbers.
 # Example usage in script:  if yancey_relationship >= 65: ...

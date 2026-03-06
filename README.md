@@ -5,12 +5,14 @@ A visual novel adaptation of *Cimarron* by Edna Ferber (1929), built in Ren'Py.
 ![Main menu screenshot](screenshot_mainmenu.png)
 
 You play as **Sabra Cravat** — a refined Southern belle pulled into frontier life
-by her charismatic husband Yancey. The game currently covers four chapters:
-the Oklahoma Land Run of 1889 and the founding of Osage (Chapter One), the
-town's early years and Yancey's first long disappearance (Chapter Two, 1890–1893),
-Yancey's five-year absence and Sabra's rise as editor and community leader
-(Chapter Three, 1893–1898), and the Rough Rider return, Dixie Lee's trial,
-statehood, and the first oil boom (Chapter Four, 1898–1907).
+by her charismatic husband Yancey. The complete game covers five chapters
+(Scenes 1–28, 1889–1931): the Oklahoma Land Run and founding of Osage (Chapter One),
+the town's early years and Yancey's first disappearance (Chapter Two, 1890–1893),
+Yancey's five-year absence and Sabra's rise as editor (Chapter Three, 1893–1898),
+the Rough Rider return, Dixie Lee's trial, statehood, and the first oil boom
+(Chapter Four, 1898–1907), and the final chapter covering Cim's marriage, Sabra's
+congressional career, Yancey's death at Bowlegs, and the Oklahoma Pioneer monument
+unveiling with three possible endings (Chapter Five, 1910–1931).
 
 ---
 

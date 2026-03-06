@@ -841,15 +841,5 @@ label chapter4_summary:
         "She has managed to love Yancey Cravat and to need him less. Both things are true. She has stopped trying to resolve the contradiction."
 
     " "
-    "Chapter Five: Coming."
-    " "
 
     jump chapter5_start
-
-
-## ─── Chapter 5 placeholder ───────────────────────────────────────────────────
-
-label chapter5_start:
-    scene black
-    "Chapter Five is not yet written."
-    return
