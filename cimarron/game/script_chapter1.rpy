@@ -648,11 +648,9 @@ label chapter_summary:
         "When danger came, she held her ground."
 
     " "
-    "CHAPTER TWO: COMING SOON"
-    " "
-    "Thank you for playing."
+    "The territory does not wait. Neither does she."
 
-    return
+    jump chapter2_start
 
 ## ─── JOURNAL ENTRY SUBROUTINE ────────────────────────────────────────────────
 

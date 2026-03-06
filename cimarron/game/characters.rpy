@@ -31,3 +31,17 @@ define dixie = Character("Dixie Lee", color="#A0522D")
 
 # Generic frontier character for scene 5
 define stranger = Character("Stranger", color="#696969")
+
+# ── Chapter 2 characters ──────────────────────────────────────────────────────
+
+# Doc Valliant — the town's hard-drinking, warm-hearted physician
+define doc   = Character("Doc Valliant",      color="#8B7355")
+
+# Arita Red Feather — a Cherokee woman; proud, measured, watching
+define arita = Character("Arita Red Feather", color="#CD5C1A")
+
+# Pete Pitchlyn — an old acquaintance of Yancey's from the territory days
+define pete  = Character("Pete Pitchlyn",     color="#6B8E23")
+
+# The Kid — a young gunman whose name no one quite knows
+define kid   = Character("The Kid",           color="#444444")

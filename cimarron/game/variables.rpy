@@ -32,6 +32,32 @@ default sabra_stood_firm_danger    = False
 
 default quick_menu = True
 
+# ─── Chapter 2 Meters ────────────────────────────────────────────────────────
+# community_standing: how Osage sees Sabra; negative=outcast, positive=respected
+default community_standing = 0
+
+# indian_sympathy: Sabra's stance toward Osage/Cherokee people
+#   < -2 → prejudiced; 0 = cautious; > 3 → advocate
+default indian_sympathy = 0
+
+# sabra_independence: how self-sufficient Sabra becomes without Yancey
+default sabra_independence = 0
+
+# yancey_mystery: True if Sabra has glimpsed the darker/unknowable side of Yancey
+default yancey_mystery = False
+
+# ─── Chapter 2 Journal Flags ──────────────────────────────────────────────────
+default journal_scene8  = False
+default journal_scene9  = False
+default journal_scene10 = False
+default journal_scene11 = False
+default journal_scene12 = False
+default journal_scene13 = False
+
+# ─── Chapter 2 Achievement Flags ─────────────────────────────────────────────
+default sabra_stood_alone      = False   # handled birth of Donna without Yancey
+default sabra_defended_indians = False   # refused to exclude Arita from the club
+
 # ─── Convenience helpers (read-only computed values) ─────────────────────────
 # Use these in conditional dialogue rather than raw numbers.
 # Example usage in script:  if yancey_relationship >= 65: ...
