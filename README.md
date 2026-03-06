@@ -5,9 +5,11 @@ A visual novel adaptation of *Cimarron* by Edna Ferber (1929), built in Ren'Py.
 ![Main menu screenshot](screenshot_mainmenu.png)
 
 You play as **Sabra Cravat** — a refined Southern belle pulled into frontier life
-by her charismatic husband Yancey. The game currently covers two chapters:
-the Oklahoma Land Run of 1889 and the founding of Osage (Chapter One), through
-the town's early years and Yancey's first long disappearance (Chapter Two, 1890–1893).
+by her charismatic husband Yancey. The game currently covers three chapters:
+the Oklahoma Land Run of 1889 and the founding of Osage (Chapter One), the
+town's early years and Yancey's first long disappearance (Chapter Two, 1890–1893),
+and Yancey's five-year absence and Sabra's rise as editor and community leader
+(Chapter Three, 1893–1898).
 
 ---
 
@@ -32,6 +34,7 @@ cimarron/
         ├── script.rpy                ← Entry point
         ├── script_chapter1.rpy       ← Scenes 1–7
         ├── script_chapter2.rpy       ← Scenes 8–13
+        ├── script_chapter3.rpy       ← Scenes 14–18
         ├── characters.rpy            ← Character definitions
         ├── variables.rpy             ← Game state variables
         ├── options.rpy               ← Project configuration
@@ -39,6 +42,7 @@ cimarron/
         ├── screens.rpy               ← UI screens (save/load, menus)
         ├── minigame_typesetting.rpy  ← Scene 6 typesetting mini-game
         ├── minigame_collection.rpy   ← Scene 8 collection mini-game
+        ├── minigame_letters.rpy      ← Scene 16 letters mini-game
         ├── images/                   ← Backgrounds and sprites (add your art here)
         └── audio/                    ← Music tracks (add .ogg files here)
 ```
@@ -98,6 +102,28 @@ and nudges Sabra toward the Frontier Woman track.
 through 8 congregation members. Three of them are skimming — they show a brief
 tell while the hat is on them. Click to flag them before the hat moves on.
 You have 30 seconds. Score affects community standing.
+
+---
+
+## Chapter Three — Yancey Leaves; Sabra Rises (1893–1898)
+
+**5 scenes** covering Yancey's five-year absence and Sabra's growth:
+
+14. Five Years — montage of Sabra holding the Wigwam together; how she found her footing
+15. The Kid — Yancey returns after killing a young gunman; the reunion is complicated
+16. Running the Paper — Sabra writes her own editorials; **letters-to-the-editor mini-game**
+17. Isaiah — Sabra discovers Isaiah's literacy; defends him against an advertiser; his death is planted
+18. The War — Yancey enlists for the Spanish-American War; Dixie Lee comes to the door
+
+**~14 choice moments** that add one new tracked value:
+
+| Meter | Range | Effect |
+|---|---|---|
+| Newspaper Stance | negative ↔ positive | Conservative vs. progressive editorial direction |
+
+**Letters mini-game** in Scene 16: 8 letters arrive; Sabra must select exactly 4 to print.
+Each letter has a tag (pro-indian, anti-indian, gossip, oil, yancey, neutral, frontier).
+Which letters she prints shifts `newspaper_stance`, `indian_sympathy`, and `community_standing`.
 
 ---
 

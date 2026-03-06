@@ -1,6 +1,6 @@
 # Cimarron — Ren'Py Visual Novel
 
-A visual novel based on *Cimarron* by Edna Ferber (1929). Currently covers **Chapters One and Two** (Scenes 1–13, 1889–1893).
+A visual novel based on *Cimarron* by Edna Ferber (1929). Currently covers **Chapters One through Three** (Scenes 1–18, 1889–1898).
 
 ---
 
@@ -21,6 +21,7 @@ cimarron/
 │   ├── script.rpy                ← Entry point; jumps to chapter1_start
 │   ├── script_chapter1.rpy       ← Scenes 1–7, Chapter 1 summary
 │   ├── script_chapter2.rpy       ← Scenes 8–13, Chapter 2 summary
+│   ├── script_chapter3.rpy       ← Scenes 14–18, Chapter 3 summary
 │   ├── characters.rpy            ← All character definitions and colors
 │   ├── variables.rpy             ← Game state (all meters and flags)
 │   ├── options.rpy               ← Project settings (title, screen size, transitions)
@@ -28,6 +29,7 @@ cimarron/
 │   ├── screens.rpy               ← UI screens (save/load, menus, quick bar)
 │   ├── minigame_typesetting.rpy  ← Scene 6 typesetting mini-game
 │   ├── minigame_collection.rpy   ← Scene 8 church collection mini-game
+│   ├── minigame_letters.rpy      ← Scene 16 letters-to-the-editor mini-game
 │   ├── images/                   ← Backgrounds and character sprites (add files here)
 │   │   └── sprites/
 │   ├── audio/                    ← Music tracks (add .ogg files here)
@@ -138,6 +140,12 @@ Then uncomment the font lines in `game/gui.rpy`.
 - Summarize Sabra's emotional state in her own voice
 - Function as a recap and character development device
 
+### Newspaper Stance (`newspaper_stance`) — Chapter 3+
+- Starts at 0
+- Positive = progressive (Indian rights, women's voice, reform journalism)
+- Negative = conservative (advertiser-friendly, civic respectability)
+- Influenced by Sabra's editorial choices and which letters she prints
+
 ### Typesetting Mini-Game (Scene 6)
 - Sabra sets the first headline for the *Oklahoma Wigwam*
 - Five scrambled lead-type tiles spell the town name: **O S A G E**
@@ -186,6 +194,16 @@ Then uncomment the font lines in `game/gui.rpy`.
 | 11. The Wind and Donna | Cravat home | Donna born; Yancey is away |
 | 12. Respectability | Osage parlor | Women's Club founding; who gets to belong |
 | 13. The Cherokee Strip | Wigwam office | Yancey rides for the last land run |
+
+### Chapter Three — Yancey Leaves; Sabra Rises (1893–1898)
+
+| Scene | Location | Key Moment |
+|---|---|---|
+| 14. Five Years | Wigwam office | Sabra holds Osage together across Yancey's 5-year absence |
+| 15. The Kid | Osage street | Yancey returns after killing the Kid; reward money choice |
+| 16. Running the Paper | Wigwam office | Sabra as editor; Indian allotment editorial; **letters mini-game** |
+| 17. Isaiah | Wigwam office | Isaiah reads type; defended against an advertiser; his death planted |
+| 18. The War | Editorial office | Yancey enlists for Spanish-American War; Dixie Lee at the door |
 
 ---
 
@@ -245,6 +263,43 @@ else:
 
 The amber highlight and `FLAGGED` label can stay as-is — they overlay the
 sprite automatically via the button's background color.
+
+---
+
+## Chapter 3 Assets
+
+### Additional Backgrounds
+
+| Filename | Description | AI Prompt Suggestion |
+|---|---|---|
+| `bg_wigwam_office_daytime.jpg` | The Wigwam press room in daylight — Sabra at the compositor's desk | "1890s frontier newspaper office, daylight through dusty windows, letterpress cases, woman working, painted illustration" |
+| `bg_osage_street_1895.jpg` | Main street of Osage circa 1895 — frame buildings, boardwalks, horses | "1895 Oklahoma small town main street, wooden storefronts, horse-tied hitching posts, afternoon light, painted illustration" |
+| `bg_hefner_window.jpg` | A single lit window at night — warm glow against a dark sky | "Lit window at night, Oklahoma prairie darkness, warm amber light inside, silhouette, oil painting style" |
+| `bg_editorial_office_night.jpg` | The Wigwam at night — oil lamps, ink smell, a woman at her desk | "1890s newspaper office at night, oil lamps, woman editor at desk, letterpress in shadows, painted illustration" |
+
+### Additional Audio
+
+| Filename | Mood |
+|---|---|
+| `five_years.ogg` | Slow, persistent, quietly determined — time passing without stopping |
+| `kid_return.ogg` | Low tension releasing — relief mixed with unease, a man returned from violence |
+| `war_march.ogg` | Martial and far-off — patriotic brass dulled by distance and loss |
+
+### Letters Mini-Game (Scene 16)
+
+Scene 16 uses `minigame_letters.rpy`. No sprite replacements needed — the
+mini-game uses styled text cards. The 8 letter senders and their tag categories are:
+
+| Sender | Tag | Effect if Printed |
+|---|---|---|
+| A.J. Folsom | anti-indian | `newspaper_stance -2`, `indian_sympathy -1` |
+| Pete Pitchlyn | pro-indian | `newspaper_stance +2`, `indian_sympathy +1` |
+| Mrs. Wyatt | neutral | No variable change |
+| Shanghai Wiley | yancey | `yancey_relationship +1` |
+| Anonymous | gossip | `community_standing -2` |
+| A Ponca farmer | pro-indian | `newspaper_stance +2`, `indian_sympathy +1` |
+| Oil Company Rep | oil | `newspaper_stance -1` (applied in result) |
+| Name Withheld | frontier | Special narrative beat if printed |
 
 ---
 

@@ -691,7 +691,5 @@ label chapter2_summary:
         "She still watches him ride away and feels the catch in her chest. She has stopped fighting it."
 
     " "
-    "Chapter Three: Coming."
-    " "
 
-    return
+    jump chapter3_start

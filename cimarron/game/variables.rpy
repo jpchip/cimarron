@@ -1,5 +1,5 @@
 ## variables.rpy
-## Tracks game state across all scenes of Chapter One.
+## Tracks game state across all scenes of Chapters One through Three.
 
 # ─── Relationship Meter ───────────────────────────────────────────────────────
 # yancey_relationship: 0–100
@@ -57,6 +57,27 @@ default journal_scene13 = False
 # ─── Chapter 2 Achievement Flags ─────────────────────────────────────────────
 default sabra_stood_alone      = False   # handled birth of Donna without Yancey
 default sabra_defended_indians = False   # refused to exclude Arita from the club
+
+# ─── Chapter 3 Meters ────────────────────────────────────────────────────────
+# newspaper_stance: editorial direction Sabra steers the Wigwam
+#   negative = conservative (conciliatory, advertiser-friendly)
+#   positive  = progressive (Indian rights, reform, women's voice)
+default newspaper_stance = 0
+
+# ─── Chapter 3 Journal Flags ──────────────────────────────────────────────────
+default journal_scene14 = False
+default journal_scene15 = False
+default journal_scene16 = False
+default journal_scene17 = False
+default journal_scene18 = False
+
+# ─── Chapter 3 Achievement Flags ─────────────────────────────────────────────
+default sabra_cleared_the_office = False  # took charge when Yancey returned (scene15)
+default isaiah_defended          = False  # defended Isaiah against the advertiser (scene17)
+
+# ─── Letters Minigame State ───────────────────────────────────────────────────
+# Reset before each Scene 16 call; tracks which letter IDs were selected.
+default letters_printed = []
 
 # ─── Convenience helpers (read-only computed values) ─────────────────────────
 # Use these in conditional dialogue rather than raw numbers.
