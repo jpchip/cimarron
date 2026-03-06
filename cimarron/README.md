@@ -1,6 +1,6 @@
-# Cimarron: Chapter One — Ren'Py Project
+# Cimarron — Ren'Py Visual Novel
 
-A visual novel based on *Cimarron* by Edna Ferber (1929).
+A visual novel based on *Cimarron* by Edna Ferber (1929). Currently covers **Chapters One and Two** (Scenes 1–13, 1889–1893).
 
 ---
 
@@ -16,15 +16,18 @@ A visual novel based on *Cimarron* by Edna Ferber (1929).
 ## Project Structure
 
 ```
-cimarron_chapter1/
+cimarron/
 ├── game/
-│   ├── script.rpy                ← All 7 scenes, dialogue, and choices
-│   ├── characters.rpy            ← Character definitions and colors
-│   ├── variables.rpy             ← Game state (relationship meter, character direction)
+│   ├── script.rpy                ← Entry point; jumps to chapter1_start
+│   ├── script_chapter1.rpy       ← Scenes 1–7, Chapter 1 summary
+│   ├── script_chapter2.rpy       ← Scenes 8–13, Chapter 2 summary
+│   ├── characters.rpy            ← All character definitions and colors
+│   ├── variables.rpy             ← Game state (all meters and flags)
 │   ├── options.rpy               ← Project settings (title, screen size, transitions)
 │   ├── gui.rpy                   ← Visual theme (colors, fonts, layout)
 │   ├── screens.rpy               ← UI screens (save/load, menus, quick bar)
 │   ├── minigame_typesetting.rpy  ← Scene 6 typesetting mini-game
+│   ├── minigame_collection.rpy   ← Scene 8 church collection mini-game
 │   ├── images/                   ← Backgrounds and character sprites (add files here)
 │   │   └── sprites/
 │   ├── audio/                    ← Music tracks (add .ogg files here)
@@ -118,6 +121,18 @@ Then uncomment the font lines in `game/gui.rpy`.
 - Negative = Refined Lady track (composed, cautious)
 - Affects available dialogue in future chapters
 
+### Community Standing (`community_standing`) — Chapter 2+
+- Starts at 0; tracks how Osage as a town sees Sabra
+- High = well-regarded civic figure; Low = has made enemies being right
+
+### Indian Sympathy (`indian_sympathy`) — Chapter 2+
+- Starts at 0; tracks Sabra's stance toward the Osage/Cherokee peoples
+- High = active advocate; Low = accommodates the town's prejudices
+
+### Sabra's Independence (`sabra_independence`) — Chapter 2+
+- Starts at 0; tracks how self-sufficient Sabra becomes without Yancey
+- Rises when she acts alone, falls when she defers or waits for him
+
 ### Journal Entries
 - Appear at the end of each scene
 - Summarize Sabra's emotional state in her own voice
@@ -133,9 +148,23 @@ Then uncomment the font lines in `game/gui.rpy`.
 - **Wrong order or Give Up** → Yancey quietly corrects it, neutral outcome
 - Implemented in `game/minigame_typesetting.rpy`
 
+### Church Collection Mini-Game (Scene 8)
+- Sabra watches the Sunday collection hat pass through 8 congregation members
+- The hat moves left to right, spending ~4 seconds on each member
+- 3 of the 8 members are secretly skimming — they show an amber `!` tell while the hat is on them
+- Click a member while the hat is on them to flag them as a cheat
+- You have 30 seconds total; flagging a non-cheat counts against you (false positive)
+- **Score 3/3** → `community_standing +3`, the congregation notices Sabra's sharp eye
+- **Score 1–2** → `community_standing +1–2`
+- **Score 0** → no bonus
+- Implemented in `game/minigame_collection.rpy`
+- The `!` and `O` symbols are placeholders; see the **Chapter 2 Assets** section below for how to swap in sprites
+
 ---
 
 ## Scenes
+
+### Chapter One — The Land of the Fair God (1889)
 
 | Scene | Location | Key Moment |
 |---|---|---|
@@ -146,6 +175,76 @@ Then uncomment the font lines in `game/gui.rpy`.
 | 5. Arriving at Osage | Osage tent town | First confrontation with a rough frontier character |
 | 6. The Oklahoma Wigwam | Newspaper tent | **Typesetting mini-game** + response to danger |
 | 7. End of Chapter | Osage / epilogue | Reflection — what was gained, what was lost |
+
+### Chapter Two — Building Osage (1890–1893)
+
+| Scene | Location | Key Moment |
+|---|---|---|
+| 8. The Lion in the Streets | Church tent | Yancey faces down a gunman; **collection mini-game** |
+| 9. Seven Notches | Wigwam office | Sabra learns about Yancey's past killings |
+| 10. The Wigwam Lives | Wigwam office | Indian rights editorial; Arita Red Feather brings documents |
+| 11. The Wind and Donna | Cravat home | Donna born; Yancey is away |
+| 12. Respectability | Osage parlor | Women's Club founding; who gets to belong |
+| 13. The Cherokee Strip | Wigwam office | Yancey rides for the last land run |
+
+---
+
+## Chapter 2 Assets
+
+### Additional Backgrounds
+
+| Filename | Description | AI Prompt Suggestion |
+|---|---|---|
+| `bg_tent_church.jpg` | Canvas tent serving as a frontier church, wooden pew benches, oil lamps | "Oklahoma frontier church tent interior 1890, rough pine benches, oil lamps, congregation, painted illustration" |
+| `bg_cravat_home.jpg` | Interior of a simple but sturdy frame house on the Oklahoma prairie | "1890s Oklahoma frontier farmhouse interior, cookstove, glass windows, modest but cared-for, painted illustration" |
+| `bg_osage_parlor.jpg` | A respectable Osage parlor — better-furnished than a tent, not yet grand | "1890s small-town Oklahoma parlor, floral wallpaper, horsehair sofa, afternoon light, Victorian frontier, painted illustration" |
+
+### Additional Audio
+
+| Filename | Mood |
+|---|---|
+| `osage_sunday.ogg` | Quiet Sunday-morning hymn feeling — slow, plain, earnest |
+| `wigwam_press.ogg` | Low rhythmic ambience of a working print shop — mechanical, purposeful |
+| `cherokee_strip.ogg` | Wide-open, urgent, bittersweet — the last land run, something ending |
+
+### Additional Sprites
+
+| Filename | Character |
+|---|---|
+| `doc_neutral.png` | Doc Valliant — weathered frontier doctor, medical bag, sardonic expression |
+| `arita_neutral.png` | Arita Red Feather — young Osage woman, calico dress, moccasins, still face |
+| `pete_neutral.png` | Pete Pitchlyn — half-Cherokee lawyer, well-tailored suit, measuring eyes |
+| `isaiah_neutral.png` | Isaiah — young Black man (Ch 2 version, age ~13), working clothes |
+
+See `plans/character_bible.md` for full visual descriptions and AI generation prompts for each character.
+
+### Church Collection Mini-Game (Scene 8)
+
+The mini-game currently uses text symbols (`!` for cheating members, `O` for
+innocent) as placeholders. These can be replaced with actual sprite art:
+
+**Member silhouettes** — 8 generic congregation members, shown as small
+standing figures (no individual names needed). A single reusable silhouette
+works for all 8:
+
+| Filename | Usage |
+|---|---|
+| `congregation_neutral.png` | Default member — standing figure, Sunday dress, facing forward |
+| `congregation_cheat.png` | Same figure with a guilty tell — eyes shifted, hand slightly extended toward the hat |
+
+Place both in `game/images/sprites/`. Then in `minigame_collection.rpy`,
+replace the `text "O"` and `text "!"` blocks inside each button with:
+
+```renpy
+## Replace placeholder text with sprites:
+if is_hat and is_cheat and not is_flagged:
+    add "sprites/congregation_cheat.png" xalign 0.5
+else:
+    add "sprites/congregation_neutral.png" xalign 0.5
+```
+
+The amber highlight and `FLAGGED` label can stay as-is — they overlay the
+sprite automatically via the button's background color.
 
 ---
 
