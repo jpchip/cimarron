@@ -30,8 +30,7 @@ default sabra_admires_yancey       = False
 default sabra_helped_frontier_char = False
 default sabra_stood_firm_danger    = False
 
-# ─── Ren'Py built-in variables ───────────────────────────────────────────────
-default quick_menu = True    # shows the quick-access bar (Back/Skip/Save etc.)
+default quick_menu = True
 
 # ─── Convenience helpers (read-only computed values) ─────────────────────────
 # Use these in conditional dialogue rather than raw numbers.

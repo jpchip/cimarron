@@ -240,16 +240,35 @@ screen main_menu():
 
     style_prefix "main_menu"
 
+    ## Full-screen background
     add gui.main_menu_background
 
+    ## Title block — top-left, dark overlay panel behind it
     frame:
+        xalign 0.0
+        yalign 0.0
+        xoffset 60
+        yoffset 60
+        background Frame("#00000099", 20, 20, 20, 20)
+        padding (30, 20, 40, 20)
+
         vbox:
-            xalign 0.5
-            yalign 0.65
-
-            label gui.game_name:
+            text "CIMARRON":
                 style "main_menu_title"
+            text "Chapter One":
+                style "main_menu_subtitle"
 
+    ## Menu buttons — bottom-left, dark panel
+    frame:
+        xalign 0.0
+        yalign 1.0
+        xoffset 60
+        yoffset -60
+        background Frame("#00000099", 20, 20, 20, 20)
+        padding (30, 24, 50, 24)
+
+        vbox:
+            spacing 8
             textbutton _("Start Game")  action Start()
             textbutton _("Load Game")   action ShowMenu("load")
             textbutton _("Preferences") action ShowMenu("preferences")
@@ -257,20 +276,23 @@ screen main_menu():
             textbutton _("Quit")        action Quit(confirm=False)
 
 style main_menu_frame is empty
-style main_menu_vbox is vbox:
-    xalign 0.5
-    yalign 0.65
 
-style main_menu_title is label_text:
-    xalign 0.5
-    text_align 0.5
-    color gui.accent_color
-    size 56
+style main_menu_title:
+    color "#D4A84B"
+    size 72
 
-style main_menu_button is button
+style main_menu_subtitle:
+    color "#C8A87A"
+    size 28
+
+style main_menu_button is button:
+    padding (0, 4, 0, 4)
+
 style main_menu_button_text is button_text:
-    size gui.interface_text_size
-    xalign 0.5
+    size 28
+    color "#E8D5B0"
+    hover_color "#D4A84B"
+    xalign 0.0
 
 
 ################################################################################

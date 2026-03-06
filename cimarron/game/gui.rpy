@@ -108,7 +108,7 @@ define gui.frame_tile      = False
 define gui.confirm_frame_borders = Borders(60, 60, 60, 60)
 
 ## ─── Game / Main Menu ─────────────────────────────────────────────────────────
-define gui.main_menu_background = "#1A0E06"
+define gui.main_menu_background = "images/bg_land_run.png"
 define gui.game_menu_background = "#1A0E06"
 define gui.game_name            = "Cimarron"
 
