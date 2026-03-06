@@ -327,6 +327,7 @@ label scene16_running_paper:
     "She spread them across the composing table and read."
 
     $ letters_printed = []
+    $ letters_spiked  = []
     call screen letters_minigame
     $ letters_printed = _return
 

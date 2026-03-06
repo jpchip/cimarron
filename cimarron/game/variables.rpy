@@ -76,8 +76,9 @@ default sabra_cleared_the_office = False  # took charge when Yancey returned (sc
 default isaiah_defended          = False  # defended Isaiah against the advertiser (scene17)
 
 # ─── Letters Minigame State ───────────────────────────────────────────────────
-# Reset before each Scene 16 call; tracks which letter IDs were selected.
+# Reset before each Scene 16 call ($ letters_printed = [], $ letters_spiked = []).
 default letters_printed = []
+default letters_spiked  = []
 
 # ─── Convenience helpers (read-only computed values) ─────────────────────────
 # Use these in conditional dialogue rather than raw numbers.

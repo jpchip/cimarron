@@ -2,14 +2,15 @@
 ## Scene 16 mini-game: Sabra edits letters to the editor for publication.
 ##
 ## How it works:
-##   - 8 letter cards shown in 2 rows of 4; each shows sender, summary, tag
-##   - Click a card to open a detail overlay with full text
-##   - PRINT adds the letter to the print column (max 4); SPIKE discards it
+##   - 8 letter cards shown in 2 rows of 4; each shows sender and summary only
+##   - Click a card to open a detail overlay with the full letter text
+##   - PRINT adds the letter (max 4); SPIKE discards it
 ##   - "Go to Press" activates when exactly 4 letters are printed
+##   - State lives in store variables letters_printed / letters_spiked
+##     (reset in script before calling the screen)
 ##   - Returns letters_printed (list of IDs) via Return(letters_printed)
 ##
-## Outcomes applied in scene16_letters_result (script_chapter3.rpy):
-##   Tags: anti-indian, pro-indian, yancey, gossip, oil, frontier, neutral
+## Outcomes applied in scene16_letters_result (script_chapter3.rpy).
 
 ## ─── Letter data ─────────────────────────────────────────────────────────────
 
@@ -123,16 +124,6 @@ init python:
         },
     ]
 
-    TAG_COLORS = {
-        "anti-indian": "#8B2020",
-        "pro-indian":  "#3A6B3A",
-        "neutral":     "#6B5A3A",
-        "yancey":      "#2F4F6F",
-        "gossip":      "#6B3A6B",
-        "oil":         "#4A4A2A",
-        "frontier":    "#5A4A2A",
-    }
-
 
 ## ─── Helper: look up a letter dict by id ─────────────────────────────────────
 
@@ -146,15 +137,15 @@ init python:
 
 
 ## ─── Detail overlay ───────────────────────────────────────────────────────────
+## Reads/writes store.letters_printed and store.letters_spiked directly.
 
-screen letter_detail(letter_id, printed_list, spiked_list):
+screen letter_detail(letter_id):
     modal True
 
-    $ letter = get_letter(letter_id)
-    $ is_printed = letter_id in printed_list
-    $ is_spiked  = letter_id in spiked_list
-    $ can_print  = len(printed_list) < 4 and not is_printed
-    $ tag_col    = TAG_COLORS.get(letter["tag"], "#6B5A3A")
+    $ letter     = get_letter(letter_id)
+    $ is_printed = letter_id in letters_printed
+    $ is_spiked  = letter_id in letters_spiked
+    $ can_print  = len(letters_printed) < 4 and not is_printed
 
     add "#000000cc"
 
@@ -169,19 +160,10 @@ screen letter_detail(letter_id, printed_list, spiked_list):
             spacing 16
             xalign 0.0
 
-            hbox:
-                spacing 14
-                xalign 0.0
-
-                text "[letter['sender']]":
-                    size 26
-                    color "#E8D5A3"
-                    bold True
-
-                text "[letter['tag']]":
-                    size 16
-                    color tag_col
-                    yalign 0.7
+            text "[letter['sender']]":
+                size 26
+                color "#E8D5A3"
+                bold True
 
             text "[letter['text']]":
                 size 18
@@ -200,13 +182,12 @@ screen letter_detail(letter_id, printed_list, spiked_list):
                     xsize 140
                     ysize 44
                     sensitive can_print
-                    background (
-                        "#2A5C2Acc" if can_print else "#1A2A1Acc"
-                    )
+                    background ("#2A5C2Acc" if can_print else "#1A2A1Acc")
                     hover_background "#3A8C3Acc"
                     action [
-                        SetScreenVariable("printed_list",
-                            printed_list + [letter_id] if not is_printed else printed_list),
+                        SetVariable("letters_printed",
+                            letters_printed + [letter_id] if not is_printed
+                            else letters_printed),
                         Hide("letter_detail"),
                     ]
 
@@ -224,11 +205,11 @@ screen letter_detail(letter_id, printed_list, spiked_list):
                     background "#5C1A1Acc"
                     hover_background "#8C2A2Acc"
                     action [
-                        SetScreenVariable("printed_list",
-                            [x for x in printed_list if x != letter_id]),
-                        SetScreenVariable("spiked_list",
-                            spiked_list + [letter_id] if letter_id not in spiked_list
-                            else spiked_list),
+                        SetVariable("letters_printed",
+                            [x for x in letters_printed if x != letter_id]),
+                        SetVariable("letters_spiked",
+                            letters_spiked + [letter_id] if letter_id not in letters_spiked
+                            else letters_spiked),
                         Hide("letter_detail"),
                     ]
 
@@ -259,11 +240,7 @@ screen letter_detail(letter_id, printed_list, spiked_list):
 screen letters_minigame():
     modal True
 
-    ## Local state — reset on every call
-    default printed_list = []
-    default spiked_list  = []
-
-    $ can_go_to_press = len(printed_list) == 4
+    $ can_go_to_press = len(letters_printed) == 4
 
     add "#000000cc"
 
@@ -277,7 +254,7 @@ screen letters_minigame():
             size 38
             color "#D2691E"
 
-        text "Select exactly 4 letters to print. Click a card to read the full text.":
+        text "Select exactly 4 letters to print. Click a card to read the full letter.":
             xalign 0.5
             size 19
             color "#C4956A"
@@ -290,17 +267,17 @@ screen letters_minigame():
             xalign 0.5
             spacing 40
 
-            text "Printed: [len(printed_list)] / 4":
+            text "Printed: [len(letters_printed)] / 4":
                 size 20
                 color "#80CC80"
 
-            text "Spiked: [len(spiked_list)]":
+            text "Spiked: [len(letters_spiked)]":
                 size 20
                 color "#CC8080"
 
         null height 4
 
-        ## ── Row 1 (letters 0-3) ──────────────────────────────────────────────
+        ## ── Row 1 (letters 0–3) ──────────────────────────────────────────────
         hbox:
             xalign 0.5
             spacing 12
@@ -308,9 +285,8 @@ screen letters_minigame():
             for i in range(4):
                 $ letter  = LETTERS[i]
                 $ lid     = letter["id"]
-                $ printed = lid in printed_list
-                $ spiked  = lid in spiked_list
-                $ tcol    = TAG_COLORS.get(letter["tag"], "#6B5A3A")
+                $ printed = lid in letters_printed
+                $ spiked  = lid in letters_spiked
                 $ card_bg = (
                     "#1A4A1Acc" if printed else
                     "#4A1A1Acc" if spiked  else
@@ -319,14 +295,11 @@ screen letters_minigame():
 
                 button:
                     xsize 180
-                    ysize 140
+                    ysize 130
                     padding (10, 8)
                     background card_bg
                     hover_background "#3A2A18cc"
-                    action Show("letter_detail",
-                                letter_id=lid,
-                                printed_list=printed_list,
-                                spiked_list=spiked_list)
+                    action Show("letter_detail", letter_id=lid)
 
                     vbox:
                         spacing 6
@@ -344,10 +317,6 @@ screen letters_minigame():
                             line_spacing 2
 
                         null height 4
-
-                        text "[letter['tag']]":
-                            size 13
-                            color tcol
 
                         if printed:
                             text "IN PRINT":
@@ -360,7 +329,7 @@ screen letters_minigame():
                                 color "#CC8080"
                                 bold True
 
-        ## ── Row 2 (letters 4-7) ──────────────────────────────────────────────
+        ## ── Row 2 (letters 4–7) ──────────────────────────────────────────────
         hbox:
             xalign 0.5
             spacing 12
@@ -368,9 +337,8 @@ screen letters_minigame():
             for i in range(4, 8):
                 $ letter  = LETTERS[i]
                 $ lid     = letter["id"]
-                $ printed = lid in printed_list
-                $ spiked  = lid in spiked_list
-                $ tcol    = TAG_COLORS.get(letter["tag"], "#6B5A3A")
+                $ printed = lid in letters_printed
+                $ spiked  = lid in letters_spiked
                 $ card_bg = (
                     "#1A4A1Acc" if printed else
                     "#4A1A1Acc" if spiked  else
@@ -379,14 +347,11 @@ screen letters_minigame():
 
                 button:
                     xsize 180
-                    ysize 140
+                    ysize 130
                     padding (10, 8)
                     background card_bg
                     hover_background "#3A2A18cc"
-                    action Show("letter_detail",
-                                letter_id=lid,
-                                printed_list=printed_list,
-                                spiked_list=spiked_list)
+                    action Show("letter_detail", letter_id=lid)
 
                     vbox:
                         spacing 6
@@ -404,10 +369,6 @@ screen letters_minigame():
                             line_spacing 2
 
                         null height 4
-
-                        text "[letter['tag']]":
-                            size 13
-                            color tcol
 
                         if printed:
                             text "IN PRINT":
@@ -428,11 +389,9 @@ screen letters_minigame():
             xsize 260
             ysize 54
             sensitive can_go_to_press
-            background (
-                "#8B4513cc" if can_go_to_press else "#2A180Acc"
-            )
+            background ("#8B4513cc" if can_go_to_press else "#2A180Acc")
             hover_background "#D2691Ecc"
-            action Return(printed_list)
+            action Return(letters_printed)
 
             text "Go to Press":
                 xalign 0.5
