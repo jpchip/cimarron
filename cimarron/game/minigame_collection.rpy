@@ -139,21 +139,11 @@ screen church_collection_minigame():
                         else:
                             null height 20
 
-                        ## Visual tell — bright "!" for cheats while hat is on them
+                        ## Visual tell — sprite for cheats while hat is on them
                         if is_hat and is_cheat and not is_flagged:
-                            text "!":
-                                xalign 0.5
-                                size 30
-                                color "#FFAA00"
-                                bold True
+                            add "sprites/congregation_cheat.png" xalign 0.5
                         else:
-                            text "O":
-                                xalign 0.5
-                                size 30
-                                color (
-                                    "#FF4444" if is_flagged else
-                                    "#E8D5A3"
-                                )
+                            add "sprites/congregation_neutral.png" xalign 0.5
 
                         text COLLECTION_NAMES[i]:
                             xalign 0.5
