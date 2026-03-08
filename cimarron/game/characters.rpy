@@ -35,6 +35,10 @@ image dixie direct   = Transform("images/sprites/dixie_direct.png",   zoom=0.45)
 image dixie composed = Transform("images/sprites/dixie_composed.png", zoom=0.45)
 image dixie sad      = Transform("images/sprites/dixie_sad.png",      zoom=0.45)
 
+image doc neutral = Transform("images/sprites/doc_neutral.png", zoom=0.45)
+image doc weary   = Transform("images/sprites/doc_weary.png",   zoom=0.45)
+image doc warm    = Transform("images/sprites/doc_warm.png",    zoom=0.45)
+
 ## ── Position transforms for character sprites ────────────────────────────────
 ## Override built-in left/right/center to position sprites in upper screen area.
 

@@ -404,6 +404,7 @@ label scene11_wind_donna:
 
     doc "A girl. Strong one."
 
+    show doc warm with dissolve
     "He set the baby in Sabra's arms. The baby had dark hair and seemed to be frowning at a private problem."
 
     show sabra tender
