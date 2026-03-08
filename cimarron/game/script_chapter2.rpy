@@ -177,6 +177,7 @@ label scene9_seven_notches:
     show yancey dangerous
     yancey "You always were bad at arithmetic, Pete."
 
+    show pete sardonic with dissolve
     "Pete Pitchlyn smiled without warmth and left. Yancey stood at his type case and did not look at Sabra."
 
     hide pete

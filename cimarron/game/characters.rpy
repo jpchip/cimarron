@@ -53,6 +53,11 @@ image felice commanding = Transform("images/sprites/felice_commanding.png", zoom
 
 image lewis neutral = Transform("images/sprites/lewis_neutral.png", zoom=0.45)
 
+image pete neutral  = Transform("images/sprites/pete_neutral.png",  zoom=0.45)
+image pete curious  = Transform("images/sprites/pete_curious.png",  zoom=0.45)
+image pete sardonic = Transform("images/sprites/pete_sardonic.png", zoom=0.45)
+image pete serious  = Transform("images/sprites/pete_serious.png",  zoom=0.45)
+
 ## ── Position transforms for character sprites ────────────────────────────────
 ## Override built-in left/right/center to position sprites in upper screen area.
 
