@@ -36,6 +36,8 @@ image sabra ch5 neutral  = Transform("images/sprites/sabra_ch5_neutral.png",  zo
 image congregation neutral = Transform("images/sprites/congregation_neutral.png", zoom=0.45)
 image congregation cheat   = Transform("images/sprites/congregation_cheat.png",   zoom=0.45)
 
+image rev_barr neutral     = Transform("images/sprites/congregation_7_neutral.png", zoom=0.45)
+
 image isaiah child neutral = Transform("images/sprites/isaiah_child_neutral.png", zoom=0.45)
 image isaiah neutral       = Transform("images/sprites/isaiah_neutral.png",       zoom=0.45)
 
@@ -57,6 +59,8 @@ image pete neutral  = Transform("images/sprites/pete_neutral.png",  zoom=0.45)
 image pete curious  = Transform("images/sprites/pete_curious.png",  zoom=0.45)
 image pete sardonic = Transform("images/sprites/pete_sardonic.png", zoom=0.45)
 image pete serious  = Transform("images/sprites/pete_serious.png",  zoom=0.45)
+
+image kid dead = Transform("images/sprites/kid_dead.png", zoom=0.45)
 
 ## ── Position transforms for character sprites ────────────────────────────────
 ## Override built-in left/right/center to position sprites in upper screen area.
@@ -103,6 +107,9 @@ define dixie = Character("Dixie Lee", color="#A0522D")
 
 # Generic frontier character for scene 5
 define stranger = Character("Stranger", color="#696969")
+
+# Rev. Barr — a distinguished frontier minister
+define rev_barr = Character("Rev. Barr", color="#2F4F4F")
 
 # ── Chapter 2 characters ──────────────────────────────────────────────────────
 

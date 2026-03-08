@@ -26,6 +26,23 @@ init python:
         "Sister Oaks", "Jim Hull",  "Cal Mott",   "Rev. Barr",
     ]
 
+    COLLECTION_SPRITES = [
+        "sprites/congregation_0_neutral.png",   # Elder Howe
+        "sprites/congregation_1_neutral.png",   # Pete R.
+        "sprites/congregation_2_neutral.png",   # Mrs. Flynn
+        "sprites/congregation_3_neutral.png",   # Bart Simms
+        "sprites/congregation_4_neutral.png",   # Sister Oaks
+        "sprites/congregation_5_neutral.png",   # Jim Hull
+        "sprites/congregation_6_neutral.png",   # Cal Mott
+        "sprites/congregation_7_neutral.png",   # Rev. Barr
+    ]
+
+    COLLECTION_CHEAT_SPRITES = {
+        1: "sprites/congregation_1_cheat.png",  # Pete R.
+        3: "sprites/congregation_3_cheat.png",  # Bart Simms
+        6: "sprites/congregation_6_cheat.png",  # Cal Mott
+    }
+
     class FlagMember(Action):
         """Flag the congregation member at index idx as a suspected cheat."""
 
@@ -139,11 +156,11 @@ screen church_collection_minigame():
                         else:
                             null height 20
 
-                        ## Visual tell — sprite for cheats while hat is on them
+                        ## Visual tell — cheat sprite when hat is on them; unique sprite per member
                         if is_hat and is_cheat and not is_flagged:
-                            add "sprites/congregation_cheat.png" xalign 0.5
+                            add Transform(COLLECTION_CHEAT_SPRITES[i],   maxsize=(76, 90)) xalign 0.5
                         else:
-                            add "sprites/congregation_neutral.png" xalign 0.5
+                            add Transform(COLLECTION_SPRITES[i], maxsize=(76, 90)) xalign 0.5
 
                         text COLLECTION_NAMES[i]:
                             xalign 0.5

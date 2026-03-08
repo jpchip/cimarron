@@ -222,6 +222,7 @@ label scene15_the_kid:
     ## ── Journal beat ─────────────────────────────────────────────────────────
 
     scene bg_hefner_window with dissolve
+    show kid dead at center with dissolve
 
     "She saw it and she did not pretend otherwise."
 
@@ -229,6 +230,7 @@ label scene15_the_kid:
 
     "It was not a question."
 
+    hide kid
     hide sabra
 
     $ journal_scene15 = True
