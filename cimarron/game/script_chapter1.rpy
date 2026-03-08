@@ -156,7 +156,7 @@ label scene3_the_decision:
 
     "After dinner, the storm broke."
 
-    show felice neutral at left with dissolve
+    show felice commanding at left with dissolve
     show sabra neutral at right with dissolve
 
     felice "I forbid it. You do not know what you are talking about. Wild Indians. Rattlesnakes. Outlaws and desperadoes. No decent society. No schools, no churches—"
@@ -168,6 +168,8 @@ label scene3_the_decision:
     show lewis neutral at center with dissolve
 
     lewis "Felice. You might recall that your own mother said much the same thing, when you came West with me twenty years ago."
+
+    show felice neutral
 
     felice "That was different. Sabra's different."
 
@@ -187,9 +189,11 @@ label scene3_the_decision:
             $ sabra_direction += 2
             $ sabra_confronted_mother = True
             show sabra determined
+            show felice commanding
             sabra "I will go, Mamma."
             felice "You won't."
             sabra "I will."
+            show felice neutral
             "The older woman's iron met the younger woman's iron. And the older woman's bent — just slightly — for the first time in twenty years."
             "Something shifted permanently in that moment. Sabra felt it."
 
