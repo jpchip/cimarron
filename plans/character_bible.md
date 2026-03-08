@@ -1,8 +1,8 @@
 # Cimarron — Character Bible
 ## Visual Reference for Sprite Generation
 
-All sprites: full body, transparent background, facing slightly left (3/4 view), neutral expression as base.
-Style target: painted illustration, warm earth tones, late-Victorian / early-frontier aesthetic.
+All sprites: waist up, transparent background, facing slightly left (3/4 view), neutral expression as base.
+Style target: flat illustration, bold ink outlines, clean flat color fills, minimal shading, muted warm earth tones, late-Victorian / early-frontier aesthetic.
 
 ---
 
@@ -26,10 +26,10 @@ Black grosgrain silk dress, three box pleats on each side, passementerie trim, j
 Gray cheviot walking dress, plain and practical. Hair still neat but slightly windblown. No hat plumes — a simpler bonnet.
 
 **AI Prompt (Ch 1A):**
-> Visual novel character sprite, transparent background, full body, 3/4 view, neutral expression. Young woman age 21, 1889 Kansas, olive skin, luminously white complexion, abundant thick black hair parted in the middle, large dark startled eyes, strong curved black brows. Wearing black grosgrain silk dress with passementerie trim and jet buttons, modish hat with ostrich plumes and pink roses, black kid gloves. Painted illustration style, warm Victorian lighting.
+> Visual novel character sprite, transparent background, waist up, 3/4 view, neutral expression. Young woman age 21, 1889 Kansas, olive skin, luminously white complexion, abundant thick black hair parted in the middle, large dark startled eyes, strong curved black brows. Wearing black grosgrain silk dress with passementerie trim and jet buttons, modish hat with ostrich plumes and pink roses, black kid gloves. Flat illustration style, bold ink outlines, clean flat color fills, minimal shading, muted warm earth tones.
 
 **AI Prompt (Ch 1B):**
-> Same woman, gray cheviot walking dress, practical frontier travel clothes 1889, simple bonnet, slightly windblown dark hair, alert expression. Painted illustration, transparent background.
+> Same woman, gray cheviot walking dress, practical frontier travel clothes 1889, simple bonnet, slightly windblown dark hair, alert expression. Flat illustration style, bold ink outlines, clean flat color fills, minimal shading, muted warm earth tones, transparent background.
 
 ---
 
@@ -38,7 +38,7 @@ Gray cheviot walking dress, plain and practical. Hair still neat but slightly wi
 Blue serge skirt (wide and flaring at hem, snug at hips). Blue serge Eton jacket trimmed with black soutache braid. Shirtwaist. Balloon sleeves (new fashion from Chicago). Hair still perfect center part but more practically arranged.
 
 **AI Prompt (Ch 2):**
-> Same woman, age 23, frontier Oklahoma 1890. Blue serge skirt flaring at hem, blue serge Eton jacket trimmed with black soutache braid, white shirtwaist, balloon sleeves. Dark hair center-parted, neatly pinned. Confident, slightly tired expression. Painted illustration, transparent background.
+> Same woman, age 23, frontier Oklahoma 1890. Blue serge skirt flaring at hem, blue serge Eton jacket trimmed with black soutache braid, white shirtwaist, balloon sleeves. Dark hair center-parted, neatly pinned. Confident, slightly tired expression. Flat illustration style, bold ink outlines, clean flat color fills, minimal shading, muted warm earth tones, transparent background.
 
 ---
 
@@ -47,7 +47,7 @@ Blue serge skirt (wide and flaring at hem, snug at hips). Blue serge Eton jacket
 Practical dark skirt and jacket. Ink sometimes on fingers. Hair still dark but with first threads of gray at temples by Ch 4. Expression: capable, guarded, self-possessed.
 
 **AI Prompt (Ch 3–4):**
-> Same woman, age 30–38, Oklahoma frontier editor 1895–1905. Dark practical skirt suit, ink-stained fingers, center-parted dark hair with first threads of silver at temples. Expression: composed and watchful. Painted illustration, transparent background.
+> Same woman, age 30–38, Oklahoma frontier editor 1895–1905. Dark practical skirt suit, ink-stained fingers, center-parted dark hair with first threads of silver at temples. Expression: composed and watchful. Flat illustration style, bold ink outlines, clean flat color fills, minimal shading, muted warm earth tones, transparent background.
 
 ---
 
@@ -56,7 +56,7 @@ Practical dark skirt and jacket. Ink sometimes on fingers. Hair still dark but w
 Formal dark suit appropriate to a congresswoman, 1920s cut. Hair fully white, still center-parted and neatly arranged. Straight-backed, dignified. Quiet authority in posture.
 
 **AI Prompt (Ch 5):**
-> Same woman, age 60, 1920s Oklahoma congresswoman. Formal dark 1920s suit, white hair center-parted and neatly pinned, dark eyes still sharp, strong brows now white. Upright posture, quiet dignity, slight lines of a long life. Painted illustration, transparent background.
+> Same woman, age 60, 1920s Oklahoma congresswoman. Formal dark 1920s suit, white hair center-parted and neatly pinned, dark eyes still sharp, strong brows now white. Upright posture, quiet dignity, slight lines of a long life. Flat illustration style, bold ink outlines, clean flat color fills, minimal shading, muted warm earth tones, transparent background.
 
 ---
 
@@ -79,7 +79,7 @@ Formal dark suit appropriate to a congresswoman, 1920s cut. Hair fully white, st
 Prince Albert coat of fine black broadcloth. Pleated white shirt of soft exquisite material. Black string tie. Trousers tucked into boot-tops. White felt hat, broad-brimmed and rolling. Texas star boots of fine soft calf, very high-heeled, thin-soled, ornamented with gold stars. Twin mother-of-pearl-handled six-shooters at belt.
 
 **AI Prompt (Ch 1):**
-> Visual novel character sprite, transparent background, full body, 3/4 view. Tall imposing man age 32, 1889 Oklahoma frontier. Six foot two, enormous presence, great heavy "buffalo" head, long black hair curling at collar in Civil War actor style, pockmarked face, full sweet mouth, impossibly long eyelashes, ocean-gray blazing eyes, slim white hands. Prince Albert coat of fine black broadcloth, pleated white shirt, black string tie, trousers tucked into gold-star-ornamented Texas cowboy boots, white broad-brimmed felt sombrero. Twin mother-of-pearl six-shooters at his belt. Painted illustration style, frontier charisma.
+> Visual novel character sprite, transparent background, waist up, 3/4 view. Tall imposing man age 32, 1889 Oklahoma frontier. Six foot two, enormous presence, great heavy "buffalo" head, long black hair curling at collar in Civil War actor style, pockmarked face, full sweet mouth, impossibly long eyelashes, ocean-gray blazing eyes, slim white hands. Prince Albert coat of fine black broadcloth, pleated white shirt, black string tie, trousers tucked into gold-star-ornamented Texas cowboy boots, white broad-brimmed felt sombrero. Twin mother-of-pearl six-shooters at his belt. Flat illustration style, bold ink outlines, clean flat color fills, minimal shading, muted warm earth tones.
 
 ---
 
@@ -88,7 +88,7 @@ Prince Albert coat of fine black broadcloth. Pleated white shirt of soft exquisi
 Broad-brimmed khaki hat with brim pinned up on one side and crossed cavalry sabers insignia. Brown canvas cavalry coat. Standard Rough Rider kit. Thinner, yellower in face. Eight notches on pistol grips (can be suggested by worn guns).
 
 **AI Prompt (Ch 4 — Uniform):**
-> Same man, age 41, thinner and battle-worn. 1898 Rough Rider uniform: broad khaki hat brim pinned on one side with crossed sabers pin, brown canvas cavalry coat. More lined face, slightly yellow from fever, but eyes still blazing gray. White sombrero replaced by military hat. Painted illustration, transparent background.
+> Same man, age 41, thinner and battle-worn. 1898 Rough Rider uniform: broad khaki hat brim pinned on one side with crossed sabers pin, brown canvas cavalry coat. More lined face, slightly yellow from fever, but eyes still blazing gray. White sombrero replaced by military hat. Flat illustration style, bold ink outlines, clean flat color fills, minimal shading, muted warm earth tones, transparent background.
 
 ---
 
@@ -97,7 +97,7 @@ Broad-brimmed khaki hat with brim pinned up on one side and crossed cavalry sabe
 Oil-field laborer's worn clothes. Old man's version of the same frame — still huge in silhouette, but diminished. Gray streaking the black hair. The eyes the same.
 
 **AI Prompt (Ch 5 — Dying):**
-> Same man, age 73, an oil-field worker in 1930 Oklahoma. Worn laborer's clothes, oil-stained. Still enormous in frame but clearly old — gray in the black hair, more deeply lined face, but those ocean-gray eyes still present. Exhausted, lying position (for the death scene). Painted illustration, transparent background.
+> Same man, age 73, an oil-field worker in 1930 Oklahoma. Worn laborer's clothes, oil-stained. Still enormous in frame but clearly old — gray in the black hair, more deeply lined face, but those ocean-gray eyes still present. Exhausted, lying position (for the death scene). Flat illustration style, bold ink outlines, clean flat color fills, minimal shading, muted warm earth tones, transparent background.
 
 ---
 
@@ -117,7 +117,7 @@ Oil-field laborer's worn clothes. Old man's version of the same frame — still 
 Ruffled and trailing white wrappers of cross-barred dimity in the mornings. For company: formal dark dress. Pointed slippers with arched instep. Never a sunbonnet. Hair immaculate.
 
 **AI Prompt:**
-> Visual novel character sprite, transparent background, full body, 3/4 view. Imperious Southern woman, 1880s Wichita Kansas, age mid-50s. Sallow olive complexion, blazing black eyes in a controlled face, black hair. Ruffled trailing dress with white dimity detail, pointed arched slippers, formal and upright posture. The expression of a woman who has never been contradicted twice. Painted illustration, warm parlor lighting.
+> Visual novel character sprite, transparent background, waist up, 3/4 view. Imperious Southern woman, 1880s Wichita Kansas, age mid-50s. Sallow olive complexion, blazing black eyes in a controlled face, black hair. Ruffled trailing dress with white dimity detail, pointed arched slippers, formal and upright posture. The expression of a woman who has never been contradicted twice. Flat illustration style, bold ink outlines, clean flat color fills, minimal shading, muted warm earth tones.
 
 ---
 
@@ -133,7 +133,7 @@ Ruffled and trailing white wrappers of cross-barred dimity in the mornings. For 
 - Fumbling, gentle manner; reaches for his cane
 
 **AI Prompt:**
-> Visual novel character sprite, transparent background. Gentle aging Southern man, 1880s Wichita, late 50s. Yellow-ivory complexion from chronic malaria, faded kind blue eyes, fine white hair, slight stoop. Formal Victorian frock coat, uses a cane. Expression of patient, resigned gentleness. Painted illustration style.
+> Visual novel character sprite, transparent background. Gentle aging Southern man, 1880s Wichita, late 50s. Yellow-ivory complexion from chronic malaria, faded kind blue eyes, fine white hair, slight stoop. Formal Victorian frock coat, uses a cane. Expression of patient, resigned gentleness. Flat illustration style, bold ink outlines, clean flat color fills, minimal shading, muted warm earth tones.
 
 ---
 
@@ -155,7 +155,7 @@ Ruffled and trailing white wrappers of cross-barred dimity in the mornings. For 
 **Costume:** Black coat, waistcoat, careful cravat. As Osage grows, his store improves but his quiet, dark-clothed presence does not change.
 
 **AI Prompt:**
-> Visual novel character sprite, transparent background. Small slim pale man, 1890s Oklahoma frontier merchant, age 30s–40s. White face, sad remote dark eyes with deep melancholy, slim ivory hands, neat black coat and waistcoat and careful cravat. Immaculate despite frontier dust. Expression of watchful quiet dignity. Painted illustration style.
+> Visual novel character sprite, transparent background. Small slim pale man, 1890s Oklahoma frontier merchant, age 30s–40s. White face, sad remote dark eyes with deep melancholy, slim ivory hands, neat black coat and waistcoat and careful cravat. Immaculate despite frontier dust. Expression of watchful quiet dignity. Flat illustration style, bold ink outlines, clean flat color fills, minimal shading, muted warm earth tones.
 
 ---
 
@@ -174,13 +174,13 @@ Ruffled and trailing white wrappers of cross-barred dimity in the mornings. For 
 **Costume:** Yancey's discarded high-heeled star-trimmed boots (too big, split at seams). Red calico sash. Oversized holstered leather belt hanging to knees. Battered, battered sombrero salvaged from the backyard.
 
 **AI Prompt (Ch 1):**
-> Visual novel character sprite, transparent background. Young Black boy age 10–12, 1889 Oklahoma frontier. Round head with tight fuzzy hair, gleaming dark skin, wide rolling eyes, enormous grin showing white teeth. Wearing oversized cast-off frontier clothes: split high-heeled cowboy boots too large for him, red calico sash, enormous leather belt hanging to his knees, battered shapeless sombrero. Expression of delighted excitement. Painted illustration style.
+> Visual novel character sprite, transparent background. Young Black boy age 10–12, 1889 Oklahoma frontier. Round head with tight fuzzy hair, gleaming dark skin, wide rolling eyes, enormous grin showing white teeth. Wearing oversized cast-off frontier clothes: split high-heeled cowboy boots too large for him, red calico sash, enormous leather belt hanging to his knees, battered shapeless sombrero. Expression of delighted excitement. Flat illustration style, bold ink outlines, clean flat color fills, minimal shading, muted warm earth tones.
 
 ### Chapter 3 — 1898, age ~20
 **Costume:** More settled frontier working clothes — still modest but fitting. He works at the Wigwam now. Ink on his hands.
 
 **AI Prompt (Ch 3):**
-> Same young man, now age 20, 1898 Oklahoma. Lean, dignified, working at a newspaper. Simple working clothes, ink-stained hands, composed expression with quiet intelligence in the eyes. Still recognizably the same person but grown. Painted illustration, transparent background.
+> Same young man, now age 20, 1898 Oklahoma. Lean, dignified, working at a newspaper. Simple working clothes, ink-stained hands, composed expression with quiet intelligence in the eyes. Still recognizably the same person but grown. Flat illustration style, bold ink outlines, clean flat color fills, minimal shading, muted warm earth tones, transparent background.
 
 ---
 
@@ -200,13 +200,13 @@ Ruffled and trailing white wrappers of cross-barred dimity in the mornings. For 
 **Costume — Church scene (Scene 8):** Purple grosgrain silk dress. Purple parasol to match. Two purple plumes in hat. The full display of her profession's prosperity.
 
 **AI Prompt (Ch 1 — Church):**
-> Visual novel character sprite, transparent background. Handsome young woman age 22, 1889 Oklahoma frontier. Fair skin, vivid blue eyes, black hair, slim girlish figure. Purple grosgrain silk dress, purple parasol, two purple plumes in elaborate hat. Painted cheeks, beaded lashes. Expression: amused, bold, entirely unashamed. Painted illustration style.
+> Visual novel character sprite, transparent background. Handsome young woman age 22, 1889 Oklahoma frontier. Fair skin, vivid blue eyes, black hair, slim girlish figure. Purple grosgrain silk dress, purple parasol, two purple plumes in elaborate hat. Painted cheeks, beaded lashes. Expression: amused, bold, entirely unashamed. Flat illustration style, bold ink outlines, clean flat color fills, minimal shading, muted warm earth tones.
 
 ### Chapter 4 — Trial (1899), age ~32
 **Costume:** Rich, quiet dress — she has money now and it shows, but more tastefully. Dove gray. She is not trying to display anymore.
 
 **AI Prompt (Ch 4):**
-> Same woman, age 32, 1899 Oklahoma. Now plumper, more settled. Dove gray dress, quietly expensive, no longer the purple plumes. Small gray beginning to show in black abundant hair. Pince-nez spectacles. Expression: watchful, self-contained, has seen everything. Painted illustration, transparent background.
+> Same woman, age 32, 1899 Oklahoma. Now plumper, more settled. Dove gray dress, quietly expensive, no longer the purple plumes. Small gray beginning to show in black abundant hair. Pince-nez spectacles. Expression: watchful, self-contained, has seen everything. Flat illustration style, bold ink outlines, clean flat color fills, minimal shading, muted warm earth tones, transparent background.
 
 ---
 
@@ -220,7 +220,7 @@ Ruffled and trailing white wrappers of cross-barred dimity in the mornings. For 
 - Note: The book gives minimal physical description — the prompts below are extrapolated from period type and role.
 
 **AI Prompt:**
-> Visual novel character sprite, transparent background. Frontier doctor, 1890s Oklahoma, age 40s–50s. Weathered face, capable hands. Medical bag in hand. Well-traveled rumpled clothes — once good quality, now showing frontier wear. Expression: sardonic intelligence mixed with ruin. The face of a man who chose the wrong life and doesn't entirely regret it. Painted illustration style.
+> Visual novel character sprite, transparent background. Frontier doctor, 1890s Oklahoma, age 40s–50s. Weathered face, capable hands. Medical bag in hand. Well-traveled rumpled clothes — once good quality, now showing frontier wear. Expression: sardonic intelligence mixed with ruin. The face of a man who chose the wrong life and doesn't entirely regret it. Flat illustration style, bold ink outlines, clean flat color fills, minimal shading, muted warm earth tones.
 
 ---
 
@@ -237,7 +237,7 @@ Ruffled and trailing white wrappers of cross-barred dimity in the mornings. For 
 **Costume:** Calico dress, moccasins. Practical frontier housework dress with Osage elements.
 
 **AI Prompt:**
-> Visual novel character sprite, transparent background. Young Osage woman age 15–20, 1890s Oklahoma frontier. Pure Native American features, dead-still black eyes showing nothing, quiet composed face, dark hair simply arranged. Plain calico dress appropriate to 1890s domestic work, moccasins. Expression: absolute stillness — not absence of feeling but its containment. Painted illustration style.
+> Visual novel character sprite, transparent background. Young Osage woman age 15–20, 1890s Oklahoma frontier. Pure Native American features, dead-still black eyes showing nothing, quiet composed face, dark hair simply arranged. Plain calico dress appropriate to 1890s domestic work, moccasins. Expression: absolute stillness — not absence of feeling but its containment. Flat illustration style, bold ink outlines, clean flat color fills, minimal shading, muted warm earth tones.
 
 ---
 
@@ -251,7 +251,7 @@ Ruffled and trailing white wrappers of cross-barred dimity in the mornings. For 
 - Sophisticated manner — the book's description of him is primarily through impression rather than physical detail
 
 **AI Prompt:**
-> Visual novel character sprite, transparent background. Half-Cherokee lawyer, 1890s Oklahoma, age 30s. Mixed Native American and white features, Harvard-educated bearing, well-tailored dark suit incongruous on the frontier. Eyes: cool, curious, measuring. Expression of a man who has learned to read every room. Painted illustration style, period accurate 1890s.
+> Visual novel character sprite, transparent background. Half-Cherokee lawyer, 1890s Oklahoma, age 30s. Mixed Native American and white features, Harvard-educated bearing, well-tailored dark suit incongruous on the frontier. Eyes: cool, curious, measuring. Expression of a man who has learned to read every room. Flat illustration style, bold ink outlines, clean flat color fills, minimal shading, muted warm earth tones.
 
 ---
 
@@ -266,7 +266,7 @@ Ruffled and trailing white wrappers of cross-barred dimity in the mornings. For 
 - Dressed for display in a new cheap black suit of store clothes, square-cut
 
 **AI Prompt (dead / display):**
-> Visual novel character sprite, transparent background. Young outlaw, early 20s, laid out for display 1898 Oklahoma. Light hair, light complexion, slim build. Cheap black store-bought suit, square-cut. Face in death fixed in a slight sardonic snarl showing teeth. The terrible beauty of a young man who died violently. Painted illustration style.
+> Visual novel character sprite, transparent background. Young outlaw, early 20s, laid out for display 1898 Oklahoma. Light hair, light complexion, slim build. Cheap black store-bought suit, square-cut. Face in death fixed in a slight sardonic snarl showing teeth. The terrible beauty of a young man who died violently. Flat illustration style, bold ink outlines, clean flat color fills, minimal shading, muted warm earth tones.
 
 ---
 
@@ -279,7 +279,7 @@ Ruffled and trailing white wrappers of cross-barred dimity in the mornings. For 
 - Oil money showing in quality of dress
 
 **AI Prompt (Ch 4–5):**
-> Visual novel character sprite, transparent background. Wealthy Oklahoma oil baron, 1900s–1920s, age 30s–40s. Handsome in a conventional settled way, expensive suit, well-groomed, confident ease of inherited and earned money. Expression: reliable, pleasant, no particular depth. Painted illustration style, early 20th century period dress.
+> Visual novel character sprite, transparent background. Wealthy Oklahoma oil baron, 1900s–1920s, age 30s–40s. Handsome in a conventional settled way, expensive suit, well-groomed, confident ease of inherited and earned money. Expression: reliable, pleasant, no particular depth. Flat illustration style, bold ink outlines, clean flat color fills, minimal shading, muted warm earth tones.
 
 ---
 
@@ -296,7 +296,7 @@ Ruffled and trailing white wrappers of cross-barred dimity in the mornings. For 
 - Regal, measured pace; the lameness becomes dignity
 
 **AI Prompt:**
-> Visual novel character sprite, transparent background. Young Osage woman age 20, 1910 Oklahoma. Osage features, broad fine-boned face, large head with a man's physical presence in a woman's frame, black eyes that reveal nothing, regal upright posture. Slight lameness in stance — left leg shorter — but she carries it as authority. Simple but dignified dress. Painted illustration style.
+> Visual novel character sprite, transparent background. Young Osage woman age 20, 1910 Oklahoma. Osage features, broad fine-boned face, large head with a man's physical presence in a woman's frame, black eyes that reveal nothing, regal upright posture. Slight lameness in stance — left leg shorter — but she carries it as authority. Simple but dignified dress. Flat illustration style, bold ink outlines, clean flat color fills, minimal shading, muted warm earth tones.
 
 ---
 
@@ -310,7 +310,7 @@ Ruffled and trailing white wrappers of cross-barred dimity in the mornings. For 
 - Small, precise, out of place in Oklahoma
 
 **AI Prompt:**
-> Visual novel character sprite, transparent background. Small middle-aged Central European man, 1929 Oklahoma, a sculptor. Round spectacles, neat but rumpled European clothes (out of place on the frontier). Holding a teacup with both hands. Expression: politely attentive, quietly observant, professionally detached. Painted illustration style.
+> Visual novel character sprite, transparent background. Small middle-aged Central European man, 1929 Oklahoma, a sculptor. Round spectacles, neat but rumpled European clothes (out of place on the frontier). Holding a teacup with both hands. Expression: politely attentive, quietly observant, professionally detached. Flat illustration style, bold ink outlines, clean flat color fills, minimal shading, muted warm earth tones.
 
 ---
 
@@ -325,7 +325,7 @@ Ruffled and trailing white wrappers of cross-barred dimity in the mornings. For 
 - The bearing of a man who led his people
 
 **AI Prompt:**
-> Visual novel character sprite, transparent background. Elder Osage man, age late 60s–70s, 1910 Oklahoma. Osage features, great dignity in posture, the bearing of a former tribal chief. Traditional formal Osage dress appropriate for a family visit of ceremony. Expression: formal, measuring, carrying the weight of his nation's loss with composure. Painted illustration style.
+> Visual novel character sprite, transparent background. Elder Osage man, age late 60s–70s, 1910 Oklahoma. Osage features, great dignity in posture, the bearing of a former tribal chief. Traditional formal Osage dress appropriate for a family visit of ceremony. Expression: formal, measuring, carrying the weight of his nation's loss with composure. Flat illustration style, bold ink outlines, clean flat color fills, minimal shading, muted warm earth tones.
 
 ---
 
@@ -341,7 +341,7 @@ Ruffled and trailing white wrappers of cross-barred dimity in the mornings. For 
 Dressed in his best: bright plaid silk tie, buttoned shoes with tassels. A small boy trying to look like his father.
 
 **AI Prompt (Ch 1):**
-> Visual novel character sprite, transparent background. Small boy age 4, 1889 Oklahoma. Dark hair, large gray eyes, his father's face in miniature. Best clothes: plaid silk tie, buttoned shoes with tassels. Expression: curious and slightly overwhelmed. Painted illustration style.
+> Visual novel character sprite, transparent background. Small boy age 4, 1889 Oklahoma. Dark hair, large gray eyes, his father's face in miniature. Best clothes: plaid silk tie, buttoned shoes with tassels. Expression: curious and slightly overwhelmed. Flat illustration style, bold ink outlines, clean flat color fills, minimal shading, muted warm earth tones.
 
 ### Chapter 2 — age ~5–8
 Small frontier child. More practical clothes. Still has the gray eyes.
@@ -353,7 +353,7 @@ Gangly boy, his father's frame starting to show. Plain frontier-boy clothes.
 Young man. His father's looks but softer. Well-dressed for a college graduate in 1905–1907. Beginning to be drawn toward the oil world.
 
 **AI Prompt (Ch 4):**
-> Visual novel character sprite, transparent background. Young man age 20–22, 1905 Oklahoma. His father's gray eyes and black hair, tall frame — but a softer, less commanding face. College-educated dress: suit jacket and shirt, modern for 1905. Expression: well-meaning, slightly adrift. Painted illustration style.
+> Visual novel character sprite, transparent background. Young man age 20–22, 1905 Oklahoma. His father's gray eyes and black hair, tall frame — but a softer, less commanding face. College-educated dress: suit jacket and shirt, modern for 1905. Expression: well-meaning, slightly adrift. Flat illustration style, bold ink outlines, clean flat color fills, minimal shading, muted warm earth tones.
 
 ### Chapter 5 — age ~35–40
 Established geologist, married to Ruby. Content, quieter than his father in every way.
@@ -381,7 +381,7 @@ A girl becoming a young woman, dressed for departure — eastern fashions, not f
 A beautiful, composed woman of the oil-money class. Tracy Wyatt's wife.
 
 **AI Prompt (Ch 5 — Wedding):**
-> Visual novel character sprite, transparent background. Beautiful composed young woman age 25, 1916 Oklahoma oil-baron wedding. Olive skin, dark eyes — her grandmother's face, younger. 1916 wedding dress appropriate to wealthy Oklahoma society. Expression: perfectly composed, aware of her own beauty, slightly amused by the occasion. Painted illustration style.
+> Visual novel character sprite, transparent background. Beautiful composed young woman age 25, 1916 Oklahoma oil-baron wedding. Olive skin, dark eyes — her grandmother's face, younger. 1916 wedding dress appropriate to wealthy Oklahoma society. Expression: perfectly composed, aware of her own beauty, slightly amused by the occasion. Flat illustration style, bold ink outlines, clean flat color fills, minimal shading, muted warm earth tones.
 
 ---
 
@@ -394,7 +394,7 @@ A beautiful, composed woman of the oil-money class. Tracy Wyatt's wife.
 - Gives Sabra the coverlet for the journey
 
 **AI Prompt:**
-> Visual novel character sprite, transparent background. Catholic nun, 1889 Kansas frontier, age 50s–60s. Full black habit and white wimple, plain strong face with steady kind eyes. Expression: direct and unsentimental — a woman who has seen everything and helps anyway. Painted illustration style.
+> Visual novel character sprite, transparent background. Catholic nun, 1889 Kansas frontier, age 50s–60s. Full black habit and white wimple, plain strong face with steady kind eyes. Expression: direct and unsentimental — a woman who has seen everything and helps anyway. Flat illustration style, bold ink outlines, clean flat color fills, minimal shading, muted warm earth tones.
 
 ---
 
@@ -414,7 +414,7 @@ A beautiful, composed woman of the oil-money class. Tracy Wyatt's wife.
 ## Notes for AI Generation
 
 - **Consistency pass:** Generate all versions of a recurring character in the same session with the same seed/style if the tool allows, to maintain face shape consistency.
-- **Style anchor:** Request "oil painting illustration style, warm earth tones, 1890s Oklahoma frontier" on every prompt to keep the visual language unified.
+- **Style anchor:** Request "flat illustration style, bold ink outlines, clean flat color fills, minimal shading, muted warm earth tones" on every prompt to keep the visual language unified.
 - **Transparent background:** Always specify — needed for Ren'Py sprite overlay.
 - **Expression variants:** Once the neutral base sprite is approved, generate: `_happy`, `_worried`, `_angry`, `_sad` by changing only the expression description, keeping all other parameters identical.
 - **Sprite facing:** All characters should face slightly left (toward Sabra / the reader). Yancey may face right (away, suggesting his departures).

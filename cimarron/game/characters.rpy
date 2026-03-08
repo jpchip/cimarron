@@ -12,6 +12,11 @@ image yancey dangerous  = Transform("images/sprites/yancey_dangerous.png",  zoom
 image yancey restless   = Transform("images/sprites/yancey_restless.png",   zoom=0.45)
 image yancey weary      = Transform("images/sprites/yancey_weary.png",      zoom=0.45)
 
+image yancey roughrider neutral = Transform("images/sprites/yancey_roughrider_neutral.png", zoom=0.45)
+image yancey roughrider weary   = Transform("images/sprites/yancey_roughrider_weary.png",   zoom=0.45)
+image yancey roughrider tender  = Transform("images/sprites/yancey_roughrider_tender.png",  zoom=0.45)
+image yancey dying              = Transform("images/sprites/yancey_dying.png",               zoom=0.45)
+
 image sabra neutral     = Transform("images/sprites/sabra_neutral.png",     zoom=0.45)
 image sabra determined  = Transform("images/sprites/sabra_determined.png",  zoom=0.45)
 image sabra worried     = Transform("images/sprites/sabra_worried.png",     zoom=0.45)

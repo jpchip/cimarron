@@ -50,8 +50,8 @@ label scene19_rough_rider:
 
     "The whole of Main Street was out when he rode in. The Rough Rider hat. The sun on the brass buttons. Eight — she counted — eight notches cut into the hat band."
 
-    show yancey neutral at left with dissolve
-    show yancey weary
+    show yancey roughrider neutral at left with dissolve
+    show yancey roughrider weary
 
     "Yancey Cravat, grinning at the crowd like a man who has never been afraid of anything in his life."
 
@@ -115,7 +115,7 @@ label scene19_rough_rider:
             "Then he told her."
             "She sat on the press stool and listened for two hours. The good parts and the terrible parts."
             "She did not interrupt."
-            show yancey tender
+            show yancey roughrider tender
             yancey "You're the only person I can tell it to."
             "She put her hand over his and said nothing."
 
