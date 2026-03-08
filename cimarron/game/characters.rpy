@@ -39,6 +39,11 @@ image doc neutral = Transform("images/sprites/doc_neutral.png", zoom=0.45)
 image doc weary   = Transform("images/sprites/doc_weary.png",   zoom=0.45)
 image doc warm    = Transform("images/sprites/doc_warm.png",    zoom=0.45)
 
+image felice neutral    = Transform("images/sprites/felice_neutral.png",    zoom=0.45)
+image felice commanding = Transform("images/sprites/felice_commanding.png", zoom=0.45)
+
+image lewis neutral = Transform("images/sprites/lewis_neutral.png", zoom=0.45)
+
 ## ── Position transforms for character sprites ────────────────────────────────
 ## Override built-in left/right/center to position sprites in upper screen area.
 

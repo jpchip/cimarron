@@ -10,6 +10,7 @@
 ################################################################################
 
 style default:
+    font gui.text_font
     color gui.text_color
     size gui.text_size
     language gui.language
@@ -24,6 +25,7 @@ style hyperlink_text:
     hover_underline True
 
 style gui_text:
+    font gui.interface_text_font
     color gui.interface_text_color
     size gui.interface_text_size
 
