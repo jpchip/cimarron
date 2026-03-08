@@ -24,13 +24,7 @@ define config.intra_transition  = dissolve
 define config.after_load_transition = None
 
 ## ─── Text and Fonts ──────────────────────────────────────────────────────────
-# Fonts must be placed in game/fonts/ if you add custom .ttf files.
-# Ren'Py ships with DejaVuSans by default; replace below once you have
-# Playfair Display or IM Fell English from Google Fonts.
-
-# define gui.text_font          = "fonts/PlayfairDisplay-Regular.ttf"
-# define gui.name_text_font     = "fonts/PlayfairDisplay-Bold.ttf"
-# define gui.interface_text_font = "fonts/IMFellEnglish-Regular.ttf"
+# Font definitions live in gui.rpy. Font files are in game/fonts/.
 
 ## ─── Music ───────────────────────────────────────────────────────────────────
 # Default music volume.

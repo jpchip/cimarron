@@ -27,9 +27,9 @@ define gui.sensitive_color       = "#F5DEB3"
 
 ## ─── Fonts ────────────────────────────────────────────────────────────────────
 ## Uncomment after placing .ttf files in game/fonts/:
-# define gui.text_font           = "fonts/PlayfairDisplay-Regular.ttf"
-# define gui.name_text_font      = "fonts/PlayfairDisplay-Bold.ttf"
-# define gui.interface_text_font = "fonts/IMFellEnglish-Regular.ttf"
+define gui.text_font           = "fonts/PlayfairDisplay-Regular.ttf"
+define gui.name_text_font      = "fonts/PlayfairDisplay-Bold.ttf"
+define gui.interface_text_font = "fonts/IMFellEnglish-Regular.ttf"
 
 ## ─── Text Sizes ───────────────────────────────────────────────────────────────
 define gui.text_size             = 26
