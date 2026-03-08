@@ -587,6 +587,7 @@ label scene18_war:
 
     "She looked at Sabra."
 
+    show dixie direct with dissolve
     "Dixie Lee: You're a good woman, Mrs. Cravat. I know you don't think I know that. But I do."
 
     ## ── Choice 2: Dixie Lee ───────────────────────────────────────────────────

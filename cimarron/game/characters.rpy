@@ -30,6 +30,11 @@ image congregation cheat   = Transform("images/sprites/congregation_cheat.png", 
 image isaiah child neutral = Transform("images/sprites/isaiah_child_neutral.png", zoom=0.45)
 image isaiah neutral       = Transform("images/sprites/isaiah_neutral.png",       zoom=0.45)
 
+image dixie neutral  = Transform("images/sprites/dixie_neutral.png",  zoom=0.45)
+image dixie direct   = Transform("images/sprites/dixie_direct.png",   zoom=0.45)
+image dixie composed = Transform("images/sprites/dixie_composed.png", zoom=0.45)
+image dixie sad      = Transform("images/sprites/dixie_sad.png",      zoom=0.45)
+
 ## ── Position transforms for character sprites ────────────────────────────────
 ## Override built-in left/right/center to position sprites in upper screen area.
 

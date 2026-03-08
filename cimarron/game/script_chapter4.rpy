@@ -295,7 +295,7 @@ label scene20_trial_result:
 
     "The jury was out forty minutes."
 
-    show dixie neutral at center with dissolve
+    show dixie composed at center with dissolve
 
     "Not guilty."
 
@@ -345,6 +345,7 @@ label scene20_post_verdict:
 
     "Dixie Lee was waiting in the courthouse hallway."
 
+    show dixie sad at center with dissolve
     "She was not waiting for Yancey. Yancey was already surrounded by admirers."
 
     "She was waiting for Sabra."
