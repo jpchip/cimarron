@@ -197,6 +197,7 @@ label scene25_congresswoman:
             $ community_standing += 3
             $ sabra_independence  += 2
 
+            show sabra determined
             sabra "Yes. I'll run."
 
             "She said it before she had time to think better of it. The party man shook her hand with both of his. She won. Of course she won. She had been winning Osage over for two decades, and this was just a larger version of Osage."
@@ -411,6 +412,7 @@ label scene27_bowlegs:
 
     "His lips moved. He was saying something she didn't recognize — she had never heard of Peer Gynt, had never read Ibsen, knew nothing of Solveig or the Button Moulder or the play's long resolution. She only heard the words."
 
+    show yancey weary
     yancey "Wife and mother — you stainless woman — hide me — hide me in your love."
 
     "She didn't know it was a play. She only knew what he was asking."
@@ -430,6 +432,7 @@ label scene27_bowlegs:
         "\"Sleep. You're safe.\"":
             $ yancey_relationship += 3
 
+            show sabra tender
             sabra "Sleep. You're safe."
 
             "She became, without knowing it, Solveig. The play ended as it must."
@@ -587,6 +590,7 @@ label ending_his_shadow:
 
     $ journal_scene28 = True
 
+    show sabra weary
     "She stood at the foot of the statue and looked up at his face — the great menacing head, the long coat, the brilliant boots — and felt, for the first time in many years, that she was exactly where she was supposed to be."
 
     "Beside him. As she had always been."
@@ -630,6 +634,7 @@ label ending_built_herself:
 
     "She knew what she had built. This state knew it too. The paper. The school board. The water commission. The twenty-three years of editorial positions taken when it was easier to stay quiet. The oil rights hearings. The congressional seat."
 
+    show sabra proud
     "The crowd was watching her. She turned and spoke to the Senators, the editors, the oil men, the women who had come from the federation."
 
     "She spoke for twenty minutes without notes."

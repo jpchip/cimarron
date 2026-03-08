@@ -40,6 +40,7 @@ label scene1_venable_home:
     "He was talking."
 
     show yancey neutral at left with dissolve
+    show yancey passionate
 
     yancey "And you should have seen them, I tell you — fifty thousand souls lined up along the border at the stroke of noon on April twenty-second, eighteen-eighty-nine. Ready to race into two million acres of the finest land on God's green earth."
 
@@ -98,10 +99,12 @@ label scene2_land_run:
 
     "He paused. Something moved behind his gray-green eyes."
 
+    show yancey passionate
     yancey "There was a woman. She came out of nowhere on the finest black thoroughbred I have ever seen — a woman in black tights, bold as you please, riding like a Comanche. She had staked the same claim. She had been there before me."
 
     "He smiled — that slow, helpless smile that Sabra had never been able to resist."
 
+    show yancey tender
     yancey "So I gave it to her."
 
     show felice neutral at right with dissolve
@@ -183,6 +186,7 @@ label scene3_the_decision:
             $ yancey_relationship += 5
             $ sabra_direction += 2
             $ sabra_confronted_mother = True
+            show sabra determined
             sabra "I will go, Mamma."
             felice "You won't."
             sabra "I will."
@@ -211,6 +215,7 @@ label scene3_the_decision:
 
     "He tossed Cim up in the air — once, twice — and the child shrieked with delight."
 
+    show yancey passionate
     yancey "We'll leave all the goddamned middle-class respectability of Wichita, Kansas, behind us."
 
     "Somewhere above, there was a crash. Black Isaiah — who had been eavesdropping from atop the sideboard — had fallen directly into Felice Venable's finest frosted silver cake."
@@ -263,6 +268,7 @@ label scene4_journey_west:
         "\"Yes\" — she stays guarded but truthful.":
             $ yancey_relationship += 5
             $ sabra_direction -= 1
+            show sabra worried
             sabra "Terrified, if you want the truth."
             yancey "Good. That means you're paying attention."
             "He said it gently — not dismissively. And for a moment she felt that he saw her, the real her, the one behind the cheviot jacket and the gray straw bonnet."
@@ -288,6 +294,7 @@ label scene4_journey_west:
 
     "He looked up at her across the fire. His face in the firelight was all planes and shadows, like a face on a coin."
 
+    show yancey passionate
     yancey "Oklahoma will be the last, best chance America has. The other states were built on the mistakes of men who did not know better. We will know better. We will build something — different."
 
     "She watched him write. The fire snapped. The coyotes sang."
@@ -331,6 +338,7 @@ label scene5_arriving_osage:
 
     show sabra neutral at center with dissolve
 
+    show sabra worried
     sabra "Mr. Levy. Is it — always like this?"
 
     sol "Like what, Mrs. Cravat?"
@@ -358,6 +366,7 @@ label scene5_arriving_osage:
             $ yancey_relationship += 5
             $ sabra_direction += 3
             $ sabra_helped_frontier_char = True
+            show sabra determined
             sabra "I am not lost. I am exactly where I intend to be."
             "The man blinked. Then — to her astonishment — he grinned."
             stranger "Ha! Good answer, ma'am. Good answer. Welcome to Osage."
@@ -510,22 +519,27 @@ label scene6_oklahoma_wigwam:
 
     "He read her the first editorial aloud, standing in the middle of the tent with the press behind him:"
 
+    show yancey passionate
     yancey "'{i}We come not as conquerors but as builders. We come to a land that has known injustice and knows it still, and we come swearing that this new commonwealth shall be different — that its laws shall be equitable, its courts honest, its press free. The Oklahoma Wigwam will print the truth as it finds it, the whole truth and nothing beside it, so help us God.{/i}'"
 
     "Silence."
 
     "Sabra looked at him."
 
+    show sabra worried
     sabra "They might shoot you for that."
 
+    show yancey neutral
     yancey "They might."
 
     "He was grinning."
 
     sabra "You're looking forward to it."
 
+    show yancey tender
     yancey "Not the shooting part. The writing part."
 
+    show sabra neutral
     "She shook her head. She was trying not to smile."
 
     $ journal_scene6 = True
@@ -561,6 +575,7 @@ label scene7_end_of_chapter:
     "That evening, when Cim and Isaiah were asleep, Sabra sat at the little table they'd set up beside the press and wrote a letter."
 
     show sabra neutral at center with dissolve
+    show sabra weary
 
     "She wrote it to her mother."
 

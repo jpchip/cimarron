@@ -1,6 +1,42 @@
 ## characters.rpy
 ## Defines all speaking characters for Cimarron: Chapter One.
 
+## ── Sprite image declarations ─────────────────────────────────────────────────
+## Ren'Py auto-names images in subdirectories with the folder prefix, so we
+## declare explicit names that match the "show yancey passionate" syntax.
+
+image yancey neutral    = Transform("images/sprites/yancey_neutral.png",    zoom=0.45)
+image yancey passionate = Transform("images/sprites/yancey_passionate.png", zoom=0.45)
+image yancey tender     = Transform("images/sprites/yancey_tender.png",     zoom=0.45)
+image yancey dangerous  = Transform("images/sprites/yancey_dangerous.png",  zoom=0.45)
+image yancey restless   = Transform("images/sprites/yancey_restless.png",   zoom=0.45)
+image yancey weary      = Transform("images/sprites/yancey_weary.png",      zoom=0.45)
+
+image sabra neutral     = Transform("images/sprites/sabra_neutral.png",     zoom=0.45)
+image sabra determined  = Transform("images/sprites/sabra_determined.png",  zoom=0.45)
+image sabra worried     = Transform("images/sprites/sabra_worried.png",     zoom=0.45)
+image sabra proud       = Transform("images/sprites/sabra_proud.png",       zoom=0.45)
+image sabra tender      = Transform("images/sprites/sabra_tender.png",      zoom=0.45)
+image sabra weary       = Transform("images/sprites/sabra_weary.png",       zoom=0.45)
+
+image congregation neutral = Transform("images/sprites/congregation_neutral.png", zoom=0.45)
+image congregation cheat   = Transform("images/sprites/congregation_cheat.png",   zoom=0.45)
+
+## ── Position transforms for character sprites ────────────────────────────────
+## Override built-in left/right/center to position sprites in upper screen area.
+
+transform left:
+    xpos 0.0 xanchor 0.0
+    ypos 500 yanchor 1.0
+
+transform right:
+    xpos 1.0 xanchor 1.0
+    ypos 500 yanchor 1.0
+
+transform center:
+    xpos 0.5 xanchor 0.5
+    ypos 500 yanchor 1.0
+
 # Narrator — third-person literary voice (Ferber-style prose)
 # Ren'Py provides a built-in narrator; unquoted strings use it automatically.
 # No definition needed here.

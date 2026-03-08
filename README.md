@@ -190,3 +190,10 @@ The game code (all `.rpy` files and other software) is released under the
 
 The source novel text is public domain. Any art assets or music you add may
 carry their own licenses; check before redistributing.
+
+
+## Note
+
+```bash
+systemd-inhibit --what=sleep:idle --who="Claude Remote" --why="Remote Session Active" claude remote-control
+```

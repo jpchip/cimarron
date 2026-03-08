@@ -164,6 +164,7 @@ label scene15_the_kid:
             "She made coffee. It was something to do."
 
     show yancey neutral at left with dissolve
+    show yancey weary
 
     "He was thinner. There were lines around his eyes she had not seen before."
 
@@ -195,8 +196,10 @@ label scene15_the_kid:
             $ indian_sympathy     += 1
             sabra "Did the Kid have family?"
             yancey "Mother in Kansas. Young."
+            show sabra tender
             sabra "Send her something. Not all of it, but something."
             "He was quiet a moment."
+            show yancey tender
             yancey "You are a better person than I am, Sabra Cravat."
 
         "Say nothing. The money was his affair.":
@@ -208,6 +211,7 @@ label scene15_the_kid:
 
     "Then he began to itch."
 
+    show yancey restless
     "She saw it in the way he stood at the door in the evenings, looking west."
 
     hide yancey
@@ -460,6 +464,7 @@ label scene17_isaiah:
             $ isaiah_defended    = True
             $ community_standing -= 2
             $ newspaper_stance   += 1
+            show sabra determined
             sabra "Isaiah has worked for this paper since we opened. He goes where he is needed and does his job. I suggest you do the same, Mr. Tubbs."
             "Horace Tubbs went red."
             "Horace Tubbs: I'll pull my notices."
@@ -487,6 +492,7 @@ label scene17_isaiah:
 
     hide isaiah
 
+    show sabra weary
     sabra "He was learning to write."
 
     hide sabra
@@ -513,6 +519,7 @@ label scene18_war:
     "Sabra watched him read. She knew."
 
     show yancey neutral at left with dissolve
+    show yancey passionate
     show sabra neutral at right with dissolve
 
     yancey "Roosevelt is raising a regiment. Rough Riders. Volunteers."
@@ -553,8 +560,10 @@ label scene18_war:
         "\"Don't go. For once. Stay.\"":
             $ yancey_relationship -= 5
             $ sabra_direction     -= 2
+            show sabra tender
             sabra "Don't go, Yancey. I am asking you. Stay here."
             "He looked at her with genuine anguish."
+            show yancey weary
             yancey "I can't."
             "She had known. It did not make it less true."
 
@@ -612,6 +621,7 @@ label scene18_war:
     "He left before dawn."
 
     show sabra neutral at center with dissolve
+    show sabra determined
 
     "Sabra Cravat stood in the pressroom of the Oklahoma Wigwam and looked at the cases of type."
 

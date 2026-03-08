@@ -51,6 +51,7 @@ label scene8_lion_streets:
 
     "Lon Yountis: You still in town, Cravat. I come to collect what you owe me."
 
+    show yancey dangerous
     yancey "Lon. You're standing in a house of God. I'd suggest you remove your hat and take a seat."
 
     "Lon Yountis: I'll remove your head before I sit in any—"
@@ -74,6 +75,7 @@ label scene8_lion_streets:
 
     "Yancey did not raise his voice. He stood, slowly, and walked down the center aisle."
 
+    show yancey dangerous
     yancey "You want to leave now, Lon. Before this gets complicated for both of us."
 
     "For one long moment, Yountis held. Then he read something in Yancey's eyes — something Sabra could not name — and he backed through the tent flap and was gone."
@@ -89,7 +91,10 @@ label scene8_lion_streets:
 
         "Reach across the pew and take his hand, openly.":
             $ yancey_relationship += 5
+            show yancey neutral
+            show sabra proud
             sabra "I am very proud of you."
+            show yancey tender
             yancey "Don't be. He might have been faster."
             "She kept hold of his hand anyway."
 
@@ -169,6 +174,7 @@ label scene9_seven_notches:
 
     "The room went quiet in a particular way."
 
+    show yancey dangerous
     yancey "You always were bad at arithmetic, Pete."
 
     "Pete Pitchlyn smiled without warmth and left. Yancey stood at his type case and did not look at Sabra."
@@ -185,6 +191,7 @@ label scene9_seven_notches:
         "Ask him directly. \"Is it true? Seven men?\"":
             $ yancey_relationship -= 3
             $ yancey_mystery       = True
+            show sabra worried
             sabra "Yancey. Is it true?"
             "He turned slowly."
             yancey "What Pete says and what is true are not always the same thing."
@@ -199,7 +206,9 @@ label scene9_seven_notches:
                 "\"I understand. The territory has its own laws.\"":
                     $ yancey_relationship += 5
                     $ sabra_direction     += 2
+                    show sabra determined
                     sabra "I married you knowing what you were. I will not unknow it now."
+                    show yancey tender
                     yancey "You're a better woman than I deserve."
                     "She was not sure whether to be glad or frightened that he meant it."
 
@@ -247,6 +256,7 @@ label scene10_wigwam_lives:
     "Yancey had been writing editorials on the Osage Indian land question — arguing that speculators were using legal instruments to strip the Nations of territory guaranteed by treaty."
 
     show yancey neutral at left with dissolve
+    show yancey passionate
 
     yancey "If the law is used as a weapon against the people it was written to protect, then the law is not justice. It is theater."
 
@@ -268,6 +278,7 @@ label scene10_wigwam_lives:
         "Defend Yancey — the paper prints what it believes.":
             $ yancey_relationship += 5
             $ community_standing  -= 2
+            show sabra determined
             sabra "The Wigwam has always printed what is true and what is right. My husband is not in the habit of adjusting his convictions to suit his advertisers."
             "The men exchanged glances. They left, not entirely empty-handed — they had learned something about Sabra Cravat."
 
@@ -307,6 +318,7 @@ label scene10_wigwam_lives:
         "Accept the documents and promise secrecy.":
             $ indian_sympathy    += 3
             $ sabra_independence += 2
+            show sabra determined
             sabra "Yes. You can trust me."
             "She held the woman's gaze long enough to mean it."
             "Arita left the documents and left without another word."
@@ -363,6 +375,7 @@ label scene11_wind_donna:
             $ sabra_independence += 3
             $ sabra_direction    += 2
             $ sabra_stood_alone   = True
+            show sabra determined
             sabra "Get the doctor, Isaiah. Don't send for Yancey. We'll manage."
             "The boy ran. Sabra sat down slowly and breathed."
             sabra "We will manage."
@@ -393,6 +406,7 @@ label scene11_wind_donna:
 
     "He set the baby in Sabra's arms. The baby had dark hair and seemed to be frowning at a private problem."
 
+    show sabra tender
     sabra "Hello. Hello, you."
 
     menu:
@@ -453,6 +467,7 @@ label scene12_respectability:
             $ community_standing -= 2
             $ sabra_independence += 2
             $ sabra_direction    += 2
+            show sabra determined
             sabra "Dixie Lee has lived in this town as long as any of us. If we are building a club for the women of Osage, we build it for all of them."
             "Estelle Sipes drew herself up. Several others exchanged glances."
             "They did not vote Dixie in. But they did not vote her out in front of Sabra Cravat, either."
@@ -482,6 +497,7 @@ label scene12_respectability:
             $ indian_sympathy      += 3
             $ community_standing   -= 3
             $ sabra_defended_indians = True
+            show sabra determined
             sabra "Arita Red Feather is educated, principled, and a landowner of this territory. She is precisely our kind, Mrs. Sipes. She stays."
             "The room was very quiet."
             "Three women left before the meeting adjourned. Two wrote letters to Sabra the following week — thanking her, privately, for saying it."
@@ -520,6 +536,7 @@ label scene13_cherokee_strip:
     "Sabra knew before Yancey spoke. She had seen his hands at the type case, moving faster. His eyes somewhere further west than the pressroom."
 
     show yancey neutral at left with dissolve
+    show yancey restless
     show sabra neutral at right with dissolve
 
     yancey "I have to cover it, Sabra. It's the last run. The end of the Territory as a territory."
@@ -549,10 +566,13 @@ label scene13_cherokee_strip:
             $ yancey_relationship += 3
             $ sabra_independence  += 3
             $ sabra_direction     += 2
+            show sabra determined
             sabra "Go. I can run the paper without you for a week. I've done it before."
             yancey "Sabra —"
+            show sabra tender
             sabra "The Wigwam will be here when you get back. So will I."
             "He crossed the room and held her face in both hands."
+            show yancey tender
             yancey "You are remarkable."
             "She let herself believe it, just for a moment."
 
@@ -578,6 +598,7 @@ label scene13_cherokee_strip:
     "The pressroom was very quiet."
 
     show sabra neutral at center with dissolve
+    show sabra weary
     hide yancey
 
     menu:

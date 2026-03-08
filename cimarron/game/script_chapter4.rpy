@@ -51,6 +51,7 @@ label scene19_rough_rider:
     "The whole of Main Street was out when he rode in. The Rough Rider hat. The sun on the brass buttons. Eight — she counted — eight notches cut into the hat band."
 
     show yancey neutral at left with dissolve
+    show yancey weary
 
     "Yancey Cravat, grinning at the crowd like a man who has never been afraid of anything in his life."
 
@@ -108,11 +109,13 @@ label scene19_rough_rider:
 
         "\"Tell me everything. I want to know.\"":
             $ yancey_relationship += 5
+            show sabra tender
             sabra "Tell me everything. Not for the paper. For me."
             "He looked at her for a moment as if checking whether she meant it."
             "Then he told her."
             "She sat on the press stool and listened for two hours. The good parts and the terrible parts."
             "She did not interrupt."
+            show yancey tender
             yancey "You're the only person I can tell it to."
             "She put her hand over his and said nothing."
 
@@ -219,6 +222,7 @@ label scene20_dixie_trial:
 
     "She opened her notebook."
 
+    show yancey passionate
     yancey "Your Honor. Before we begin."
 
     "He surveyed the room. He always began by surveying the room."
@@ -277,6 +281,7 @@ label scene20_trial_result:
 
     if yancey_relationship >= 60:
         "He was brilliant. She had known he would be. She wrote it down anyway."
+        show yancey passionate
         yancey "The law is not a weapon to be aimed at the inconvenient. It is the common protection of every person in this territory — or it is nothing."
         "The gallery was very quiet."
     elif yancey_relationship >= 40:
