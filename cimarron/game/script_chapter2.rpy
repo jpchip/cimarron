@@ -360,7 +360,7 @@ label scene11_wind_donna:
     "Yancey had gone to cover a territorial story in Guthrie. He had been gone three days."
 
     show sabra neutral at center with dissolve
-    show isaiah neutral at left with dissolve
+    show isaiah child neutral at left with dissolve
 
     "Isaiah appeared in the doorway. He saw the look on her face and said nothing — just went for his coat."
 

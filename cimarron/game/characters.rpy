@@ -27,6 +27,9 @@ image sabra weary       = Transform("images/sprites/sabra_weary.png",       zoom
 image congregation neutral = Transform("images/sprites/congregation_neutral.png", zoom=0.45)
 image congregation cheat   = Transform("images/sprites/congregation_cheat.png",   zoom=0.45)
 
+image isaiah child neutral = Transform("images/sprites/isaiah_child_neutral.png", zoom=0.45)
+image isaiah neutral       = Transform("images/sprites/isaiah_neutral.png",       zoom=0.45)
+
 ## ── Position transforms for character sprites ────────────────────────────────
 ## Override built-in left/right/center to position sprites in upper screen area.
 
