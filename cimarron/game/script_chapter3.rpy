@@ -39,13 +39,15 @@ label scene14_five_years:
 
     "Sabra Cravat ran the Oklahoma Wigwam."
 
-    show sabra neutral at center with dissolve
+    show sabra ch3 neutral at center with dissolve
 
     "She set the type. She wrote the editorials. She paid Sol Levy for the newsprint and argued with the territorial mail office about distribution rates."
 
     "She did not tell the children their father was gone. She told them he was covering the territory. He was always covering the territory."
 
     "She believed it, on good days."
+
+    show sabra sad
 
     ## ── How Sabra Held On ─────────────────────────────────────────────────────
 
@@ -125,7 +127,7 @@ label scene15_the_kid:
 
     "The Kid was in the ground. Yancey was riding home."
 
-    show sabra neutral at right with dissolve
+    show sabra ch3 neutral at right with dissolve
 
     "Sabra was at the Wigwam composing table when she heard the horse."
 
@@ -138,6 +140,7 @@ label scene15_the_kid:
 
         "She went to him immediately.":
             $ yancey_relationship += 5
+            show sabra happy
             "She did not think. She crossed the floor and put her arms around him."
             sabra "You're here."
             yancey "I'm here."
@@ -247,7 +250,7 @@ label scene16_running_paper:
 
     "Sabra was the editor of the Oklahoma Wigwam. Not in the way she had been during his absences — that was management by necessity. This was something else."
 
-    show sabra neutral at center with dissolve
+    show sabra ch3 neutral at center with dissolve
 
     sabra "I am writing my own editorial this week."
 
@@ -397,7 +400,7 @@ label scene17_isaiah:
     "Isaiah was fifteen. He had been with the Cravats since the first run — since before Donna was born, before the Wigwam had a proper building, before Sabra had learned to work the press."
 
     show isaiah neutral at left with dissolve
-    show sabra neutral at right with dissolve
+    show sabra ch3 neutral at right with dissolve
 
     "He was reading."
 
@@ -464,7 +467,7 @@ label scene17_isaiah:
             $ isaiah_defended    = True
             $ community_standing -= 2
             $ newspaper_stance   += 1
-            show sabra determined
+            show sabra angry
             sabra "Isaiah has worked for this paper since we opened. He goes where he is needed and does his job. I suggest you do the same, Mr. Tubbs."
             "Horace Tubbs went red."
             "Horace Tubbs: I'll pull my notices."
@@ -520,7 +523,7 @@ label scene18_war:
 
     show yancey neutral at left with dissolve
     show yancey passionate
-    show sabra neutral at right with dissolve
+    show sabra ch3 neutral at right with dissolve
 
     yancey "Roosevelt is raising a regiment. Rough Riders. Volunteers."
 
@@ -541,6 +544,7 @@ label scene18_war:
             $ yancey_relationship -= 3
             $ sabra_independence  += 3
             $ sabra_direction     += 3
+            show sabra angry
             sabra "Go. You're going to go. But I am telling you plainly: I am not going to hold this paper and this family together for another five years on the chance that you come back."
             "He looked at her."
             yancey "What are you saying?"
@@ -621,7 +625,7 @@ label scene18_war:
 
     "He left before dawn."
 
-    show sabra neutral at center with dissolve
+    show sabra ch3 neutral at center with dissolve
     show sabra determined
 
     "Sabra Cravat stood in the pressroom of the Oklahoma Wigwam and looked at the cases of type."

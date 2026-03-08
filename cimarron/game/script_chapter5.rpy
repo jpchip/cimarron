@@ -42,7 +42,7 @@ label scene24_cim_ruby:
 
     "Big Elk and his wife sat formally in the parlor chairs, as if waiting in a bank. His wife wore a blanket shawl and kept her hands folded. He was very large and very still, the way the old headmen were still — a stillness that was not patience but something beyond patience."
 
-    show sabra neutral at right with dissolve
+    show sabra ch5 neutral at right with dissolve
 
     "Sabra entered from the hallway."
 
@@ -76,6 +76,7 @@ label scene24_cim_ruby:
             $ yancey_relationship += 5
             $ ruby_welcomed       = True
 
+            show sabra happy
             sabra "Welcome to our family, Ruby."
 
             "She said it and meant it — or tried to mean it — and found, to her own surprise, that it was not entirely performance. She took Ruby's hands. Ruby's grip was firm and brief. Big Elk nodded once. Cim exhaled."
@@ -182,7 +183,7 @@ label scene25_congresswoman:
 
     "She was fifty-two years old when they asked her to run."
 
-    show sabra neutral at right with dissolve
+    show sabra ch5 neutral at right with dissolve
 
     "Not the women's club this time. The state party. They had looked at her record — twenty-odd years of editorial advocacy, her work on the Osage mineral rights dispute, the testimony she had given at the Federal hearing — and they had made a practical calculation."
 
@@ -296,7 +297,7 @@ label scene26_donnas_wedding:
 
     "He was, in short, everything Yancey was not."
 
-    show sabra neutral at right with dissolve
+    show sabra ch5 neutral at right with dissolve
 
     "Donna was composed, as she always was. She was her grandmother Felice's grandchild and her mother's daughter, which meant she had both the armor and the nerve."
 
@@ -374,7 +375,7 @@ label scene27_bowlegs:
 
     "She had come on a congressional fact-finding trip. The town was everything old Osage had been in 1889 — raw, violent, desperate, full of men who had arrived from somewhere else in search of something they couldn't name — except that now the mud was black and the money was bigger and the violence moved faster."
 
-    show sabra neutral at right with dissolve
+    show sabra ch5 neutral at right with dissolve
 
     "A Harvard boy in bone-rimmed spectacles was showing her delegation around the field. He had the slightly injured expression of a man who had expected adventure and received instead the smell of crude oil and the sound of machinery."
 
@@ -403,6 +404,8 @@ label scene27_bowlegs:
     "She did not know how she crossed the field. She only knew that she was running."
 
     "He was on his back in the oil-soaked dirt. Men stood in a ring. She pushed through them."
+
+    show sabra sad
 
     "His face was older. The gray at the temples gone to white, the great chest diminished, the long coat muddy and torn. But the jaw was the same. The cheekbones. The ridiculous lashes."
 
@@ -471,7 +474,7 @@ label scene28_monument:
 
     "The monument had been commissioned by the state legislature — five hundred thousand dollars, the papers said, the largest allocation for public sculpture in Oklahoma's history. The sculptor was a Pole named Masja Krbecek, small and snuffy and extremely precise, who had come to Osage the previous winter with a letter of introduction and a portfolio of photographs of his previous work."
 
-    show sabra neutral at right with dissolve
+    show sabra ch5 neutral at right with dissolve
 
     "He had used Yancey's photographs. She knew that, had known it since the commission was announced. She had sent what she had."
 

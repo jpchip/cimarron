@@ -23,6 +23,15 @@ image sabra worried     = Transform("images/sprites/sabra_worried.png",     zoom
 image sabra proud       = Transform("images/sprites/sabra_proud.png",       zoom=0.45)
 image sabra tender      = Transform("images/sprites/sabra_tender.png",      zoom=0.45)
 image sabra weary       = Transform("images/sprites/sabra_weary.png",       zoom=0.45)
+image sabra happy       = Transform("images/sprites/sabra_happy.png",       zoom=0.45)
+image sabra angry       = Transform("images/sprites/sabra_angry.png",       zoom=0.45)
+image sabra sad         = Transform("images/sprites/sabra_sad.png",         zoom=0.45)
+
+## Chapter costume variants (neutral only; emotion variants added in Phase 3)
+image sabra ch1a neutral = Transform("images/sprites/sabra_ch1a_neutral.png", zoom=0.45)
+image sabra ch2 neutral  = Transform("images/sprites/sabra_ch2_neutral.png",  zoom=0.45)
+image sabra ch3 neutral  = Transform("images/sprites/sabra_ch3_neutral.png",  zoom=0.45)
+image sabra ch5 neutral  = Transform("images/sprites/sabra_ch5_neutral.png",  zoom=0.45)
 
 image congregation neutral = Transform("images/sprites/congregation_neutral.png", zoom=0.45)
 image congregation cheat   = Transform("images/sprites/congregation_cheat.png",   zoom=0.45)

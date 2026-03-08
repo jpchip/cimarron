@@ -44,7 +44,7 @@ label scene1_venable_home:
 
     yancey "And you should have seen them, I tell you — fifty thousand souls lined up along the border at the stroke of noon on April twenty-second, eighteen-eighty-nine. Ready to race into two million acres of the finest land on God's green earth."
 
-    show sabra neutral at right with dissolve
+    show sabra ch1a neutral at right with dissolve
 
     "Sabra Cravat watched her husband from her place at the table. Twenty-one years old. Dark and quiet and fine, like a figure in a daguerreotype. She had heard this story before. She would hear it a hundred times more. And still it made her heart quicken."
 
@@ -157,7 +157,7 @@ label scene3_the_decision:
     "After dinner, the storm broke."
 
     show felice commanding at left with dissolve
-    show sabra neutral at right with dissolve
+    show sabra ch1a neutral at right with dissolve
 
     felice "I forbid it. You do not know what you are talking about. Wild Indians. Rattlesnakes. Outlaws and desperadoes. No decent society. No schools, no churches—"
 

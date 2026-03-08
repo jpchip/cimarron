@@ -37,7 +37,7 @@ label scene8_lion_streets:
 
     "Oil lamps on bare pine posts. Hymn books held by people who had driven cattle, filed homestead claims, buried children in the hard red earth."
 
-    show sabra neutral at right with dissolve
+    show sabra ch2 neutral at right with dissolve
 
     sabra "I did not expect to feel at home here. And yet — I do. Partly."
 
@@ -181,7 +181,7 @@ label scene9_seven_notches:
 
     hide pete
 
-    show sabra neutral at right with dissolve
+    show sabra ch2 neutral at right with dissolve
 
     "Seven. She had known he was a man of the frontier — had known, in the abstract, what that meant. But the number had a weight she had not felt before."
 
@@ -264,7 +264,7 @@ label scene10_wigwam_lives:
 
     hide yancey
 
-    show sabra neutral at right with dissolve
+    show sabra ch2 neutral at right with dissolve
 
     "Three of the town's respectable citizens came to the Wigwam while Yancey was out. They wanted to speak to Sabra."
 
@@ -359,7 +359,7 @@ label scene11_wind_donna:
 
     "Yancey had gone to cover a territorial story in Guthrie. He had been gone three days."
 
-    show sabra neutral at center with dissolve
+    show sabra ch2 neutral at center with dissolve
     show isaiah child neutral at left with dissolve
 
     "Isaiah appeared in the doorway. He saw the look on her face and said nothing — just went for his coat."
@@ -451,7 +451,7 @@ label scene12_respectability:
 
     "The Osage Women's Improvement Club was being founded. The founding members had agreed: Sabra Cravat should be president. She had the newspaper, the reputation, and what one woman called 'the kind of spine this town needs in a parlor.'"
 
-    show sabra neutral at center with dissolve
+    show sabra ch2 neutral at center with dissolve
 
     "The organizational meeting was in Estelle Sipes's front room. Twelve women. Good dresses. The particular energy of women who have decided to improve something."
 
@@ -538,7 +538,7 @@ label scene13_cherokee_strip:
 
     show yancey neutral at left with dissolve
     show yancey restless
-    show sabra neutral at right with dissolve
+    show sabra ch2 neutral at right with dissolve
 
     yancey "I have to cover it, Sabra. It's the last run. The end of the Territory as a territory."
 
@@ -598,7 +598,7 @@ label scene13_cherokee_strip:
 
     "The pressroom was very quiet."
 
-    show sabra neutral at center with dissolve
+    show sabra ch2 neutral at center with dissolve
     show sabra weary
     hide yancey
 
