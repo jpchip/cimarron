@@ -1,8 +1,27 @@
 # Cimarron — Character Bible
 ## Visual Reference for Sprite Generation
 
-All sprites: waist up, transparent background, facing slightly left (3/4 view), neutral expression as base.
+All sprites: waist up, **true transparent background (PNG with alpha channel)**, facing slightly left (3/4 view), neutral expression as base.
 Style target: flat illustration, bold ink outlines, clean flat color fills, minimal shading, muted warm earth tones, late-Victorian / early-frontier aesthetic.
+
+### ⚠ Transparency Warning
+
+AI image generators frequently produce sprites with the transparency indicator **baked in as pixels** — i.e., the grey-and-white checkerboard that editors display to show transparent areas is saved as actual colored image data instead of real alpha-channel transparency. This is not true transparency and will show as a visible checkerboard in-game.
+
+**When generating sprites, always:**
+1. Export as PNG with alpha channel enabled (not JPEG, not PNG without alpha)
+2. Open the file in an image viewer and confirm the background is absent — not grey, not white, not checkered
+3. If the background appears as any solid or patterned color, run the removal script before committing the file (see `plans/sprite_bg_removal.md`)
+
+**Prompt phrasing that helps (include all of these):**
+- `"transparent background"` — basic request
+- `"PNG with alpha channel"` — format-level instruction
+- `"isolated figure, no background"` — compositional instruction
+- `"character on transparent/empty canvas"` — redundant but reinforcing
+
+Even with correct prompting, some generators ignore alpha. Always verify visually.
+
+---
 
 ---
 
@@ -415,6 +434,7 @@ A beautiful, composed woman of the oil-money class. Tracy Wyatt's wife.
 
 - **Consistency pass:** Generate all versions of a recurring character in the same session with the same seed/style if the tool allows, to maintain face shape consistency.
 - **Style anchor:** Request "flat illustration style, bold ink outlines, clean flat color fills, minimal shading, muted warm earth tones" on every prompt to keep the visual language unified.
-- **Transparent background:** Always specify — needed for Ren'Py sprite overlay.
+- **Transparent background:** Always specify — needed for Ren'Py sprite overlay. Use the four-part phrasing from the warning block above. Verify the output before use.
 - **Expression variants:** Once the neutral base sprite is approved, generate: `_happy`, `_worried`, `_angry`, `_sad` by changing only the expression description, keeping all other parameters identical.
 - **Sprite facing:** All characters should face slightly left (toward Sabra / the reader). Yancey may face right (away, suggesting his departures).
+- **Background removal:** If a new sprite has a baked-in background, do not commit it until fixed. Run the scripts documented in `plans/sprite_bg_removal.md` — takes under 5 seconds per file.

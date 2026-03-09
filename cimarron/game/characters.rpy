@@ -60,6 +60,8 @@ image pete curious  = Transform("images/sprites/pete_curious.png",  zoom=0.45)
 image pete sardonic = Transform("images/sprites/pete_sardonic.png", zoom=0.45)
 image pete serious  = Transform("images/sprites/pete_serious.png",  zoom=0.45)
 
+image sol neutral = Transform("images/sprites/sol_neutral.png", zoom=0.45)
+
 image kid dead = Transform("images/sprites/kid_dead.png", zoom=0.45)
 
 ## ── Position transforms for character sprites ────────────────────────────────

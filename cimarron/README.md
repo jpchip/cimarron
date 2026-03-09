@@ -79,9 +79,11 @@ Place `.png` files (transparent background) in `game/images/sprites/`:
 | `stranger_neutral.png` | Frontier stranger — sunburned, bearded |
 
 **Sprite options**:
-- Generate with AI (Midjourney, Adobe Firefly) — ask for "visual novel sprite, transparent background"
+- Generate with AI (Midjourney, Adobe Firefly) — use the four-part phrasing: "transparent background, PNG with alpha channel, isolated figure, no background"
 - Search itch.io for "western VN sprites" or "historical character sprites"
 - Use silhouette-style sprites (all black with colored outlines) if portrait art isn't ready
+
+**Important — background removal:** AI generators often bake the transparency checkerboard in as actual pixels. Always verify the PNG has true alpha-channel transparency before use. If the background is visible in-game, see `plans/sprite_bg_removal.md` for the detection and fix process.
 
 ### Music
 
