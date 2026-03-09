@@ -373,6 +373,7 @@ label scene5_arriving_osage:
             show sabra determined
             sabra "I am not lost. I am exactly where I intend to be."
             "The man blinked. Then — to her astonishment — he grinned."
+            show stranger grinning at right with dissolve
             stranger "Ha! Good answer, ma'am. Good answer. Welcome to Osage."
             "He touched the brim of his hat and moved on."
             "Sabra's heart was hammering. But her face had not moved. She filed that small victory away for future use."

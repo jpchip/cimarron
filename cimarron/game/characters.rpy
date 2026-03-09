@@ -64,6 +64,9 @@ image sol neutral = Transform("images/sprites/sol_neutral.png", zoom=0.45)
 
 image kid dead = Transform("images/sprites/kid_dead.png", zoom=0.45)
 
+image stranger neutral  = Transform("images/stranger_neutral.png",  zoom=0.45)
+image stranger grinning = Transform("images/stranger_grinning.png", zoom=0.45)
+
 ## ── Position transforms for character sprites ────────────────────────────────
 ## Override built-in left/right/center to position sprites in upper screen area.
 

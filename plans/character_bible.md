@@ -404,6 +404,44 @@ A beautiful, composed woman of the oil-money class. Tracy Wyatt's wife.
 
 ---
 
+## THE STRANGER (Frontier Man)
+*Unnamed frontier man. Chapter 1, Scene 5 only — Sabra's first test in Osage.*
+
+### Role in Story
+The first person to approach Sabra in Osage — a rough hand that grabs her arm while Sol is helping unload the wagon. He is not a villain; he is simply the frontier, embodied: enormous, physical, presumptuous, and capable of instant respect when met with dignity. His one scene serves as Sabra's initiation into the Territory. Depending on player choice, he sees her stand her ground (grinning approval), is driven off by Yancey, or is simply walked past.
+
+### Core Appearance
+- Enormous — makes Yancey's six-foot-two seem proportionate by contrast
+- Sunburned to mahogany (face, neck, hands — everything exposed)
+- Beard like a buffalo robe: thick, dark-to-brown, unkempt but not filthy
+- Smell of whisky and optimism (the book's own phrase)
+- Big rough hands; the grip of a man who works stock and lumber
+- Not young, not old — frontier-weathered mid-thirties to mid-forties
+- When he grins, genuinely warm — no malice, only a kind of coarse vitality
+
+### Chapter 1 — Osage, 1889 (Scene 5)
+**Costume — Frontier laborer / settler:**
+Heavy canvas trousers tucked into work boots. Flannel or thick cotton work shirt, open at the collar, sleeves possibly rolled. Wide-brimmed working hat — beaten shapeless by weather, not a gentleman's hat. Leather suspenders. No jacket; he generates his own heat. Belt with a plain working revolver (not the showman's twin pearl-handles — just a tool).
+
+**AI Prompt (neutral — sizing up):**
+> Visual novel character sprite, transparent background, waist up, 3/4 view. Enormous frontier man, 1889 Oklahoma Territory, age mid-30s to mid-40s. Sunburned mahogany skin, massive frame, thick buffalo-robe beard, big rough hands. Heavy canvas trousers, worn flannel work shirt open at collar, leather suspenders, battered shapeless wide-brimmed work hat. Expression: appraising — not hostile but presumptuous, the look of a man who owns every room he walks into simply because no one has ever said otherwise. Flat illustration style, bold ink outlines, clean flat color fills, minimal shading, muted warm earth tones.
+
+**AI Prompt (grinning — respect given):**
+> Same man, same costume. Now grinning broadly — a genuine, unguarded grin of surprised approval. He is touching the brim of his battered hat. The mahogany face has split open into warmth. Expression: delighted, a little sheepish, the look of a man who just got better than he expected. Flat illustration style, bold ink outlines, clean flat color fills, minimal shading, muted warm earth tones, transparent background.
+
+### Expression Variants Needed
+| Variant | Use |
+|---|---|
+| `stranger_neutral` | Default — looming, appraising, hand extended |
+| `stranger_grinning` | After Sabra stands her ground: "Ha! Good answer, ma'am." |
+
+### Notes
+- Single-scene character; no costume changes across chapters.
+- The `stranger` define in `characters.rpy` (line 111) uses gray `#696969` — appropriate for a nameless frontier type.
+- He represents the test the Territory will keep administering. His grin when Sabra passes is the Territory's first nod of acknowledgment.
+
+---
+
 ## MOTHER BRIDGET
 *Nun at the Mission. Chapter 1 only.*
 
