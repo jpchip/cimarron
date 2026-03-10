@@ -536,11 +536,11 @@ label scene22_first_oil:
 
     "She looked at him. He was not wrong."
 
-    hide sol
+    hide cim
 
     ## ── Choice 1: The Oil Story Headline ────────────────────────────────────
 
-    show sol neutral at right with dissolve
+    show sol neutral at left with dissolve
 
     "Sol Levy had the same expression he always wore when he was about to point out something she already knew."
 

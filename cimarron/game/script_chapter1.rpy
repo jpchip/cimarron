@@ -70,7 +70,7 @@ label scene1_venable_home:
 
     yancey "Fifty thousand people, all of them hungry — for land, for a new life, for a second chance. The Sooners tried to creep in the night before. The cavalry rode them off. And then — noon struck."
 
-    show felice neutral at left with dissolve
+    show felice neutral at center with dissolve
 
     felice "And you were among those fifty thousand, I suppose, Yancey."
 

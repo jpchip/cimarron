@@ -548,6 +548,8 @@ label scene28_photos_result:
 
     "He thanked her and left. The ceremony was the next morning."
 
+    hide krbecek
+
     jump scene28_monument_reveal
 
 
