@@ -70,6 +70,9 @@ image tracy charming = Transform("images/sprites/tracy_charming.png", zoom=0.45)
 image ruby neutral = Transform("images/sprites/ruby_neutral.png", zoom=0.45)
 image ruby direct  = Transform("images/sprites/ruby_direct.png",  zoom=0.45)
 
+image krbecek neutral    = Transform("images/sprites/krbecek_neutral.png",    zoom=0.45)
+image krbecek thoughtful = Transform("images/sprites/krbecek_thoughtful.png", zoom=0.45)
+
 image stranger neutral  = Transform("images/stranger_neutral.png",  zoom=0.45)
 image stranger grinning = Transform("images/stranger_grinning.png", zoom=0.45)
 

@@ -510,6 +510,8 @@ label scene28_photos_result:
     ## Pair outcome logic
     $ photo_set = set(selected_photos)
 
+    show krbecek thoughtful at left with dissolve
+
     if photo_set == {1, 4}:
         ## Run + Rough Rider
         $ yancey_relationship += 3
@@ -547,6 +549,8 @@ label scene28_photos_result:
         krbecek "Yes. A man of many faces. I will do my best."
 
         "He tucked the photographs away carefully."
+
+    show krbecek neutral at left
 
     "He thanked her and left. The ceremony was the next morning."
 
