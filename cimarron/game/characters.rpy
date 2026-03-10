@@ -39,6 +39,7 @@ image congregation cheat   = Transform("images/sprites/congregation_cheat.png", 
 image rev_barr neutral     = Transform("images/sprites/congregation_7_neutral.png", zoom=0.45)
 
 image isaiah child neutral = Transform("images/sprites/isaiah_child_neutral.png", zoom=0.45)
+image isaiah child solemn  = Transform("images/sprites/isaiah_child_solemn.png",  zoom=0.45)
 image isaiah neutral       = Transform("images/sprites/isaiah_neutral.png",       zoom=0.45)
 
 image dixie neutral  = Transform("images/sprites/dixie_neutral.png",  zoom=0.45)
