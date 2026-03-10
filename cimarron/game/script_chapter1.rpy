@@ -22,6 +22,106 @@ label chapter1_start:
     "{i}Based on the novel by Edna Ferber{/i}"
     "Chapter One: The Land of the Fair God"
 
+    jump scene1a_mission_visit
+
+## ─── SCENE 1a — The Mission Visit ───────────────────────────────────────────
+
+label scene1a_mission_visit:
+
+    scene bg_mission_wichita with dissolve
+    play music "audio/wichita_parlor.ogg" fadein 1.5 loop
+
+    "The Mission stood at the edge of Wichita, behind its hedge of osage orange."
+
+    show mother_bridget neutral at center with dissolve
+
+    "Mother Bridget was among the rhubarb, cutting great rosy stalks with a garden knife, her habit hitched up over muddied shoes."
+
+    mother_bridget "Sabra Venable. Come to say goodbye, have you."
+
+    show sabra neutral at right with dissolve
+
+    "It was not a question. Mother Bridget had always known things before they were said aloud."
+
+    mother_bridget "He's going for the adventure of it. They always have, no matter what excuse they've given."
+
+    sabra "He believes in it. The Territory."
+
+    mother_bridget "Of course he does. That's the most dangerous kind."
+
+    "She set down the rhubarb and wiped her hands on her apron."
+
+    mother_bridget "When you read the history of France you're peeking through a bedroom keyhole. But here — here the women have been the real hewers of wood and drawers of water. They've done more than the men, and got less credit for it since the world began."
+
+    menu:
+        "How does she take this in?"
+
+        "\"I want to be one of those women.\" (Frontier spirit)":
+            $ sabra_direction += 2
+            show sabra determined at right
+            sabra "That's what I intend to be."
+            mother_bridget "Well. We'll see."
+            "There was no discouragement in it. Only the flat evaluation of someone who had seen intentions tested."
+
+        "\"I want to do Yancey proud.\" (Marriage first)":
+            sabra "I only want to be worthy of it — of him."
+            "Mother Bridget looked at her for a long moment without speaking."
+            mother_bridget "That's a start."
+
+        "\"I'm frightened.\" (Honest)":
+            $ yancey_relationship += 2
+            show sabra worried at right
+            sabra "I'm not sure I have what it takes."
+            show mother_bridget gentle at center
+            mother_bridget "Nobody does, before. That's not the thing to have beforehand."
+
+    show sabra worried at right
+    "Then it struck her — not gradually but all at once, the way cold water strikes."
+
+    "The Territory. She did not know its roads. She did not know its weather. Yancey became suddenly remote in her mind — a stranger, terrible, belonging to it already in a way she did not."
+
+    sabra "I couldn't go there. Not really. Could I?"
+
+    show mother_bridget gentle at center
+    mother_bridget "You already are."
+
+    "Mother Bridget disappeared into the Mission and returned carrying something thick and folded: a coverlet woven in white and deep brilliant blue."
+
+    mother_bridget "It's to keep you and little Cim warm, in the wagon, on the way to the Territory. Tell 'em a Kansas tapestry — the dye is Indian, nothing can fade it."
+
+    menu:
+        "Before she goes—"
+
+        "\"Will I see you again?\"":
+            $ yancey_relationship -= 1
+            "She had not meant to ask it. It was not a strong woman's question."
+            sabra "Will I — shall we come back?"
+            mother_bridget "You'll come back when there's something to come back to. Now there isn't."
+            "Sabra nodded. She understood, even if she didn't want to."
+
+        "\"Tell me it will be all right.\"":
+            sabra "Just — tell me it will be all right."
+            show mother_bridget gentle at center
+            mother_bridget "It'll be all right. There's no such thing as a new country for the people who come to it. They bring along their own ways and their own bits of things and make it like the old as fast as they can."
+            "She believed it then. She didn't know if she was supposed to, but she did."
+
+        "\"Thank you.\" (Take the blanket and go)":
+            $ sabra_direction += 1
+            show sabra neutral at right
+            sabra "Thank you, Mother Bridget."
+            "She took the blanket. It was heavier than it looked."
+            mother_bridget "It's a practical thing."
+
+    hide mother_bridget with dissolve
+    hide sabra
+
+    "She walked back down the Kihekah road with the blanket over her arm and her eyes wet."
+
+    "The Mission receded behind the osage hedge."
+
+    $ journal_scene1a = True
+    call journal_entry("SCENE 1a", "Mother Bridget gave me a blue blanket for the wagon. She said there's no such thing as a new country — people just make it into the old one as fast as they can. I wonder if that is comfort or warning. I am carrying half of Wichita in this trunk and I suspect she knows it.") from _call_journal_scene1a
+
     jump scene1_venable_home
 
 ## ─── SCENE 1 — The Venable Home ──────────────────────────────────────────────

@@ -76,6 +76,9 @@ image krbecek thoughtful = Transform("images/sprites/krbecek_thoughtful.png", zo
 image big_elk neutral       = Transform("images/sprites/big_elk_neutral.png",       zoom=0.45)
 image big_elk acknowledging = Transform("images/sprites/big_elk_acknowledging.png", zoom=0.45)
 
+image mother_bridget neutral = Transform("images/sprites/mother_bridget_neutral.png", zoom=0.45)
+image mother_bridget gentle  = Transform("images/sprites/mother_bridget_gentle.png",  zoom=0.45)
+
 image stranger neutral  = Transform("images/stranger_neutral.png",  zoom=0.45)
 image stranger grinning = Transform("images/stranger_grinning.png", zoom=0.45)
 

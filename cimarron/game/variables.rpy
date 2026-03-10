@@ -15,6 +15,7 @@ default sabra_direction = 0
 
 # ─── Journal Unlocks ─────────────────────────────────────────────────────────
 # Each flag becomes True after the matching scene is completed.
+default journal_scene1a = False   # Scene 1a: Mission visit with Mother Bridget
 default journal_scene1 = False
 default journal_scene2 = False
 default journal_scene3 = False
