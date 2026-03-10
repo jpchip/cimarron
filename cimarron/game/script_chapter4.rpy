@@ -657,7 +657,7 @@ label scene23_what_yancey_left:
 
     "Donna was sixteen and going east to Miss Dignum's school in the spring."
 
-    show donna neutral at right with dissolve
+    show donna ch4 neutral at right with dissolve
 
     donna "I'm only going for the year."
 
