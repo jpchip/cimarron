@@ -40,6 +40,8 @@ label scene24_cim_ruby:
 
     "Sabra had been told. She had had three weeks to think about it. She had thought about it every morning and then put it away and thought about it again."
 
+    show big_elk neutral at left with dissolve
+
     "Big Elk and his wife sat formally in the parlor chairs, as if waiting in a bank. His wife wore a blanket shawl and kept her hands folded. He was very large and very still, the way the old headmen were still — a stillness that was not patience but something beyond patience."
 
     show sabra ch5 neutral at right with dissolve
@@ -49,6 +51,8 @@ label scene24_cim_ruby:
     sabra "Good afternoon."
 
     "She said it to the room. She was not sure yet where to put her eyes."
+
+    hide big_elk
 
     show cim neutral at left with dissolve
 
@@ -79,6 +83,7 @@ label scene24_cim_ruby:
             show sabra happy
             sabra "Welcome to our family, Ruby."
 
+            show big_elk acknowledging at left
             "She said it and meant it — or tried to mean it — and found, to her own surprise, that it was not entirely performance. She took Ruby's hands. Ruby's grip was firm and brief. Big Elk nodded once. Cim exhaled."
 
             "She heard Yancey in herself, then. {i}Of course. Who else would Cim marry?{/i} She could almost hear the teasing satisfaction in it."
@@ -106,6 +111,8 @@ label scene24_cim_ruby:
 
     ## ── Big Elk's Formal Words (through Ruby) ────────────────────────────────
 
+    show big_elk neutral at left with dissolve
+
     "Big Elk spoke. Ruby translated, her voice careful and neutral: three words, but from the way he had taken the time to compose them, they carried more weight than three words."
 
     ruby "My father says: we are glad."
@@ -122,6 +129,7 @@ label scene24_cim_ruby:
 
             sabra "Tell your father — I hope to know him better."
 
+            show big_elk acknowledging at left
             "Ruby translated. Big Elk inclined his head. The formality closed like a door, gently."
 
         "\"The formalities are appreciated.\" (Polite, distant)":
@@ -135,11 +143,14 @@ label scene24_cim_ruby:
 
             sabra "Tell him he is welcome in this house whenever he is in Osage. Both of them are."
 
+            show big_elk acknowledging at left
             "She meant it. Ruby translated. Something shifted in Big Elk's face — not warmth, exactly, but a recalibration. He spoke again, briefly."
 
             ruby "He says: thank you."
 
     ## ── Recovery arc ─────────────────────────────────────────────────────────
+
+    hide big_elk with dissolve
 
     if ruby_time_needed:
         "After Big Elk and his wife had risen and the formal goodbyes were done, Ruby came back to the parlor alone while Cim walked his father to the automobile."

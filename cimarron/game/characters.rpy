@@ -73,6 +73,9 @@ image ruby direct  = Transform("images/sprites/ruby_direct.png",  zoom=0.45)
 image krbecek neutral    = Transform("images/sprites/krbecek_neutral.png",    zoom=0.45)
 image krbecek thoughtful = Transform("images/sprites/krbecek_thoughtful.png", zoom=0.45)
 
+image big_elk neutral       = Transform("images/sprites/big_elk_neutral.png",       zoom=0.45)
+image big_elk acknowledging = Transform("images/sprites/big_elk_acknowledging.png", zoom=0.45)
+
 image stranger neutral  = Transform("images/stranger_neutral.png",  zoom=0.45)
 image stranger grinning = Transform("images/stranger_grinning.png", zoom=0.45)
 
@@ -157,3 +160,6 @@ define ruby    = Character("Ruby Big Elk",  color="#8B6914")
 
 # Masja Krbecek — the Polish sculptor commissioned for the monument
 define krbecek = Character("Masja Krbecek", color="#888888")
+
+# Big Elk — Ruby's father; former Osage Chief; elder of great dignity
+define big_elk = Character("Big Elk", color="#5A3A1A")
