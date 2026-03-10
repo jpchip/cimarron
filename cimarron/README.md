@@ -55,6 +55,7 @@ Place `.jpg` or `.png` files in `game/images/`:
 
 | Filename | Description | AI Prompt Suggestion |
 |---|---|---|
+| `bg_mission_wichita.png` | Catholic mission grounds, Wichita 1889, rhubarb garden | "1889 Wichita Kansas Catholic mission grounds, rhubarb garden foreground, osage orange hedge, whitewashed frontier chapel with cross, morning light, oil painting style" |
 | `bg_venable_home.jpg` | Elegant 1889 Kansas parlor, Sunday dinner | "Victorian parlor 1889, mahogany table, Sunday dinner, warm candlelight, oil painting style" |
 | `bg_land_run.jpg` | The Oklahoma Land Run, April 22 1889 | "Oklahoma Land Run 1889, thousands of settlers racing across open prairie, dramatic sky, painted illustration" |
 | `bg_wagon_trail.jpg` | Prairie wagon trail, red clay Oklahoma | "Prairie wagon trail 1889, red clay Oklahoma, vast sky, two covered wagons, impressionist painting" |
