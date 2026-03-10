@@ -62,6 +62,10 @@ image pete serious  = Transform("images/sprites/pete_serious.png",  zoom=0.45)
 
 image sol neutral = Transform("images/sprites/sol_neutral.png", zoom=0.45)
 
+image arita neutral = Transform("images/sprites/arita_neutral.png", zoom=0.45)
+image arita gentle  = Transform("images/sprites/arita_gentle.png",  zoom=0.45)
+image arita agony   = Transform("images/sprites/arita_agony.png",   zoom=0.45)
+
 image kid dead = Transform("images/sprites/kid_dead.png", zoom=0.45)
 
 image tracy neutral  = Transform("images/sprites/tracy_neutral.png",  zoom=0.45)
