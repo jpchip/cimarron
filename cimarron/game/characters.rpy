@@ -64,6 +64,12 @@ image sol neutral = Transform("images/sprites/sol_neutral.png", zoom=0.45)
 
 image kid dead = Transform("images/sprites/kid_dead.png", zoom=0.45)
 
+image tracy neutral  = Transform("images/sprites/tracy_neutral.png",  zoom=0.45)
+image tracy charming = Transform("images/sprites/tracy_charming.png", zoom=0.45)
+
+image ruby neutral = Transform("images/sprites/ruby_neutral.png", zoom=0.45)
+image ruby direct  = Transform("images/sprites/ruby_direct.png",  zoom=0.45)
+
 image stranger neutral  = Transform("images/stranger_neutral.png",  zoom=0.45)
 image stranger grinning = Transform("images/stranger_grinning.png", zoom=0.45)
 

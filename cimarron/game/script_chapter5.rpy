@@ -146,6 +146,8 @@ label scene24_cim_ruby:
 
         "She sat across from Sabra without being invited. Not rude — simply practical. She had a thing to say."
 
+        show ruby direct at center with dissolve
+
         ruby "I didn't expect it to be easy."
 
         sabra "No."
@@ -311,7 +313,7 @@ label scene26_donnas_wedding:
 
     "Donna folded it into her hands without ceremony. She had her mother's practicality about gifts."
 
-    show tracy neutral at left with dissolve
+    show tracy charming at left with dissolve
 
     ## ── Choice 1: What Sabra Tells Donna ────────────────────────────────────
 
