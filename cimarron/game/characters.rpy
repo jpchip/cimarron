@@ -134,8 +134,8 @@ transform center:
 # Ren'Py provides a built-in narrator; unquoted strings use it automatically.
 # No definition needed here.
 
-# Sabra Cravat — the player character; her thoughts appear in italics
-define sabra = Character("Sabra", color="#8B4513", what_italic=True)
+# Sabra Cravat — the player character
+define sabra = Character("Sabra", color="#8B4513")
 
 # Yancey Cravat — Sabra's husband; larger-than-life, charismatic
 define yancey = Character("Yancey", color="#2F4F4F")

@@ -148,13 +148,10 @@ screen church_collection_minigame():
 
                         ## Hat indicator
                         if is_hat:
-                            text "(HAT)":
+                            add "images/sprites/hat_collection.png":
                                 xalign 0.5
-                                size 14
-                                color "#F5DEB3"
-                                bold True
                         else:
-                            null height 20
+                            null height 40
 
                         ## Visual tell — cheat sprite when hat is on them; unique sprite per member
                         if is_hat and is_cheat and not is_flagged:
