@@ -39,7 +39,7 @@ label scene1a_mission_visit:
 
     mother_bridget "Sabra Venable. Come to say goodbye, have you."
 
-    show sabra neutral at right with dissolve
+    show sabra ch1a neutral at right with dissolve
 
     "It was not a question. Mother Bridget had always known things before they were said aloud."
 
@@ -58,7 +58,7 @@ label scene1a_mission_visit:
 
         "\"I want to be one of those women.\" (Frontier spirit)":
             $ sabra_direction += 2
-            show sabra determined at right
+            show sabra ch1a determined at right
             sabra "That's what I intend to be."
             mother_bridget "Well. We'll see."
             "There was no discouragement in it. Only the flat evaluation of someone who had seen intentions tested."
@@ -70,12 +70,12 @@ label scene1a_mission_visit:
 
         "\"I'm frightened.\" (Honest)":
             $ yancey_relationship += 2
-            show sabra worried at right
+            show sabra ch1a worried at right
             sabra "I'm not sure I have what it takes."
             show mother_bridget gentle at center
             mother_bridget "Nobody does, before. That's not the thing to have beforehand."
 
-    show sabra worried at right
+    show sabra ch1a worried at right
     "Then it struck her — not gradually but all at once, the way cold water strikes."
 
     "The Territory. She did not know its roads. She did not know its weather. Yancey became suddenly remote in her mind — a stranger, terrible, belonging to it already in a way she did not."
@@ -107,7 +107,7 @@ label scene1a_mission_visit:
 
         "\"Thank you.\" (Take the blanket and go)":
             $ sabra_direction += 1
-            show sabra neutral at right
+            show sabra ch1a neutral at right
             sabra "Thank you, Mother Bridget."
             "She took the blanket. It was heavier than it looked."
             mother_bridget "It's a practical thing."
@@ -288,7 +288,7 @@ label scene3_the_decision:
             $ yancey_relationship += 5
             $ sabra_direction += 2
             $ sabra_confronted_mother = True
-            show sabra determined
+            show sabra ch1a determined
             show felice commanding
             sabra "I will go, Mamma."
             felice "You won't."
@@ -352,7 +352,7 @@ label scene4_journey_west:
 
     "He said it with something like reverence."
 
-    show sabra neutral at right with dissolve
+    show sabra ch1a neutral at right with dissolve
 
     "At midday, they stopped beside a grove of cottonwoods to eat and water the horses. Yancey came and sat beside Sabra on the wagon tongue."
 
@@ -372,7 +372,7 @@ label scene4_journey_west:
         "\"Yes\" — she stays guarded but truthful.":
             $ yancey_relationship += 5
             $ sabra_direction -= 1
-            show sabra worried
+            show sabra ch1a worried
             sabra "Terrified, if you want the truth."
             yancey "Good. That means you're paying attention."
             "He said it gently — not dismissively. And for a moment she felt that he saw her, the real her, the one behind the cheviot jacket and the gray straw bonnet."
@@ -440,9 +440,9 @@ label scene5_arriving_osage:
 
     sol "Mrs. Cravat. Welcome to Osage."
 
-    show sabra neutral at center with dissolve
+    show sabra ch1a neutral at center with dissolve
 
-    show sabra worried
+    show sabra ch1a worried
     sabra "Mr. Levy. Is it — always like this?"
 
     sol "Like what, Mrs. Cravat?"
@@ -470,7 +470,7 @@ label scene5_arriving_osage:
             $ yancey_relationship += 5
             $ sabra_direction += 3
             $ sabra_helped_frontier_char = True
-            show sabra determined
+            show sabra ch1a determined
             sabra "I am not lost. I am exactly where I intend to be."
             "The man blinked. Then — to her astonishment — he grinned."
             show stranger grinning at right with dissolve
@@ -515,7 +515,7 @@ label scene6_oklahoma_wigwam:
     "It was not a beautiful tent. It was not a beautiful press. But it was theirs."
 
     show yancey neutral at left with dissolve
-    show sabra neutral at right with dissolve
+    show sabra ch1a neutral at right with dissolve
 
     yancey "Here. The case rack goes there. The rollers here. And the press — right in the middle, where the light is best."
 
@@ -631,7 +631,7 @@ label scene6_oklahoma_wigwam:
 
     "Sabra looked at him."
 
-    show sabra worried
+    show sabra ch1a worried
     sabra "They might shoot you for that."
 
     show yancey neutral
@@ -644,7 +644,7 @@ label scene6_oklahoma_wigwam:
     show yancey tender
     yancey "Not the shooting part. The writing part."
 
-    show sabra neutral
+    show sabra ch1a neutral
     "She shook her head. She was trying not to smile."
 
     $ journal_scene6 = True
@@ -679,8 +679,8 @@ label scene7_end_of_chapter:
 
     "That evening, when Cim and Isaiah were asleep, Sabra sat at the little table they'd set up beside the press and wrote a letter."
 
-    show sabra neutral at center with dissolve
-    show sabra weary
+    show sabra ch1a neutral at center with dissolve
+    show sabra ch1a weary
 
     "She wrote it to her mother."
 

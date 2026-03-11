@@ -47,7 +47,7 @@ label scene14_five_years:
 
     "She believed it, on good days."
 
-    show sabra sad
+    show sabra ch3 sad
 
     ## ── How Sabra Held On ─────────────────────────────────────────────────────
 
@@ -140,7 +140,7 @@ label scene15_the_kid:
 
         "She went to him immediately.":
             $ yancey_relationship += 5
-            show sabra happy
+            show sabra ch3 happy
             "She did not think. She crossed the floor and put her arms around him."
             sabra "You're here."
             yancey "I'm here."
@@ -199,7 +199,7 @@ label scene15_the_kid:
             $ indian_sympathy     += 1
             sabra "Did the Kid have family?"
             yancey "Mother in Kansas. Young."
-            show sabra tender
+            show sabra ch3 tender
             sabra "Send her something. Not all of it, but something."
             "He was quiet a moment."
             show yancey tender
@@ -469,7 +469,7 @@ label scene17_isaiah:
             $ isaiah_defended    = True
             $ community_standing -= 2
             $ newspaper_stance   += 1
-            show sabra angry
+            show sabra ch3 angry
             sabra "Isaiah has worked for this paper since we opened. He goes where he is needed and does his job. I suggest you do the same, Mr. Tubbs."
             "Horace Tubbs went red."
             "Horace Tubbs: I'll pull my notices."
@@ -497,7 +497,7 @@ label scene17_isaiah:
 
     hide isaiah
 
-    show sabra weary
+    show sabra ch3 weary
     sabra "He was learning to write."
 
     hide sabra
@@ -546,7 +546,7 @@ label scene18_war:
             $ yancey_relationship -= 3
             $ sabra_independence  += 3
             $ sabra_direction     += 3
-            show sabra angry
+            show sabra ch3 angry
             sabra "Go. You're going to go. But I am telling you plainly: I am not going to hold this paper and this family together for another five years on the chance that you come back."
             "He looked at her."
             yancey "What are you saying?"
@@ -566,7 +566,7 @@ label scene18_war:
         "\"Don't go. For once. Stay.\"":
             $ yancey_relationship -= 5
             $ sabra_direction     -= 2
-            show sabra tender
+            show sabra ch3 tender
             sabra "Don't go, Yancey. I am asking you. Stay here."
             "He looked at her with genuine anguish."
             show yancey weary
@@ -628,7 +628,7 @@ label scene18_war:
     "He left before dawn."
 
     show sabra ch3 neutral at center with dissolve
-    show sabra determined
+    show sabra ch3 determined
 
     "Sabra Cravat stood in the pressroom of the Oklahoma Wigwam and looked at the cases of type."
 

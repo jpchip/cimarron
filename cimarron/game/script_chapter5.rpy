@@ -80,7 +80,7 @@ label scene24_cim_ruby:
             $ yancey_relationship += 5
             $ ruby_welcomed       = True
 
-            show sabra happy
+            show sabra ch5 happy
             sabra "Welcome to our family, Ruby."
 
             show big_elk acknowledging at left
@@ -211,7 +211,7 @@ label scene25_congresswoman:
             $ community_standing += 3
             $ sabra_independence  += 2
 
-            show sabra determined
+            show sabra ch5 determined
             sabra "Yes. I'll run."
 
             "She said it before she had time to think better of it. The party man shook her hand with both of his. She won. Of course she won. She had been winning Osage over for two decades, and this was just a larger version of Osage."
@@ -418,7 +418,7 @@ label scene27_bowlegs:
 
     "He was on his back in the oil-soaked dirt. Men stood in a ring. She pushed through them."
 
-    show sabra sad
+    show sabra ch5 sad
 
     "His face was older. The gray at the temples gone to white, the great chest diminished, the long coat muddy and torn. But the jaw was the same. The cheekbones. The ridiculous lashes."
 
@@ -448,7 +448,7 @@ label scene27_bowlegs:
         "\"Sleep. You're safe.\"":
             $ yancey_relationship += 3
 
-            show sabra tender
+            show sabra ch5 tender
             sabra "Sleep. You're safe."
 
             "She became, without knowing it, Solveig. The play ended as it must."
@@ -612,7 +612,7 @@ label ending_his_shadow:
 
     $ journal_scene28 = True
 
-    show sabra weary
+    show sabra ch5 weary
     "She stood at the foot of the statue and looked up at his face — the great menacing head, the long coat, the brilliant boots — and felt, for the first time in many years, that she was exactly where she was supposed to be."
 
     "Beside him. As she had always been."
@@ -656,7 +656,7 @@ label ending_built_herself:
 
     "She knew what she had built. This state knew it too. The paper. The school board. The water commission. The twenty-three years of editorial positions taken when it was easier to stay quiet. The oil rights hearings. The congressional seat."
 
-    show sabra proud
+    show sabra ch5 proud
     "The crowd was watching her. She turned and spoke to the Senators, the editors, the oil men, the women who had come from the federation."
 
     "She spoke for twenty minutes without notes."
