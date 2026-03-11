@@ -428,7 +428,7 @@ label scene27_bowlegs:
 
     "His lips moved. He was saying something she didn't recognize — she had never heard of Peer Gynt, had never read Ibsen, knew nothing of Solveig or the Button Moulder or the play's long resolution. She only heard the words."
 
-    show yancey dying
+    show yancey dying at left with dissolve
     yancey "Wife and mother — you stainless woman — hide me — hide me in your love."
 
     "She didn't know it was a play. She only knew what he was asking."
