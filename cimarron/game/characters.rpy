@@ -109,6 +109,10 @@ image big_elk acknowledging = Transform("images/sprites/big_elk_acknowledging.pn
 
 image cim neutral = Transform("images/sprites/cim_neutral.png", zoom=0.45)
 
+image donna neutral      = Transform("images/sprites/donna_neutral.png",      zoom=0.45)
+image donna composed     = Transform("images/sprites/donna_composed.png",     zoom=0.45)
+image donna ch4 neutral  = Transform("images/sprites/donna_ch4_neutral.png",  zoom=0.45)
+
 image mother_bridget neutral = Transform("images/sprites/mother_bridget_neutral.png", zoom=0.45)
 image mother_bridget gentle  = Transform("images/sprites/mother_bridget_gentle.png",  zoom=0.45)
 
