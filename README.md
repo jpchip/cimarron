@@ -2,7 +2,7 @@
 
 A visual novel adaptation of *Cimarron* by Edna Ferber (1929), built in Ren'Py.
 
-![Main menu screenshot](screenshot_mainmenu.png)
+![Main menu](screenshot_mainmenu.png)
 
 You play as **Sabra Cravat** — a refined Southern belle pulled into frontier life
 by her charismatic husband Yancey. The complete game covers five chapters
