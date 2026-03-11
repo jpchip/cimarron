@@ -29,25 +29,28 @@ unveiling with three possible endings (Chapter Five, 1910–1931).
 ```
 cimarron/
 ├── book.md               ← Source text: Cimarron by Edna Ferber (public domain)
-├── PLAN.md               ← Design document and scene breakdown
+├── plans/                ← Per-chapter design documents and scene breakdowns
 ├── LICENSE               ← MIT license (game code) + public domain note (source text)
 └── cimarron/             ← Ren'Py game project
     ├── README.md         ← Full asset guide, mechanics reference, scene list
     └── game/
-        ├── script.rpy                ← Entry point
+        ├── script.rpy                ← Entry point → jumps to chapter1_start
         ├── script_chapter1.rpy       ← Scenes 1–7
         ├── script_chapter2.rpy       ← Scenes 8–13
         ├── script_chapter3.rpy       ← Scenes 14–18
-        ├── characters.rpy            ← Character definitions
-        ├── variables.rpy             ← Game state variables
-        ├── options.rpy               ← Project configuration
-        ├── gui.rpy                   ← Visual theme (earth tones, fonts)
-        ├── screens.rpy               ← UI screens (save/load, menus)
         ├── script_chapter4.rpy       ← Scenes 19–23
+        ├── script_chapter5.rpy       ← Scenes 24–28 + three ending branches
+        ├── characters.rpy            ← All character and image definitions
+        ├── variables.rpy             ← All game state variables and meters
+        ├── backgrounds.rpy           ← Background image definitions
         ├── minigame_typesetting.rpy  ← Scene 6 typesetting mini-game
         ├── minigame_collection.rpy   ← Scene 8 collection mini-game
         ├── minigame_letters.rpy      ← Scene 16 letters mini-game
         ├── minigame_trial.rpy        ← Scene 20 trial arguments mini-game
+        ├── minigame_photographs.rpy  ← Scene 28 photograph box mini-game
+        ├── options.rpy               ← Project configuration
+        ├── gui.rpy                   ← Visual theme (earth tones, fonts)
+        ├── screens.rpy               ← UI screens (save/load, menus)
         ├── images/                   ← Backgrounds and sprites (add your art here)
         └── audio/                    ← Music tracks (add .ogg files here)
 ```
@@ -153,25 +156,30 @@ Which letters she prints shifts `newspaper_stance`, `indian_sympathy`, and `comm
 then arrange them as OPENING / MIDDLE / CLOSING. Selection and ordering both affect
 `yancey_relationship`, `newspaper_stance`, and `community_standing`.
 
-### Chapter 4 — New Assets Needed
+---
 
-**Backgrounds:**
-- `bg_osage_street_1900` — main street, slightly more developed than 1895 version
-- `bg_courthouse_interior` — territorial courtroom, wood benches, judge's bench
-- `bg_civic_hall` — town meeting hall, chairs and a raised platform
-- `bg_oil_derrick_distant` — Oklahoma plains with derricks on the horizon
-- `bg_wigwam_modern` — the Wigwam pressroom in 1907, more equipment, settled
+## Chapter Five — Legacy & Monument (1910–1931)
 
-**Audio:**
-- `hero_return.ogg` — triumphant but understated; brass with frontier undertones
-- `courthouse_quiet.ogg` — tense, minimal; low strings
-- `state_seal.ogg` — civic, measured; a sense of mixed feeling
-- `oil_derricks.ogg` — industrial rhythm; something new arriving
+**5 scenes** covering Sabra's final years and three possible endings:
 
-**New Characters:**
-- `tracy` — Tracy Wyatt, oil investor; needs `tracy_neutral.png`
-- `cim` — Cim Cravat as a young man; needs `cim_neutral.png`
-- `donna` — Donna Cravat as a teenager; needs `donna_neutral.png`
+24. Cim and Ruby — Cim brings Ruby Big Elk home; Sabra meets her daughter-in-law
+25. Congresswoman — Sabra runs for Congress; platform choice
+26. Donna's Wedding — Donna marries Tracy Wyatt
+27. Bowlegs — Yancey's death; silence; no journal entry
+28. The Monument — the Oklahoma Pioneer statue unveiled; **photograph box mini-game**; ending branch
+
+**~12 choice moments.** No new meters — the ending is determined by cumulative
+values carried across all five chapters:
+
+| Ending | Condition |
+|---|---|
+| *The Land Belongs* | `indian_sympathy ≥ 7` AND (`sabra_independence ≥ 5` OR `yancey_relationship ≥ 50`) |
+| *Built Herself* | `sabra_independence ≥ 8` AND `community_standing ≥ 8` |
+| *His Shadow* | fallback — Sabra is remembered as Yancey's wife |
+
+**Photograph mini-game** in Scene 28: a reporter asks Sabra to choose two photographs
+for a profile piece. Six photos are available; which pair she selects adjusts final
+meter values before the ending branch resolves.
 
 ---
 
@@ -190,10 +198,3 @@ The game code (all `.rpy` files and other software) is released under the
 
 The source novel text is public domain. Any art assets or music you add may
 carry their own licenses; check before redistributing.
-
-
-## Note
-
-```bash
-systemd-inhibit --what=sleep:idle --who="Claude Remote" --why="Remote Session Active" claude remote-control
-```

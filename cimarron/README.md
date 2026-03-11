@@ -471,6 +471,14 @@ To add sound effects:
 1. Place `.ogg` files in `game/audio/`
 2. Add `play sound "audio/yourfile.ogg"` in `script.rpy`
 
+## Note
+
+To run Claude Remote
+
+```bash
+systemd-inhibit --what=sleep:idle --who="Claude Remote" --why="Remote Session Active" claude remote-control
+```
+
 ---
 
 *Based on Cimarron by Edna Ferber (1929) — public domain in the United States.*
