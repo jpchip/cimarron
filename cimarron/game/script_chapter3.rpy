@@ -58,28 +58,28 @@ label scene14_five_years:
             $ sabra_independence += 3
             $ sabra_direction    += 2
             $ newspaper_stance   += 1
-            sabra "The press is loud enough to fill a room. That is useful."
+            sabra "{i}The press is loud enough to fill a room. That is useful.{/i}"
             "She learned to love the smell of ink the way you learn to love a difficult country — by living in it long enough."
             "The Wigwam did not miss a single edition. Five years. Not one."
 
         "Through the children — for Cim and Donna she kept going.":
             $ sabra_independence += 2
             $ sabra_direction    -= 1
-            sabra "They need me to be steady. So I am steady."
+            sabra "{i}They need me to be steady. So I am steady.{/i}"
             "She told Cim stories about his father. The good ones."
             "Donna was too young for stories. She needed supper on the table and a mother who did not cry."
 
         "Through the community — Osage needed her, and she let it.":
             $ sabra_independence += 2
             $ community_standing += 3
-            sabra "The town has work for me. That is not nothing."
+            sabra "{i}The town has work for me. That is not nothing.{/i}"
             "The Women's Club. The school board. The Indian affairs committee she'd started with Arita Red Feather."
             "Osage grew around her while she was not looking."
 
         "With difficulty — there were nights she nearly quit.":
             $ yancey_relationship -= 3
             $ yancey_mystery       = True
-            sabra "I will not tell anyone how many times I sat at that press and could not move."
+            sabra "{i}I will not tell anyone how many times I sat at that press and could not move.{/i}"
             "She had nearly sold the Wigwam twice. Both times she had been stopped by something she could not name."
             "Pride, perhaps. Or the knowledge that she had nowhere else to be."
 
@@ -270,7 +270,7 @@ label scene16_running_paper:
             sabra "I have the documents. I have Arita's testimony. I am going to print it."
             "She sat down and wrote for three hours."
             "The editorial named three legislators by name and called their allotment votes 'a quiet robbery conducted in the language of law.'"
-            sabra "Yancey will either love this or never forgive me for printing it without him."
+            sabra "{i}Yancey will either love this or never forgive me for printing it without him.{/i}"
             "She sent it to press."
 
             menu:
@@ -369,12 +369,12 @@ label scene16_letters_result:
         "Sabra was not sure whether to be glad or troubled."
     elif gossip_count >= 1:
         "She had printed the anonymous letter about Dixie Lee."
-        sabra "I should not have done that."
+        sabra "{i}I should not have done that.{/i}"
         "She knew it before the ink was dry."
         $ community_standing -= 1
     elif oil_count >= 1:
         "The oil company letter ran. It looked like news. It was advertising."
-        sabra "Yancey would have spiked it."
+        sabra "{i}Yancey would have spiked it.{/i}"
         $ newspaper_stance -= 1
 
     if 8 in letters_printed:

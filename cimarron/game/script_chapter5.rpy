@@ -175,9 +175,9 @@ label scene24_cim_ruby:
 
     $ journal_scene24 = True
 
-    sabra "October, 1910."
+    sabra "{i}October, 1910.{/i}"
 
-    sabra "Cim's wife has his same quality of stillness — the ability to be entirely present without pushing. I don't know what to do with that. I'm trying."
+    sabra "{i}Cim's wife has his same quality of stillness — the ability to be entirely present without pushing. I don't know what to do with that. I'm trying.{/i}"
 
     play music "audio/kihekah_parlor.ogg" fadein 1.0 loop
 
@@ -285,9 +285,9 @@ label scene25_congresswoman:
 
     $ journal_scene25 = True
 
-    sabra "1923."
+    sabra "{i}1923.{/i}"
 
-    sabra "A Senator from Pennsylvania told me Oklahoma needed a woman Governor. He said it as a joke. I wrote it down."
+    sabra "{i}A Senator from Pennsylvania told me Oklahoma needed a woman Governor. He said it as a joke. I wrote it down.{/i}"
 
     play music "audio/kihekah_parlor.ogg" fadein 1.0 loop
 
@@ -367,9 +367,9 @@ label scene26_donnas_wedding:
 
     $ journal_scene26 = True
 
-    sabra "April, 1916."
+    sabra "{i}April, 1916.{/i}"
 
-    sabra "Donna's wedding was beautiful and organized and Tracy Wyatt arrived exactly on time. I cried once, briefly, in the back room. Then I came out and ran the reception."
+    sabra "{i}Donna's wedding was beautiful and organized and Tracy Wyatt arrived exactly on time. I cried once, briefly, in the back room. Then I came out and ran the reception.{/i}"
 
     play music "audio/bowlegs_field.ogg" fadein 2.0 loop
 
@@ -625,9 +625,9 @@ label ending_his_shadow:
 
     scene bg_journal with dissolve
 
-    sabra "1931."
+    sabra "{i}1931.{/i}"
 
-    sabra "They made it look like him. It's the right thing. He was what this land was — impossible, larger than life, more beautiful than practical. I was the one who kept the books."
+    sabra "{i}They made it look like him. It's the right thing. He was what this land was — impossible, larger than life, more beautiful than practical. I was the one who kept the books.{/i}"
 
     scene black with fade
 
@@ -669,9 +669,9 @@ label ending_built_herself:
 
     scene bg_journal with dissolve
 
-    sabra "1931."
+    sabra "{i}1931.{/i}"
 
-    sabra "They built a monument to the Pioneer. They should have built two. But I have the paper, and the paper will say what needs saying. It always has."
+    sabra "{i}They built a monument to the Pioneer. They should have built two. But I have the paper, and the paper will say what needs saying. It always has.{/i}"
 
     scene black with fade
 
@@ -720,9 +720,9 @@ label ending_land_belongs:
 
     scene bg_journal with dissolve
 
-    sabra "1931."
+    sabra "{i}1931.{/i}"
 
-    sabra "Her name is Sabra, after me — but she has Cim's face and Ruby's stillness. She will outlast us all. The land belongs to her. It always did."
+    sabra "{i}Her name is Sabra, after me — but she has Cim's face and Ruby's stillness. She will outlast us all. The land belongs to her. It always did.{/i}"
 
     scene black with fade
 

@@ -161,7 +161,7 @@ label scene1_venable_home:
         "Quiet skepticism — she has heard this story too many times.":
             $ yancey_relationship -= 5
             $ sabra_direction -= 1
-            sabra "He tells it a little differently every time."
+            sabra "{i}He tells it a little differently every time.{/i}"
             "She said it only to herself — her lips did not move. But Cousin Dabney Venable, peeling an orange, gave her a sly sidelong look, as if he had heard anyway."
 
         "Polite reserve — she listens without expression, giving nothing away.":
@@ -220,18 +220,18 @@ label scene2_land_run:
             $ yancey_relationship += 10
             $ sabra_direction += 1
             $ sabra_admires_yancey = True
-            sabra "That was like him. That was exactly like him."
+            sabra "{i}That was like him. That was exactly like him.{/i}"
             "She thought it fiercely, as though daring anyone at the table to say otherwise. This was the Yancey she had married — this impossible, magnificent man."
 
         "She finds it reckless — beautiful, but reckless.":
             $ yancey_relationship -= 5
             $ sabra_direction -= 1
-            sabra "Beautiful. And completely impractical."
+            sabra "{i}Beautiful. And completely impractical.{/i}"
             "She said it only to herself, and was ashamed a moment later. It was beautiful. She just wished beauty came a little cheaper."
 
         "She feels a complex mix — admiration and dread together.":
             $ yancey_relationship += 5
-            sabra "What will become of us, then?"
+            sabra "{i}What will become of us, then?{/i}"
             "She did not say it aloud. But the question was there, underneath everything, like bedrock."
             "She loved him for giving the claim away. She was also terrified of what it meant."
 

@@ -70,7 +70,7 @@ label scene8_lion_streets:
 
         "Stay seated, hands folded, and pray.":
             $ sabra_direction -= 1
-            sabra "Lord, let this pass."
+            sabra "{i}Lord, let this pass.{/i}"
             "Her mother had taught her that dignity was a form of armor. She wore it now."
 
     "Yancey did not raise his voice. He stood, slowly, and walked down the center aisle."
@@ -288,7 +288,7 @@ label scene10_wigwam_lives:
             $ community_standing  += 2
             sabra "I will speak with him. I understand your concerns."
             "She watched them go. She would not speak to him. But she had bought time — and perhaps goodwill."
-            sabra "I have told a polite lie to unpleasant men. Mamma would be proud."
+            sabra "{i}I have told a polite lie to unpleasant men. Mamma would be proud.{/i}"
 
         "Give them a composed non-answer — the paper speaks for itself.":
             $ yancey_relationship += 3
@@ -478,7 +478,7 @@ label scene12_respectability:
             $ community_standing -= 2
             $ sabra_direction    -= 2
             "She said nothing. The motion passed."
-            sabra "I will not think about this too hard."
+            sabra "{i}I will not think about this too hard.{/i}"
             "But she did. Later. In the dark."
 
         "Abstain — decline to vote either way.":
