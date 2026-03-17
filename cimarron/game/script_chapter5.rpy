@@ -400,6 +400,7 @@ label scene27_bowlegs:
 
     "And then—"
 
+    play sound "sfx/oil_blowout.ogg"
     "A sound from across the field. Not an explosion — something more pressurized than that, a column of oil and gas and released earth going up with a sound like the world tearing. The nitroglycerin canister shot upward with it."
 
     "Forty lives in a single tin container."
@@ -587,6 +588,8 @@ label scene28_monument_reveal:
     "Of course."
 
     "Who else could it have been."
+
+    play sound "sfx/crowd_applause.ogg"
 
     ## ── Ending branch determination ───────────────────────────────────────────
     ## Checked in order: Branch 3 → 2 → 1 → fallback (Branch 1)

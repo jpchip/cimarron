@@ -493,7 +493,7 @@ screen trial_arguments_minigame():
                 sensitive can_present
                 background ("#8B4513cc" if can_present else "#2A180Acc")
                 hover_background "#D2691Ecc"
-                action Return((list(trial_sel), list(trial_ord)))
+                action [Play("sound", "sfx/gavel_strike.ogg"), Return((list(trial_sel), list(trial_ord)))]
 
                 text "Present to Jury":
                     xalign 0.5

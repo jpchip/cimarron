@@ -385,6 +385,7 @@ label scene4_journey_west:
             sabra "And in the meantime?"
             "He grinned. 'In the meantime, we improvise.' She was not entirely comforted."
 
+    play sfx "sfx/wind_howl.ogg" fadein 2.0 loop
     "That night, camped under a sky that went on forever, Sabra lay awake listening to coyotes."
 
     "Isaiah, who had been found rolled in a carpet in the back of the wagon, was already one of them. He tended Cim like a devoted sheepdog."
@@ -405,6 +406,8 @@ label scene4_journey_west:
     "She watched him write. The fire snapped. The coyotes sang."
 
     sabra "I hope you're right."
+
+    stop sfx fadeout 2.0
 
     $ journal_scene4 = True
     call journal_entry("SCENE 4", "We have been three days on the road. The country is red and enormous and I confess it has a certain terrible beauty. Yancey says we are making history. I am making biscuits over a campfire and trying not to burn them. Perhaps these are the same thing.") from _call_journal_scene4

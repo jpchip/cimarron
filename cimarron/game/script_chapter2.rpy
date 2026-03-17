@@ -74,6 +74,7 @@ label scene8_lion_streets:
             "Her mother had taught her that dignity was a form of armor. She wore it now."
 
     "Yancey did not raise his voice. He stood, slowly, and walked down the center aisle."
+    play sound "sfx/boots_wood_floor.ogg"
 
     show yancey dangerous
     yancey "You want to leave now, Lon. Before this gets complicated for both of us."
@@ -355,6 +356,7 @@ label scene11_wind_donna:
 
     scene bg_cravat_home with dissolve
     play music "audio/wigwam_press.ogg" fadein 1.5 loop
+    play sfx "sfx/wind_howl.ogg" fadein 2.0 loop
 
     "1892. The Cravat home — a proper frame house now, with glass windows and a cookstove."
 
@@ -403,6 +405,7 @@ label scene11_wind_donna:
 
     "When it was over, he held the child up and the child announced herself to the room."
 
+    play sound "sfx/baby_cry.ogg"
     doc "A girl. Strong one."
 
     show doc warm with dissolve
@@ -434,6 +437,8 @@ label scene11_wind_donna:
 
     hide doc
     hide sabra
+
+    stop sfx fadeout 2.0
 
     $ journal_scene11 = True
     call journal_entry("SCENE 11", "Donna was born on a Tuesday. Yancey was in Guthrie. Isaiah ran for Doc Valliant and then stood outside the door for four hours because he did not know what else to do. Donna has her father's frown. I am already afraid of what she will want.") from _call_journal_scene11

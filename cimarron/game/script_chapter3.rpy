@@ -125,6 +125,7 @@ label scene15_the_kid:
 
     "Yancey had walked the main street of Enid, alone, at noon, and the Kid had come at him from the hardware-store doorway."
 
+    play sound "sfx/holster_draw.ogg"
     "The Kid was in the ground. Yancey was riding home."
 
     show sabra ch3 neutral at right with dissolve
@@ -474,6 +475,7 @@ label scene17_isaiah:
             "Horace Tubbs went red."
             "Horace Tubbs: I'll pull my notices."
             sabra "I know the way to the door."
+            play sound "sfx/door_slam.ogg"
             "He left. She sat down and shook."
             "Isaiah was at the press. He had heard everything. He did not look up."
             "She did not ask him to."
@@ -489,6 +491,7 @@ label scene17_isaiah:
             "She did not look into it. Isaiah kept working."
             "Tubbs kept his notices. She kept her discomfort."
 
+    play sound "sfx/wagon_runaway.ogg"
     "Some months later, Isaiah was struck by a runaway wagon on the main street of Osage."
 
     "He lingered three days. He died on a Sunday."
