@@ -28,6 +28,7 @@ init python:
             avail.pop(self.idx)
             store.typeset_available = avail
             store.typeset_placed    = store.typeset_placed + [letter]
+            renpy.sound.play("audio/sfx/type_clink.ogg", channel="sound")
             renpy.restart_interaction()
 
         def get_sensitive(self):
@@ -47,6 +48,7 @@ init python:
             letter = placed.pop(self.idx)
             store.typeset_placed    = placed
             store.typeset_available = store.typeset_available + [letter]
+            renpy.sound.play("audio/sfx/type_clink.ogg", channel="sound")
             renpy.restart_interaction()
 
         def __eq__(self, other):
