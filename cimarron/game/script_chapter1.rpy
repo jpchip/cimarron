@@ -322,6 +322,7 @@ label scene3_the_decision:
     show yancey passionate
     yancey "We'll leave all the goddamned middle-class respectability of Wichita, Kansas, behind us."
 
+    play sound "sfx/crash_china.ogg"
     "Somewhere above, there was a crash. Black Isaiah — who had been eavesdropping from atop the sideboard — had fallen directly into Felice Venable's finest frosted silver cake."
 
     "In the commotion that followed, Sabra thought: {i}Well. It is decided, then.{/i}"
@@ -565,8 +566,11 @@ label scene6_oklahoma_wigwam:
         "He was right."
     ## ── End mini-game ─────────────────────────────────────────────────────
 
+    play sfx "sfx/printing_press.ogg" fadein 1.0 loop
     "They worked through the afternoon. Yancey wrote. Sabra set type. Outside, Osage made its various noises."
 
+    stop sfx fadeout 0.5
+    play sound "sfx/gunshot.ogg"
     "Then: a shot."
 
     "And then: shouting."
