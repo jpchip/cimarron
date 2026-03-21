@@ -62,12 +62,12 @@ label scene14_five_years:
             "She learned to love the smell of ink the way you learn to love a difficult country — by living in it long enough."
             "The Wigwam did not miss a single edition. Five years. Not one."
 
-        "Through the children — for Cim and Donna she kept going.":
+        "Through the children — for Cim and [donna_name] she kept going.":
             $ sabra_independence += 2
             $ sabra_direction    -= 1
             sabra "{i}They need me to be steady. So I am steady.{/i}"
             "She told Cim stories about his father. The good ones."
-            "Donna was too young for stories. She needed supper on the table and a mother who did not cry."
+            "[donna_name] was too young for stories. She needed supper on the table and a mother who did not cry."
 
         "Through the community — Osage needed her, and she let it.":
             $ sabra_independence += 2
@@ -87,7 +87,7 @@ label scene14_five_years:
 
     "The children grew. Cim was serious and tall, with his father's eyes and his grandfather Venable's quiet manner."
 
-    "Donna was loud and opinionated and had a talent for arithmetic that no one in the family could account for."
+    "[donna_name] was loud and opinionated and had a talent for arithmetic that no one in the family could account for."
 
     show isaiah neutral at left with dissolve
 
@@ -193,6 +193,7 @@ label scene15_the_kid:
             sabra "There's a reward from the territory. Two hundred dollars. Put it toward the press costs."
             yancey "Practical."
             sabra "Someone has to be."
+            show yancey respect
             "He looked at her steadily. Something in his expression shifted — respect, perhaps, and something more complicated."
 
         "\"Give some to the Kid's family, if he had one.\"":
@@ -218,21 +219,17 @@ label scene15_the_kid:
     show yancey restless
     "She saw it in the way he stood at the door in the evenings, looking west."
 
-    hide yancey
-
-    ## ── Journal beat ─────────────────────────────────────────────────────────
-
-    scene bg_hefner_window with dissolve
-    show kid dead at center with dissolve
-
     "She saw it and she did not pretend otherwise."
+
+    hide yancey with dissolve
 
     sabra "There will be a next time. Won't there."
 
     "It was not a question."
 
-    hide kid
     hide sabra
+
+    ## ── Journal beat ─────────────────────────────────────────────────────────
 
     $ journal_scene15 = True
     call journal_entry("Scene 15", "He came back. I did not know until the moment I heard his horse whether I would be glad or furious. I was both. He killed the Kid — a young man I never met, whose name I do not know — and rode home like it was weather. He is here. He is himself. And I can already see the door calling him.") from _call_journal_scene15
@@ -400,7 +397,7 @@ label scene17_isaiah:
 
     "1896."
 
-    "Isaiah was fifteen. He had been with the Cravats since the first run — since before Donna was born, before the Wigwam had a proper building, before Sabra had learned to work the press."
+    "Isaiah was fifteen. He had been with the Cravats since the first run — since before [donna_name] was born, before the Wigwam had a proper building, before Sabra had learned to work the press."
 
     show isaiah neutral at left with dissolve
     show sabra ch3 neutral at right with dissolve
@@ -455,11 +452,13 @@ label scene17_isaiah:
 
     "He came in on a Wednesday afternoon, hat in hand, with the specific politeness of a man who intends to be impolite."
 
-    "Horace Tubbs: Mrs. Cravat. I want that boy off the street when my customers are coming in."
+    show horace neutral at left with dissolve
+
+    horace "Mrs. Cravat. I want that boy off the street when my customers are coming in."
 
     sabra "I beg your pardon?"
 
-    "Horace Tubbs: The colored boy. I have customers who don't care to — they find it — it is a preference, Mrs. Cravat. A business preference."
+    horace "The colored boy. I have customers who don't care to — they find it — it is a preference, Mrs. Cravat. A business preference."
 
     ## ── Choice 2: Defense ────────────────────────────────────────────────────
 
@@ -473,9 +472,11 @@ label scene17_isaiah:
             show sabra ch3 angry
             sabra "Isaiah has worked for this paper since we opened. He goes where he is needed and does his job. I suggest you do the same, Mr. Tubbs."
             "Horace Tubbs went red."
-            "Horace Tubbs: I'll pull my notices."
+            show horace angry
+            horace "I'll pull my notices."
             sabra "I know the way to the door."
             play sound "sfx/door_slam.ogg"
+            hide horace with dissolve
             "He left. She sat down and shook."
             "Isaiah was at the press. He had heard everything. He did not look up."
             "She did not ask him to."
@@ -483,10 +484,12 @@ label scene17_isaiah:
         "Offer a compromise — different hours, different street entrance.":
             $ community_standing += 1
             sabra "Isaiah uses the back entrance in the mornings when your deliveries come. I'll ask him to keep to that."
+            hide horace with dissolve
             "It was a compromise. It felt like a defeat."
             "She told herself she was being practical. She did not fully believe it."
 
         "Buy time — tell Tubbs she'll 'look into it'.":
+            hide horace with dissolve
             "She told Tubbs she would look into it."
             "She did not look into it. Isaiah kept working."
             "Tubbs kept his notices. She kept her discomfort."
@@ -637,7 +640,7 @@ label scene18_war:
 
     "Her type, now. Her paper."
 
-    "Donna's footsteps on the stairs above. The smell of ink and newsprint and the particular dust of Osage in summer."
+    "[donna_name]'s footsteps on the stairs above. The smell of ink and newsprint and the particular dust of Osage in summer."
 
     sabra "All right."
 
@@ -709,7 +712,7 @@ label chapter3_summary:
     if isaiah_defended:
         "She defended Isaiah against a man with money and she knew the cost and she did it anyway."
     if sabra_stood_alone:
-        "She brought Donna into the world without sending for Yancey. She has not forgotten it."
+        "She brought [donna_name] into the world without sending for Yancey. She has not forgotten it."
     if sabra_defended_indians:
         "She said Arita Red Feather's name out loud in a parlor of respectable women and meant every word."
     if yancey_mystery:

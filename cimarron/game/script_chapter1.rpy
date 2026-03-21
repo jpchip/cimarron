@@ -785,6 +785,8 @@ label journal_entry(scene_name, entry_text):
     ## Displays a journal page overlay at the end of each scene.
     ## Call with:  call journal_entry("SCENE N", "text here")
 
+    $ entry_text = renpy.substitute(entry_text)
+
     scene bg_journal with dissolve
 
     "[scene_name] — Sabra's Journal"

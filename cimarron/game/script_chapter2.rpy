@@ -419,18 +419,21 @@ label scene11_wind_donna:
 
         "Donna. For the land.":
             $ sabra_direction += 2
+            $ donna_name = "Donna"
             sabra "Donna. Her name is Donna."
             doc "After the territory?"
             sabra "After nobody. After herself."
 
         "Felice — for her mother.":
             $ sabra_direction -= 2
+            $ donna_name = "Felice"
             sabra "Felice. For my mother."
             doc "She'll have to grow into it."
             "Sabra looked at the child. It was an olive branch. It was also an admission."
 
         "Yancey — if she'll have it. Donna Yancey Cravat.":
             $ yancey_relationship += 3
+            $ donna_name = "Donna"
             sabra "Donna. Donna Yancey Cravat, if she'll have the middle name."
             doc "She'll do as she pleases, that one."
             "Sabra thought he might be right."
@@ -441,7 +444,7 @@ label scene11_wind_donna:
     stop sfx fadeout 2.0
 
     $ journal_scene11 = True
-    call journal_entry("Scene 11", "Donna was born on a Tuesday. Yancey was in Guthrie. Isaiah ran for Doc Valliant and then stood outside the door for four hours because he did not know what else to do. Donna has her father's frown. I am already afraid of what she will want.") from _call_journal_scene11
+    call journal_entry("Scene 11", "[donna_name] was born on a Tuesday. Yancey was in Guthrie. Isaiah ran for Doc Valliant and then stood outside the door for four hours because he did not know what else to do. [donna_name] has her father's frown. I am already afraid of what she will want.") from _call_journal_scene11
 
     jump scene12_respectability
 
@@ -563,7 +566,7 @@ label scene13_cherokee_strip:
             $ yancey_relationship += 5
             $ sabra_direction     += 3
             $ sabra_independence  += 2
-            sabra "Take me. Cim and Donna can stay with Isaiah. But take me."
+            sabra "Take me. Cim and [donna_name] can stay with Isaiah. But take me."
             yancey "Sabra —"
             sabra "I have ridden across this territory once already. I can do it again."
             "He looked at her for a long moment. Something in him shifted — something like admiration, and something like relief."
@@ -700,7 +703,7 @@ label chapter2_summary:
 
     ## Achievement flags
     if sabra_stood_alone:
-        "She brought Donna into the world without sending for Yancey. She did not need to."
+        "She brought [donna_name] into the world without sending for Yancey. She did not need to."
     if sabra_defended_indians:
         "In a parlor full of respectable women, she said Arita Red Feather's name out loud and meant it."
     if yancey_mystery:

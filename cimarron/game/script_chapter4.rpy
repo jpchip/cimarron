@@ -539,7 +539,7 @@ label scene22_first_oil:
 
     "He was there to buy advertising space."
 
-    "He looked, briefly, at Donna's photograph on Sabra's desk."
+    "He looked, briefly, at [donna_name]'s photograph on Sabra's desk."
 
     "She did not notice."
 
@@ -578,10 +578,10 @@ label scene23_what_yancey_left:
     menu:
         "What Sabra did with the letter:"
 
-        "\"Write back. Tell him about Donna and Cim.\"":
+        "\"Write back. Tell him about [donna_name] and Cim.\"":
             $ yancey_relationship += 5
             sabra "{i}I will write him a letter. A careful one. Kinder than my feelings.{/i}"
-            "She wrote him about Donna's plans for Miss Dignum's school on the Hudson. About Cim and the oil surveys. About the new telephone on the office wall."
+            "She wrote him about [donna_name]'s plans for Miss Dignum's school on the Hudson. About Cim and the oil surveys. About the new telephone on the office wall."
             "She sealed it and addressed it to the last return address, knowing he might not be there when it arrived."
 
         "\"File it with the others. Don't write back.\"":
@@ -596,7 +596,7 @@ label scene23_what_yancey_left:
             show cim neutral at left with dissolve
             show donna ch4 neutral at right with dissolve
             "She read it aloud."
-            "Cim's face was careful, as always. Donna rolled her eyes at a specific sentence and then caught herself."
+            "Cim's face was careful, as always. [donna_name] rolled her eyes at a specific sentence and then caught herself."
             "Sabra removed herself as interpreter of Yancey. That was the most generous thing she knew how to do."
             hide cim
             hide donna
@@ -615,13 +615,13 @@ label scene23_what_yancey_left:
 
     sabra "I know. I arranged it."
 
-    "Donna blinked."
+    "[donna_name] blinked."
 
     donna "You knew I wanted to go?"
 
     sabra "You have never made a secret of your feelings about the frontier."
 
-    "Donna, to her credit, laughed."
+    "[donna_name], to her credit, laughed."
 
     cim "I'm going back east too. Tulsa, anyway. The oil survey."
 
@@ -667,7 +667,7 @@ label scene23_what_yancey_left:
     "— End of Chapter Four —"
 
     $ journal_scene23 = True
-    call journal_entry("Scene 23", "Donna leaves for Miss Dignum's on the Hudson on Monday. She packed three times and was still dissatisfied. She has absolutely no aptitude for the frontier and I could not be more proud of her.") from _call_journal_scene23
+    call journal_entry("Scene 23", "[donna_name] leaves for Miss Dignum's on the Hudson on Monday. She packed three times and was still dissatisfied. She has absolutely no aptitude for the frontier and I could not be more proud of her.") from _call_journal_scene23
 
     call chapter4_summary from _call_chapter4_summary
 

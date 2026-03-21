@@ -301,7 +301,7 @@ label scene26_donnas_wedding:
 
     play music "audio/kihekah_parlor.ogg" fadein 1.0 loop
 
-    "Donna Cravat married Tracy Wyatt in the spring of 1916."
+    "[donna_name] Cravat married Tracy Wyatt in the spring of 1916."
 
     "Tracy Wyatt arrived exactly on time. He was prosperous, handsome in an amiable way, entirely reliable, and constitutionally incapable of the kind of magnificent unreliability that had defined the last thirty years of Sabra's life."
 
@@ -311,9 +311,9 @@ label scene26_donnas_wedding:
 
     show sabra ch5 neutral at right with dissolve
 
-    "Donna was composed, as she always was. She was her grandmother Felice's grandchild and her mother's daughter, which meant she had both the armor and the nerve."
+    "[donna_name] was composed, as she always was. She was her grandmother Felice's grandchild and her mother's daughter, which meant she had both the armor and the nerve."
 
-    "Before the ceremony, five minutes in the back room. Donna in her wedding dress, Sabra with the coverlet Mother Bridget had pressed into her hands on the morning they had left Wichita."
+    "Before the ceremony, five minutes in the back room. [donna_name] in her wedding dress, Sabra with the coverlet Mother Bridget had pressed into her hands on the morning they had left Wichita."
 
     sabra "This was given to me on my wedding morning. I've kept it thirty years."
 
@@ -321,7 +321,7 @@ label scene26_donnas_wedding:
 
     sabra "Take it with you."
 
-    "Donna folded it into her hands without ceremony. She had her mother's practicality about gifts."
+    "[donna_name] folded it into her hands without ceremony. She had her mother's practicality about gifts."
 
     show tracy charming at left with dissolve
 
@@ -336,7 +336,7 @@ label scene26_donnas_wedding:
 
             sabra "You've chosen well. You always choose well."
 
-            "It was true. Donna had always known exactly what she wanted and had moved toward it without apology. Sabra wondered, briefly, whether choosing well and living fully were the same thing. She decided this was not the moment to raise that question."
+            "It was true. [donna_name] had always known exactly what she wanted and had moved toward it without apology. Sabra wondered, briefly, whether choosing well and living fully were the same thing. She decided this was not the moment to raise that question."
 
         "\"Whatever comes — you'll manage it. You're Cravat stock.\"":
             $ sabra_independence += 1
@@ -344,7 +344,7 @@ label scene26_donnas_wedding:
 
             sabra "Whatever comes — you'll manage it. You're Cravat stock."
 
-            "She meant: {i}You don't need anyone to save you.{/i} Donna gave her a long look."
+            "She meant: {i}You don't need anyone to save you.{/i} [donna_name] gave her a long look."
 
             donna "I know, Mother."
 
@@ -358,7 +358,7 @@ label scene26_donnas_wedding:
 
             "She was thinking, unexpectedly, of her own wedding morning. The white sombrero. The impossible man. The fact that she had not, at twenty years old, had the wisdom to hope for happiness before hoping for everything else."
 
-            "Donna looked at her for a moment, and then did something she rarely did: she put her arms around her mother and held on for a second."
+            "[donna_name] looked at her for a moment, and then did something she rarely did: she put her arms around her mother and held on for a second."
 
     ## ── Journal Entry 26 ─────────────────────────────────────────────────────
 
@@ -368,7 +368,7 @@ label scene26_donnas_wedding:
 
     sabra "{i}April, 1916.{/i}"
 
-    sabra "{i}Donna's wedding was beautiful and organized and Tracy Wyatt arrived exactly on time. I cried once, briefly, in the back room. Then I came out and ran the reception.{/i}"
+    sabra "{i}[donna_name]'s wedding was beautiful and organized and Tracy Wyatt arrived exactly on time. I cried once, briefly, in the back room. Then I came out and ran the reception.{/i}"
 
     play music "audio/bowlegs_field.ogg" fadein 2.0 loop
 

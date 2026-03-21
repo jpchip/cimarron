@@ -11,6 +11,7 @@ image yancey tender     = Transform("images/sprites/yancey_tender.png",     zoom
 image yancey dangerous  = Transform("images/sprites/yancey_dangerous.png",  zoom=0.45)
 image yancey restless   = Transform("images/sprites/yancey_restless.png",   zoom=0.45)
 image yancey weary      = Transform("images/sprites/yancey_weary.png",      zoom=0.45)
+image yancey respect    = Transform("images/sprites/yancey_respect.png",    zoom=0.45)
 
 image yancey roughrider neutral = Transform("images/sprites/yancey_roughrider_neutral.png", zoom=0.45)
 image yancey roughrider weary   = Transform("images/sprites/yancey_roughrider_weary.png",   zoom=0.45)
@@ -94,6 +95,9 @@ image arita gentle  = Transform("images/sprites/arita_gentle.png",  zoom=0.45)
 image arita agony   = Transform("images/sprites/arita_agony.png",   zoom=0.45)
 
 image kid dead = Transform("images/sprites/kid_dead.png", zoom=0.45)
+
+image horace neutral = Transform("images/sprites/horace_tubbs_neutral.png", zoom=0.45)
+image horace angry   = Transform("images/sprites/horace_tubbs_angry.png",   zoom=0.45)
 
 image tracy neutral  = Transform("images/sprites/tracy_neutral.png",  zoom=0.45)
 image tracy charming = Transform("images/sprites/tracy_charming.png", zoom=0.45)
@@ -182,6 +186,9 @@ define pete  = Character("Pete Pitchlyn",     color="#6B8E23")
 # The Kid — a young gunman whose name no one quite knows
 define kid   = Character("The Kid",           color="#444444")
 
+# Horace Greeley Tubbs — hardware merchant and advertiser in Osage; an antagonist in Scene 17
+define horace = Character("Horace Tubbs",     color="#8B5E3C")
+
 # ── Chapter 4 characters ──────────────────────────────────────────────────────
 
 # Tracy Wyatt — a Tulsa oil investor; charming, calculating, modern
@@ -191,7 +198,7 @@ define tracy = Character("Tracy Wyatt",  color="#5F4F3B")
 define cim   = Character("Cim Cravat",   color="#6B4B2B")
 
 # Donna Cravat — Sabra and Yancey's daughter, growing up fast
-define donna = Character("Donna Cravat", color="#9B7E6A")
+define donna = Character("[donna_name] Cravat", color="#9B7E6A")
 
 # ── Chapter 5 characters ──────────────────────────────────────────────────────
 

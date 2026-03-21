@@ -56,6 +56,7 @@ default journal_scene12 = False
 default journal_scene13 = False
 
 # ─── Chapter 2 Achievement Flags ─────────────────────────────────────────────
+default donna_name             = "Donna"  # set at birth in scene11; "Donna" or "Felice"
 default sabra_stood_alone      = False   # handled birth of Donna without Yancey
 default sabra_defended_indians = False   # refused to exclude Arita from the club
 
