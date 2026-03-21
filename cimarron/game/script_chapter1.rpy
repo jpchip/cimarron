@@ -465,7 +465,7 @@ label scene5_arriving_osage:
 
     "A woman crossed the street — the kind who parts a crowd without trying. Short skirt raised against the wind, dark hair loose under a skullcap, riding boots still on from the Run. She moved through the chaos of Osage as though she had expected it."
 
-    show dixie neutral at right with dissolve
+    show dixie ch1 neutral at right with dissolve
 
     "Sabra felt Yancey go still beside her."
 

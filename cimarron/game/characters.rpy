@@ -69,6 +69,7 @@ image isaiah child neutral = Transform("images/sprites/isaiah_child_neutral.png"
 image isaiah child solemn  = Transform("images/sprites/isaiah_child_solemn.png",  zoom=0.45)
 image isaiah neutral       = Transform("images/sprites/isaiah_neutral.png",       zoom=0.45)
 
+image dixie ch1 neutral = Transform("images/sprites/dixie_ch1_neutral.png", zoom=0.45)
 image dixie neutral  = Transform("images/sprites/dixie_neutral.png",  zoom=0.45)
 image dixie direct   = Transform("images/sprites/dixie_direct.png",   zoom=0.45)
 image dixie composed = Transform("images/sprites/dixie_composed.png", zoom=0.45)
