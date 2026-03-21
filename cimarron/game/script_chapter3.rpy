@@ -444,6 +444,8 @@ label scene17_isaiah:
             sabra "It does. But so does the copy desk."
             "He did not smile exactly. But something in his face opened."
 
+    hide isaiah with dissolve
+
     ## ── The advertiser confrontation ─────────────────────────────────────────
 
     "Three days later, the trouble came."
