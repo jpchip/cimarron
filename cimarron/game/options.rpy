@@ -3,7 +3,7 @@
 
 ## ─── Game Basics ─────────────────────────────────────────────────────────────
 
-define config.name = "Cimarron: Chapter One"
+define config.name = "Cimarron: A Visual Novel"
 
 # Version string shown in the launcher.
 define config.version = "0.1.0"

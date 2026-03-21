@@ -257,7 +257,7 @@ screen main_menu():
         vbox:
             text "CIMARRON":
                 style "main_menu_title"
-            text "Chapter One":
+            text "A Visual Novel":
                 style "main_menu_subtitle"
 
     ## Menu buttons — bottom-left, dark panel
@@ -701,7 +701,7 @@ style history_text is default:
 ## About Screen
 ################################################################################
 
-define gui.about = _("{b}Cimarron: Chapter One{/b}\nBased on the novel by Edna Ferber (1929)\n\nPublic domain source text via Standard Ebooks.")
+define gui.about = _("{b}Cimarron: A Visual Novel{/b}\nBased on the novel by Edna Ferber (1929)\n\nPublic domain source text via Standard Ebooks.")
 
 screen about():
     tag menu

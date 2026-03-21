@@ -3,6 +3,7 @@
 
 image bg_venable_home          = im.Scale("images/bg_venable_home.png",          1280, 720)
 image bg_land_run              = im.Scale("images/bg_land_run.png",              1280, 720)
+image bg_land_run_ch1          = im.Scale("images/bg_land_run_ch1.png",          1280, 720)
 image bg_wagon_trail           = im.Scale("images/bg_wagon_trail.png",           1280, 720)
 image bg_osage_tent_town       = im.Scale("images/bg_osage_tent_town.png",       1280, 720)
 image bg_wigwam_office         = im.Scale("images/bg_wigwam_office.png",         1280, 720)

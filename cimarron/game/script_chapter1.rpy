@@ -189,7 +189,7 @@ label scene1_venable_home:
 
 label scene2_land_run:
 
-    scene bg_land_run with dissolve
+    scene bg_land_run_ch1 with dissolve
 
     "Yancey rose from the table — he always rose when a story demanded it — and the room seemed to shrink around him."
 

@@ -141,7 +141,7 @@ define gui.nvl_spacing    = 15
 define gui.nvl_adv_transition_widget = None
 
 ## ─── About ────────────────────────────────────────────────────────────────────
-define gui.about = _("{b}Cimarron: Chapter One{/b}\nBased on the novel by Edna Ferber (1929)\nPublic domain.")
+define gui.about = _("{b}Cimarron: A Visual Novel{/b}\nBased on the novel by Edna Ferber (1929)\nPublic domain.")
 
 ## ─── Helper: button_properties ────────────────────────────────────────────────
 ## Ren'Py's gui module uses this to look up per-button-type properties.
