@@ -614,7 +614,7 @@ label ending_his_shadow:
 
     $ journal_scene28 = True
 
-    show sabra ch5 weary
+    show sabra ch5 weary at right with dissolve
     "She stood at the foot of the statue and looked up at his face — the great menacing head, the long coat, the brilliant boots — and felt, for the first time in many years, that she was exactly where she was supposed to be."
 
     "Beside him. As she had always been."
@@ -658,7 +658,7 @@ label ending_built_herself:
 
     "She knew what she had built. This state knew it too. The paper. The school board. The water commission. The twenty-three years of editorial positions taken when it was easier to stay quiet. The oil rights hearings. The congressional seat."
 
-    show sabra ch5 proud
+    show sabra ch5 proud at right with dissolve
     "The crowd was watching her. She turned and spoke to the Senators, the editors, the oil men, the women who had come from the federation."
 
     "She spoke for twenty minutes without notes."
