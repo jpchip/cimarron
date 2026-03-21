@@ -508,6 +508,10 @@ label scene22_first_oil:
 
     "He had his father's magnetism and his mother's practicality. The combination, she had noticed, made him dangerous to himself."
 
+    "Yancey had named him Cimarron — after the wild country, the unruly river, the land that couldn't be tamed. She had argued against it at the time. Too much to carry, she had said. And Yancey had laughed."
+
+    "Standing in the Wigwam doorway watching her son calculate survey coordinates in his head, she thought perhaps the name had been a prophecy."
+
     cim "There's a company out of Tulsa that wants to talk to me, Mother. About the surveys east of the reservation."
 
     ## ── Choice 2: Cim and Oil ───────────────────────────────────────────────────
