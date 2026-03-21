@@ -463,6 +463,33 @@ label scene5_arriving_osage:
 
     hide sol
 
+    "A woman crossed the street — the kind who parts a crowd without trying. Short skirt raised against the wind, dark hair loose under a skullcap, riding boots still on from the Run. She moved through the chaos of Osage as though she had expected it."
+
+    show dixie neutral at right with dissolve
+
+    "Sabra felt Yancey go still beside her."
+
+    yancey "That's Dixie Lee."
+
+    sabra "Who is she?"
+
+    yancey "She made the Run. On a thoroughbred. One of the few women who rode it."
+
+    "A pause. The noise of Osage moved through the silence between them."
+
+    sabra "And what does she do here?"
+
+    show yancey neutral
+    yancey "She runs a house."
+
+    "He said it simply. As a fact of the Territory. The way he might have said: {i}She runs a dry goods store.{/i}"
+
+    "Sabra looked at Dixie Lee again — at the easy way she moved through the crowd, as though she owned it. Or had decided she didn't need to."
+
+    "She filed the name away."
+
+    hide dixie with dissolve
+
     hide yancey with dissolve
 
     "Sabra was still processing the smell of the place — wood shavings, horse dung, frying meat, something unidentifiable but vigorous — when a rough hand grabbed her arm."

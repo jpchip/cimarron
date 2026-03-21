@@ -453,10 +453,61 @@ label scene11_wind_donna:
 
 label scene12_respectability:
 
-    scene bg_osage_parlor with dissolve
-    play music "audio/osage_sunday.ogg" fadein 1.5 loop
+    scene bg_wigwam_office with dissolve
+    play music "audio/wigwam_press.ogg" fadein 1.5 loop
 
     "1892. Osage had a bank, a school, three churches, and the beginnings of a civic conscience."
+
+    "Sabra was setting copy for the evening edition when Sol Levy appeared in the doorway. He stood there a moment in his precise black coat, as though weighing something he had been carrying for a while."
+
+    show sabra ch2 neutral at right with dissolve
+    show sol neutral at left with dissolve
+
+    sabra "Sol. Come in."
+
+    sol "I won't stay. I heard about the women's club. That you are to be president."
+
+    sabra "That's what they tell me."
+
+    sol "I came to warn you. In my way."
+
+    "He set his hat on the type case. Sol Levy's hands were always careful with things."
+
+    sol "There is a story going around Osage. About Yancey and Dixie Lee. That he knew her before — before Wichita. That he is the one who brought her here and set her up in the brick house."
+
+    "Sabra set down the composing stick."
+
+    sol "I don't say it is true. I don't say it isn't. I say only — her name will come up at your meeting. And when it does, you will want to have already decided what you think."
+
+    menu:
+        "Sabra's response:"
+
+        "\"Is it true, Sol? Do you know?\"":
+            $ yancey_mystery = True
+            show sabra ch2 worried
+            sabra "Is it true? Do you know?"
+            sol "I talk to Dixie Lee sometimes. She has never said. I have never asked."
+            "He picked up his hat."
+            sol "Neither have you, I imagine."
+            sabra "No. I haven't."
+            "The press stood between them, full of tomorrow's words."
+
+        "\"Thank you. I'll manage.\"":
+            $ sabra_independence += 1
+            show sabra ch2 determined
+            sabra "Thank you, Sol. I'll manage."
+            sol "I know you will. That is why I told you."
+
+        "Say nothing — just nod.":
+            "She looked at the type case. The letters were all there, in their boxes. You just had to know which ones to use."
+            "She nodded."
+            sol "Good."
+
+    hide sol with dissolve
+    hide sabra
+
+    scene bg_osage_parlor with dissolve
+    play music "audio/osage_sunday.ogg" fadein 1.5 loop
 
     "The Osage Women's Improvement Club was being founded. The founding members had agreed: Sabra Cravat should be president. She had the newspaper, the reputation, and what one woman called 'the kind of spine this town needs in a parlor.'"
 
