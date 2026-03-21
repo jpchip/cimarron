@@ -148,7 +148,7 @@ label scene8_lion_streets:
     hide sabra
 
     $ journal_scene8 = True
-    call journal_entry("SCENE 8", "The tent was cold even in July. A man came in wanting trouble and Yancey sent him away with only words — though I think the words were not the whole of it. I held Cim in front of me. I did not decide to. I watched the collection after. There are people here who take from the church as easily as they breathe. I am learning to see them.") from _call_journal_scene8
+    call journal_entry("Scene 8", "The tent was cold even in July. A man came in wanting trouble and Yancey sent him away with only words — though I think the words were not the whole of it. I held Cim in front of me. I did not decide to. I watched the collection after. There are people here who take from the church as easily as they breathe. I am learning to see them.") from _call_journal_scene8
 
     jump scene9_seven_notches
 
@@ -241,7 +241,7 @@ label scene9_seven_notches:
     hide yancey
 
     $ journal_scene9 = True
-    call journal_entry("SCENE 9", "Pete Pitchlyn came and went like weather. He said seven. Yancey neither confirmed nor denied it in any way I could call honest. I have set type beside this man every day for a year. I have slept beside him. I am still learning what he is. I think he is learning it too.") from _call_journal_scene9
+    call journal_entry("Scene 9", "Pete Pitchlyn came and went like weather. He said seven. Yancey neither confirmed nor denied it in any way I could call honest. I have set type beside this man every day for a year. I have slept beside him. I am still learning what he is. I think he is learning it too.") from _call_journal_scene9
 
     jump scene10_wigwam_lives
 
@@ -345,7 +345,7 @@ label scene10_wigwam_lives:
     hide sabra
 
     $ journal_scene10 = True
-    call journal_entry("SCENE 10", "The paper is larger than it was. Yancey writes about the Indians and the town does not thank him for it. I begin to understand that being respected and being right are different things entirely. A Cherokee woman came today and looked at me as though she were deciding something. I am still not sure what she decided.") from _call_journal_scene10
+    call journal_entry("Scene 10", "The paper is larger than it was. Yancey writes about the Indians and the town does not thank him for it. I begin to understand that being respected and being right are different things entirely. A Cherokee woman came today and looked at me as though she were deciding something. I am still not sure what she decided.") from _call_journal_scene10
 
     jump scene11_wind_donna
 
@@ -441,7 +441,7 @@ label scene11_wind_donna:
     stop sfx fadeout 2.0
 
     $ journal_scene11 = True
-    call journal_entry("SCENE 11", "Donna was born on a Tuesday. Yancey was in Guthrie. Isaiah ran for Doc Valliant and then stood outside the door for four hours because he did not know what else to do. Donna has her father's frown. I am already afraid of what she will want.") from _call_journal_scene11
+    call journal_entry("Scene 11", "Donna was born on a Tuesday. Yancey was in Guthrie. Isaiah ran for Doc Valliant and then stood outside the door for four hours because he did not know what else to do. Donna has her father's frown. I am already afraid of what she will want.") from _call_journal_scene11
 
     jump scene12_respectability
 
@@ -524,7 +524,7 @@ label scene12_respectability:
     hide sabra
 
     $ journal_scene12 = True
-    call journal_entry("SCENE 12", "We have a Women's Club. I am its president. I do not know whether to be proud of this or suspicious of it. The question of who belongs to this town is not settled by a meeting in Estelle Sipes's parlor. I am beginning to think it is not settled at all.") from _call_journal_scene12
+    call journal_entry("Scene 12", "We have a Women's Club. I am its president. I do not know whether to be proud of this or suspicious of it. The question of who belongs to this town is not settled by a meeting in Estelle Sipes's parlor. I am beginning to think it is not settled at all.") from _call_journal_scene12
 
     jump scene13_cherokee_strip
 
@@ -646,7 +646,7 @@ label scene13_cherokee_strip:
     hide sabra
 
     $ journal_scene13 = True
-    call journal_entry("SCENE 13", "He went for the Cherokee Strip. I knew he would. I think I have always known that there is a part of Yancey Cravat that cannot be held by any one place, any one person. I have decided not to need him to be otherwise. The Wigwam ran its edition. The children ate their supper. I am learning what it means to be a woman who manages.") from _call_journal_scene13
+    call journal_entry("Scene 13", "He went for the Cherokee Strip. I knew he would. I think I have always known that there is a part of Yancey Cravat that cannot be held by any one place, any one person. I have decided not to need him to be otherwise. The Wigwam ran its edition. The children ate their supper. I am learning what it means to be a woman who manages.") from _call_journal_scene13
 
     scene black with dissolve
 
@@ -664,9 +664,7 @@ label chapter2_summary:
     scene black
 
     "CHAPTER TWO COMPLETE"
-    " "
     "— Your Story So Far —"
-    " "
 
     ## Yancey relationship
     if yancey_relationship >= 65:
@@ -676,8 +674,6 @@ label chapter2_summary:
     else:
         "YANCEY & SABRA: Strained. She has begun to make a life that does not depend on him."
 
-    " "
-
     ## Sabra's direction
     if sabra_direction >= 5:
         "SABRA'S PATH: Frontier Woman. She is someone her mother would not recognize, and she is glad."
@@ -685,8 +681,6 @@ label chapter2_summary:
         "SABRA'S PATH: Refined Lady. She keeps Wichita's standards like a lamp against the dark."
     else:
         "SABRA'S PATH: Between Two Worlds. She has not yet chosen — or the choice is choosing itself."
-
-    " "
 
     ## Community standing
     if community_standing >= 4:
@@ -696,8 +690,6 @@ label chapter2_summary:
     else:
         "STANDING IN OSAGE: Respectable. Neither beloved nor resented — yet."
 
-    " "
-
     ## Indian sympathy
     if indian_sympathy >= 4:
         "ON THE INDIAN QUESTION: Advocate. She has put herself on the side of the treaties and the Nations."
@@ -705,8 +697,6 @@ label chapter2_summary:
         "ON THE INDIAN QUESTION: Prejudiced. She has accommodated the prejudices of the town."
     else:
         "ON THE INDIAN QUESTION: Cautious. She has not yet decided what she believes — or acted on it."
-
-    " "
 
     ## Achievement flags
     if sabra_stood_alone:
@@ -717,7 +707,5 @@ label chapter2_summary:
         "She has glimpsed the part of Yancey that he does not explain. She is learning to live alongside it."
     if sabra_admires_yancey:
         "She still watches him ride away and feels the catch in her chest. She has stopped fighting it."
-
-    " "
 
     jump chapter3_start

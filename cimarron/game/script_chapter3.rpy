@@ -105,7 +105,7 @@ label scene14_five_years:
     hide sabra
 
     $ journal_scene14 = True
-    call journal_entry("SCENE 14", "Five years. I have not written it plainly before: five years without Yancey Cravat. Letters, occasionally. The sense that he is alive, somewhere, because the alternative is a thing I will not consider. I have run his newspaper. I have raised his children. I have made something in this town that will not disappear when he comes back — if he comes back. I am no longer certain which I would prefer.") from _call_journal_scene14
+    call journal_entry("Scene 14", "Five years. I have not written it plainly before: five years without Yancey Cravat. Letters, occasionally. The sense that he is alive, somewhere, because the alternative is a thing I will not consider. I have run his newspaper. I have raised his children. I have made something in this town that will not disappear when he comes back — if he comes back. I am no longer certain which I would prefer.") from _call_journal_scene14
 
     jump scene15_the_kid
 
@@ -235,7 +235,7 @@ label scene15_the_kid:
     hide sabra
 
     $ journal_scene15 = True
-    call journal_entry("SCENE 15", "He came back. I did not know until the moment I heard his horse whether I would be glad or furious. I was both. He killed the Kid — a young man I never met, whose name I do not know — and rode home like it was weather. He is here. He is himself. And I can already see the door calling him.") from _call_journal_scene15
+    call journal_entry("Scene 15", "He came back. I did not know until the moment I heard his horse whether I would be glad or furious. I was both. He killed the Kid — a young man I never met, whose name I do not know — and rode home like it was weather. He is here. He is himself. And I can already see the door calling him.") from _call_journal_scene15
 
     jump scene16_running_paper
 
@@ -386,7 +386,7 @@ label scene16_letters_result:
     hide sabra
 
     $ journal_scene16 = True
-    call journal_entry("SCENE 16", "I chose four letters. I will not pretend the choice was neutral. Everything I print is a choice. I understand that now in a way I did not when I was only setting Yancey's type. This is my paper too. I am learning what I think it should say.") from _call_journal_scene16
+    call journal_entry("Scene 16", "I chose four letters. I will not pretend the choice was neutral. Everything I print is a choice. I understand that now in a way I did not when I was only setting Yancey's type. This is my paper too. I am learning what I think it should say.") from _call_journal_scene16
 
     jump scene17_isaiah
 
@@ -506,7 +506,7 @@ label scene17_isaiah:
     hide sabra
 
     $ journal_scene17 = True
-    call journal_entry("SCENE 17", "Isaiah died. I have written those words and I cannot add to them. He was seventeen years old and he could read and he was learning to write and he is gone. I did not know his mother's name until I had to send her a letter. That is the kind of failure that does not leave you.") from _call_journal_scene17
+    call journal_entry("Scene 17", "Isaiah died. I have written those words and I cannot add to them. He was seventeen years old and he could read and he was learning to write and he is gone. I did not know his mother's name until I had to send her a letter. That is the kind of failure that does not leave you.") from _call_journal_scene17
 
     jump scene18_war
 
@@ -661,9 +661,7 @@ label chapter3_summary:
     scene black
 
     "CHAPTER THREE COMPLETE"
-    " "
     "— Your Story So Far —"
-    " "
 
     ## Yancey relationship
     if yancey_relationship >= 65:
@@ -673,8 +671,6 @@ label chapter3_summary:
     else:
         "YANCEY & SABRA: Strained. She has built something he cannot quite reach, and she is not sure she minds."
 
-    " "
-
     ## Sabra's direction
     if sabra_direction >= 8:
         "SABRA'S PATH: Frontier Woman. The person who arrived in a silk dress from Wichita is a distant memory."
@@ -682,8 +678,6 @@ label chapter3_summary:
         "SABRA'S PATH: Refined Lady. She has kept the old standards. They have kept her."
     else:
         "SABRA'S PATH: Her Own. Neither Wichita nor the frontier entirely owns her now."
-
-    " "
 
     ## Newspaper stance
     if newspaper_stance >= 5:
@@ -693,8 +687,6 @@ label chapter3_summary:
     else:
         "THE WIGWAM: Balanced — it prints what it believes, mostly. The rest, it is learning."
 
-    " "
-
     ## Community standing
     if community_standing >= 6:
         "STANDING IN OSAGE: Beloved. The town would not be what it is without Sabra Cravat."
@@ -703,8 +695,6 @@ label chapter3_summary:
     else:
         "STANDING IN OSAGE: Respected. They know her name and mean it."
 
-    " "
-
     ## Indian sympathy
     if indian_sympathy >= 5:
         "ON THE INDIAN QUESTION: Advocate — her name is known in the Nations as someone who could be trusted."
@@ -712,8 +702,6 @@ label chapter3_summary:
         "ON THE INDIAN QUESTION: Accommodating — she has bent with the town's prejudices more than she would like to admit."
     else:
         "ON THE INDIAN QUESTION: Cautious, but changing."
-
-    " "
 
     ## Achievement flags
     if sabra_cleared_the_office:
@@ -728,10 +716,6 @@ label chapter3_summary:
         "She has seen the part of Yancey that cannot be explained. She has decided to live alongside it."
     if newspaper_stance >= 3:
         "The Wigwam she runs is not the paper Yancey founded. It is something more."
-
-    " "
-    "Chapter Four: Coming."
-    " "
 
     jump chapter4_start
 

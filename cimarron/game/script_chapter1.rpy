@@ -181,7 +181,7 @@ label scene1_venable_home:
     "The temperature at the table dropped several degrees."
 
     $ journal_scene1 = True
-    call journal_entry("SCENE 1", "He arrived like weather. One moment the parlor was simply a parlor — Mama's china, the decanters, Cousin Dabney with his orange. And then Yancey was in it, and everything shifted. I have been married to him two years and he still does this to a room. And, I confess, to me.") from _call_journal_scene1
+    call journal_entry("Scene 1", "He arrived like weather. One moment the parlor was simply a parlor — Mama's china, the decanters, Cousin Dabney with his orange. And then Yancey was in it, and everything shifted. I have been married to him two years and he still does this to a room. And, I confess, to me.") from _call_journal_scene1
 
     jump scene2_land_run
 
@@ -244,7 +244,7 @@ label scene2_land_run:
     yancey "The {i}Oklahoma Wigwam{/i}. That's what we'll call it."
 
     $ journal_scene2 = True
-    call journal_entry("SCENE 2", "He gave his claim away to a woman on a black thoroughbred. A stranger. He doesn't even know her name. I have been sitting with this fact for an hour. I cannot decide if it is the most magnificent thing I have ever heard, or the most maddening. Possibly both. Probably both.") from _call_journal_scene2
+    call journal_entry("Scene 2", "He gave his claim away to a woman on a black thoroughbred. A stranger. He doesn't even know her name. I have been sitting with this fact for an hour. I cannot decide if it is the most magnificent thing I have ever heard, or the most maddening. Possibly both. Probably both.") from _call_journal_scene2
 
     jump scene3_the_decision
 
@@ -328,7 +328,7 @@ label scene3_the_decision:
     "In the commotion that followed, Sabra thought: {i}Well. It is decided, then.{/i}"
 
     $ journal_scene3 = True
-    call journal_entry("SCENE 3", "We are going to Oklahoma Territory. I have said it aloud and I cannot unsay it. Yancey is already planning the newspaper. I am already planning what linens to pack. Perhaps that is the difference between us.") from _call_journal_scene3
+    call journal_entry("Scene 3", "We are going to Oklahoma Territory. I have said it aloud and I cannot unsay it. Yancey is already planning the newspaper. I am already planning what linens to pack. Perhaps that is the difference between us.") from _call_journal_scene3
 
     jump scene4_journey_west
 
@@ -410,7 +410,7 @@ label scene4_journey_west:
     stop sfx fadeout 2.0
 
     $ journal_scene4 = True
-    call journal_entry("SCENE 4", "We have been three days on the road. The country is red and enormous and I confess it has a certain terrible beauty. Yancey says we are making history. I am making biscuits over a campfire and trying not to burn them. Perhaps these are the same thing.") from _call_journal_scene4
+    call journal_entry("Scene 4", "We have been three days on the road. The country is red and enormous and I confess it has a certain terrible beauty. Yancey says we are making history. I am making biscuits over a campfire and trying not to burn them. Perhaps these are the same thing.") from _call_journal_scene4
 
     jump scene5_arriving_osage
 
@@ -504,7 +504,7 @@ label scene5_arriving_osage:
     "Sabra Cravat looked at what was to be her home and thought, carefully and completely: {i}Well.{/i}"
 
     $ journal_scene5 = True
-    call journal_entry("SCENE 5", "We have arrived. I do not know what I expected. I know that this was not it. And yet — there is something in the air here, some electric impossibility, as though the whole place knows it is becoming something and cannot quite believe its luck. I find I cannot entirely hate it. I will not tell Mamma that.") from _call_journal_scene5
+    call journal_entry("Scene 5", "We have arrived. I do not know what I expected. I know that this was not it. And yet — there is something in the air here, some electric impossibility, as though the whole place knows it is becoming something and cannot quite believe its luck. I find I cannot entirely hate it. I will not tell Mamma that.") from _call_journal_scene5
 
     jump scene6_oklahoma_wigwam
 
@@ -655,7 +655,7 @@ label scene6_oklahoma_wigwam:
     "She shook her head. She was trying not to smile."
 
     $ journal_scene6 = True
-    call journal_entry("SCENE 6", "The first issue of the Wigwam will print Friday. I set half the type myself. My fingers are black with ink and my back aches and I find I do not mind at all. There was a shooting in the street today. I am making a list of things I have survived that I did not think I could survive. It is becoming a long list.") from _call_journal_scene6
+    call journal_entry("Scene 6", "The first issue of the Wigwam will print Friday. I set half the type myself. My fingers are black with ink and my back aches and I find I do not mind at all. There was a shooting in the street today. I am making a list of things I have survived that I did not think I could survive. It is becoming a long list.") from _call_journal_scene6
 
     jump scene7_end_of_chapter
 
@@ -726,7 +726,7 @@ label scene7_end_of_chapter:
     hide sabra
 
     $ journal_scene7 = True
-    call journal_entry("SCENE 7", "Dear Mamma, I am well. The tent is not as cold as I feared. Yancey has sold forty-two papers. Cim has decided he is an Indian. I set type today and I was good at it. I miss the elm trees and your garden. I do not miss being told what to feel. I will write again soon. Your devoted daughter, Sabra.") from _call_journal_scene7
+    call journal_entry("Scene 7", "Dear Mamma, I am well. The tent is not as cold as I feared. Yancey has sold forty-two papers. Cim has decided he is an Indian. I set type today and I was good at it. I miss the elm trees and your garden. I do not miss being told what to feel. I will write again soon. Your devoted daughter, Sabra.") from _call_journal_scene7
 
     scene black with dissolve
 
@@ -743,9 +743,7 @@ label chapter_summary:
     scene black
 
     "CHAPTER ONE COMPLETE"
-    " "
     "— Your Story So Far —"
-    " "
 
     if yancey_relationship >= 65:
         "YANCEY & SABRA: Deeply trusting. He confides in her; she believes in his vision."
@@ -754,16 +752,12 @@ label chapter_summary:
     else:
         "YANCEY & SABRA: Strained. Sabra follows, but she follows alone, inside."
 
-    " "
-
     if sabra_direction >= 3:
         "SABRA'S PATH: Frontier Woman. She is becoming someone her mother would not entirely recognize."
     elif sabra_direction <= -3:
         "SABRA'S PATH: Refined Lady. She carries Wichita with her like a shield. It may serve her, or not."
     else:
         "SABRA'S PATH: Undecided. She is between two worlds, and has not yet chosen."
-
-    " "
 
     if sabra_confronted_mother:
         "She stood up to her mother. The iron in her was tested and held."
@@ -774,7 +768,6 @@ label chapter_summary:
     if sabra_stood_firm_danger:
         "When danger came, she held her ground."
 
-    " "
     "The territory does not wait. Neither does she."
 
     jump chapter2_start
@@ -787,10 +780,8 @@ label journal_entry(scene_name, entry_text):
 
     scene bg_journal with dissolve
 
-    "[scene_name] — SABRA'S JOURNAL"
-    " "
+    "[scene_name] — Sabra's Journal"
     "[entry_text]"
-    " "
     "— S.C."
 
     return

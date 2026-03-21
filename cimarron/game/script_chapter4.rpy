@@ -148,7 +148,7 @@ label scene19_rough_rider:
     hide sabra
 
     $ journal_scene19 = True
-    call journal_entry("SCENE 19", "He came home in a soldier's hat with the brim pinned up on one side. He still has both six-shooters. I counted: eight notches now.") from _call_journal_scene19
+    call journal_entry("Scene 19", "He came home in a soldier's hat with the brim pinned up on one side. He still has both six-shooters. I counted: eight notches now.") from _call_journal_scene19
 
     jump scene20_dixie_trial
 
@@ -345,7 +345,7 @@ label scene20_post_verdict:
     hide sabra
 
     $ journal_scene20 = True
-    call journal_entry("SCENE 20", "Not guilty. I sat in the gallery and watched the jury file in and I was not sure, until the foreman spoke, whether I wanted them to say guilty or not. I still don't know.") from _call_journal_scene20
+    call journal_entry("Scene 20", "Not guilty. I sat in the gallery and watched the jury file in and I was not sure, until the foreman spoke, whether I wanted them to say guilty or not. I still don't know.") from _call_journal_scene20
 
     jump scene21_statehood
 
@@ -445,7 +445,7 @@ label scene21_statehood:
     hide sabra
 
     $ journal_scene21 = True
-    call journal_entry("SCENE 21", "November 16, 1907. Oklahoma is a state. They rang the church bell at noon and fired a cannon in the square and Doc Valliant came to the office with a bottle of whisky and said, 'Well, Sabra, we made it.' I said we did. I didn't say what I was thinking: that we made it without him.") from _call_journal_scene21
+    call journal_entry("Scene 21", "November 16, 1907. Oklahoma is a state. They rang the church bell at noon and fired a cannon in the square and Doc Valliant came to the office with a bottle of whisky and said, 'Well, Sabra, we made it.' I said we did. I didn't say what I was thinking: that we made it without him.") from _call_journal_scene21
 
     jump scene22_first_oil
 
@@ -548,7 +548,7 @@ label scene22_first_oil:
     hide sabra
 
     $ journal_scene22 = True
-    call journal_entry("SCENE 22", "The derricks on the horizon look like enormous iron insects. At night you can see the flare-off fires from the bedroom window. The smell of crude oil drifts into town when the wind blows from the northeast. I keep writing it up as progress. I'm not sure I believe myself.") from _call_journal_scene22
+    call journal_entry("Scene 22", "The derricks on the horizon look like enormous iron insects. At night you can see the flare-off fires from the bedroom window. The smell of crude oil drifts into town when the wind blows from the northeast. I keep writing it up as progress. I'm not sure I believe myself.") from _call_journal_scene22
 
     jump scene23_what_yancey_left
 
@@ -667,7 +667,7 @@ label scene23_what_yancey_left:
     "— End of Chapter Four —"
 
     $ journal_scene23 = True
-    call journal_entry("SCENE 23", "Donna leaves for Miss Dignum's on the Hudson on Monday. She packed three times and was still dissatisfied. She has absolutely no aptitude for the frontier and I could not be more proud of her.") from _call_journal_scene23
+    call journal_entry("Scene 23", "Donna leaves for Miss Dignum's on the Hudson on Monday. She packed three times and was still dissatisfied. She has absolutely no aptitude for the frontier and I could not be more proud of her.") from _call_journal_scene23
 
     call chapter4_summary from _call_chapter4_summary
 
@@ -681,9 +681,7 @@ label chapter4_summary:
     scene black
 
     "CHAPTER FOUR COMPLETE"
-    " "
     "— Your Story So Far —"
-    " "
 
     ## Yancey relationship
     if yancey_relationship >= 65:
@@ -693,8 +691,6 @@ label chapter4_summary:
     else:
         "YANCEY & SABRA: Strained. She has built something he cannot quite reach, and she is no longer sure she minds."
 
-    " "
-
     ## Sabra's direction
     if sabra_direction >= 8:
         "SABRA'S PATH: Frontier Woman. The person who arrived in a silk dress from Wichita is a distant memory."
@@ -702,8 +698,6 @@ label chapter4_summary:
         "SABRA'S PATH: Refined Lady. She has kept the old standards. They have kept her."
     else:
         "SABRA'S PATH: Her Own. Neither Wichita nor the frontier entirely owns her now."
-
-    " "
 
     ## Newspaper stance
     if newspaper_stance >= 5:
@@ -713,8 +707,6 @@ label chapter4_summary:
     else:
         "THE WIGWAM: Balanced — it prints what it believes, mostly. The rest, it is learning."
 
-    " "
-
     ## Community standing
     if community_standing >= 6:
         "STANDING IN OSAGE: Beloved. The town would not be what it is without Sabra Cravat."
@@ -722,8 +714,6 @@ label chapter4_summary:
         "STANDING IN OSAGE: Complicated. She has made the right enemies."
     else:
         "STANDING IN OSAGE: Respected. They know her name and mean it."
-
-    " "
 
     ## Indian sympathy
     if indian_sympathy >= 5:
@@ -733,8 +723,6 @@ label chapter4_summary:
     else:
         "ON THE INDIAN QUESTION: Cautious, but changing."
 
-    " "
-
     ## Dixie Lee editorial flag
     if dixie_lee_editorial == "support":
         "She stood on the right side of that verdict and she knew it."
@@ -742,8 +730,6 @@ label chapter4_summary:
         "She wrote against the verdict. The town's women thanked her for it. Dixie Lee did not."
     elif dixie_lee_editorial == "neutral":
         "She printed the facts and let the community decide. It was the hardest kind of restraint."
-
-    " "
 
     ## Statehood stance flag
     if statehood_stance == "single":
@@ -753,22 +739,14 @@ label chapter4_summary:
     elif statehood_stance == "consult":
         "She went to the reservation before she wrote a word. Some editors thought that was weakness. She thought it was journalism."
 
-    " "
-
     ## Journal achievement flags
     if journal_scene19 and journal_scene20 and journal_scene21 and journal_scene22 and journal_scene23:
         "She kept her journal through all of it. Every scene. Nothing went unrecorded."
     elif journal_scene19 or journal_scene20 or journal_scene21 or journal_scene22 or journal_scene23:
         "Some of it she wrote down. The rest she carried."
 
-    " "
-
     ## Newspaper stance high-water mark
     if newspaper_stance >= 3:
         "The Wigwam she runs is not the paper Yancey founded. It is something more."
-
-    " "
-    "Chapter Five: Coming."
-    " "
 
     jump chapter5_start

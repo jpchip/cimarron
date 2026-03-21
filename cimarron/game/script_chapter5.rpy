@@ -20,7 +20,6 @@ label chapter5_start:
     "CIMARRON"
     "{i}Based on the novel by Edna Ferber{/i}"
     "Chapter Five: Legacy and Monument"
-    " "
     "{i}Osage, Oklahoma. 1910–1931.{/i}"
 
     play music "audio/kihekah_parlor.ogg" fadein 1.5 loop
