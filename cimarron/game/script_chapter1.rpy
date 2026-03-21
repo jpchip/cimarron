@@ -120,7 +120,7 @@ label scene1a_mission_visit:
     "The Mission receded behind the osage hedge."
 
     $ journal_scene1a = True
-    call journal_entry("SCENE 1a", "Mother Bridget gave me a blue blanket for the wagon. She said there's no such thing as a new country — people just make it into the old one as fast as they can. I wonder if that is comfort or warning. I am carrying half of Wichita in this trunk and I suspect she knows it.") from _call_journal_scene1a
+    call journal_entry("Prologue", "Mother Bridget gave me a blue blanket for the wagon. She said there's no such thing as a new country — people just make it into the old one as fast as they can. I wonder if that is comfort or warning. I am carrying half of Wichita in this trunk and I suspect she knows it.") from _call_journal_scene1a
 
     jump scene1_venable_home
 
