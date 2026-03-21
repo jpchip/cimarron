@@ -281,6 +281,8 @@ label scene3_the_decision:
 
     "She was her mother, twenty years ago. She was every woman who had ever gone West."
 
+    hide lewis with dissolve
+
     "What does Sabra do?"
 
     menu:
@@ -314,6 +316,8 @@ label scene3_the_decision:
 
     hide felice
     hide lewis
+
+    show yancey neutral at left with dissolve
 
     yancey "Week from Monday. Two wagons. One for the printing outfit, one for the household things. We'll make it in nine days, God willing."
 
@@ -459,9 +463,11 @@ label scene5_arriving_osage:
 
     hide sol
 
+    hide yancey with dissolve
+
     "Sabra was still processing the smell of the place — wood shavings, horse dung, frying meat, something unidentifiable but vigorous — when a rough hand grabbed her arm."
 
-    show stranger neutral at right with dissolve
+    show stranger neutral at left with dissolve
 
     stranger "Hey there, pretty lady. You lost? You lookin' for someone?"
 
@@ -477,7 +483,7 @@ label scene5_arriving_osage:
             show sabra ch1a determined
             sabra "I am not lost. I am exactly where I intend to be."
             "The man blinked. Then — to her astonishment — he grinned."
-            show stranger grinning at right with dissolve
+            show stranger grinning at left with dissolve
             stranger "Ha! Good answer, ma'am. Good answer. Welcome to Osage."
             "He touched the brim of his hat and moved on."
             "Sabra's heart was hammering. But her face had not moved. She filed that small victory away for future use."
@@ -580,6 +586,7 @@ label scene6_oklahoma_wigwam:
 
     yancey "Stay here."
 
+    hide yancey with dissolve
     "He was through the tent flap before she could answer."
 
     "Sabra stood very still beside the press."

@@ -164,8 +164,8 @@ label scene9_seven_notches:
 
     "A man had come in that afternoon — Pete Pitchlyn, an old acquaintance of Yancey's from before the run. Weathered, quiet, with the kind of eyes that took inventory of a room before he stepped into it."
 
-    show pete neutral at left with dissolve
-    show yancey neutral at center with dissolve
+    show yancey neutral at left with dissolve
+    show pete neutral at right with dissolve
 
     pete "You're doing well here, Yancey. I wouldn't have thought it."
 
@@ -178,7 +178,7 @@ label scene9_seven_notches:
     show yancey dangerous
     yancey "You always were bad at arithmetic, Pete."
 
-    show pete sardonic with dissolve
+    show pete sardonic at right with dissolve
     "Pete Pitchlyn smiled without warmth and left. Yancey stood at his type case and did not look at Sabra."
 
     hide pete
