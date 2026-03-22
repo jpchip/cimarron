@@ -122,6 +122,10 @@ label scene8_lion_streets:
 
     "Elder Howe: There are members who give with one hand and take back with the other. You'll know them. You'll see the moment."
 
+    hide yancey with dissolve
+    hide sabra with dissolve
+    hide doc with dissolve
+
     ## Reset minigame state
     $ collection_time_left = 30
     $ collection_caught    = 0
@@ -167,7 +171,6 @@ label scene9_seven_notches:
 
     "A man had come in that afternoon — Pete Pitchlyn, an old acquaintance of Yancey's from before the run. Weathered, quiet, with the kind of eyes that took inventory of a room before he stepped into it."
 
-    play sound "sfx/door_creak.ogg"
     show yancey neutral at left with dissolve
     show pete neutral at right with dissolve
 
@@ -304,7 +307,6 @@ label scene10_wigwam_lives:
     ## Arita Red Feather arrives
     show arita neutral at center with dissolve
 
-    play sound "sfx/door_creak.ogg"
     "That evening, a Cherokee woman came to the back door of the Wigwam. She introduced herself as Arita Red Feather."
 
     arita "You are Mrs. Cravat. I have read your husband's editorials."

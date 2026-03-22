@@ -1,2 +1,9 @@
 **/nanobanana-output/
 .env
+.cursor/*
+.agents/*
+.claude/*
+.gemini/*
+.tessl/*
+tessl.json
+.mcp.json

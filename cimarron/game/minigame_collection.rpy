@@ -124,7 +124,7 @@ screen church_collection_minigame():
         ## ── Congregation row ──────────────────────────────────────────────
         hbox:
             xalign 0.5
-            spacing 10
+            spacing 6
 
             for i in range(8):
                 $ is_hat     = (hat_pos == i)
@@ -140,9 +140,9 @@ screen church_collection_minigame():
                 $ slot_bg = "#6B0000dd" if is_flagged  else slot_bg
 
                 button:
-                    xsize 88
-                    ysize 130
-                    padding (4, 6)
+                    xsize 158
+                    ysize 250
+                    padding (4, 8)
                     background slot_bg
                     hover_background "#D2691E88"
                     action FlagMember(i)
@@ -157,13 +157,13 @@ screen church_collection_minigame():
                             add "images/sprites/hat_collection.png":
                                 xalign 0.5
                         else:
-                            null height 40
+                            null height 56
 
                         ## Visual tell — cheat sprite when hat is on them; unique sprite per member
                         if is_hat and is_cheat and not is_flagged:
-                            add Transform(COLLECTION_CHEAT_SPRITES[i],   maxsize=(76, 90)) xalign 0.5
+                            add Transform(COLLECTION_CHEAT_SPRITES[i],   maxsize=(140, 175)) xalign 0.5
                         else:
-                            add Transform(COLLECTION_SPRITES[i], maxsize=(76, 90)) xalign 0.5
+                            add Transform(COLLECTION_SPRITES[i], maxsize=(140, 175)) xalign 0.5
 
                         text COLLECTION_NAMES[i]:
                             xalign 0.5
