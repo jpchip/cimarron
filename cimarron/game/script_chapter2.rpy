@@ -306,6 +306,7 @@ label scene10_wigwam_lives:
 
     ## Arita Red Feather arrives
     show arita neutral at center with dissolve
+    show sabra ch2 neutral
 
     "That evening, a Cherokee woman came to the back door of the Wigwam. She introduced herself as Arita Red Feather."
 
@@ -318,6 +319,7 @@ label scene10_wigwam_lives:
     play sound "sfx/paper_rustle.ogg"
     "She set a cloth packet on the composing table."
 
+    show arita gentle
     arita "I do not know if I can trust you. But I know I cannot trust the men at the land office, and I cannot trust most of the men in this town."
 
     arita "Can I trust you?"
@@ -338,6 +340,7 @@ label scene10_wigwam_lives:
             $ indian_sympathy -= 2
             sabra "These would be better in my husband's hands. I am only the typesetter."
             "She heard herself say it. She did not quite like the sound of it."
+            show arita neutral
             arita "Then perhaps your husband's hands are the only ones that matter here."
             "She left the documents on the counter anyway, and walked out."
 
@@ -345,6 +348,7 @@ label scene10_wigwam_lives:
             $ indian_sympathy += 1
             sabra "Mr. Cravat is the one who writes the editorials. He should be the one to receive these."
             "Arita considered her."
+            show arita gentle
             arita "You will tell him I came?"
             sabra "I will tell him exactly."
             "It was the honest answer. It was also the cautious one."
