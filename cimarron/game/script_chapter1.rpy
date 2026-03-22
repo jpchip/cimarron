@@ -708,7 +708,7 @@ label scene6_oklahoma_wigwam:
 
 label scene7_end_of_chapter:
 
-    scene bg_osage_tent_town with dissolve
+    scene bg_tent_church with dissolve
     play music "audio/wichita_parlor.ogg" fadein 2.0 loop
 
     "Sunday morning."

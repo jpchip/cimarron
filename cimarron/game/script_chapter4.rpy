@@ -322,7 +322,7 @@ label scene20_post_verdict:
 
     "In the hallway after the verdict."
 
-    "Dixie Lee was wearing dove gray. She had not looked at Sabra directly since the land run. She looked at her now."
+    "Dixie Lee was wearing dove gray. She looked at Sabra directly. It was the first time she had done so without flinching."
 
     menu:
         "Sabra's response:"
@@ -541,7 +541,8 @@ label scene22_first_oil:
             sabra "Somewhere in the Cimarron country. He writes."
             "She did not add: not often."
 
-    show tracy neutral at right with dissolve
+    hide cim with dissolve
+    show tracy neutral at left with dissolve
 
     "A young man appeared in the Wigwam's doorway that afternoon — Tracy Wyatt, home from an Eastern school, carrying his father's oil money and his own considerable ambitions."
 
