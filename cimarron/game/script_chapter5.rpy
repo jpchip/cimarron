@@ -35,6 +35,7 @@ label scene24_cim_ruby:
 
     play music "audio/kihekah_parlor.ogg" fadein 1.0 loop
 
+    play sound "sfx/car_engine_1910.ogg"
     "On a Saturday, a large automobile pulled up in front of the house on Kihekah Street."
 
     "Sabra had been told. She had had three weeks to think about it. She had thought about it every morning and then put it away and thought about it again."
@@ -300,6 +301,7 @@ label scene26_donnas_wedding:
     scene bg_kihekah_house_parlor with dissolve
 
     play music "audio/kihekah_parlor.ogg" fadein 1.0 loop
+    play sound "sfx/wedding_march.ogg"
 
     "[donna_name] Cravat married Tracy Wyatt in the spring of 1916."
 
@@ -382,6 +384,7 @@ label scene27_bowlegs:
     scene bg_oil_field_bowlegs with dissolve
 
     play music "audio/bowlegs_field.ogg" fadein 1.0 loop
+    play sfx "sfx/oil_drill.ogg" fadein 2.0 loop
 
     "Bowlegs, Oklahoma. 1930."
 
@@ -402,8 +405,10 @@ label scene27_bowlegs:
     play sound "sfx/oil_blowout.ogg"
     "A sound from across the field. Not an explosion — something more pressurized than that, a column of oil and gas and released earth going up with a sound like the world tearing. The nitroglycerin canister shot upward with it."
 
+    play sound "sfx/canister_whistle.ogg"
     "Forty lives in a single tin container."
 
+    play sound "sfx/clipboard_drop.ogg"
     "The Harvard boy dropped his clipboard. The senators scattered."
 
     "And then a man ran out from the crowd — an old man, she saw even from that distance — and he ran the way an outfielder runs: not toward the canister but {i}to where it would come down,{/i} calculating it by some instinct that had nothing to do with thought."
@@ -458,6 +463,7 @@ label scene27_bowlegs:
 
             "She said it until it was the only true thing left."
 
+    play sound "sfx/last_breath.ogg"
     "His eyes closed."
 
     "She did not stand up for a long time."
@@ -468,6 +474,7 @@ label scene27_bowlegs:
 
     scene black with fade
 
+    stop sfx fadeout 2.0
     stop music fadeout 3.0
 
     "  "
@@ -501,6 +508,7 @@ label scene28_monument:
 
     krbecek "The face in photographs is always truer than the face in memory. Memory is generous."
 
+    play sound "sfx/cedar_box_open.ogg"
     "She went to the parlor and opened the cedar box she had kept for forty years."
 
     "Inside: six photographs. She would give him two."
@@ -576,6 +584,7 @@ label scene28_monument_reveal:
 
     "Five hundred people. Senators. Oil men. A delegation from the Osage Nation. The women's federation. The editor of the Tulsa paper. Sabra's granddaughter, who was eight years old and had Ruby's stillness and Cim's gray eyes and was therefore, in Sabra's considered opinion, entirely Yancey's fault."
 
+    play sound "sfx/fabric_billow.ogg"
     "The canvas cover came down in a billow of pale cloth."
 
     "The statue showed a man with a great buffalo head — magnificent, menacing — stepping forward in high-heeled boots and a long coat, one hand resting on his holster. He was stepping forward as if the land itself had just given way beneath him and he was moving anyway."

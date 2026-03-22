@@ -111,6 +111,7 @@ init python:
             store.trial_sel = [x for x in store.trial_sel if x != arg_id]
         elif len(store.trial_sel) < 3:
             store.trial_sel = store.trial_sel + [arg_id]
+        renpy.sound.play("sfx/trial_select.ogg", channel="sound")
         renpy.restart_interaction()
 
     def trial_place_arg(arg_id):
@@ -122,6 +123,7 @@ init python:
             if v is None:
                 new_ord[i] = arg_id
                 store.trial_ord = new_ord
+                renpy.sound.play("sfx/trial_place.ogg", channel="sound")
                 renpy.restart_interaction()
                 return
 

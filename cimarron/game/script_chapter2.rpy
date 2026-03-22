@@ -32,6 +32,7 @@ label scene8_lion_streets:
 
     scene bg_tent_church with dissolve
     play music "audio/osage_sunday.ogg" fadein 1.5 loop
+    play sfx "sfx/canvas_rustle.ogg" fadein 1.0 loop
 
     "Sunday morning in Osage. The congregation gathered in a patched canvas tent — the only church the town had yet managed."
 
@@ -81,6 +82,7 @@ label scene8_lion_streets:
 
     "For one long moment, Yountis held. Then he read something in Yancey's eyes — something Sabra could not name — and he backed through the tent flap and was gone."
 
+    play sound "sfx/crowd_exhale.ogg"
     "The congregation exhaled as one."
 
     show doc neutral at center with dissolve
@@ -159,11 +161,13 @@ label scene9_seven_notches:
 
     scene bg_wigwam_office with dissolve
     play music "audio/wigwam_press.ogg" fadein 1.5 loop
+    stop sfx fadeout 1.0
 
     "The Oklahoma Wigwam. Evening. The press was quiet for once."
 
     "A man had come in that afternoon — Pete Pitchlyn, an old acquaintance of Yancey's from before the run. Weathered, quiet, with the kind of eyes that took inventory of a room before he stepped into it."
 
+    play sound "sfx/door_creak.ogg"
     show yancey neutral at left with dissolve
     show pete neutral at right with dissolve
 
@@ -300,6 +304,7 @@ label scene10_wigwam_lives:
     ## Arita Red Feather arrives
     show arita neutral at center with dissolve
 
+    play sound "sfx/door_creak.ogg"
     "That evening, a Cherokee woman came to the back door of the Wigwam. She introduced herself as Arita Red Feather."
 
     arita "You are Mrs. Cravat. I have read your husband's editorials."
@@ -308,6 +313,7 @@ label scene10_wigwam_lives:
 
     arita "I have documents. Letters from the land office. They show what he has been arguing — but with names, and dates, and signatures."
 
+    play sound "sfx/paper_rustle.ogg"
     "She set a cloth packet on the composing table."
 
     arita "I do not know if I can trust you. But I know I cannot trust the men at the land office, and I cannot trust most of the men in this town."
@@ -654,6 +660,7 @@ label scene13_cherokee_strip:
             sabra "You said."
             "He left before dawn, anyway."
 
+    play sound "sfx/horse_depart.ogg"
     "He left before dawn — with two horses, a bedroll, and a notebook."
 
     "The pressroom was very quiet."

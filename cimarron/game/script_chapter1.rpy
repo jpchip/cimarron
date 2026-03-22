@@ -130,6 +130,7 @@ label scene1_venable_home:
 
     scene bg_venable_home with dissolve
     play music "audio/wichita_parlor.ogg" fadein 1.5 loop
+    play sfx "sfx/silverware_clink.ogg" fadein 1.0 loop
 
     "Wichita, Kansas. A Sunday in the spring of 1889."
 
@@ -190,6 +191,8 @@ label scene1_venable_home:
 label scene2_land_run:
 
     scene bg_land_run_ch1 with dissolve
+    play sound "sfx/cannon_start.ogg"
+    queue sound "sfx/hooves_stampede.ogg"
 
     "Yancey rose from the table — he always rose when a story demanded it — and the room seemed to shrink around him."
 
@@ -253,6 +256,7 @@ label scene2_land_run:
 label scene3_the_decision:
 
     scene bg_venable_home with dissolve
+    stop sfx fadeout 1.0
 
     "After dinner, the storm broke."
 
@@ -342,6 +346,7 @@ label scene4_journey_west:
 
     scene bg_wagon_trail with dissolve
     play music "audio/frontier_theme.ogg" fadein 2.0 loop
+    play sfx "sfx/wagon_creak.ogg" fadein 1.5 loop
 
     "A Monday in spring. The wagons lurched away from the white house on the elm-shaded street, and Sabra did not look back."
 
@@ -389,8 +394,11 @@ label scene4_journey_west:
             sabra "And in the meantime?"
             "He grinned. 'In the meantime, we improvise.' She was not entirely comforted."
 
+    stop sfx fadeout 1.0
     play sfx "sfx/wind_howl.ogg" fadein 2.0 loop
+    play sound "sfx/campfire_crackle.ogg"
     "That night, camped under a sky that went on forever, Sabra lay awake listening to coyotes."
+    play sound "sfx/coyote_howl.ogg"
 
     "Isaiah, who had been found rolled in a carpet in the back of the wagon, was already one of them. He tended Cim like a devoted sheepdog."
 
@@ -423,6 +431,7 @@ label scene4_journey_west:
 label scene5_arriving_osage:
 
     scene bg_osage_tent_town with dissolve
+    play sfx "sfx/crowd_chaos.ogg" fadein 1.5 loop
 
     "Osage, Oklahoma Territory."
 
@@ -546,6 +555,7 @@ label scene5_arriving_osage:
 label scene6_oklahoma_wigwam:
 
     scene bg_wigwam_office with dissolve
+    stop sfx fadeout 1.0
 
     "The press went up in a tent at the end of what would eventually be called Cherokee Street."
 
@@ -629,6 +639,7 @@ label scene6_oklahoma_wigwam:
             "A man lay in the street. Another man stood over him with a pistol. A crowd was forming — but at a careful distance."
             "She watched until she found Yancey in the crowd, that dark head above the rest. He was talking to the man with the gun."
             "Quietly. Hands out. Voice calm."
+            play sound "sfx/pistol_set_down.ogg"
             "The pistol went down."
             "She let out a breath she hadn't known she was holding."
             sabra "Good man."
@@ -704,6 +715,7 @@ label scene7_end_of_chapter:
 
     "The church service was held in the largest tent in Osage, which happened to be the Silver Dollar Saloon. The tables were pushed back. The bottles were hidden, more or less. Someone had found a hymnal."
 
+    play sound "sfx/church_hymn.ogg"
     "Sabra sat in a folding chair with Cim on her lap, listening to a circuit preacher deliver a sermon of considerable passion and limited grammar about the blessings of a new country."
 
     "She looked around at the congregation."
@@ -741,9 +753,11 @@ label scene7_end_of_chapter:
 
     "Then she folded it, sealed it, and set it aside to post in the morning."
 
+    play sound "sfx/lamp_puff.ogg"
     "She blew out the lamp."
 
     "In the dark, the tent was very quiet. Yancey's breathing was even and deep. Outside, a coyote called once, and was answered."
+    play sound "sfx/coyote_howl.ogg"
 
     "Oklahoma Territory. April, 1889."
 

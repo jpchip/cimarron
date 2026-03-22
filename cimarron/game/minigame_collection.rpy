@@ -54,6 +54,9 @@ init python:
                 store.collection_flagged = store.collection_flagged + [self.idx]
                 if self.idx in COLLECTION_CHEATS:
                     store.collection_caught += 1
+                    renpy.sound.play("sfx/collection_alert.ogg", channel="sound")
+                else:
+                    renpy.sound.play("sfx/coin_jingle.ogg", channel="sound")
             renpy.restart_interaction()
 
         def get_sensitive(self):
@@ -79,6 +82,9 @@ screen church_collection_minigame():
         "collection_time_left",
         max(0, collection_time_left - 1)
     )
+
+    ## Hat advances every 4 seconds — play a fabric rustle to signal movement
+    timer 4.0 repeat True action Play("sound", "sfx/hat_fabric_pass.ogg")
 
     ## Auto-return when timer hits zero (Return() is safe in screen language)
     if collection_time_left <= 0:

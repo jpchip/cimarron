@@ -185,6 +185,7 @@ screen letter_detail(letter_id):
                     background ("#2A5C2Acc" if can_print else "#1A2A1Acc")
                     hover_background "#3A8C3Acc"
                     action [
+                        Play("sound", "sfx/press_confirm.ogg"),
                         SetVariable("letters_printed",
                             letters_printed + [letter_id] if not is_printed
                             else letters_printed),
@@ -205,6 +206,7 @@ screen letter_detail(letter_id):
                     background "#5C1A1Acc"
                     hover_background "#8C2A2Acc"
                     action [
+                        Play("sound", "sfx/spike_discard.ogg"),
                         SetVariable("letters_printed",
                             [x for x in letters_printed if x != letter_id]),
                         SetVariable("letters_spiked",
@@ -299,7 +301,7 @@ screen letters_minigame():
                     padding (10, 8)
                     background card_bg
                     hover_background "#3A2A18cc"
-                    action Show("letter_detail", letter_id=lid)
+                    action [Play("sound", "sfx/paper_rustle.ogg"), Show("letter_detail", letter_id=lid)]
 
                     vbox:
                         spacing 6
@@ -351,7 +353,7 @@ screen letters_minigame():
                     padding (10, 8)
                     background card_bg
                     hover_background "#3A2A18cc"
-                    action Show("letter_detail", letter_id=lid)
+                    action [Play("sound", "sfx/paper_rustle.ogg"), Show("letter_detail", letter_id=lid)]
 
                     vbox:
                         spacing 6

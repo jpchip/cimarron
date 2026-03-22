@@ -36,6 +36,7 @@ label scene19_rough_rider:
 
     scene bg_osage_street_1900 with dissolve
 
+    play sound "sfx/horse_gallop_single.ogg"
     "He came back in September."
 
     "Word ran ahead of him — of course it did, with Yancey Cravat — carried by riders from Guthrie and then from Enid: the Rough Rider, home from Cuba, wearing the hat."
@@ -281,6 +282,7 @@ label scene20_post_verdict:
 
     "Not guilty."
 
+    play sound "sfx/courtroom_reaction.ogg"
     "The room erupted. Half of it cheered. The other half sat in stunned silence."
 
     ## ── Choice 2: The Editorial ─────────────────────────────────────────────────
@@ -428,6 +430,7 @@ label scene21_statehood:
 
     "November 16, 1907."
 
+    play sound "sfx/celebration_bells.ogg"
     "They rang the church bell at noon. Someone fired a cannon in the square."
 
     show doc neutral at left with dissolve
@@ -456,6 +459,7 @@ label scene22_first_oil:
 
     scene bg_oil_derrick_distant with dissolve
     play music "audio/oil_derricks.ogg" fadein 1.5 loop
+    play sfx "sfx/oil_drill.ogg" fadein 2.0 loop
 
     "1905."
 
@@ -562,6 +566,7 @@ label scene22_first_oil:
 label scene23_what_yancey_left:
 
     scene bg_wigwam_modern with dissolve
+    stop sfx fadeout 1.5
 
     "1907."
 

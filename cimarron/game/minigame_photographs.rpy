@@ -108,6 +108,7 @@ init python:
             store.selected_photos = [x for x in store.selected_photos if x != photo_id]
         elif len(store.selected_photos) < 2:
             store.selected_photos = store.selected_photos + [photo_id]
+        renpy.sound.play("sfx/photo_handle.ogg", channel="sound")
         renpy.restart_interaction()
 
 

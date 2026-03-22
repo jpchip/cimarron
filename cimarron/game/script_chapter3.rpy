@@ -32,6 +32,7 @@ label chapter3_start:
 label scene14_five_years:
 
     scene bg_wigwam_office_daytime with dissolve
+    play sfx "sfx/printing_press.ogg" fadein 1.5 loop
 
     "He did not come back from the Cherokee Strip."
 
@@ -116,6 +117,7 @@ label scene15_the_kid:
 
     scene bg_osage_street_1895 with dissolve
     play music "audio/kid_return.ogg" fadein 1.5 loop
+    stop sfx fadeout 1.0
 
     "He came back in October."
 
@@ -126,12 +128,14 @@ label scene15_the_kid:
     "Yancey had walked the main street of Enid, alone, at noon, and the Kid had come at him from the hardware-store doorway."
 
     play sound "sfx/holster_draw.ogg"
+    play sound "sfx/gunshot.ogg"
     "The Kid was in the ground. Yancey was riding home."
 
     show sabra ch3 neutral at right with dissolve
 
     "Sabra was at the Wigwam composing table when she heard the horse."
 
+    play sound "sfx/hooves_approach.ogg"
     "She knew the sound."
 
     ## ── Choice 1: Seeing him ──────────────────────────────────────────────────
@@ -331,6 +335,7 @@ label scene16_running_paper:
 
     sabra "I have room for four. Something will have to go."
 
+    play sound "sfx/paper_rustle.ogg"
     "She spread them across the composing table and read."
 
     $ letters_printed = []
@@ -380,6 +385,7 @@ label scene16_letters_result:
         "Three people stopped Sabra on the street that week to say they'd read it."
         sabra "That is what the Wigwam is for."
 
+    play sound "sfx/press_start.ogg"
     hide sabra
 
     $ journal_scene16 = True
@@ -454,6 +460,7 @@ label scene17_isaiah:
 
     "He came in on a Wednesday afternoon, hat in hand, with the specific politeness of a man who intends to be impolite."
 
+    play sound "sfx/door_creak.ogg"
     show horace neutral at left with dissolve
 
     horace "Mrs. Cravat. I want that boy off the street when my customers are coming in."
@@ -589,6 +596,7 @@ label scene18_war:
 
     ## ── Dixie Lee at the door ─────────────────────────────────────────────────
 
+    play sound "sfx/door_knock.ogg"
     "The evening before Yancey left, a knock came at the Wigwam door."
 
     "It was Dixie Lee."
@@ -633,6 +641,7 @@ label scene18_war:
     hide dixie
     hide yancey
 
+    play sound "sfx/horse_depart.ogg"
     "He left before dawn."
 
     show sabra ch3 neutral at center with dissolve
@@ -646,6 +655,7 @@ label scene18_war:
 
     sabra "All right."
 
+    play sound "sfx/press_start.ogg"
     "She crossed to the press and began."
 
     hide sabra
