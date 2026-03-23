@@ -189,12 +189,13 @@ style choice_vbox is vbox:
 style choice_button is default:
     padding (8, 8)
     background Frame("#2C1A0Ecc", Borders(6,6,6,6))
-    hover_background Frame("#8B4513cc", Borders(6,6,6,6))
+    hover_background Frame("#6B3010ee", Borders(6,6,6,6))
 
 style choice_button_text is default:
-    color gui.interface_text_color
-    hover_color gui.hover_color
+    color "#E8D5A3"
+    hover_color "#FFFFFF"
     size gui.choice_button_text_size
+    outlines [(1, "#00000088", 0, 0)]
 
 
 ################################################################################
