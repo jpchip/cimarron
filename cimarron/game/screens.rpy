@@ -130,7 +130,7 @@ style namebox is default:
     xsize gui.namebox_width
     ypos gui.name_ypos
     ysize gui.namebox_height
-    background Frame("#2C1A0Ecc", gui.namebox_borders)
+    background Frame("#0E0905dd", gui.namebox_borders)
     padding gui.namebox_borders.padding
 
 style namebox_text is default:
@@ -138,6 +138,8 @@ style namebox_text is default:
     size gui.name_text_size
     xalign gui.name_xalign
     yalign 0.5
+    bold True
+    outlines [(2, "#000000bb", 0, 0)]
 
 
 ################################################################################

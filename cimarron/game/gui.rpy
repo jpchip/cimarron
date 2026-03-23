@@ -55,11 +55,11 @@ define gui.dialogue_text_xalign = 0.0
 
 ## ─── Name Box ─────────────────────────────────────────────────────────────────
 define gui.name_xpos       = 30
-define gui.name_ypos       = -38
+define gui.name_ypos       = -50
 define gui.name_xalign     = 0.0
-define gui.namebox_width   = 280
-define gui.namebox_height  = 38
-define gui.namebox_borders = Borders(8, 5, 8, 5)
+define gui.namebox_width   = 320
+define gui.namebox_height  = 50
+define gui.namebox_borders = Borders(14, 8, 14, 8)
 define gui.namebox_tile    = False
 
 ## ─── Buttons ──────────────────────────────────────────────────────────────────

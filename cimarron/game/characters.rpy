@@ -144,70 +144,70 @@ transform center:
 # No definition needed here.
 
 # Sabra Cravat — the player character
-define sabra = Character("Sabra", color="#8B4513")
+define sabra = Character("Sabra", color="#D4895A")
 
 # Yancey Cravat — Sabra's husband; larger-than-life, charismatic
-define yancey = Character("Yancey", color="#2F4F4F")
+define yancey = Character("Yancey", color="#6BAFAF")
 
 # Felice Venable — Sabra's imperious mother
-define felice = Character("Mrs. Venable", color="#800000")
+define felice = Character("Mrs. Venable", color="#D96060")
 
 # Lewis Venable — Sabra's gentle, ailing father
-define lewis = Character("Mr. Venable", color="#4A3728")
+define lewis = Character("Mr. Venable", color="#A08878")
 
 # Sol Levy — the quiet Jewish merchant of Osage
-define sol = Character("Sol Levy", color="#556B2F")
+define sol = Character("Sol Levy", color="#90B050")
 
 # Mother Bridget — the wise, plain-spoken nun at the Mission
-define mother_bridget = Character("Mother Bridget", color="#483D8B")
+define mother_bridget = Character("Mother Bridget", color="#8878CC")
 
 # Isaiah — the young Black servant boy who follows the Cravats
-define isaiah = Character("Isaiah", color="#8B6914")
+define isaiah = Character("Isaiah", color="#C8A030")
 
 # Dixie Lee — a rough frontier woman Sabra encounters in Osage
-define dixie = Character("Dixie Lee", color="#A0522D")
+define dixie = Character("Dixie Lee", color="#C87850")
 
 # Generic frontier character for scene 5
-define stranger = Character("Stranger", color="#696969")
+define stranger = Character("Stranger", color="#AAAAAA")
 
 # Rev. Barr — a distinguished frontier minister
-define rev_barr = Character("Rev. Barr", color="#2F4F4F")
+define rev_barr = Character("Rev. Barr", color="#6BAFAF")
 
 # ── Chapter 2 characters ──────────────────────────────────────────────────────
 
 # Doc Valliant — the town's hard-drinking, warm-hearted physician
-define doc   = Character("Doc Valliant",      color="#8B7355")
+define doc   = Character("Doc Valliant",      color="#B8A080")
 
 # Arita Red Feather — a Cherokee woman; proud, measured, watching
-define arita = Character("Arita Red Feather", color="#CD5C1A")
+define arita = Character("Arita Red Feather", color="#E07840")
 
 # Pete Pitchlyn — an old acquaintance of Yancey's from the territory days
-define pete  = Character("Pete Pitchlyn",     color="#6B8E23")
+define pete  = Character("Pete Pitchlyn",     color="#98C050")
 
 # The Kid — a young gunman whose name no one quite knows
-define kid   = Character("The Kid",           color="#444444")
+define kid   = Character("The Kid",           color="#AAAAAA")
 
 # Horace Greeley Tubbs — hardware merchant and advertiser in Osage; an antagonist in Scene 17
-define horace = Character("Horace Tubbs",     color="#8B5E3C")
+define horace = Character("Horace Tubbs",     color="#B88060")
 
 # ── Chapter 4 characters ──────────────────────────────────────────────────────
 
 # Tracy Wyatt — a Tulsa oil investor; charming, calculating, modern
-define tracy = Character("Tracy Wyatt",  color="#5F4F3B")
+define tracy = Character("Tracy Wyatt",  color="#A09070")
 
 # Cim Cravat — Sabra and Yancey's son, grown into a young man
-define cim   = Character("Cim Cravat",   color="#6B4B2B")
+define cim   = Character("Cim Cravat",   color="#B08050")
 
 # Donna Cravat — Sabra and Yancey's daughter, growing up fast
-define donna = Character("[donna_name] Cravat", color="#9B7E6A")
+define donna = Character("[donna_name] Cravat", color="#C8A888")
 
 # ── Chapter 5 characters ──────────────────────────────────────────────────────
 
 # Ruby Big Elk — Cim's wife; young Osage woman; composed, direct, watchful
-define ruby    = Character("Ruby Big Elk",  color="#8B6914")
+define ruby    = Character("Ruby Big Elk",  color="#C8A030")
 
 # Masja Krbecek — the Polish sculptor commissioned for the monument
-define krbecek = Character("Masja Krbecek", color="#888888")
+define krbecek = Character("Masja Krbecek", color="#B0B0B0")
 
 # Big Elk — Ruby's father; former Osage Chief; elder of great dignity
-define big_elk = Character("Big Elk", color="#5A3A1A")
+define big_elk = Character("Big Elk", color="#A07848")
