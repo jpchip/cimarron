@@ -288,7 +288,7 @@ style main_menu_subtitle:
     size 28
 
 style main_menu_button is button:
-    padding (0, 4, 0, 4)
+    padding (16, 8, 16, 8)
 
 style main_menu_button_text is button_text:
     size 28
