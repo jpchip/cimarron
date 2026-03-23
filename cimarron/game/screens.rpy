@@ -522,71 +522,198 @@ style slot_name_text:
 screen preferences():
     tag menu
 
-    use game_menu(_("Preferences"), scroll="viewport"):
+    ## Solid dark background — no distracting scene image
+    add "#0E0905f0"
+
+    ## Main content panel — centred
+    frame:
+        xalign 0.5
+        ypos 105
+        xsize 1100
+        background "#1A0E06e0"
+        padding (50, 36)
 
         vbox:
-            hbox:
-                box_wrap True
+            spacing 28
 
+            ## ── Row 1: toggles ───────────────────────────────────────────────
+            hbox:
+                spacing 60
+                xalign 0.0
+
+                ## Display
                 if renpy.variant("pc") or renpy.variant("web"):
                     vbox:
-                        style_prefix "radio"
-                        label _("Display")
-                        textbutton _("Window")   action Preference("display", "window")
-                        textbutton _("Fullscreen") action Preference("display", "fullscreen")
+                        spacing 6
+                        text _("Display"):
+                            color "#C4956A"
+                            size 20
+                            bold True
+                        null height 4
+                        textbutton _("Window"):
+                            action Preference("display", "window")
+                            text_color "#E8D5A3"
+                            text_hover_color "#D2691E"
+                            text_selected_color "#D2691E"
+                            text_size 19
+                        textbutton _("Fullscreen"):
+                            action Preference("display", "fullscreen")
+                            text_color "#E8D5A3"
+                            text_hover_color "#D2691E"
+                            text_selected_color "#D2691E"
+                            text_size 19
 
+                ## Rollback
                 vbox:
-                    style_prefix "radio"
-                    label _("Rollback Side")
-                    textbutton _("Disable") action Preference("rollback side", "disable")
-                    textbutton _("Left")    action Preference("rollback side", "left")
-                    textbutton _("Right")   action Preference("rollback side", "right")
+                    spacing 6
+                    text _("Rollback Side"):
+                        color "#C4956A"
+                        size 20
+                        bold True
+                    null height 4
+                    textbutton _("Disable"):
+                        action Preference("rollback side", "disable")
+                        text_color "#E8D5A3"
+                        text_hover_color "#D2691E"
+                        text_selected_color "#D2691E"
+                        text_size 19
+                    textbutton _("Left"):
+                        action Preference("rollback side", "left")
+                        text_color "#E8D5A3"
+                        text_hover_color "#D2691E"
+                        text_selected_color "#D2691E"
+                        text_size 19
+                    textbutton _("Right"):
+                        action Preference("rollback side", "right")
+                        text_color "#E8D5A3"
+                        text_hover_color "#D2691E"
+                        text_selected_color "#D2691E"
+                        text_size 19
 
+                ## Skip
                 vbox:
-                    style_prefix "check"
-                    label _("Skip")
-                    textbutton _("Unseen Text") action Preference("skip", "toggle")
-                    textbutton _("After Choices") action Preference("after choices", "toggle")
-                    textbutton _("Transitions (fast skip)") action InvertSelected(Preference("transitions", "toggle"))
+                    spacing 6
+                    text _("Skip"):
+                        color "#C4956A"
+                        size 20
+                        bold True
+                    null height 4
+                    textbutton _("Unseen Text"):
+                        action Preference("skip", "toggle")
+                        text_color "#E8D5A3"
+                        text_hover_color "#D2691E"
+                        text_selected_color "#D2691E"
+                        text_size 19
+                    textbutton _("After Choices"):
+                        action Preference("after choices", "toggle")
+                        text_color "#E8D5A3"
+                        text_hover_color "#D2691E"
+                        text_selected_color "#D2691E"
+                        text_size 19
+                    textbutton _("Transitions (fast skip)"):
+                        action InvertSelected(Preference("transitions", "toggle"))
+                        text_color "#E8D5A3"
+                        text_hover_color "#D2691E"
+                        text_selected_color "#D2691E"
+                        text_size 19
 
-            null height (4 * gui.pref_spacing)
+            ## Divider
+            frame:
+                xfill True
+                ysize 1
+                background "#3A2510"
 
+            ## ── Row 2: sliders ───────────────────────────────────────────────
             hbox:
-                style_prefix "slider"
-                box_wrap True
+                spacing 60
 
+                ## Left column
                 vbox:
-                    label _("Text Speed")
-                    bar value Preference("text speed")
+                    spacing 18
+                    xsize 460
 
-                    label _("Auto-Forward Time")
-                    bar value Preference("auto-forward time")
+                    text _("Text Speed"):
+                        color "#C4956A"
+                        size 20
+                        bold True
+                    bar:
+                        value Preference("text speed")
+                        xfill True
+                        ysize 22
 
+                    text _("Auto-Forward Time"):
+                        color "#C4956A"
+                        size 20
+                        bold True
+                    bar:
+                        value Preference("auto-forward time")
+                        xfill True
+                        ysize 22
+
+                ## Right column
                 vbox:
+                    spacing 18
+                    xsize 460
+
                     if config.has_music:
-                        label _("Music Volume")
-                        hbox:
-                            bar value Preference("music volume")
+                        text _("Music Volume"):
+                            color "#C4956A"
+                            size 20
+                            bold True
+                        bar:
+                            value Preference("music volume")
+                            xfill True
+                            ysize 22
 
                     if config.has_sound:
-                        label _("Sound Volume")
-                        hbox:
-                            bar value Preference("sound volume")
-                            if config.sample_sound:
-                                textbutton _("Test") action Play("sound", config.sample_sound)
+                        text _("Sound Volume"):
+                            color "#C4956A"
+                            size 20
+                            bold True
+                        bar:
+                            value Preference("sound volume")
+                            xfill True
+                            ysize 22
 
                     if config.has_voice:
-                        label _("Voice Volume")
-                        hbox:
-                            bar value Preference("voice volume")
-                            if config.sample_voice:
-                                textbutton _("Test") action Play("voice", config.sample_voice)
+                        text _("Voice Volume"):
+                            color "#C4956A"
+                            size 20
+                            bold True
+                        bar:
+                            value Preference("voice volume")
+                            xfill True
+                            ysize 22
 
-                    if config.has_music or config.has_sound or config.has_voice:
-                        null height gui.pref_spacing
-                        textbutton _("Mute All"):
-                            action Preference("all mute", "toggle")
-                            style "mute_all_button"
+            ## Mute All
+            if config.has_music or config.has_sound or config.has_voice:
+                textbutton _("Mute All"):
+                    action Preference("all mute", "toggle")
+                    xalign 0.0
+                    text_color "#A08060"
+                    text_hover_color "#D2691E"
+                    text_selected_color "#D2691E"
+                    text_size 19
+
+    ## Title and Return on same row — drawn after frame so they appear on top
+    hbox:
+        xpos 60
+        ypos 32
+        spacing 40
+        yalign 0.0
+
+        text _("Preferences"):
+            size 52
+            color "#C4956A"
+            font gui.interface_text_font
+            yalign 0.5
+
+        textbutton _("Return"):
+            action Return()
+            yalign 0.5
+            text_color "#A08060"
+            text_hover_color "#D2691E"
+            text_size 22
 
 style pref_label is label:
     top_margin gui.pref_spacing
@@ -706,27 +833,133 @@ define gui.about = _("{b}Cimarron: A Visual Novel{/b}\nBased on the novel by Edn
 screen about():
     tag menu
 
-    use game_menu(_("About"), scroll="viewport"):
+    add "#0E0905f0"
 
-        style_prefix "about"
+    ## Header row
+    hbox:
+        xpos 60
+        ypos 32
+        spacing 40
+
+        text _("About"):
+            size 52
+            color "#C4956A"
+            font gui.interface_text_font
+            yalign 0.5
+
+        textbutton _("Return"):
+            action Return()
+            yalign 0.5
+            text_color "#A08060"
+            text_hover_color "#D2691E"
+            text_size 22
+
+    ## Content panel
+    frame:
+        xalign 0.5
+        ypos 105
+        xsize 1100
+        background "#1A0E06e0"
+        padding (60, 40)
 
         vbox:
-            label "[config.name!t]"
-            text _("Version [config.version!t]\n")
-            if gui.about:
-                text "[gui.about!t]\n"
+            spacing 36
 
+            ## ── Credits ──────────────────────────────────────────────────────
+            vbox:
+                spacing 8
+                xalign 0.5
 
-style about_label is label:
-    xalign 0.5
+                text _("[config.name!t]"):
+                    xalign 0.5
+                    size 28
+                    color "#C4956A"
+                    bold True
 
-style about_label_text is label_text:
-    text_align 0.5
+                text _("Version [config.version!t]"):
+                    xalign 0.5
+                    size 19
+                    color "#E8D5A3"
 
-style about_text is gui_text:
-    xalign 0.5
-    text_align 0.5
-    layout "subtitle"
+                null height 4
+
+                text _("Based on the novel by Edna Ferber (1929)"):
+                    xalign 0.5
+                    size 19
+                    color "#A08060"
+
+                text _("Public domain source text via Standard Ebooks"):
+                    xalign 0.5
+                    size 19
+                    color "#A08060"
+
+            ## Divider
+            frame:
+                xfill True
+                ysize 1
+                background "#3A2510"
+
+            ## ── Controls ─────────────────────────────────────────────────────
+            text _("Controls"):
+                size 22
+                color "#C4956A"
+                bold True
+
+            grid 2 7:
+                xfill True
+                spacing 10
+
+                ## Column headers
+                text _("Action"):
+                    size 17
+                    color "#C4956A"
+                    bold True
+                text _("Key / Mouse"):
+                    size 17
+                    color "#C4956A"
+                    bold True
+
+                text _("Advance dialogue"):
+                    size 17
+                    color "#E8D5A3"
+                text _("Left click  /  Space  /  Enter"):
+                    size 17
+                    color "#A08060"
+
+                text _("Go back one line"):
+                    size 17
+                    color "#E8D5A3"
+                text _("Right click  /  Backspace"):
+                    size 17
+                    color "#A08060"
+
+                text _("Hide dialogue box"):
+                    size 17
+                    color "#E8D5A3"
+                text _("H"):
+                    size 17
+                    color "#A08060"
+
+                text _("Hide / show quick menu"):
+                    size 17
+                    color "#E8D5A3"
+                text _("Tab"):
+                    size 17
+                    color "#A08060"
+
+                text _("Skip (hold)"):
+                    size 17
+                    color "#E8D5A3"
+                text _("Ctrl"):
+                    size 17
+                    color "#A08060"
+
+                text _("Fullscreen"):
+                    size 17
+                    color "#E8D5A3"
+                text _("Alt + Enter  /  F"):
+                    size 17
+                    color "#A08060"
 
 
 ################################################################################
