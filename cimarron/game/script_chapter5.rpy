@@ -44,7 +44,7 @@ label scene24_cim_ruby:
 
     "Big Elk and his wife sat formally in the parlor chairs, as if waiting in a bank. His wife wore a blanket shawl and kept her hands folded. He was very large and very still, the way the old headmen were still — a stillness that was not patience but something beyond patience."
 
-    show sabra ch5 neutral at right with dissolve
+    show sabra ch5 worried at right with dissolve
 
     "Sabra entered from the hallway."
 
@@ -202,6 +202,7 @@ label scene25_congresswoman:
 
     "Sol Levy had written from his shop on Main Street: {i}'Go. The territory owes you this. You have already been doing the work.'  {/i}"
 
+    show sabra ch5 worried
     ## ── Choice 1: Whether to Run ──────────────────────────────────────────────
 
     menu:
@@ -717,6 +718,7 @@ label ending_land_belongs:
     hide cim
     hide ruby
 
+    show sabra ch5 neutral at right with dissolve
     "Sabra looked at her son's daughter, who was looking at the statue with the patient attentiveness Sabra had spent forty years learning to see."
 
     sabra "What do you think?"

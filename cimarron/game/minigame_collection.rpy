@@ -98,51 +98,46 @@ screen church_collection_minigame():
 
     vbox:
         xalign 0.5
-        yalign 0.4
-        spacing 18
+        yalign 0.5
+        spacing 10
 
         text "— Pass the Hat —":
             xalign 0.5
-            size 38
+            size 36
             color "#D2691E"
 
-        text "Click a member while the hat is on them if you think they are cheating.":
-            xalign 0.5
-            size 19
-            color "#C4956A"
-            text_align 0.5
-
-        null height 4
-
-        text "Time: [collection_time_left]s":
-            xalign 0.5
-            size 22
-            color time_color
-
-        null height 10
-
-        ## ── Congregation row ──────────────────────────────────────────────
         hbox:
             xalign 0.5
-            spacing 6
+            spacing 20
 
-            for i in range(8):
+            text "Click a member while the hat is on them if you think they are cheating.":
+                size 18
+                color "#C4956A"
+                text_align 0.5
+
+            text "Time: [collection_time_left]s":
+                size 22
+                color time_color
+
+        ## ── Row 1: members 0–3 ────────────────────────────────────────────
+        hbox:
+            xalign 0.5
+            spacing 8
+
+            for i in range(4):
                 $ is_hat     = (hat_pos == i)
                 $ is_cheat   = (i in COLLECTION_CHEATS)
                 $ is_flagged = (i in collection_flagged)
 
-                ## Slot background colour:
-                ##   flagged → dark red  |  hat+cheat → amber  |
-                ##   hat only → teal     |  idle → near-black
                 $ slot_bg = "#2C1A0Edd"
                 $ slot_bg = "#3A6060dd" if is_hat      else slot_bg
                 $ slot_bg = "#AA7700dd" if (is_hat and is_cheat and not is_flagged) else slot_bg
                 $ slot_bg = "#6B0000dd" if is_flagged  else slot_bg
 
                 button:
-                    xsize 158
-                    ysize 250
-                    padding (4, 8)
+                    xsize 250
+                    ysize 360
+                    padding (4, 6)
                     background slot_bg
                     hover_background "#D2691E88"
                     action FlagMember(i)
@@ -152,54 +147,102 @@ screen church_collection_minigame():
                         yalign 0.5
                         spacing 4
 
-                        ## Hat indicator
                         if is_hat:
                             add "images/sprites/hat_collection.png":
                                 xalign 0.5
                         else:
-                            null height 56
+                            null height 62
 
-                        ## Visual tell — cheat sprite when hat is on them; unique sprite per member
                         if is_hat and is_cheat and not is_flagged:
-                            add Transform(COLLECTION_CHEAT_SPRITES[i],   maxsize=(140, 175)) xalign 0.5
+                            add Transform(COLLECTION_CHEAT_SPRITES[i], maxsize=(230, 270)) xalign 0.5
                         else:
-                            add Transform(COLLECTION_SPRITES[i], maxsize=(140, 175)) xalign 0.5
+                            add Transform(COLLECTION_SPRITES[i], maxsize=(230, 270)) xalign 0.5
 
                         text COLLECTION_NAMES[i]:
                             xalign 0.5
-                            size 13
+                            size 15
                             color "#A08060"
                             text_align 0.5
 
                         if is_flagged:
                             text "FLAGGED":
                                 xalign 0.5
-                                size 11
+                                size 13
                                 color "#FF4444"
                                 bold True
 
-        null height 14
-
-        text "Caught: [collection_caught] / 3":
+        ## ── Row 2: members 4–7 ────────────────────────────────────────────
+        hbox:
             xalign 0.5
-            size 22
-            color "#E8D5A3"
+            spacing 8
 
-        null height 8
+            for i in range(4, 8):
+                $ is_hat     = (hat_pos == i)
+                $ is_cheat   = (i in COLLECTION_CHEATS)
+                $ is_flagged = (i in collection_flagged)
 
-        button:
+                $ slot_bg = "#2C1A0Edd"
+                $ slot_bg = "#3A6060dd" if is_hat      else slot_bg
+                $ slot_bg = "#AA7700dd" if (is_hat and is_cheat and not is_flagged) else slot_bg
+                $ slot_bg = "#6B0000dd" if is_flagged  else slot_bg
+
+                button:
+                    xsize 250
+                    ysize 360
+                    padding (4, 6)
+                    background slot_bg
+                    hover_background "#D2691E88"
+                    action FlagMember(i)
+
+                    vbox:
+                        xalign 0.5
+                        yalign 0.5
+                        spacing 4
+
+                        if is_hat:
+                            add "images/sprites/hat_collection.png":
+                                xalign 0.5
+                        else:
+                            null height 62
+
+                        if is_hat and is_cheat and not is_flagged:
+                            add Transform(COLLECTION_CHEAT_SPRITES[i], maxsize=(230, 270)) xalign 0.5
+                        else:
+                            add Transform(COLLECTION_SPRITES[i], maxsize=(230, 270)) xalign 0.5
+
+                        text COLLECTION_NAMES[i]:
+                            xalign 0.5
+                            size 15
+                            color "#A08060"
+                            text_align 0.5
+
+                        if is_flagged:
+                            text "FLAGGED":
+                                xalign 0.5
+                                size 13
+                                color "#FF4444"
+                                bold True
+
+        hbox:
             xalign 0.5
-            xsize 200
-            ysize 46
-            background "#2C1A0Ecc"
-            hover_background "#5C3317cc"
-            action Return(collection_caught)
+            spacing 30
 
-            text "End Collection":
-                xalign 0.5
-                yalign 0.5
+            text "Caught: [collection_caught] / 3":
                 size 22
-                color "#A08060"
+                color "#E8D5A3"
+
+            button:
+                xsize 200
+                ysize 42
+                background "#2C1A0Ecc"
+                hover_background "#5C3317cc"
+                action Return(collection_caught)
+
+                text "End Collection":
+                    xalign 0.5
+                    yalign 0.5
+                    size 20
+                    color "#A08060"
 
 
 ## ─── Result overlay ──────────────────────────────────────────────────────────

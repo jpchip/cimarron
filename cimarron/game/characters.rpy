@@ -35,6 +35,7 @@ image sabra ch1a determined = Transform("images/sprites/sabra_ch1a_determined.pn
 image sabra ch1a weary      = Transform("images/sprites/sabra_ch1a_weary.png",      zoom=0.45)
 
 image sabra ch2 neutral    = Transform("images/sprites/sabra_ch2_neutral.png",    zoom=0.45)
+image sabra ch2 angry      = Transform("images/sprites/sabra_ch2_angry.png",      zoom=0.45)
 image sabra ch2 worried    = Transform("images/sprites/sabra_ch2_worried.png",    zoom=0.45)
 image sabra ch2 determined = Transform("images/sprites/sabra_ch2_determined.png", zoom=0.45)
 image sabra ch2 tender     = Transform("images/sprites/sabra_ch2_tender.png",     zoom=0.45)
@@ -49,8 +50,12 @@ image sabra ch3 angry      = Transform("images/sprites/sabra_ch3_angry.png",    
 image sabra ch3 weary      = Transform("images/sprites/sabra_ch3_weary.png",      zoom=0.45)
 image sabra ch3 determined = Transform("images/sprites/sabra_ch3_determined.png", zoom=0.45)
 
-image sabra ch4 neutral = Transform("images/sprites/sabra_ch4_neutral.png", zoom=0.45)
-image sabra ch4 tender  = Transform("images/sprites/sabra_ch4_tender.png",  zoom=0.45)
+image sabra ch4 neutral    = Transform("images/sprites/sabra_ch4_neutral.png",    zoom=0.45)
+image sabra ch4 tender     = Transform("images/sprites/sabra_ch4_tender.png",     zoom=0.45)
+image sabra ch4 worried    = Transform("images/sprites/sabra_ch4_worried.png",    zoom=0.45)
+image sabra ch4 determined = Transform("images/sprites/sabra_ch4_determined.png", zoom=0.45)
+image sabra ch4 weary      = Transform("images/sprites/sabra_ch4_weary.png",      zoom=0.45)
+image sabra ch4 proud      = Transform("images/sprites/sabra_ch4_proud.png",      zoom=0.45)
 
 image sabra ch5 neutral    = Transform("images/sprites/sabra_ch5_neutral.png",    zoom=0.45)
 image sabra ch5 happy      = Transform("images/sprites/sabra_ch5_happy.png",      zoom=0.45)
@@ -59,6 +64,7 @@ image sabra ch5 sad        = Transform("images/sprites/sabra_ch5_sad.png",      
 image sabra ch5 tender     = Transform("images/sprites/sabra_ch5_tender.png",     zoom=0.45)
 image sabra ch5 weary      = Transform("images/sprites/sabra_ch5_weary.png",      zoom=0.45)
 image sabra ch5 proud      = Transform("images/sprites/sabra_ch5_proud.png",      zoom=0.45)
+image sabra ch5 worried    = Transform("images/sprites/sabra_ch5_worried.png",    zoom=0.45)
 
 image congregation neutral = Transform("images/sprites/congregation_neutral.png", zoom=0.45)
 image congregation cheat   = Transform("images/sprites/congregation_cheat.png",   zoom=0.45)

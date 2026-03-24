@@ -75,7 +75,7 @@ label scene19_rough_rider:
 
         "Wave to the crowd herself — a gesture of partnership.":
             $ community_standing += 2
-            show sabra ch4 tender
+            show sabra ch4 proud
             "She raised one hand to the crowd — a small wave, deliberate and confident."
             "The crowd cheered for her too."
             "That was new."
@@ -93,6 +93,7 @@ label scene19_rough_rider:
 
     "Sabra watched him and thought: I have run a newspaper for eight months. I have made payroll three times without him. I have written twelve editorials, six of which he would have disagreed with, and I sent every one of them to press."
 
+    show sabra ch4 proud
     "She watched him and was proud."
 
     ## ── Private reunion ────────────────────────────────────────────────────────
@@ -280,8 +281,12 @@ label scene20_post_verdict:
 
     "The jury deliberated for forty minutes."
 
+    show sabra ch4 worried
+    "She was not sure, until the foreman stood, whether she wanted them to say guilty or not."
+
     "Not guilty."
 
+    show sabra ch4 neutral
     play sound "sfx/courtroom_reaction.ogg"
     "The room erupted. Half of it cheered. The other half sat in stunned silence."
 
@@ -382,6 +387,7 @@ label scene21_statehood:
             $ newspaper_stance += 2
             $ indian_sympathy += 2
             $ statehood_stance = "single"
+            show sabra ch4 determined
             sabra "The people of these territories have lived beside one another for seventeen years. The law that divides them now was the law of a different century."
             "She wrote it in three hours."
             "It was a bold position. It cost her some subscribers. She believed it was correct."
@@ -390,12 +396,14 @@ label scene21_statehood:
             $ newspaper_stance -= 2
             $ indian_sympathy -= 1
             $ statehood_stance = "double"
+            show sabra ch4 determined
             sabra "The interests of the Indian Nations and of the Oklahoma settlers are not identical. Two states allows each people to govern itself."
             "She wrote carefully, without cruelty. The position was defensible. She was not entirely satisfied with it."
 
         "\"The Wigwam cannot advocate without consultation with the affected communities.\"":
             $ sabra_independence += 2
             $ statehood_stance = "consult"
+            show sabra ch4 determined
             sabra "I am going to the Osage Reservation before I write a word."
             "She went to Pete Pitchlyn. She went to the women's club. She went to the men who would be subject to whatever the state became."
             "Then she wrote."
@@ -433,6 +441,7 @@ label scene21_statehood:
     play sound "sfx/celebration_bells.ogg"
     "They rang the church bell at noon. Someone fired a cannon in the square."
 
+    show sabra ch4 proud
     show doc neutral at left with dissolve
 
     "Doc Valliant came to the Wigwam with a bottle of whisky."
@@ -581,6 +590,7 @@ label scene23_what_yancey_left:
 
     "A letter came. He was in the Cimarron country, he said. Working for something or other. Coming home soon."
 
+    show sabra ch4 weary
     "He always said he was coming home soon."
 
     ## ── Choice 1: The Letter ────────────────────────────────────────────────────
@@ -644,6 +654,7 @@ label scene23_what_yancey_left:
 
     ## ── Choice 2: Taking Stock ──────────────────────────────────────────────────
 
+    show sabra ch4 neutral at center with dissolve
     "Alone at the desk, after they'd gone."
 
     "She was the editor of a newspaper. President of two civic organizations. Mother of two grown children. The most recognizable woman in a hundred miles."
@@ -656,10 +667,12 @@ label scene23_what_yancey_left:
         "\"I chose this. I'd choose it again.\"":
             $ sabra_independence += 1
             $ community_standing += 1
+            show sabra ch4 determined
             sabra "{i}I chose this. All of it — the press, the town, the absence, the presence. I would choose it again.{/i}"
             "She meant it. The freedom was real, even if it had cost something she hadn't planned to pay."
 
         "\"It is what it is. Don't romanticize it.\"":
+            show sabra ch4 weary
             sabra "{i}It is what it is. Don't make it a tragedy and don't make it a triumph. It is just what happened. It is a life.{/i}"
             "The most honest thing she could say. She said it to herself and meant it."
 

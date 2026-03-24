@@ -48,6 +48,7 @@ label scene8_lion_streets:
 
     show yancey neutral at left with dissolve
 
+    show sabra ch2 worried
     "Yountis stood in the entrance with his hand near his holster. The congregation went still."
 
     "Lon Yountis: You still in town, Cravat. I come to collect what you owe me."
@@ -540,7 +541,7 @@ label scene12_respectability:
             $ community_standing -= 2
             $ sabra_independence += 2
             $ sabra_direction    += 2
-            show sabra ch2 determined
+            show sabra ch2 angry
             sabra "Dixie Lee has lived in this town as long as any of us. If we are building a club for the women of Osage, we build it for all of them."
             "Estelle Sipes drew herself up. Several others exchanged glances."
             "They did not vote Dixie in. But they did not vote her out in front of Sabra Cravat, either."
@@ -570,7 +571,7 @@ label scene12_respectability:
             $ indian_sympathy      += 3
             $ community_standing   -= 3
             $ sabra_defended_indians = True
-            show sabra ch2 determined
+            show sabra ch2 angry
             sabra "Arita Red Feather is educated, principled, and a landowner of this territory. She is precisely our kind, Mrs. Sipes. She stays."
             "The room was very quiet."
             "Three women left before the meeting adjourned. Two wrote letters to Sabra the following week — thanking her, privately, for saying it."
