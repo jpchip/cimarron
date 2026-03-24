@@ -101,7 +101,7 @@ Open a GitHub issue for:
 ## License
 
 By contributing, you agree that your contributions will be licensed under the
-project's MIT License. See `LICENSE` for details.
+project's License. See `LICENSE` for details.
 
-The source novel text (`book.md`) is public domain and is not affected by the MIT
+The source novel text (`book.md`) is public domain and is not affected by the
 license.
