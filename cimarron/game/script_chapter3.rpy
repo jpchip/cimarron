@@ -363,7 +363,13 @@ label scene16_letters_result:
     $ community_standing -= gossip_count * 2
     $ yancey_relationship += yancey_count
 
-    ## Narrative reaction
+    ## Apply conditional per-category penalties (independent of narrative display)
+    if gossip_count >= 1:
+        $ community_standing -= 1
+    if oil_count >= 1:
+        $ newspaper_stance -= 1
+
+    ## Narrative reaction (only one fires — elif is intentional here)
     if pro_indian_count >= 2:
         "The letters column ran heavily in favor of the Nations. Arita Red Feather sent a note: 'Thank you for the space.'"
         sabra "It is only fair."
@@ -374,11 +380,9 @@ label scene16_letters_result:
         "She had printed the anonymous letter about Dixie Lee."
         sabra "{i}I should not have done that.{/i}"
         "She knew it before the ink was dry."
-        $ community_standing -= 1
     elif oil_count >= 1:
         "The oil company letter ran. It looked like news. It was advertising."
         sabra "{i}Yancey would have spiked it.{/i}"
-        $ newspaper_stance -= 1
 
     if 8 in letters_printed:
         "The letter from the unnamed settler — the one grateful for law after the Kid — ran in the lower left column."

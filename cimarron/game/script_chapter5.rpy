@@ -601,7 +601,7 @@ label scene28_monument_reveal:
     play sound "sfx/crowd_applause.ogg"
 
     ## ── Ending branch determination ───────────────────────────────────────────
-    ## Checked in order: Branch 3 → 2 → 1 → fallback (Branch 1)
+    ## Checked in order: Branch 3 → 2 → 1a → 1 (fallback)
 
     if indian_sympathy >= 7 and (sabra_independence >= 5 or yancey_relationship >= 50):
         jump ending_land_belongs
@@ -610,7 +610,7 @@ label scene28_monument_reveal:
         jump ending_built_herself
 
     elif sabra_independence <= 4 and yancey_relationship >= 65:
-        jump ending_his_shadow
+        jump ending_his_shadow_chosen
 
     else:
         jump ending_his_shadow
@@ -640,6 +640,51 @@ label ending_his_shadow:
     sabra "{i}1931.{/i}"
 
     sabra "{i}They made it look like him. It's the right thing. He was what this land was — impossible, larger than life, more beautiful than practical. I was the one who kept the books.{/i}"
+
+    scene black with fade
+
+    stop music fadeout 3.0
+
+    "  "
+
+    "— THE END —"
+
+    return
+
+
+## ─── Ending Branch 1a — "She Chose the Shadow" ───────────────────────────────
+
+label ending_his_shadow_chosen:
+
+    play music "audio/monument_shadow_chosen.ogg" fadein 2.0
+
+    $ journal_scene28 = True
+
+    show sabra ch5 tender at right with dissolve
+    "She stood at the foot of the statue and looked up at his face — the great menacing head, the long coat, the brilliant boots — and felt something she had not expected to feel."
+
+    "Peace."
+
+    "She had spent thirty years angry at him, or trying not to be, or pretending she wasn't. She had spent thirty years keeping the Wigwam alive on her own, raising his children, voting in elections he'd never bothered to show up for, watching the territory become a state while he was somewhere on the Cimarron with a new story she'd never entirely believe."
+
+    "And she had spent thirty years choosing it. Every single time. Every letter she'd answered, every door she'd left unlocked, every night she'd pulled out the photograph from the Run and looked at it for longer than she meant to."
+
+    show sabra ch5 happy
+    "She had known what he was on the day she married him. She had known it was not sensible. She had known she would be the one who kept the house while he kept the horizon."
+
+    "She had chosen it anyway. She would choose it again."
+
+    "The crowd applauded. A Senator said something about the Pioneer Spirit. She did not hear it."
+
+    "She was thinking about the way he had tipped his hat at her from the back of that horse, before the Run, when the world was still about to begin. She was thinking that she had never loved anything the way she loved that impossible, irresponsible, glorious man."
+
+    "That this was enough. That she was enough."
+
+    scene bg_journal with dissolve
+
+    sabra "{i}1931.{/i}"
+
+    sabra "{i}They made it look like him, and they were right to. He was what this land wanted to be. I was what it actually was. I am not sure those are different things. I chose him. He chose this country. The country got both of us, whether it knew it or not.{/i}"
 
     scene black with fade
 
