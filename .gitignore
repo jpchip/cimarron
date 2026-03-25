@@ -7,3 +7,5 @@
 .tessl/*
 tessl.json
 .mcp.json
+-dists/*
+cimarron/progressive_download.txt
