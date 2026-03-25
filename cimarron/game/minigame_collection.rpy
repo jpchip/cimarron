@@ -106,18 +106,11 @@ screen church_collection_minigame():
             size 36
             color "#D2691E"
 
-        hbox:
+        text "Click a member while the hat is on them if you think they are cheating.":
             xalign 0.5
-            spacing 20
-
-            text "Click a member while the hat is on them if you think they are cheating.":
-                size 18
-                color "#C4956A"
-                text_align 0.5
-
-            text "Time: [collection_time_left]s":
-                size 22
-                color time_color
+            size 18
+            color "#C4956A"
+            text_align 0.5
 
         ## ── Row 1: members 0–3 ────────────────────────────────────────────
         hbox:
@@ -243,6 +236,14 @@ screen church_collection_minigame():
                     yalign 0.5
                     size 20
                     color "#A08060"
+
+    ## Timer pinned to upper-left, drawn last so it's always on top
+    text "Time: [collection_time_left]s":
+        xpos 0.05
+        ypos 0.05
+        size 28
+        color time_color
+        bold True
 
 
 ## ─── Result overlay ──────────────────────────────────────────────────────────

@@ -584,7 +584,7 @@ label scene18_war:
             show sabra ch3 tender
             sabra "Don't go, Yancey. I am asking you. Stay here."
             "He looked at her with genuine anguish."
-            show yancey weary
+            show yancey anguished
             yancey "I can't."
             "She had known. It did not make it less true."
 

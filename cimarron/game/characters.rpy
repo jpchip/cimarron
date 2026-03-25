@@ -12,6 +12,8 @@ image yancey dangerous  = Transform("images/sprites/yancey_dangerous.png",  zoom
 image yancey restless   = Transform("images/sprites/yancey_restless.png",   zoom=0.45)
 image yancey weary      = Transform("images/sprites/yancey_weary.png",      zoom=0.45)
 image yancey respect    = Transform("images/sprites/yancey_respect.png",    zoom=0.45)
+image yancey charming   = Transform("images/sprites/yancey_charming.png",   zoom=0.45)
+image yancey anguished  = Transform("images/sprites/yancey_anguished.png",  zoom=0.45)
 
 image yancey roughrider neutral = Transform("images/sprites/yancey_roughrider_neutral.png", zoom=0.45)
 image yancey roughrider weary   = Transform("images/sprites/yancey_roughrider_weary.png",   zoom=0.45)

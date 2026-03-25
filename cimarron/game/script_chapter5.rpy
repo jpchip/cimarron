@@ -288,7 +288,7 @@ label scene25_congresswoman:
 
     sabra "{i}1923.{/i}"
 
-    sabra "{i}A Senator from Pennsylvania told me Oklahoma needed a woman Governor. He said it as a joke. I wrote it down.{/i}"
+    sabra "{i}A Senator from Pennsylvania told me Oklahoma needed a woman Governor. He said it as a joke. Men like that always say it as a joke. I find that if you wait long enough, the joke becomes the agenda.{/i}"
 
     play music "audio/kihekah_parlor.ogg" fadein 1.0 loop
 

@@ -102,7 +102,7 @@ label scene19_rough_rider:
     play music "audio/oil_derricks.ogg" fadein 1.5 loop
 
     show sabra ch4 neutral at right with dissolve
-    show yancey roughrider neutral at left with dissolve
+    show yancey roughrider weary at left with dissolve
 
     "That evening, alone at last."
 
@@ -127,6 +127,7 @@ label scene19_rough_rider:
             "He talked until midnight."
             "She listened without interruption. He told her about the heat, the mud, the men who had come from every state in the union to die on a Cuban hillside for a cause they understood imperfectly."
             "He told her about a moment, near the top, when he had thought he might not come back."
+            show yancey roughrider tender
             "She listened to that part without moving."
             "It was one of the best nights of their marriage."
 
@@ -142,6 +143,7 @@ label scene19_rough_rider:
             $ yancey_relationship += 5
             sabra "I'm glad you're home, Yancey."
             "She meant it without qualification."
+            show yancey roughrider tender
             "He looked at her a long moment."
             yancey "Sabra."
             "He said her name like it was a complete sentence. Tonight, that was enough."
@@ -149,7 +151,6 @@ label scene19_rough_rider:
     hide yancey
     hide sabra
 
-    $ journal_scene19 = True
     call journal_entry("Scene 19", "He came home in a soldier's hat with the brim pinned up on one side. He still has both six-shooters. I counted: eight notches now.") from _call_journal_scene19
 
     jump scene20_dixie_trial
@@ -351,7 +352,6 @@ label scene20_post_verdict:
     hide dixie
     hide sabra
 
-    $ journal_scene20 = True
     call journal_entry("Scene 20", "Not guilty. I sat in the gallery and watched the jury file in and I was not sure, until the foreman spoke, whether I wanted them to say guilty or not. I still don't know.") from _call_journal_scene20
 
     jump scene21_statehood
@@ -456,7 +456,6 @@ label scene21_statehood:
 
     hide sabra
 
-    $ journal_scene21 = True
     call journal_entry("Scene 21", "November 16, 1907. Oklahoma is a state. They rang the church bell at noon and fired a cannon in the square and Doc Valliant came to the office with a bottle of whisky and said, 'Well, Sabra, we made it.' I said we did. I didn't say what I was thinking: that we made it without him.") from _call_journal_scene21
 
     jump scene22_first_oil
@@ -565,7 +564,6 @@ label scene22_first_oil:
     hide cim
     hide sabra
 
-    $ journal_scene22 = True
     call journal_entry("Scene 22", "The derricks on the horizon look like enormous iron insects. At night you can see the flare-off fires from the bedroom window. The smell of crude oil drifts into town when the wind blows from the northeast. I keep writing it up as progress. I'm not sure I believe myself.") from _call_journal_scene22
 
     jump scene23_what_yancey_left
@@ -689,7 +687,6 @@ label scene23_what_yancey_left:
 
     "— End of Chapter Four —"
 
-    $ journal_scene23 = True
     call journal_entry("Scene 23", "[donna_name] leaves for Miss Dignum's on the Hudson on Monday. She packed three times and was still dissatisfied. She has absolutely no aptitude for the frontier and I could not be more proud of her.") from _call_journal_scene23
 
     call chapter4_summary from _call_chapter4_summary
@@ -761,12 +758,6 @@ label chapter4_summary:
         "She published for two states. It was the careful choice. She is not sure it was the right one."
     elif statehood_stance == "consult":
         "She went to the reservation before she wrote a word. Some editors thought that was weakness. She thought it was journalism."
-
-    ## Journal achievement flags
-    if journal_scene19 and journal_scene20 and journal_scene21 and journal_scene22 and journal_scene23:
-        "She kept her journal through all of it. Every scene. Nothing went unrecorded."
-    elif journal_scene19 or journal_scene20 or journal_scene21 or journal_scene22 or journal_scene23:
-        "Some of it she wrote down. The rest she carried."
 
     ## Newspaper stance high-water mark
     if newspaper_stance >= 3:

@@ -59,6 +59,7 @@ default journal_scene13 = False
 default donna_name             = "Donna"  # set at birth in scene11; "Donna" or "Felice"
 default sabra_stood_alone      = False   # handled birth of Donna without Yancey
 default sabra_defended_indians = False   # refused to exclude Arita from the club
+default sabra_shielded_cim     = False   # stepped between Cim and the gunman (scene8)
 
 # ─── Chapter 3 Meters ────────────────────────────────────────────────────────
 # newspaper_stance: editorial direction Sabra steers the Wigwam
@@ -85,13 +86,6 @@ default letters_spiked  = []
 # ─── Chapter 4 Flags ──────────────────────────────────────────────────────────
 default dixie_lee_editorial = "none"   # "support" / "oppose" / "neutral"
 default statehood_stance    = "none"   # "single" / "double" / "consult"
-
-# ─── Chapter 4 Journal Flags ──────────────────────────────────────────────────
-default journal_scene19 = False
-default journal_scene20 = False
-default journal_scene21 = False
-default journal_scene22 = False
-default journal_scene23 = False
 
 # ─── Trial Minigame State ─────────────────────────────────────────────────────
 # Reset before calling trial_arguments_minigame screen.

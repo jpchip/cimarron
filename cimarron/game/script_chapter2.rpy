@@ -66,6 +66,7 @@ label scene8_lion_streets:
         "Step forward — put herself between Cim and the door.":
             $ sabra_direction    += 1
             $ sabra_independence += 2
+            $ sabra_shielded_cim  = True
             sabra "Move back, Cim. Stay behind me."
             "The boy pressed against her skirts without argument."
             "She had not thought about it. Her body simply knew."
@@ -95,7 +96,7 @@ label scene8_lion_streets:
 
         "Reach across the pew and take his hand, openly.":
             $ yancey_relationship += 5
-            show yancey neutral
+            show yancey charming
             show sabra ch2 proud
             sabra "I am very proud of you."
             show yancey tender
@@ -146,7 +147,6 @@ label scene8_lion_streets:
         "The town noticed."
     elif scene8_caught >= 1:
         "She caught [scene8_caught] of them. Not a bad eye for a Wichita girl."
-        $ community_standing += 1
     else:
         "She had been watching — but the cheaters were practiced. They went home heavier than they came."
 
@@ -155,7 +155,10 @@ label scene8_lion_streets:
     hide sabra
 
     $ journal_scene8 = True
-    call journal_entry("Scene 8", "The tent was cold even in July. A man came in wanting trouble and Yancey sent him away with only words — though I think the words were not the whole of it. I held Cim in front of me. I did not decide to. I watched the collection after. There are people here who take from the church as easily as they breathe. I am learning to see them.") from _call_journal_scene8
+    if sabra_shielded_cim:
+        call journal_entry("Scene 8", "The tent was cold even in July. A man came in wanting trouble and Yancey sent him away with only words — though I think the words were not the whole of it. I put myself between Cim and the door. I did not decide to. My body simply knew. I watched the collection after. There are people here who take from the church as easily as they breathe. I am learning to see them.") from _call_journal_scene8_a
+    else:
+        call journal_entry("Scene 8", "The tent was cold even in July. A man came in wanting trouble and Yancey sent him away with only words — though I think the words were not the whole of it. I sat very still and prayed. My mother would have approved. I am not sure I did. I watched the collection after. There are people here who take from the church as easily as they breathe. I am learning to see them.") from _call_journal_scene8_b
 
     jump scene9_seven_notches
 
@@ -172,7 +175,7 @@ label scene9_seven_notches:
 
     "A man had come in that afternoon — Pete Pitchlyn, an old acquaintance of Yancey's from before the run. Weathered, quiet, with the kind of eyes that took inventory of a room before he stepped into it."
 
-    show yancey neutral at left with dissolve
+    show yancey charming at left with dissolve
     show pete neutral at right with dissolve
 
     pete "You're doing well here, Yancey. I wouldn't have thought it."
@@ -265,7 +268,7 @@ label scene10_wigwam_lives:
 
     "Yancey had been writing editorials on the Osage Indian land question — arguing that speculators were using legal instruments to strip the Nations of territory guaranteed by treaty."
 
-    show yancey neutral at left with dissolve
+    show yancey charming at left with dissolve
     show yancey passionate
 
     yancey "If the law is used as a weapon against the people it was written to protect, then the law is not justice. It is theater."
