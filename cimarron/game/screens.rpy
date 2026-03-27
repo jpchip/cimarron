@@ -114,8 +114,8 @@ style say_window is default:
     xfill True
     yalign gui.textbox_yalign
     ysize gui.textbox_height
-    background Frame("#1A0E06cc", Borders(0, 0, 0, 0))
-    padding (gui.text_xpadding, gui.text_ypadding)
+    background Frame("gui/textbox.png", Borders(100, 60, 100, 78))
+    padding (gui.text_xpadding, 35, gui.text_xpadding, gui.text_ypadding)
 
 style say_text is default:
     color gui.text_color
@@ -130,8 +130,8 @@ style namebox is default:
     xsize gui.namebox_width
     ypos gui.name_ypos
     ysize gui.namebox_height
-    background Frame("#0E0905dd", gui.namebox_borders)
-    padding gui.namebox_borders.padding
+    background Frame("gui/namebox.png", Borders(15, 8, 15, 8))
+    padding (28, 6, 14, 6)
 
 style namebox_text is default:
     color gui.accent_color

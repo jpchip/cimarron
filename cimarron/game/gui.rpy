@@ -45,17 +45,17 @@ define gui.main_menu_text_size   = 26
 define gui.textbox_height  = 220
 define gui.textbox_yalign  = 1.0
 
-define gui.text_xpadding   = 30
-define gui.text_ypadding   = 12
+define gui.text_xpadding   = 45
+define gui.text_ypadding   = 20
 
-define gui.dialogue_xpos   = 30
-define gui.dialogue_ypos   = 10
-define gui.dialogue_width  = 1220
+define gui.dialogue_xpos   = 80
+define gui.dialogue_ypos   = 80
+define gui.dialogue_width  = 1100
 define gui.dialogue_text_xalign = 0.0
 
 ## ─── Name Box ─────────────────────────────────────────────────────────────────
 define gui.name_xpos       = 30
-define gui.name_ypos       = -50
+define gui.name_ypos       = -65
 define gui.name_xalign     = 0.0
 define gui.namebox_width   = 320
 define gui.namebox_height  = 50
