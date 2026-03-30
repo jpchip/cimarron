@@ -12,7 +12,7 @@ Yancey's five-year absence and Sabra's rise as editor (Chapter Three, 1893–189
 the Rough Rider return, Dixie Lee's trial, statehood, and the first oil boom
 (Chapter Four, 1898–1907), and the final chapter covering Cim's marriage, Sabra's
 congressional career, Yancey's death at Bowlegs, and the Oklahoma Pioneer monument
-unveiling with three possible endings (Chapter Five, 1910–1931).
+unveiling with four possible endings (Chapter Five, 1910–1931).
 
 ---
 
@@ -160,7 +160,7 @@ then arrange them as OPENING / MIDDLE / CLOSING. Selection and ordering both aff
 
 ## Chapter Five — Legacy & Monument (1910–1931)
 
-**5 scenes** covering Sabra's final years and three possible endings:
+**5 scenes** covering Sabra's final years and four possible endings:
 
 24. Cim and Ruby — Cim brings Ruby Big Elk home; Sabra meets her daughter-in-law
 25. Congresswoman — Sabra runs for Congress; platform choice
@@ -169,17 +169,25 @@ then arrange them as OPENING / MIDDLE / CLOSING. Selection and ordering both aff
 28. The Monument — the Oklahoma Pioneer statue unveiled; **photograph box mini-game**; ending branch
 
 **~12 choice moments.** No new meters — the ending is determined by cumulative
-values carried across all five chapters:
+values carried across all five chapters. Branches are checked in order (first match wins):
 
 | Ending | Condition |
 |---|---|
 | *The Land Belongs* | `indian_sympathy ≥ 7` AND (`sabra_independence ≥ 5` OR `yancey_relationship ≥ 50`) |
 | *Built Herself* | `sabra_independence ≥ 8` AND `community_standing ≥ 8` |
-| *His Shadow* | fallback — Sabra is remembered as Yancey's wife |
+| *She Chose the Shadow* | `sabra_independence ≤ 4` AND `yancey_relationship ≥ 65` — Sabra reflects on a lifetime of knowingly choosing Yancey |
+| *His Shadow* | fallback — Sabra is remembered simply as Yancey's wife |
 
 **Photograph mini-game** in Scene 28: a reporter asks Sabra to choose two photographs
-for a profile piece. Six photos are available; which pair she selects adjusts final
-meter values before the ending branch resolves.
+for a profile piece. Six photos are available; the chosen pair adjusts meter values
+before the ending branch resolves:
+
+| Pair selected | Effect |
+|---|---|
+| Photos 1 & 4 (Yancey portraits) | `yancey_relationship +3` |
+| Photos 2 & 3 (Osage community) | `community_standing +2` |
+| Photos 5 & 6 (Native peoples) | `indian_sympathy +2` |
+| Any other pair | `yancey_relationship +1` |
 
 ---
 
