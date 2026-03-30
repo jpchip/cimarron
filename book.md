@@ -1,42 +1,49 @@
-Standard Ebooks
-Back to ebook
-CimarronBy Edna Ferber.
-Table of Contents
-Titlepage
-Imprint
-Dedication
-Acknowledgment
-Foreword
-Cimarron
-I
-II
-III
-IV
-V
-VI
-VII
-VIII
-IX
-X
-XI
-XII
-XIII
-XIV
-XV
-XVI
-XVII
-XVIII
-XIX
-XX
-XXI
-XXII
-XXIII
-XXIV
-XXV
-List of Illustrations
-Colophon
-Uncopyright
-ImprintThe Standard Ebooks logo.
+> *Source: Standard Ebooks*
+# Cimarron
+
+*By Edna Ferber*
+
+## Table of Contents
+- Titlepage
+- Imprint
+- Dedication
+- Acknowledgment
+- Foreword
+- Cimarron
+- Chapter I
+- Chapter II
+- Chapter III
+- Chapter IV
+- Chapter V
+- Chapter VI
+- Chapter VII
+- Chapter VIII
+- Chapter IX
+- Chapter X
+- Chapter XI
+- Chapter XII
+- Chapter XIII
+- Chapter XIV
+- Chapter XV
+- Chapter XVI
+- Chapter XVII
+- Chapter XVIII
+- Chapter XIX
+- Chapter XX
+- Chapter XXI
+- Chapter XXII
+- Chapter XXIII
+- Chapter XXIV
+- Chapter XXV
+- List of Illustrations
+- Colophon
+- Uncopyright
+
+---
+
+## Imprint
+
+*The Standard Ebooks logo.*
 This ebook is the product of many hours of hard work by volunteers for Standard Ebooks, and builds on the hard work of other literature lovers made possible by the public domain.
 
 This particular ebook is based on on digital scans from the Internet Archive.
@@ -45,13 +52,20 @@ The source text and artwork in this ebook are believed to be in the United State
 
 Standard Ebooks is a volunteer-driven project that produces ebook editions of public domain literature using modern typography, technology, and editorial standards, and distributes them free of cost. You can download this and other ebooks carefully produced for true book lovers at standardebooks.org.
 
+
+## Dedication
+
 To my mother
 Julia Ferber
 
-Acknowledgment
+
+## Acknowledgment
+
 For certain descriptive passages in the portion of this book concerned with the Opening of Oklahoma in 1889 acknowledgment is made to Hands Up, by Fred E. Sutton and A. B. MacDonald, published and copyrighted 1927 by the Bobbs-Merrill Company.
 
-Foreword
+
+## Foreword
+
 Only the more fantastic and improbable events contained in this book are true. There is no attempt to set down a literal history of Oklahoma. All the characters, the towns, and many of the happenings contained herein are imaginary. But through reading the scant available records, documents, and histories (including the Oklahoma State Historical Library collection) and through many talks with men and women who have lived in Oklahoma since the day of the Opening, something of the spirit, the color, the movement, the life of that incredible commonwealth has, I hope, been caught. Certainly the Run, the Sunday service in the gambling tent, the death of Isaiah and of Arita Red Feather, the catching of the can of nitroglycerin, many of the shooting affrays, most descriptive passages, all of the oil phase, and the Osage Indian material complete⁠—these are based on actual happenings. In many cases material entirely true was discarded as unfit for use because it was so melodramatic, so absurd as to be too strange for the realm of fiction.
 
 There is no city of Osage, Oklahoma. It is a composite of, perhaps, five existent Oklahoma cities. The Kid is not meant to be the notorious Billy the Kid of an earlier day. There was no Yancey Cravat⁠—he is a blending of a number of dashing Oklahoma figures of a past and present day. There is no Sabra Cravat, but she exists in a score of bright-eyed, white-haired, intensely interesting women of sixty-five or thereabouts who told me many strange things as we talked and rocked on an Oklahoma front porch (tree-shaded now).
@@ -60,8 +74,12 @@ Anything can have happened in Oklahoma. Practically everything has.
 
 Edna Ferber
 
-Cimarron
-I
+
+---
+
+# Cimarron
+
+## Chapter I
 All the Venables sat at Sunday dinner. All those handsome inbred Venable faces were turned, enthralled, toward Yancey Cravat, who was talking. The combined effect was almost blinding, as of incandescence; but Yancey Cravat was not bedazzled. A sun surrounded by lesser planets, he gave out a radiance so powerful as to dim the luminous circle about him.
 
 Yancey had a disconcerting habit of abruptly concluding a meal⁠—for himself, at least⁠—by throwing down his napkin at the side of his plate, rising, and striding about the room, or even leaving it. It was not deliberate rudeness. He ate little. His appetite satisfied, he instinctively ceased to eat; ceased to wish to contemplate food. But the Venables sat hours at table, leisurely shelling almonds, sipping sherry; Cousin Dabney Venable peeling an orange for Cousin Bella French Vian with the absorbed concentration of a sculptor molding his clay.
@@ -106,7 +124,8 @@ During the course of the bountiful meal with which the Venable table was spread 
 
 He had been a month absent. Like thousands of others he had gone in search of free land and a fortune. Here was an empire to be had for the taking. He talked, as always, in the highfalutin terms of the speaker who is ever conscious of his audience. Yet, fantastic as it was, all that he said was woven of the warp and woof of truth. Whole scenes, as he talked, seemed to be happening before his listeners’ eyes.
 
-II
+
+## Chapter II
 Coat tails swishing, eyes flashing, arms waving, voice soaring.
 
 “Folks, there’s never been anything like it since Creation. Creation! Hell! That took six days. This was done in one. It was History made in an hour⁠—and I helped make it. Thousands and thousands of people from all over this vast commonwealth of ours” (he talked like that) “traveled hundreds of miles to get a bare piece of land for nothing. But what land! Virgin, except when the Indians had roamed it. ‘Lands of lost gods, and godlike men!’ They came like a procession⁠—a crazy procession⁠—all the way to the Border, covering the ground as fast as they could, by any means at hand⁠—scrambling over the ground, pushing and shoving each other into the ditches to get there first. God knows why⁠—for they all knew that once arrived there they’d have to wait like penned cattle for the firing of the signal shot that opened the promised land. As I got nearer the line it was like ants swarming on sugar. Over the little hills they came, and out of the scrub-oak woods and across the prairie. They came from Texas, and Arkansas and Colorado and Missouri. They came on foot, by God, all the way from Iowa and Nebraska! They came in buggies and wagons and on horseback and muleback. In prairie schooners and ox carts and carriages. I saw a surrey, honey colored, with a fringe around the top, and two elegant bays drawing it, still stepping high along those rutted clay roads as if out for a drive in the Presidio. There was a black boy driving it, brass buttons and all, and in the back seat was a dude in a light tan coat and a cigar in his mouth and a diamond in his shirtfront; and a woman beside him in a big hat and a pink dress laughing and urging the horses along the red dust that was halfway up to the wheel spokes and fit to choke you. They had driven like that from Denver, damned if they hadn’t. I met up with one old homesteader by the roadside⁠—a face dried and wrinkled as a nutmeg⁠—who told me he had started weeks and weeks before, and had made the long trip as best he could, on foot or by rail and boat and wagon, just as kindhearted people along the way would pick him up. I wonder if he ever got his piece of land in that savage rush⁠—poor old devil.”
@@ -303,7 +322,8 @@ It was too much for black Isaiah in his perilous perch high above the table. He 
 
 Shouts, screams, upleapings. Isaiah plucked, white-bottomed, out of the center of the vast pastry. The sudden grayish pallor of his face matched the silver tone of his pants’ seat. Felice Venable, nerves strained to breaking, lifted her hand to cuff him smartly. But the black boy was too quick for her. With the swiftness of a wild thing he scuttled across the table to where Yancey Cravat stood with his wife and child, leaped nimbly to the floor, crept between the man’s legs like a whimpering little dog, and lay there, locked in the safety of Yancey’s great knees.
 
-III
+
+## Chapter III
 Indians were no novelty to the townspeople of Wichita. Sabra had seen them all her life. At the age of three Cim was held up in his father’s arms to watch a great band of them go by on one of their annual pilgrimages. He played Indian, of course, patting his lips to simulate the Indian yodeling yell. He had a war bonnet made of chicken feathers sewed to the edge of a long strip of red calico.
 
 Twice a year, chaperoned by old General “Bull” Plummer, the Indians swept through the streets of Wichita in their visiting regalia⁠—feathers, beads, blankets, chains⁠—a brilliant sight. Ahead of them and behind them was the reassuring blue of United States army uniforms worn by the Kansas regiment from Fort Riley. All Wichita, accustomed to them though it was, rushed out to gaze at them from store doorways and offices and kitchens. Bucks, braves, chiefs, squaws, papooses; teepees, poles, pots, dogs, ponies, the cavalcade swept through the quiet sunny streets of the midwestern town, a vivid frieze of color against the drab monotony of the prairies.
@@ -388,7 +408,8 @@ Mother Bridget stepped close to the wheel. “It’ll be all right. There’s no
 
 Behind her spectacles the eyes of the wise old nun were soft with pity. “That’ll be lovely.” She watched the calico pony and the phaeton drive off up the dusty Kansas road. She turned toward the Mission house. The beads clicked. Hail, Mary, full of grace⁠ ⁠…
 
-IV
+
+## Chapter IV
 The child Cim had got it into his head that this was to be a picnic. He had smelled pies and cakes baking; had seen hampers packed. Certainly, except for the bizarre load that both wagons contained, this might have been one of those informal excursions into a nearby wood which Cim so loved, where they lunched in the open, camped near a stream, and he was allowed to run barefoot in the shadow of his aristocratic grandmother’s cool disapproval. Felice Venable loathed all forms of bucolic diversion and could, with a glance, cause more discomfort at an al fresco luncheon than a whole battalion of red ants.
 
 There was a lunatic week preceding their departure from Wichita. Felice fought their going to the last, and finally took to her bed with threats of impending dissolution which failed to achieve the desired effect owing to the preoccupation of the persons supposed to be stricken by her plight. From time to time, intrigued by the thumpings, scurryings, shouts, laughter, quarrels, and general upheaval attendant on the Cravats’ departure, Felice rose from her bed and trailed wanly about the house, looking, in her white dimity wrapper, like a bilious and distracted ghost. She issued orders. Take this. Don’t take that. It can’t be that you’re leaving those behind! Your own Aunt Sarah Moncrief du Tisne embroidered every inch of them with her own⁠—
@@ -435,7 +456,8 @@ Yancey began to make camp. Already the duties of this new manner of living had b
 
 A sudden shout from Yancey. A squeal of terror from the bundle of carpeting in his arms⁠—a bundle that suddenly was alive and wriggling. Yancey dropped it with an oath. The bundle lay on the ground a moment, heaving, then it began to unroll itself while the three regarded it with starting eyes. A black paw, a woolly head, a face all open mouth and whites of eyes. Black Isaiah. He had found a way to come with them to the Indian Territory.
 
-V
+
+## Chapter V
 By noon next day they were wondering how they had got on at all without him. He gathered wood. He started fires. He tended Cim like a nurse, played with him, sang to him, helped put him to bed, slept anywhere, like a little dog. He even helped Sabra to drive her team, change and change about, for after all there was little to it but the holding of the reins slackly in one’s fingers while the horses plodded across the prairie, mile on mile, mile on mile.
 
 Yancey pointed out the definiteness with which the land changed when they left Kansas and came into the Oklahoma country. “Oklahoma,” he explained to Cim. “That’s Choctaw. Okla⁠—people. Humma⁠—red. Red People. That’s what they called it when the Indians came here to live.”
@@ -684,7 +706,8 @@ Late next day, just before sunset, after pushing on relentlessly through the bli
 
 Sabra looked. And her brain seemed to have no order or reason about it, for she could think only of the green nun’s veiling trimmed with ruchings of pink which lay so carefully folded, with its modish sleeves all stuffed out with soft paper, in the trunk under the canvas of the wagon.
 
-VI
+
+## Chapter VI
 Long before the end of that first nightmarish day in Osage, Sabra had confronted her husband with blazing eyes. “I won’t bring up my boy in a town like this!”
 
 It had been a night and a day fantastic with untoward happenings. Their wagons had rumbled wearily down the broad main street of the settlement⁠—a raw gash in the prairie. All about, on either side, were wooden shacks, and Indians and dried mud and hitching posts and dogs and crude wagons like their own. It looked like pictures Sabra had seen of California in ’49. They had supped on ham and eggs, fried potatoes, and muddy coffee in a place labeled Ice Cream and Oyster Parlor. They spent that first night in a rooming house above one of the score of saloons that enlivened the main street⁠—Pawhuska Avenue, it was called. It was a longish street, for the Osage town settlers seemed to have felt the need of huddling together for company in this wilderness. The street stopped abruptly at either end and became suddenly prairie.
@@ -934,7 +957,8 @@ But at that a plaintive but firm note of protest entered Mr. Hefner’s voice.
 
 She raised herself from the object on which she had collapsed, weeping, and looked at it with brimming eyes that widened in horror as she realized that she had showered her tears on that pride of Hefner’s Furniture and Undertaking establishment, the newly arrived white velvet coffin (child’s size) intended for show window purposes alone.
 
-VII
+
+## Chapter VII
 From Doc Nisbett, Yancey received laconic information to the effect that the house had been rented by a family whose aquatic demands were more modest than Sabra’s. Sabra was inconsolable, but Yancey did not once reproach her for her mistake. It was characteristic of him that he was most charming and considerate in crises which might have been expected to infuriate him. “Never mind, sugar. Don’t take on like that. We’ll find a house. And, anyway, we’re here. That’s the main thing. God, when I think of those years in Wichita!”
 
 “Why, Yancey! I thought you were happy there.”
@@ -1070,7 +1094,8 @@ The face she adored was a mask. The ocean-gray eyes were slate-gray now, with th
 
 “Oh, God!” whimpered Sabra, and sank, a limp bundle of misery, into his arms. But those arms were, suddenly, no haven, no shelter. He put her from him, gently, but with iron firmness, and walked out of the house, through the newspaper office, down the broad and sinister red road.
 
-VIII
+
+## Chapter VIII
 Yancey put his question wherever he came upon a little group of three or four lounging on saloon or store porch or street corner. “How did Pegler come to die?” The effect of the question always was the same. One minute they were standing sociably, gossiping, rolling cigarettes; citizenry at ease in their shirtsleeves. Yancey would stroll up with his light, graceful step, his white sombrero with the two bullet holes in its crown, his Prince Albert, his fine high-heeled boots. He would ask his question. As though by magic the group dispersed, faded, vanished.
 
 He visited Coroner Hefner, of Hefner’s Furniture Store and Undertaking Parlor. That gentleman was seated, idle for the moment, in his combination office and laboratory. “Listen, Louie. How did Pegler come to die?”
@@ -1291,7 +1316,8 @@ Sabra felt faint. She had seen the foxlike face of Lon Yountis in the doorway. �
 
 “That’s fine, honey. Better than I hoped for. Nothing I like better than to have members of my flock right under my eye.”
 
-IX
+
+## Chapter IX
 Ranged along the rear of the tent were the Indians. Osages, Poncas, Cherokees, Creeks. They had come from miles around. The Osages wore their blankets, striped orange, purple, green, scarlet, blue. The bucks wore hats⁠—battered and dirty sombreros set high up on their heads. The thin snaky braids of their long black hair hung like wire ropes over their shoulders and down their breasts. Though they wore, for the most part, the checked gingham shirt of the white man there was always about them the gleam of metal, the flash of some brightly dyed fabric, the pattern of colored beads. The older women were shapeless bundles, with the exception of those of the Osage tribe. The Osage alone had never intermarried with the Negro. Except for intermingled white blood, the tribe was pure. The Indian children tumbled all about. The savages viewed the proceedings impassively, their faces bronze masks in which only the eyes moved. Later, on their reservations, with no white man to see and hear, they would gossip like fishwives; they would shake with laughter; they would retail this or that absurdity which, with their own eyes, they had seen the white man perform. They would slap their knees and rock with mirth.
 
 “Great jokers, the Indians,” Yancey had once said, offhand, to Sabra. She had felt sure that he was mistaken. They were sullen, taciturn, grave. They did not speak; they grunted. They never laughed.
@@ -1398,7 +1424,8 @@ Screams. Shouts. A stampede for the door. Then the voice of Yancey Cravat, power
 
 “… bless this community, O Lord.⁠ ⁠…”
 
-X
+
+## Chapter X
 Mournfully, and in accordance with the custom of the community, Yancey carved a notch in the handsome ivory and silver-mounted butt of his six-shooter. It was then for the first time that Sabra, her eyes widening with horror, noticed that there were five earlier notches cut in the butts of Yancey’s two guns⁠—two on one, three on the other. This latest addition brought the number up to six.
 
 Aghast, she gingerly investigated further. She saw that the two terrifying weapons were not worn completely encased in the holster but each was held within it by an ingenious steel clip, elastic and sensitive as a watch spring. This spring gripped the barrel securely and yet so lightly that the least effort would set it free. Yancey could pull his gun and thumb the hammer with but one motion, instead of two. The infinitesimal saving of time had saved his life that day.
@@ -1597,7 +1624,8 @@ She was thoroughly enraged by now. “What, for pity’s sake, has Aurora Leigh 
 
 He got down the volume. “I thought you’d been reading it yourself, perhaps.” He opened it. “ ‘Dreams of doing good for good-for-nothing people.’ ”
 
-XI
+
+## Chapter XI
 Sabra’s second child, a girl, was born in June, a little more than a year after their coming to Osage. It was not as dreadful an ordeal there in those crude surroundings as one might have thought. She refused to send for her mother; indeed, Sabra insisted that Felice Venable be told nothing of the event until after her granddaughter had wailed her way into the Red Man’s country. Yancey had been relieved at Sabra’s decision. The thought of his luxury-loving and formidable mother-in-law with her flounced dimities and her high-heeled slippers in the midst of this Western wallow to which he had brought her daughter was a thing from which even the redoubtable Yancey shrank. Curiously enough, it was not the pain, the heat, nor the inexpert attention she received that most distressed Sabra. It was the wind. The Oklahoma wind tortured her. It rattled the doors and windows; it whirled the red dust through the house; its hot breath was on her agonized face as she lay there; if allowed its own way it leaped through the rooms, snatching the cloth off the table, the sheets off the bed, the dishes off the shelves.
 
 “The wind!” Sabra moaned. “The wind! The wind! Make it stop.” She was a little delirious. “Yancey! With your gun. Shoot it. Seven notches. I don’t care. Only stop it.”
@@ -1690,7 +1718,8 @@ The melancholy eyes took on a remote⁠—a prophetic look. There was, suddenly,
 
 Sol Levy smiled a little bitter smile. His thin shoulders lifted in a weary shrug. “Those barbarians! My ancestors were studying the Talmud and writing the laws the civilized world now lives by when theirs were swinging from tree to tree.”
 
-XII
+
+## Chapter XII
 In the three and a half years of her residence in Osage Sabra had yielded hardly an inch. It was amazing. It was heroic. She had set herself certain standards, and those she had maintained in spite of almost overwhelming opposition. She had been bred on tradition. If she had yielded at all it was in minor matters and because to do so was expedient. True, she could be seen of a morning on her way to the butcher’s or the grocer’s shielded from the sun by one of the gingham sunbonnets which in the beginning she had despised. Certainly one could not don a straw bonnet, velvet or flower trimmed, to dart out in a calico house dress for the purchase of a pound and a half of round steak, ten cents worth of onions, and a yeast cake.
 
 Once only in those three years had she gone back to Wichita. At the prospect of the journey she had been in a fever of anticipation for days. She had taken with her Cim and Donna. She was so proud of them, so intent on outfitting them with a wardrobe sufficiently splendid to set off their charms, that she neglected the matter of her own costuming and found herself arriving in Wichita with a trunk containing the very clothes with which she had departed from it almost four years earlier. Prominent among these was the green nun’s veiling with the pink ruchings. She had had little enough use for it in these past years or for the wine-colored silk-warp henrietta.
@@ -1757,7 +1786,8 @@ She had meant, at the last, to find occasion to inform her mother and the minor 
 
 So, gladly, eagerly, Sabra went back to the wilds she once had despised.
 
-XIII
+
+## Chapter XIII
 Before the Katy pulled in at the Osage station (the railroad actually had been extended, true to Dixie Lee’s prediction, from Wahoo to Osage and beyond) Sabra’s eyes were searching the glaring wooden platform. Len Orson, the chatty and accommodating conductor, took Donna in his arms and stood with her at the foot of the car steps. His heavy gold plated watch chain, as broad as a cable, with its concomitant Masonic charm, elk’s tooth, gold pencil, and peach pit carved in the likeness of an ape, still held Donna enthralled, though she had snatched at it whenever he passed their seat or stood to relate the gossip of the Territory to Sabra. She was hungry for news, and Len was a notorious fishwife. Now, as she stepped off the train, Sabra’s face wore that look of radiant expectancy characteristic of the returned traveler, confident of a welcome.
 
 “Well, I guess I know somebody’ll be pretty sorry to see you,” Len said, archly. He looked about for powerful waiting arms in which to deposit Donna. The engine bell clanged, the whistle tooted. His kindly and inquisitive blue eyes swept the station platform. He plumped Donna, perforce, into Sabra’s strangely slack arms, and planted one foot, in its square-toed easy black shoe, onto the car step in the nick of time, the other leg swinging out behind him as the train moved on.
@@ -1836,7 +1866,8 @@ Yancey refused every penny of it. The committees, the townspeople, the county, w
 
 “I don’t take money for killing a man,” Yancey repeated, to each offer of money. The committees and the checks went back as they had come.
 
-XIV
+
+## Chapter XIV
 Sabra noticed that Yancey’s hand shook with a perceptible palsy before breakfast, and that this was more than ever noticeable as that hand approached the first drink of whisky which he always swallowed before he ate a morsel. He tossed it down as one who, seeking relief from pain, takes medicine. When he returned the glass to the table he drew a deep breath. His hand was, miraculously, quite steady.
 
 More and more he neglected the news and business details of the Wigwam. He was restless, moody, distrait. Sabra remembered with a pang of dismay something that he had said on first coming to Osage. “God, when I think of those years in Wichita! Almost five years in one place⁠—that’s the longest stretch I’ve ever done.”
@@ -1976,7 +2007,8 @@ He set her down gently and was off, turned halfway in his saddle to face her, hi
 
 Five years passed before she saw him again.
 
-XV
+
+## Chapter XV
 Dixie Lee’s girls were riding by on their daily afternoon parade. Sabra recognized their laughter and the easy measured clatter of their horses’ hoofs before they came into view. She knew it was Dixie Lee’s girls. Somehow, the virtuous women of Osage did not laugh much, though Sabra did not put this thought into words, even in her mind. She glanced up now as they drove by. She was seated at her desk by the window in the front office of the Oklahoma Wigwam. Their plumes, their parasols, their brilliant-hued dresses made a gay garden of color in the monotony of Pawhuska Avenue. They rode in open phaetons, but without the usual top, so that they had only their parasols to shade their brightly painted faces from the ardent Southwest sun. The color of the parasols and plumes and dresses was changed from day to day, but they always were done in ensemble effect. One day the eyes of Osage’s male population were dazzled (and its female population’s eyes affronted) by a burst of rosy splendor shading from pale pink to scarlet. The next day they would shade from palest lavender to deepest purple. The next, from delicate lemon to orange; the day following they ran the gamut of green. They came four by four, and usually one in each carriage handled the reins, though occasionally a Negro driver occupied the front seat alone. They were not boisterous. Indeed, they conducted themselves in seemly enough fashion except perhaps for the little bursts of laughter and for the fact that they were generous with the ankles beneath the ruffled skirts. Often they carried dolls in their arms. Sometimes⁠—rarely⁠—they called to each other. Their voices were high and curiously unformed, like the voices of little children, and yet with a metallic note in them.
 
 “Madge, looka! When we get to the end of Pawhuska we’ll race you to Coley’s Gulch and back.” These afternoon races became almost daily sporting events, and the young bloods of Osage got into the habit of stationing themselves along the road to bet on the pale pink plumes or the deep rose plumes.
@@ -2173,7 +2205,8 @@ They had come in the night and got them⁠—the black boy, the Indian girl, the
 
 Isaiah, already half dead with fright, was at noonday securely bound and fastened to a stake. Near by, but not near enough quite to touch him, was a rattlesnake so caught by a leather thong that, strike and coil and strike as it might, it could not quite reach, with its venomous head, the writhing, gibbering thing that lay staring with eyes that protruded out of all semblance to human features. But as dusk came on the dew fell, and the leather thong stretched a little with the wet. And as twilight deepened and the dew grew heavier the leather thong holding the horrible reptile stretched more and more. Presently it was long enough.
 
-XVI
+
+## Chapter XVI
 “Remember the Maine! To hell with Spain!” You read this inflaming sentiment on posters and banners and on little white buttons pinned to coat lapels or dress fronts. There were other buttons and pennants bearing the likeness of an elderly gentleman with a mild face disguised behind a martial white mustache; and thousands of male children born within the United States in 1898 grew up under the slight handicap of the christened name of Dewey. The Oklahoma Wigwam bristled with new words: Manila Bay⁠—Hobson⁠—Philippines. Throughout the Southwest sombreros suddenly became dust-colored army hats with broad, flat brims and peaked crowns. People who, if they had thought of Spain at all, saw it in the romantic terms of the early Southwest explorers⁠—Coronado, De Soto, Moscoso⁠—and, with admiration for these intrepid and mistaken seekers after gold, now were told that they must hate Spain and the Spanish and kill as many little brown men living in the place called the Philippines as possible. This was done as dutifully as could be, but with less than complete enthusiasm.
 
 Rough Riders! That was another matter. Here was something that the Oklahoma country knew and understood⁠—tall, lean, hard young men who had practically been born with a horse under them and a gun in hand; riders, hunters, dead shots; sunburned, keen eyed, daredevil. Their uniforms, worn with a swagger, had about them a dashing something that the other regiments lacked. Their hat crowns were dented, not peaked, and the brims were turned romantically up at one side and caught with the insignia of the Regiment⁠—the crossed sabers. And their lieutenant-colonel and leader was that energetic, toothy young fellow who was making something of a stir in New York State⁠—Roosevelt, his name was. Theodore Roosevelt.
@@ -2366,7 +2399,8 @@ The jury was a hard-faced lot for the most part. Plucked from the plains or the 
 
 This legal farce had already begun before Yancey made his spectacular entrance.
 
-XVII
+
+## Chapter XVII
 “Case of the Territory of Oklahoma versus Dixie Lee!” (So they had made it a Territorial case.⁠ ⁠…) “Counsel for the Territory of Oklahoma!” Pat Leary stood up. “… for the defense.” No one. The close-packed courtroom was a nightmare of staring eyes and fish-like mouths greedily devouring Dixie Lee’s white, ravaged face. Oddly enough, compared to these, she seemed pure, aloof, exquisite. “The defendant having failed to provide herself with counsel, it is my duty, according to the laws of the gover’ment of the United States and the Territory of Oklahoma to appoint counsel for the defendant.” He shifted his quid, the while his cunning, red-rimmed eyes roved solemnly through the crowd seeking the shyster, Gwin Larkin. A stir in the close-packed crowd; a murmur. “I hereby appoint⁠—” The murmur swelled. “Order in the court!”
 
 “Your Honor!”
@@ -2429,7 +2463,8 @@ The good men and true of the jury filed solemnly out through the crowd that made
 
 “… find the defendant, Dixie Lee, not guilty.”
 
-XVIII
+
+## Chapter XVIII
 It was as though Osage and the whole Oklahoma country now stopped and took a deep breath. Well it might. Just ahead of it, all unknown, waited years of such clangor and strife as would make the past years seem uneventful in comparison. Ever since the day of the Run, more than fifteen years ago, it had been racing helter-skelter, devil take the hindmost; shooting into the air, prancing and yelping out of sheer vitality and cussedness. A rough roof over its head; coarse food on its table; a horse to ride; a burning drink to toss down its throat; border justice; gyp water; a girl to hug; mud roads to the edge of the sunbaked prairie, and thereafter no road; grab what you need; fight for what you want⁠—the men who had come to the wilderness of the Oklahoma country had expected no more than this; and this they had got. A man’s country it seemed to be, ruled by men for men. The women allowed them to think so. The word feminism was unknown to the Sabra Cravats, the Mrs. Wyatts, the Mrs. Hefners, the Mesdames Turket and Folsom and Sipes. Prim, good women and courageous, banded together by their goodness and by their common resolve to tame the wilderness. Their power was the more tremendous because they did not know they had it. They never once said, during those fifteen years, “We women will do this. We women will change that.” Quietly, indomitably, relentlessly, without even a furtive glance of understanding exchanged between them, but secure in their common knowledge of the sentimental American male, they went ahead with their plans.
 
 The Philomathean Club. The Twentieth Century Culture Club. The Eastern Star. The Daughters of Rebekah. The Venus Lodge.
@@ -2657,7 +2692,8 @@ A horrible suspicion darted through Sabra. “Yancey Cravat, have you ever⁠—
 
 He nodded his magnificent head slowly, sadly. “Many times. Many times.”
 
-XIX
+
+## Chapter XIX
 Cim was nineteen, Donna fifteen. And now Sabra lived quite alone in the new house on Kihekah Street, except for a colored woman servant sent from Kansas. She ran the paper alone, as she wished it run. She ordered the house as she wished it. She very nearly ran the town of Osage. She was a power in the Territory. And Yancey was gone, Cim was gone, Donna was gone. Sabra had refused to compromise with life, and life had take matters out of her hands.
 
 Donna was away at an Eastern finishing school⁠—Miss Dignum’s on the Hudson. Yancey had opposed that, of course. It had been Sabra’s idea to send Donna east to school.
@@ -2876,7 +2912,8 @@ She put out her hand. Her lower lip was caught between her teeth, sharp and tigh
 
 The sound of the horses’ hoofs died away on the still morning air. She looked down at Cim. She thought, I will take a bath, and then I will have some coffee, too. Yancey has gone again. Has left me. I know that. How do I know it? Well, nothing more can happen to me now. I have had it all, and I have borne it. Nothing more can happen to me now.
 
-XX
+
+## Chapter XX
 For years Oklahoma had longed for statehood as a bride awaits the dawn of her wedding day. At last, “Behold the bridegroom!” said a paternal government, handing her over to the Union. “Here is a star for your forehead. Meet the family.”
 
 Then, at the very altar, the final words spoken, the pact sealed, the bride had turned to encounter a stranger⁠—an unexpected guest, dazzling, breathtaking, embodying all her wildest girlish dreams.
@@ -3029,7 +3066,8 @@ Yancey Cravat Prop. and Editor.
 
 As they stood there, she in her neat blue serge, he in his crumpled and shabby attire, she knew that she never would do it.
 
-XXI
+
+## Chapter XXI
 Young Cim came home from Colorado for the summer vacation, was caught up in the oil flood, and never went back. With his geological knowledge, slight as it was, and his familiarity with the region, he was shuttled back and forth from one end of the state to the other. Curiously enough Cim, like his father, was more an onlooker than a participant in this fantastic spectacle. The quality of business acumen seemed to be lacking in both these men; or perhaps a certain mad fastidiousness in them kept them from taking part in the feverish fight. A hint of oil in this corner, a trace of oil in that, and the thousands were upon it, pushing, scrambling, nose to the ground, down on all-fours like pigs in a trough. A hundred times Yancey could have bought an oil lease share for a song. Head lolling on his breast, lids lowered over the lightning eyes, he shrugged indifferent shoulders.
 
 “I don’t want the filthy muck,” he said. “It stinks. Let the Indians have it. It’s theirs. And the Big Boys from the East⁠—let them sweat and scheme for it. They know where Oklahoma is now, all right.”
@@ -3216,7 +3254,8 @@ Sabra drew herself up, every inch the daughter of her mother, Felice Venable, n�
 
 “Not really, if you just look at it without a lot of sentiment. I shall be happy, and Tracy, too. His wife will be unhappy, I suppose, for a while. But she isn’t happy anyway, as it is. Better one than three. It’ll work out. You’ll see. Don’t bother about me. It’s Cim that needs looking after. He’s got a streak of⁠—of⁠—” She looked at her mother. Did not finish the sentence. “When he comes home Saturday I wish you’d speak to him.”
 
-XXII
+
+## Chapter XXII
 But Cim did not come home on Saturday. On Saturday, at noon, when Sabra and Yancey drove from the office in their little utility car to the house on Kihekah Street for their noonday dinner they saw a great limousine drawn up at the curb. A chauffeur, vaguely familiar, lounged in front. The car was thick with the red dust of the country road.
 
 A vague pang of premonition stabbed at Sabra’s vitals. She clutched Yancey’s arm. “Whose car is that?”
@@ -3319,7 +3358,8 @@ The huge Indian woman beside her turned her expressionless gaze on Sabra. Ponder
 
 The clatter of a fork dropped to the plate, a clash among the cups and saucers. Sabra Cravat had fainted.
 
-XXIII
+
+## Chapter XXIII
 Osage was so sophisticated that it had again become simple. The society editor of the Oklahoma Wigwam used almost no adjectives. In the old days, you had read that “the house was beautifully decorated with an artistic arrangement of smilax, sent from Kansas City, pink and purple asters in profusion making a bower before which the young couple stood, while in the dining room the brilliance of golden glow, scarlet salvia, and autumn leaves gave a seasonal touch.” But now the society column said, austerely, “The decorations were orchids and Pernet roses.”
 
 Osage, Oklahoma, was a city.
@@ -3458,7 +3498,8 @@ Le Cercle Français will meet Tuesday evening at the home of Mr. and Mrs. Everar
 
 The sunbonnets had triumphed.
 
-XXIV
+
+## Chapter XXIV
 Still, oil was oil, and Indians were Indians. There was no way in which either of those native forces could quite be molded to fit the New York pattern.
 
 The Osages still whirled up and down the Oklahoma roads, and those roads, for hundreds of miles, were still unpaved red prairie dust. They crashed into ditches and draws and culverts as of old, walked back to town and, entering the automobile salesroom in which they had bought the original car, pointed with one dusky finger at a new and glittering model.
@@ -3499,7 +3540,8 @@ So Sabra told him. Somehow, as she talked, the years rolled back, curtain after 
 
 The statue of the Spirit of the Oklahoma Pioneer was unveiled a year later, with terrific ceremonies. It was an heroic figure of Yancey Cravat stepping forward with that light graceful stride in the high-heeled Texas star boots, the skirts of the Prince Albert billowing behind with the vigor of his movements, the sombrero atop the great menacing buffalo head, one beautiful hand resting lightly on the weapon in his two-gun holster. Behind him, one hand just touching his shoulder for support, stumbled the weary, blanketed figure of an Indian.
 
-XXV
+
+## Chapter XXV
 Sabra Cravat, Congresswoman from Oklahoma, had started a campaign against the disgraceful condition of the new oil towns. With an imposing party of twenty made up of front-page oil men, Senators, Congressmen, and editors, she led the way to Bowlegs, newest and crudest of the new oil strikes.
 
 Cities like Osage were suave enough in a surface way. But what could a state do when oil was forever surging up in unexpected places, bringing the days of the Run back again? At each newly discovered pool there followed the rush and scramble. Another Bret Harte town sprang up on the prairie; fields oozed slimy black; oil rigs clanked; false-front wooden shacks lined a one-street village. Dance halls. Brothels. Gunmen. Brawls. Heat. Flies. Dirt. Crime. The clank of machinery. The roar of traffic boiling over a road never meant for more than a plodding wagon. Nitroglycerin cars bearing their deadly freight. Overalls, corduroys, blue prints, engines. The human scum of each new oil town was like the scum of the Run, but harder, crueler, more wolfish and degraded.
