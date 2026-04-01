@@ -325,7 +325,6 @@ screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
                     if main_menu:
                         textbutton _("Return") action ShowMenu("main_menu")
                     else:
-                        textbutton _("History")     action ShowMenu("history")
                         textbutton _("Save")        action ShowMenu("save")
                         textbutton _("Load")        action ShowMenu("load")
                         textbutton _("Preferences") action ShowMenu("preferences")
@@ -435,9 +434,10 @@ screen file_slots(title):
 
     use game_menu(title):
 
-        fixed:
-            order_reverse True
+        vbox:
+            spacing 6
 
+            ## Page name (editable label)
             button:
                 style "page_label"
                 key_events True
@@ -448,6 +448,7 @@ screen file_slots(title):
                     style "page_label_text"
                     value page_name_value
 
+            ## Page navigation buttons
             hbox:
                 style "page_button_hbox"
                 xalign 0.5
@@ -461,6 +462,7 @@ screen file_slots(title):
 
                 textbutton _(">") action FilePageNext()
 
+            ## Save slots grid
             vpgrid:
                 cols 2
                 yinitial 0.0
@@ -758,73 +760,6 @@ style slider_vbox is pref_vbox
 
 style mute_all_button is check_button
 style mute_all_button_text is check_button_text
-
-
-################################################################################
-## History Screen
-################################################################################
-
-define gui.history_height = 210
-define gui.history_text_width = 809
-define gui.history_name_xpos = 233
-define gui.history_name_ypos = 0
-define gui.history_name_width = 233
-define gui.history_name_xalign = 1.0
-define gui.history_text_xpos = 259
-define gui.history_text_ypos = gui.history_name_ypos
-define gui.history_text_xalign = 0.0
-
-screen history():
-    tag menu
-
-    predict False
-
-    use game_menu(_("History"), scroll=("vpgrid" if gui.history_height else "viewport"), yinitial=1.0, spacing=gui.history_spacing):
-
-        for h in renpy.roll_forward_info() or []:
-            window:
-                style "history_window"
-
-                has fixed:
-                    yfit True
-
-                if h.who:
-                    label h.who:
-                        style "history_name"
-                        substitute False
-                        xalign gui.history_name_xalign
-
-                $ what = renpy.filter_text_tags(h.what, allow=gui.history_allow_tags)
-                text what:
-                    substitute False
-                    xpos gui.history_text_xpos
-                    ypos gui.history_text_ypos
-                    xanchor gui.history_text_xalign
-                    xsize gui.history_text_width
-                    min_width gui.history_text_width
-                    text_align gui.history_text_xalign
-
-define gui.history_allow_tags = { "alt", "noalt", "rt", "rb", "art" }
-
-style history_window is empty:
-    yminimum gui.history_height
-
-style history_name is default:
-    xpos gui.history_name_xpos
-    xanchor gui.history_name_xalign
-    ypos gui.history_name_ypos
-    xsize gui.history_name_width
-    min_width gui.history_name_width
-    text_align gui.history_name_xalign
-    color gui.accent_color
-
-style history_text is default:
-    xpos gui.history_text_xpos
-    ypos gui.history_text_ypos
-    xanchor gui.history_text_xalign
-    xsize gui.history_text_width
-    min_width gui.history_text_width
-    text_align gui.history_text_xalign
 
 
 ################################################################################
