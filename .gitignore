@@ -7,5 +7,7 @@
 .tessl/*
 tessl.json
 .mcp.json
--dists/*
+*-dists/
 cimarron/progressive_download.txt
+cimarron/game/_mcp
+cimarron/game/_mcp/*
