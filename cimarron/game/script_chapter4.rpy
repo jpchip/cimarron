@@ -698,12 +698,15 @@ label scene23_what_yancey_left:
 
 label chapter4_summary:
 
-    scene black
-
+    stop music fadeout 1.5
+    scene bg_journal with fade
+    play music "audio/state_seal.ogg" fadein 2.5 loop
+    play sound "sfx/paper_rustle.ogg"
     "CHAPTER FOUR COMPLETE"
-    "— Your Story So Far —"
+    "— from Sabra's ledger —"
 
     ## Yancey relationship
+    show yancey neutral at left with dissolve
     if yancey_relationship >= 65:
         "YANCEY & SABRA: Deeply trusting, even across the silences. She knows what he is. He knows what she has become."
     elif yancey_relationship >= 35:
@@ -711,7 +714,9 @@ label chapter4_summary:
     else:
         "YANCEY & SABRA: Strained. She has built something he cannot quite reach, and she is no longer sure she minds."
 
-    ## Sabra's direction
+    ## Sabra's direction + newspaper stance + community standing
+    hide yancey with dissolve
+    show sabra ch4 neutral at right with dissolve
     if sabra_direction >= 8:
         "SABRA'S PATH: Frontier Woman. The person who arrived in a silk dress from Wichita is a distant memory."
     elif sabra_direction <= -5:
@@ -719,7 +724,6 @@ label chapter4_summary:
     else:
         "SABRA'S PATH: Her Own. Neither Wichita nor the frontier entirely owns her now."
 
-    ## Newspaper stance
     if newspaper_stance >= 5:
         "THE WIGWAM: Progressive — advocate for the Indian Nations, women's voice, oil watchdog. It has made enemies. It has also made history."
     elif newspaper_stance <= -3:
@@ -727,7 +731,6 @@ label chapter4_summary:
     else:
         "THE WIGWAM: Balanced — it prints what it believes, mostly. The rest, it is learning."
 
-    ## Community standing
     if community_standing >= 6:
         "STANDING IN OSAGE: Beloved. The town would not be what it is without Sabra Cravat."
     elif community_standing <= -3:
@@ -736,6 +739,7 @@ label chapter4_summary:
         "STANDING IN OSAGE: Respected. They know her name and mean it."
 
     ## Indian sympathy
+    show arita neutral at right with dissolve
     if indian_sympathy >= 5:
         "ON THE INDIAN QUESTION: Advocate — her name is known in the Nations as someone who could be trusted."
     elif indian_sympathy <= -3:
@@ -744,6 +748,7 @@ label chapter4_summary:
         "ON THE INDIAN QUESTION: Cautious, but changing."
 
     ## Dixie Lee editorial flag
+    show dixie neutral at right with dissolve
     if dixie_lee_editorial == "support":
         "She stood on the right side of that verdict and she knew it."
     elif dixie_lee_editorial == "oppose":
@@ -751,7 +756,8 @@ label chapter4_summary:
     elif dixie_lee_editorial == "neutral":
         "She printed the facts and let the community decide. It was the hardest kind of restraint."
 
-    ## Statehood stance flag
+    ## Statehood stance + newspaper high-water mark
+    hide dixie with dissolve
     if statehood_stance == "single":
         "She published for one Oklahoma — one state, both peoples."
     elif statehood_stance == "double":
@@ -759,8 +765,9 @@ label chapter4_summary:
     elif statehood_stance == "consult":
         "She went to the reservation before she wrote a word. Some editors thought that was weakness. She thought it was journalism."
 
-    ## Newspaper stance high-water mark
     if newspaper_stance >= 3:
         "The Wigwam she runs is not the paper Yancey founded. It is something more."
 
+    play sound "sfx/paper_rustle.ogg"
+    scene black with fade
     jump chapter5_start

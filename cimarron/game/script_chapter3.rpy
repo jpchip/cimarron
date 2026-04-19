@@ -677,12 +677,15 @@ label scene18_war:
 
 label chapter3_summary:
 
-    scene black
-
+    stop music fadeout 1.5
+    scene bg_journal with fade
+    play music "audio/five_years.ogg" fadein 2.5 loop
+    play sound "sfx/paper_rustle.ogg"
     "CHAPTER THREE COMPLETE"
-    "— Your Story So Far —"
+    "— from Sabra's ledger —"
 
     ## Yancey relationship
+    show yancey neutral at left with dissolve
     if yancey_relationship >= 65:
         "YANCEY & SABRA: Deeply trusting, even across the silences. She knows what he is. He knows what she has become."
     elif yancey_relationship >= 35:
@@ -691,6 +694,8 @@ label chapter3_summary:
         "YANCEY & SABRA: Strained. She has built something he cannot quite reach, and she is not sure she minds."
 
     ## Sabra's direction
+    hide yancey with dissolve
+    show sabra ch3 neutral at right with dissolve
     if sabra_direction >= 8:
         "SABRA'S PATH: Frontier Woman. The person who arrived in a silk dress from Wichita is a distant memory."
     elif sabra_direction <= -5:
@@ -698,7 +703,8 @@ label chapter3_summary:
     else:
         "SABRA'S PATH: Her Own. Neither Wichita nor the frontier entirely owns her now."
 
-    ## Newspaper stance
+    ## Newspaper stance + community standing (Isaiah as the press emblem)
+    show isaiah neutral at right with dissolve
     if newspaper_stance >= 5:
         "THE WIGWAM: Progressive — advocate for the Indian Nations, women's voice, reform. It has made enemies. It has also made history."
     elif newspaper_stance <= -3:
@@ -706,7 +712,6 @@ label chapter3_summary:
     else:
         "THE WIGWAM: Balanced — it prints what it believes, mostly. The rest, it is learning."
 
-    ## Community standing
     if community_standing >= 6:
         "STANDING IN OSAGE: Beloved. The town would not be what it is without Sabra Cravat."
     elif community_standing <= -3:
@@ -715,6 +720,7 @@ label chapter3_summary:
         "STANDING IN OSAGE: Respected. They know her name and mean it."
 
     ## Indian sympathy
+    show arita neutral at right with dissolve
     if indian_sympathy >= 5:
         "ON THE INDIAN QUESTION: Advocate — her name is known in the Nations as someone who could be trusted."
     elif indian_sympathy <= -3:
@@ -723,6 +729,7 @@ label chapter3_summary:
         "ON THE INDIAN QUESTION: Cautious, but changing."
 
     ## Achievement flags
+    hide arita with dissolve
     if sabra_cleared_the_office:
         "When Yancey came home from the Kid, she was at the press. She did not stop for him. He had to come to her."
     if isaiah_defended:
@@ -736,6 +743,8 @@ label chapter3_summary:
     if newspaper_stance >= 3:
         "The Wigwam she runs is not the paper Yancey founded. It is something more."
 
+    play sound "sfx/paper_rustle.ogg"
+    scene black with fade
     jump chapter4_start
 
 

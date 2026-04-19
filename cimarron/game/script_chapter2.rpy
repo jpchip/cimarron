@@ -732,12 +732,15 @@ label scene13_cherokee_strip:
 
 label chapter2_summary:
 
-    scene black
-
+    stop music fadeout 1.5
+    scene bg_journal with fade
+    play music "audio/wigwam_press.ogg" fadein 2.5 loop
+    play sound "sfx/paper_rustle.ogg"
     "CHAPTER TWO COMPLETE"
-    "— Your Story So Far —"
+    "— from Sabra's ledger —"
 
     ## Yancey relationship
+    show yancey neutral at left with dissolve
     if yancey_relationship >= 65:
         "YANCEY & SABRA: Deeply trusting. Even his absences feel like a conversation."
     elif yancey_relationship >= 35:
@@ -745,7 +748,9 @@ label chapter2_summary:
     else:
         "YANCEY & SABRA: Strained. She has begun to make a life that does not depend on him."
 
-    ## Sabra's direction
+    ## Sabra's direction + community standing
+    hide yancey with dissolve
+    show sabra ch2 neutral at right with dissolve
     if sabra_direction >= 5:
         "SABRA'S PATH: Frontier Woman. She is someone her mother would not recognize, and she is glad."
     elif sabra_direction <= -5:
@@ -753,7 +758,6 @@ label chapter2_summary:
     else:
         "SABRA'S PATH: Between Two Worlds. She has not yet chosen — or the choice is choosing itself."
 
-    ## Community standing
     if community_standing >= 4:
         "STANDING IN OSAGE: Well-regarded. The town knows her name and means it kindly."
     elif community_standing <= -2:
@@ -762,6 +766,7 @@ label chapter2_summary:
         "STANDING IN OSAGE: Respectable. Neither beloved nor resented — yet."
 
     ## Indian sympathy
+    show arita neutral at right with dissolve
     if indian_sympathy >= 4:
         "ON THE INDIAN QUESTION: Advocate. She has put herself on the side of the treaties and the Nations."
     elif indian_sympathy <= -3:
@@ -770,6 +775,7 @@ label chapter2_summary:
         "ON THE INDIAN QUESTION: Cautious. She has not yet decided what she believes — or acted on it."
 
     ## Achievement flags
+    hide arita with dissolve
     if sabra_stood_alone:
         "She brought [donna_name] into the world without sending for Yancey. She did not need to."
     if sabra_defended_indians:
@@ -779,4 +785,6 @@ label chapter2_summary:
     if sabra_admires_yancey:
         "She still watches him ride away and feels the catch in her chest. She has stopped fighting it."
 
+    play sound "sfx/paper_rustle.ogg"
+    scene black with fade
     jump chapter3_start

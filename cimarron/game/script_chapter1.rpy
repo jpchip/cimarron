@@ -788,11 +788,14 @@ label scene7_end_of_chapter:
 
 label chapter_summary:
 
-    scene black
-
+    stop music fadeout 1.5
+    scene bg_journal with fade
+    play music "audio/frontier_theme.ogg" fadein 2.5 loop
+    play sound "sfx/paper_rustle.ogg"
     "CHAPTER ONE COMPLETE"
-    "— Your Story So Far —"
+    "— from Sabra's ledger —"
 
+    show yancey neutral at left with dissolve
     if yancey_relationship >= 65:
         "YANCEY & SABRA: Deeply trusting. He confides in her; she believes in his vision."
     elif yancey_relationship >= 35:
@@ -800,6 +803,8 @@ label chapter_summary:
     else:
         "YANCEY & SABRA: Strained. Sabra follows, but she follows alone, inside."
 
+    hide yancey with dissolve
+    show sabra ch1a neutral at right with dissolve
     if sabra_direction >= 3:
         "SABRA'S PATH: Frontier Woman. She is becoming someone her mother would not entirely recognize."
     elif sabra_direction <= -3:
@@ -807,6 +812,7 @@ label chapter_summary:
     else:
         "SABRA'S PATH: Undecided. She is between two worlds, and has not yet chosen."
 
+    hide sabra with dissolve
     if sabra_confronted_mother:
         "She stood up to her mother. The iron in her was tested and held."
     if sabra_admires_yancey:
@@ -818,6 +824,8 @@ label chapter_summary:
 
     "The territory does not wait. Neither does she."
 
+    play sound "sfx/paper_rustle.ogg"
+    scene black with fade
     jump chapter2_start
 
 ## ─── JOURNAL ENTRY SUBROUTINE ────────────────────────────────────────────────
