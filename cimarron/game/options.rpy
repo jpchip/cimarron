@@ -6,7 +6,7 @@
 define config.name = "Cimarron: A Visual Novel"
 
 # Version string shown in the launcher.
-define config.version = "0.1.0"
+define config.version = "0.2.0"
 
 # If True, the game will save automatically at the start of each scene.
 define config.has_autosave = True
@@ -41,7 +41,7 @@ define config.allow_skipping = True
 define config.developer = True
 
 ## ─── Save Directory ──────────────────────────────────────────────────────────
-define config.save_directory = "cimarron-0.1.0"
+define config.save_directory = "cimarron-0.2.0"
 
 
 ## This section contains information about how to build your project into
@@ -51,7 +51,7 @@ init python:
     ## The name that's used for directories and archive files. For example, if
     ## this is 'mygame-1.0', the windows distribution will be in the
     ## directory 'mygame-1.0-win', in the 'mygame-1.0-win.zip' file.
-    build.directory_name = "cimarron-0.1.0"
+    build.directory_name = "cimarron-0.2.0"
 
     ## The name that's uses for executables - the program that users will run
     ## to start the game. For example, if this is 'mygame', then on Windows,
