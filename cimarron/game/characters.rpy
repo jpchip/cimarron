@@ -219,3 +219,6 @@ define krbecek = Character("Masja Krbecek", color="#B0B0B0")
 
 # Big Elk — Ruby's father; former Osage Chief; elder of great dignity
 define big_elk = Character("Big Elk", color="#A07848")
+
+# Mrs. Big Elk — Big Elk's third wife; speaks broken English her husband refuses to use
+define mrs_big_elk = Character("Mrs. Big Elk", color="#B08860")
