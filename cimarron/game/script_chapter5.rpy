@@ -84,7 +84,6 @@ label scene24_cim_ruby:
     "No one answered. The kitchen was empty. Ruby's apron was gone from the hook behind the door. Sabra went into the stiff little front parlor — the room she almost never used — and stopped."
 
     show big_elk neutral at left with dissolve
-    show mrs_big_elk neutral at center with dissolve
 
     "Big Elk and his wife were sitting in the parlor chairs."
 
@@ -168,7 +167,6 @@ label scene24_cim_ruby:
 
     hide yancey with dissolve
     hide big_elk with dissolve
-    hide mrs_big_elk with dissolve
     hide sabra with dissolve
 
     ## ── At Wazhazhe ──────────────────────────────────────────────────────────
