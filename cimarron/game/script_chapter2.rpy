@@ -273,6 +273,8 @@ label scene10_wigwam_lives:
 
     yancey "If the law is used as a weapon against the people it was written to protect, then the law is not justice. It is theater."
 
+    "He spoke with the precision of a man who had once stood in courtrooms and knew what the machinery looked like from the inside."
+
     "The editorial had run. The reaction had been immediate."
 
     hide yancey

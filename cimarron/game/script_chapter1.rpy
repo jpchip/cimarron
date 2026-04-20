@@ -181,6 +181,17 @@ label scene1_venable_home:
 
     "The temperature at the table dropped several degrees."
 
+    felice "And what exactly qualifies you to build a newspaper in that wilderness?"
+
+    show yancey neutral
+    yancey "I am taking up my law practice in Osage, as well as the paper. A territory that raw needs both a press and a lawyer. I intend to provide both."
+
+    felice "Two trades. How reassuring."
+
+    yancey "A good lawyer and a good editor need the same thing, Mrs. Venable. They need to understand an argument."
+
+    "She had always known he was a lawyer — his books alone made that plain. But she noticed that her mother's face had gone still, as though this was the first time the two things together — the law and the newspaper — had landed as a single fact."
+
     $ journal_scene1 = True
     call journal_entry("Scene 1", "He arrived like weather. One moment the parlor was simply a parlor — Mama's china, the decanters, Cousin Dabney with his orange. And then Yancey was in it, and everything shifted. I have been married to him two years and he still does this to a room. And, I confess, to me.") from _call_journal_scene1
 
