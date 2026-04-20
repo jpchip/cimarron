@@ -152,6 +152,9 @@ label scene24_cim_ruby:
 
     hide big_elk with dissolve
 
+    if sabra_shielded_cim:
+        "She had stepped between Cim and a gunman once — in the church tent when he was not yet four, her body simply knowing before her mind did. She supposed she had always been, in some fundamental way, between Cim and whatever came next."
+
     if ruby_time_needed:
         "After Big Elk and his wife had risen and the formal goodbyes were done, Ruby came back to the parlor alone while Cim walked his father to the automobile."
 
@@ -232,11 +235,45 @@ label scene25_congresswoman:
 
             "She got no further. The women's club descended on her in shifts over three days. She allowed herself to be talked back into it. She had known she would allow it. She was not sorry."
 
+        "\"Yes. And I already know which three senators I need to court.\"" if sabra_direction <= -5:
+            $ community_standing += 3
+            $ sabra_independence  += 2
+            $ sabra_direction     -= 1
+
+            show sabra ch5 determined
+            sabra "Yes. And I have already identified the three committee chairs whose support I need. I would like to begin making calls."
+
+            "The party man stared at her for a moment."
+
+            "She had been running Osage for twenty years. He had not fully appreciated that."
+
+            "She won. Of course she won."
+
+        "\"Yes. And I intend to be inconvenient.\"" if sabra_direction >= 5:
+            $ community_standing += 2
+            $ newspaper_stance   += 1
+            $ sabra_independence  += 2
+            $ sabra_direction     += 1
+
+            show sabra ch5 determined
+            sabra "Yes. I want to be clear: I intend to be inconvenient. If that is a problem for the party, I am available to hear a counterproposal."
+
+            "He didn't have one."
+
+            "She won. Of course she won. She had been winning Osage over for two decades, and those people all voted."
+
     ## ── Choice 2: Primary Issue ───────────────────────────────────────────────
 
     "Washington. Marble corridors. Senators who met her eyes with the particular expression of men calculating how much trouble she intended to cause."
 
     "She had a seat. She could spend it on what Osage needed, or what Oklahoma needed, or what she believed."
+
+    if statehood_stance == "single":
+        "She had argued for statehood — one state, not two — back when it was still a debate. The party remembered. It had, she suspected, been a reason they asked her."
+    elif statehood_stance == "double":
+        "She had argued for two states in the territorial debates — more representation for the Indian Territory. She had been on the losing side. She had not forgotten it."
+    elif statehood_stance == "consult":
+        "She had told the party she would consult the Osage before she took any position, in the old statehood debates. They had found it unusual. She had found it obvious."
 
     menu:
         "Her colleagues on the floor are watching. What does she bring to the floor?"
@@ -435,6 +472,9 @@ label scene27_bowlegs:
 
     "His face was older. The gray at the temples gone to white, the great chest diminished, the long coat muddy and torn. But the jaw was the same. The cheekbones. The ridiculous lashes."
 
+    if yancey_mystery:
+        "There had been something behind his eyes she had never entirely named — the quality of a man who could stand in a church doorway while a gunman backed down, and be calm about it. She would not have to name it after today."
+
     "Those ocean-gray eyes opened."
 
     "Glazed, then: they cleared."
@@ -613,6 +653,13 @@ label scene28_monument_reveal:
         "[donna_name] stood near the back, composed and capable — exactly as Sabra had told her she would be, the morning she married Tracy Wyatt. Cravat stock. She had known it before Sabra said it."
     elif donna_wedding_advice == "be_happy":
         "[donna_name] was in the crowd with Tracy. She was happy. It showed plainly. Sabra had wanted that for her. She had said so."
+
+    if dixie_lee_editorial == "support":
+        "Dixie Lee was not here. She had been ill for some years. But she would have understood this monument — this bronze man, this particular crowd. She always had."
+    elif dixie_lee_editorial == "oppose":
+        "Dixie Lee was not here. She had moved to Guthrie after the trial. Sabra thought of her sometimes, and found no clean feeling — only the memory of two women who had both, in their different ways, been defined by the same man."
+    elif dixie_lee_editorial == "neutral":
+        "Dixie Lee was not here. Sabra thought of her briefly, and then let the thought pass, as she had learned to do."
 
     jump chapter5_summary
 
@@ -860,6 +907,9 @@ label chapter5_summary:
         "She had told [donna_name] she was Cravat stock. [donna_name] had said: {i}I know, Mother.{/i}"
     elif donna_wedding_advice == "be_happy":
         "She had told [donna_name] she hoped he made her happy. It was the truest thing she had said at a wedding."
+
+    if sabra_confronted_mother:
+        "She had walked out of her mother's parlor in Wichita forty years ago. She had not looked back."
 
     "And then: Bowlegs. The oil field. The canister catching the light on its way down. The crowd parting for her white hair."
 

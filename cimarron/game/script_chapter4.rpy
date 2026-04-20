@@ -96,6 +96,9 @@ label scene19_rough_rider:
     show sabra ch4 proud
     "She watched him and was proud."
 
+    if sabra_cleared_the_office:
+        "She had stood at the press when he came back last time — from the Kid, bloody and returned. She had not crossed the floor. She had let him find her there. She did not cross it now."
+
     ## ── Private reunion ────────────────────────────────────────────────────────
 
     scene bg_wigwam_modern with dissolve
@@ -658,6 +661,11 @@ label scene23_what_yancey_left:
     "She was the editor of a newspaper. President of two civic organizations. Mother of two grown children. The most recognizable woman in a hundred miles."
 
     "What she was not: the wife of a man who stayed."
+
+    if sabra_stood_alone:
+        "She had brought [donna_name] into the world without him. She had done that, and then kept going."
+    if isaiah_defended:
+        "Isaiah had learned to set type in this room. She thought about him sometimes — what he might have become, if the town had let him."
 
     menu:
         "How Sabra regarded what she had built:"

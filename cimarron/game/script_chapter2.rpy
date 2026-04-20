@@ -87,6 +87,9 @@ label scene8_lion_streets:
     play sound "sfx/crowd_exhale.ogg"
     "The congregation exhaled as one."
 
+    if sabra_stood_firm_danger:
+        "She had been closer than this before. She had not flinched then, either."
+
     show doc neutral at center with dissolve
 
     doc "Well. I have attended stranger services."
@@ -529,6 +532,9 @@ label scene12_respectability:
 
     "The Osage Women's Improvement Club was being founded. The founding members had agreed: Sabra Cravat should be president. She had the newspaper, the reputation, and what one woman called 'the kind of spine this town needs in a parlor.'"
 
+    if sabra_helped_frontier_char:
+        "She had earned it one act at a time. On the road to Osage in the first week, she had stopped for a sunburned stranger when no one else had. Small things. The territory noticed, even when she hadn't."
+
     show sabra ch2 neutral at center with dissolve
 
     "The organizational meeting was in Estelle Sipes's front room. Twelve women. Good dresses. The particular energy of women who have decided to improve something."
@@ -563,6 +569,24 @@ label scene12_respectability:
             "She folded her hands in her lap and looked at the window."
             sabra "I abstain."
             "Estelle Sipes noted it in the minutes with a disapproving flourish."
+
+        "\"Mrs. Sipes, the question before us is standing — and Miss Lee's standing in this town is considerable.\"" if sabra_direction <= -5:
+            $ community_standing += 1
+            $ sabra_direction     -= 1
+            show sabra ch2 determined
+            sabra "Mrs. Sipes. I suggest we set aside the question of character and address the question of standing. Miss Lee owns property in this town. Her standing among the businessmen of Osage is not in question. On those grounds, I move that her application be considered."
+            "The room shifted. It was not warmth. But it was uncertainty. Estelle Sipes could not argue against her own language."
+            "Dixie Lee was not voted in that afternoon. But the motion was tabled, not defeated. Sabra had bought her something, at least."
+
+        "\"If she goes, I go.\"" if sabra_direction >= 5:
+            $ community_standing -= 3
+            $ sabra_direction     += 2
+            $ sabra_independence  += 1
+            show sabra ch2 angry
+            sabra "If this club votes Dixie Lee out of consideration, then it has no need of me for its president."
+            "She said it quietly. She meant it completely."
+            "The room went very still. Estelle Sipes opened her mouth and closed it."
+            "Dixie Lee was not voted in that afternoon. But Estelle Sipes did not call the vote, either."
 
     ## Second question: Arita Red Feather
     "Then Estelle Sipes raised the second name. Arita Red Feather."

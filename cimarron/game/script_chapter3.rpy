@@ -304,6 +304,28 @@ label scene16_running_paper:
             "She wrote about water rights and the school bond instead."
             "The advertisers were pleased. She was not sure she was."
 
+        "Write it sharp — but frame it in the language of law and property, not moral argument." if sabra_direction <= -5:
+            $ newspaper_stance   += 2
+            $ indian_sympathy    += 1
+            $ community_standing += 1
+            $ sabra_direction    -= 1
+            sabra "If I write this as a moral argument, the merchants dismiss it. If I write it as a property rights argument, they have to engage with it."
+            "She wrote for two hours."
+            "The editorial named the allotment mechanism, quoted the treaty language, and asked no one to feel anything — only to think clearly. It was the sharpest thing she had written."
+            sabra "{i}Yancey would have written fire. I have written law. I believe mine will last longer.{/i}"
+            "She sent it to press."
+
+        "Write it sharp, sign it, and formally invite any dissenter to respond in print." if sabra_direction >= 5:
+            $ newspaper_stance   += 3
+            $ community_standing -= 2
+            $ sabra_independence += 1
+            $ sabra_direction    += 1
+            sabra "I am signing this. And I am inviting anyone who disagrees to put their name on a response."
+            "She named three legislators, made the moral argument clearly, and appended a formal editorial invitation: {i}The Wigwam will print a thoughtful counterargument if one is submitted.{/i}"
+            "No one submitted one."
+            sabra "{i}That is also information.{/i}"
+            "She sent it to press."
+
     ## ── Choice 2: The Indian question in letters ─────────────────────────────
 
     "The letters that week ran thick. Statehood talk, oil rumors, the usual civic complaints."
