@@ -114,8 +114,8 @@ image tracy charming = Transform("images/sprites/tracy_charming.png", zoom=0.45)
 image ruby neutral = Transform("images/sprites/ruby_neutral.png", zoom=0.45)
 image ruby direct  = Transform("images/sprites/ruby_direct.png",  zoom=0.45)
 
-image krbecek neutral    = Transform("images/sprites/krbecek_neutral.png",    zoom=0.45)
-image krbecek thoughtful = Transform("images/sprites/krbecek_thoughtful.png", zoom=0.45)
+image krbecek neutral    = Transform("images/sprites/krbecek_neutral.png",    zoom=0.35)
+image krbecek thoughtful = Transform("images/sprites/krbecek_thoughtful.png", zoom=0.35)
 
 image big_elk neutral       = Transform("images/sprites/big_elk_neutral.png",       zoom=0.45)
 image big_elk acknowledging = Transform("images/sprites/big_elk_acknowledging.png", zoom=0.45)

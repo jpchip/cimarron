@@ -532,7 +532,7 @@ label scene28_photos_result:
 
     show krbecek thoughtful at left with dissolve
 
-    if photo_set == {1, 4}:
+    if 1 in photo_set and 4 in photo_set:
         ## Run + Rough Rider
         $ yancey_relationship += 3
 
@@ -540,7 +540,7 @@ label scene28_photos_result:
 
         "He turned both photographs over and over in his hands, as if the paper itself could tell him something."
 
-    elif photo_set == {2, 3}:
+    elif 2 in photo_set and 3 in photo_set:
         ## Tent church + Sabra at press
         $ community_standing += 2
 
@@ -554,7 +554,7 @@ label scene28_photos_result:
 
         "He put them in his breast pocket."
 
-    elif photo_set == {5, 6}:
+    elif 5 in photo_set and 6 in photo_set:
         ## Kid's burial + Cim/Ruby
         $ indian_sympathy += 2
 
