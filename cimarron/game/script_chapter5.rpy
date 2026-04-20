@@ -27,227 +27,147 @@ label chapter5_start:
     jump scene24_cim_ruby
 
 
-## ─── SCENE 24 — Cim and Ruby Big Elk ─────────────────────────────────────────
+## ─── SCENE 24 — Cim Brings Ruby Home ─────────────────────────────────────────
 
 label scene24_cim_ruby:
 
-    scene bg_cravat_kitchen with dissolve
+    scene bg_kihekah_house_parlor with dissolve
 
     play music "audio/kihekah_parlor.ogg" fadein 1.0 loop
 
-    "Ruby Big Elk had been in the house for three years."
+    play sound "sfx/car_engine_1910.ogg"
+    "On a Saturday, a large automobile pulled up in front of the house on Kihekah Street."
 
-    "She had come the summer Cim turned fifteen — a big, silent girl of about twenty-two, almost handsome, one of six children, which was a large family for an Osage. Sabra learned, months in, that the girl had already been twice married."
-
-    show sabra ch5 neutral at right with dissolve
-    show ruby neutral at left with dissolve
-
-    sabra "What became of your husbands, Ruby?"
-
-    ruby "One dead. One divorced."
-
-    "She said it flat, and went on making the bed as if she had been asked about the weather."
-
-    "She walked with a scuffling step that Sabra could not break her of. Sabra spoke to her about it once, sharply — and then discovered she was lame, the left leg slightly shorter than the right. She apologized. The girl said nothing."
-
-    "Ruby made beds with the manner of a deposed queen. She moved about the kitchen with the pace and air of a Lady Macbeth. Her broad immobile face, her unspeaking eyes, her secret manner all worked a slow constant poison in Sabra — who, in fairness, admitted that Ruby was good to the children, fed them well, never complained about the work."
-
-    hide ruby with dissolve
-    hide sabra with dissolve
-
-    show cim neutral at left with dissolve
-    show ruby neutral at right with dissolve
-
-    "What Sabra did not fully admit, for almost three years, was what she had been seeing with her own eyes."
-
-    "Young Cim lingering in the kitchen. Cim at the table with his head close to Ruby's, learning Osage. Cim's face when he listened to her sing the long pulsing vowels of songs Sabra could not follow — a pulsation like a violin note sounded several times in a single bow stroke."
-
-    cim "One more time. Slow."
-
-    "Ruby sang. Cim tried to follow, his eyes fixed on her face, utterly absorbed."
-
-    "Sabra had seen it. She had put it away. She had seen it again, and put it away again."
-
-    hide cim with dissolve
-    hide ruby with dissolve
-
-    ## ── The Announcement ─────────────────────────────────────────────────────
-
-    scene bg_kihekah_house_parlor with dissolve
-
-    "On an afternoon in October, Sabra came home from the Wigwam to a house that was too quiet."
-
-    show sabra ch5 worried at right with dissolve
-
-    sabra "Cim? Ruby?"
-
-    "No one answered. The kitchen was empty. Ruby's apron was gone from the hook behind the door. Sabra went into the stiff little front parlor — the room she almost never used — and stopped."
+    "Sabra had been told. She had had three weeks to think about it. She had thought about it every morning and then put it away and thought about it again."
 
     show big_elk neutral at left with dissolve
 
-    "Big Elk and his wife were sitting in the parlor chairs."
+    "Big Elk and his wife sat formally in the parlor chairs, as if waiting in a bank. His wife wore a blanket shawl and kept her hands folded. He was very large and very still, the way the old headmen were still — a stillness that was not patience but something beyond patience."
 
-    "They were in ceremonial dress. Big Elk's striped blanket hung regally from his shoulders; silver emblems of his former office as Chief hung at his breast; on his head was a round high cap of brown beaver with an eagle feather stuck up the back, and his long locks, hanging straight and stiff, were dyed a brilliant orange. His wife wore a cerise satin blouse and a fine bright-hued blanket; her hair was neatly braided and wound about her hatless head."
+    show sabra ch5 worried at right with dissolve
 
-    "Sabra understood, before a word was said, that the dress was the announcement."
+    "Sabra entered from the hallway."
 
-    "Big Elk raised one palm. The other wielded languidly, back and forth, back and forth, an enormous semicircular fan made of eagle feathers."
+    sabra "Good afternoon."
 
-    big_elk "How."
+    "She said it to the room. She was not sure yet where to put her eyes."
 
-    "He said nothing else. He did not speak English — a refusal he had maintained for forty years, though he understood it perfectly well. His wife spoke for him. She had attended an Indian Mission school in her girlhood; her English was broken and slovenly, from carelessness or indifference or pride."
-
-    mrs_big_elk "Four o'clock big dinner, big dance. Your son want um come tell you."
-
-    "Sabra's hand went to the back of a chair."
-
-    mrs_big_elk "Want um know he marry Ruby this morning."
-
-    "The fan went back and forth, back and forth, regally."
-
-    ## ── Choice 1: Sabra's First Words ────────────────────────────────────────
-
-    menu:
-        "The room was very quiet. The fan went on. What does Sabra say?"
-
-        "\"I have been employing my own daughter-in-law.\" (Recognition)":
-            $ indian_sympathy    += 2
-            $ ruby_welcomed       = True
-
-            "She heard it come out of her own mouth before she had decided to say it. Three years. Three years of sharp little corrections about the grape jell and the scuffling step — and the girl on the other side of them had been the one Cim was going to marry from the beginning. Perhaps from the first week."
-
-            sabra "I have been employing my own daughter-in-law."
-
-            "Mrs. Big Elk smiled a strange fixed smile, like a schoolgirl's — a rare expression in her face, more frightening than a scowl. Big Elk himself showed nothing."
-
-            "Sabra thought, with a clarity she disliked: {i}They have known this longer than I have.{/i}"
-
-        "\"There will be no acknowledgment from this family.\" (Felice's voice)":
-            $ indian_sympathy    -= 2
-            $ yancey_relationship -= 5
-
-            "Her mother's voice came up through her own throat. The bright hard tone Felice Venable had used on Cherokees and on tradesmen and, in the last years, on Yancey himself."
-
-            sabra "There will be no acknowledgment from this family."
-
-            "Mrs. Big Elk stopped smiling. Big Elk's eyes moved, once, and came to rest on Sabra, and did not move again. The fan went on, back and forth."
-
-            mrs_big_elk "You come anyway. Four o'clock."
-
-            "She said it without heat, the way one would state a timetable."
-
-        "\"Where is my husband?\" (Postponement)":
-            "Her mouth was dry. She could not look at either of them."
-
-            sabra "Where is my husband? He should be here for this."
-
-            mrs_big_elk "Mister Yancey come soon. Cim go tell him at the paper."
-
-            "Sabra sat down. The cerise satin of Mrs. Big Elk's blouse seemed too bright, like something seen through fever."
-
-    ## ── Yancey Takes It in Stride ────────────────────────────────────────────
-
-    show yancey neutral at right with dissolve
-
-    "Yancey came down the stairs with his quick light step. At the sight of Big Elk and his wife his look of concern changed to one of relief — as though something long expected had finally arrived."
-
-    yancey "How, old friend."
-
-    big_elk "How."
-
-    "They exchanged a sentence or two in Osage. Sabra could not follow it. Yancey turned to her."
-
-    yancey "Cim married Ruby this morning at Wazhazhe. Dinner at four. We're expected."
-
-    "He said it the way he would have said {i}the weather is turning{/i}. Then he went to the telephone in the hall and, without waiting for her to speak, dictated the wedding announcement to Jesse Rickey at the Wigwam."
-
-    yancey "Jesse! Take this. Get it in. Ready. Ex-Chief Big Elk, of the Osage Nation, and Mrs. Big Elk, living at Wazhazhe, announce the marriage of their daughter Ruby Big Elk to Cimarron Cravat — don't interrupt me, I'm in a hurry — son of Mr. and Mrs. Yancey Cravat, of this city. The wedding was solemnized at the home of the bride's parents and was followed by an elaborate dinner made up of many Indian and American dishes."
-
-    "He came back into the parlor and clapped Big Elk once on the shoulder, which Big Elk permitted."
-
-    hide yancey with dissolve
-    hide big_elk with dissolve
-    hide sabra with dissolve
-
-    ## ── At Wazhazhe ──────────────────────────────────────────────────────────
-
-    scene bg_wazhazhe_bungalow with fade
-
-    "Ruby's handsome head right had bought the young couple the house — a one-story red brick bungalow, substantial and ugly — just across the road from Big Elk's. It was furnished complete. Mongrel Spanish in the living room: red plush, fringe, brass nail heads as big as twenty-dollar gold pieces. An upright piano. A rose-colored taffeta spread on the bed."
-
-    "In the kitchen sat a new hired girl — white, pale-haired, pale-eyed — hired by Ruby for Ruby's own house. Sabra felt a wave of nausea and held on."
+    hide big_elk
 
     show cim neutral at left with dissolve
+
+    "Then Cim came in from the kitchen with a young woman at his side."
+
+    cim "Mother, this is my wife."
+
+    "She was twenty years old, perhaps. Dark-haired, composed, with the straight back and the measuring eyes that Sabra associated with the older Osage women — the ones who had seen the treaty negotiations and had stopped expecting much."
+
     show ruby neutral at center with dissolve
 
-    "Ruby came toward her with that slow scuffling step — the same step she had used crossing Sabra's kitchen for three years. Only now it crossed a floor Ruby owned."
+    ruby "Mrs. Cravat."
 
-    "The two women looked at each other. Their looks clashed like swords held high."
+    "Her voice was low and clear. She waited."
 
-    ## ── Choice 2: The Greeting ───────────────────────────────────────────────
+    "The room was very quiet. Cim was watching his mother. Ruby was watching nothing in particular, with the Indian patience that Sabra had never quite understood — the capacity to simply be present without pushing."
+
+    ## ── Choice 1: Sabra's Response to Ruby ──────────────────────────────────
 
     menu:
-        "Ruby does not extend her hand first. Neither does Sabra. What does Sabra do?"
+        "The room is very quiet. What does she say to this young woman?"
 
-        "Do not offer a hand. (The distance Ferber draws)":
-            $ yancey_relationship -= 2
-
-            "She did not offer her hand. Ruby did not offer hers. They stood two feet apart, and did not shake hands, and everyone in the room saw it, and no one remarked on it."
-
-            show ruby direct at center
-            "Ruby's gaze did not falter. There was no apology in it, and no invitation."
-
-            show big_elk neutral at right with dissolve
-            mrs_big_elk "Come. Eat."
-
-            hide big_elk
-
-            "Sabra went through the motions of eating. Sometimes she put a morsel into her mouth and actually swallowed it."
-
-        "Extend a formal hand. (Civil, not warm)":
-            $ indian_sympathy += 1
-
-            sabra "Ruby."
-
-            "She put her hand out. Ruby looked at it for a moment, as though examining a strange object, then took it. The grip was firm and brief."
-
-            "It was not a welcome. It was an acknowledgment that a transaction had occurred in the world and both of them were now obliged to act as though they had agreed to it."
-
-        "Embrace her. (A thing she did not know she would do)":
+        "\"Welcome to our family.\" (And mean it)":
             $ indian_sympathy    += 3
-            $ yancey_relationship += 3
+            $ yancey_relationship += 5
             $ ruby_welcomed       = True
 
-            "She did a thing that surprised her, and probably surprised Ruby: she crossed the two feet between them and put her arms around the girl."
+            show sabra ch5 happy
+            sabra "Welcome to our family, Ruby."
 
-            "Ruby did not return the embrace. She did not refuse it, either. She stood still inside Sabra's arms the way she had stood in the kitchen when Sabra corrected her about the jelly — present, unpushing, impossible to read."
+            show big_elk acknowledging at left
+            "She said it and meant it — or tried to mean it — and found, to her own surprise, that it was not entirely performance. She took Ruby's hands. Ruby's grip was firm and brief. Big Elk nodded once. Cim exhaled."
 
-            "When Sabra stepped back, Ruby inclined her head once. It was the most the girl had ever given her."
+            "She heard Yancey in herself, then. {i}Of course. Who else would Cim marry?{/i} She could almost hear the teasing satisfaction in it."
 
-            show yancey neutral at right with dissolve
-            "Yancey, from across the room, caught Sabra's eye. He did not smile. He looked at her, steadily, as though she had finally said a thing he had been waiting twenty years to hear her say."
-            hide yancey
+        "\"I need time.\" (Honest, not cruel)":
+            $ ruby_time_needed = True
 
-    ## ── Ruby, Alone ──────────────────────────────────────────────────────────
+            "She stepped forward. She shook Ruby's hand formally."
 
-    hide cim with dissolve
-    show ruby direct at center with dissolve
+            sabra "I hope we'll come to know each other well."
 
-    "Later — when the dancing was starting in the yard and Yancey was laughing with old Big Elk over a plate — Ruby came and stood beside Sabra at the window."
+            "She said the words carefully, choosing them the way she chose type — for accuracy, not warmth. But Ruby saw through them. She would always see through her. There was no hiding from that quality of attention."
 
-    "She did not look at her mother-in-law. She looked out at the dancers."
+            "It was honest, at least. Not her mother's smile. Not Felice's performance of graciousness as a form of condescension."
 
-    ruby "I didn't expect it to be easy."
+        "\"My son chose this. I will be civil.\" (Duty without warmth)":
+            $ indian_sympathy    -= 1
+            $ yancey_relationship -= 5
 
-    sabra "No."
+            "She kept the smile in place. It was the exact smile her mother Felice had used on people she considered beneath her — that particular brightness, all surface."
 
-    ruby "It won't always be uncomfortable."
+            sabra "Cim has spoken of you."
 
-    "She said it without consolation, the way a person states a weather pattern. Then she went back to her guests."
+            "She recognized the smile only later. Standing at the kitchen window after Big Elk and his wife had gone, she recognized it, and felt ashamed."
 
-    "Sabra found herself — unexpectedly — believing her."
+    ## ── Big Elk's Formal Words (through Ruby) ────────────────────────────────
 
-    $ indian_sympathy += 1
+    show big_elk neutral at left with dissolve
+
+    "Big Elk spoke. Ruby translated, her voice careful and neutral: three words, but from the way he had taken the time to compose them, they carried more weight than three words."
+
+    ruby "My father says: we are glad."
+
+    "He meant more. He meant: {i}We hope you will be worthy of our daughter. We have considered this. We accept it now, and we expect you to live up to what that means.{/i}"
+
+    "Sabra heard: {i}We accept this.{/i} She supposed that was close enough."
+
+    menu:
+        "How does she respond?"
+
+        "\"Tell him — I hope to know him better.\"":
+            $ indian_sympathy += 1
+
+            sabra "Tell your father — I hope to know him better."
+
+            show big_elk acknowledging at left
+            "Ruby translated. Big Elk inclined his head. The formality closed like a door, gently."
+
+        "\"The formalities are appreciated.\" (Polite, distant)":
+            sabra "Please tell him the formalities are appreciated."
+
+            "Ruby translated without expression. Big Elk looked at Sabra for a moment, then at Cim, then nodded. Appropriate distance maintained on all sides."
+
+        "\"Tell him he's welcome here whenever he comes to Osage.\"":
+            $ community_standing += 1
+            $ indian_sympathy    += 1
+
+            sabra "Tell him he is welcome in this house whenever he is in Osage. Both of them are."
+
+            show big_elk acknowledging at left
+            "She meant it. Ruby translated. Something shifted in Big Elk's face — not warmth, exactly, but a recalibration. He spoke again, briefly."
+
+            ruby "He says: thank you."
+
+    ## ── Recovery arc ─────────────────────────────────────────────────────────
+
+    hide big_elk with dissolve
+
+    if ruby_time_needed:
+        "After Big Elk and his wife had risen and the formal goodbyes were done, Ruby came back to the parlor alone while Cim walked his father to the automobile."
+
+        "She sat across from Sabra without being invited. Not rude — simply practical. She had a thing to say."
+
+        show ruby direct at center with dissolve
+
+        ruby "I didn't expect it to be easy."
+
+        sabra "No."
+
+        ruby "It won't always be uncomfortable."
+
+        "She said it without consolation, the way you would state a weather pattern. Sabra found herself — unexpectedly — believing her."
+
+        $ indian_sympathy += 1
 
     ## ── Journal Entry 24 ─────────────────────────────────────────────────────
 
@@ -257,7 +177,7 @@ label scene24_cim_ruby:
 
     sabra "{i}October, 1910.{/i}"
 
-    sabra "{i}Ruby Big Elk has lived in my house for three years. I gave her orders about the jell and the beds. I asked her to pick up her feet. I did not see what was in front of me. This afternoon at four o'clock she became my son's wife — at her father's house, to which I had never been invited before today. I do not yet know what kind of mother-in-law I am going to become. I know what kind I have been, because I have been it for three years without knowing.{/i}"
+    sabra "{i}Cim's wife has his same quality of stillness — the ability to be entirely present without pushing. I don't know what to do with that. I'm trying.{/i}"
 
     play music "audio/kihekah_parlor.ogg" fadein 1.0 loop
 

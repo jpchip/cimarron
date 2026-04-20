@@ -94,7 +94,8 @@ default trial_ord   = [None, None, None]  # [opening_id, middle_id, closing_id]
 default trial_phase = 1               # 1 = selection, 2 = ordering
 
 # ─── Chapter 5 Flags ──────────────────────────────────────────────────────────
-default ruby_welcomed        = False   # welcomed Ruby (recognition line or embrace) (scene24)
+default ruby_welcomed        = False   # welcomed Ruby with genuine warmth (scene24)
+default ruby_time_needed     = False   # said "I need time" — neutral arc (scene24)
 default congress_issue       = "none"  # "indian" / "oil_law" / "education" (scene25)
 default donna_wedding_advice = "none"  # "chose_well" / "cravat_stock" / "be_happy" (scene26)
 
