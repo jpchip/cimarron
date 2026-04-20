@@ -120,6 +120,8 @@ image krbecek thoughtful = Transform("images/sprites/krbecek_thoughtful.png", zo
 image big_elk neutral       = Transform("images/sprites/big_elk_neutral.png",       zoom=0.45)
 image big_elk acknowledging = Transform("images/sprites/big_elk_acknowledging.png", zoom=0.45)
 
+image mrs_big_elk neutral   = Transform("images/sprites/mrs_big_elk_neutral.png",   zoom=0.45)
+
 image cim neutral = Transform("images/sprites/cim_neutral.png", zoom=0.45)
 
 image donna neutral      = Transform("images/sprites/donna_neutral.png",      zoom=0.45)
