@@ -401,6 +401,13 @@ label scene27_bowlegs:
 
     "She wrote down what she saw. She had been writing down what she saw for forty years."
 
+    if congress_issue == "indian":
+        "The dance-hall girl, the debtor behind the wire, the Harvard boy's slightly injured expression — all of it was exactly what she had been arguing in Washington, translated into oil-field terms. The same machinery. Just faster."
+    elif congress_issue == "oil_law":
+        "She was looking at precisely what her bills had addressed. The holding pen for debt, the hardware-store court — these were not abstractions. They were the unlegislated gap she had spent three years trying to close."
+    elif congress_issue == "education":
+        "The girl before the judge was young enough to have been in one of the schools she'd fought for. Sabra looked at her face — frightened, nineteen, not yet accustomed to the idea that the system saw her — and felt the distance between policy and its people."
+
     "And then—"
 
     play sound "sfx/oil_blowout.ogg"
@@ -600,20 +607,14 @@ label scene28_monument_reveal:
 
     play sound "sfx/crowd_applause.ogg"
 
-    ## ── Ending branch determination ───────────────────────────────────────────
-    ## Checked in order: Branch 3 → 2 → 1a → 1 (fallback)
+    if donna_wedding_advice == "chose_well":
+        "[donna_name] was here, somewhere in the crowd, Tracy at her side. She had chosen well, as she always did. Sabra wondered, briefly, whether that was her doing or simply [donna_name]'s nature. Then she decided it did not matter."
+    elif donna_wedding_advice == "cravat_stock":
+        "[donna_name] stood near the back, composed and capable — exactly as Sabra had told her she would be, the morning she married Tracy Wyatt. Cravat stock. She had known it before Sabra said it."
+    elif donna_wedding_advice == "be_happy":
+        "[donna_name] was in the crowd with Tracy. She was happy. It showed plainly. Sabra had wanted that for her. She had said so."
 
-    if indian_sympathy >= 7 and (sabra_independence >= 5 or yancey_relationship >= 50):
-        jump ending_land_belongs
-
-    elif sabra_independence >= 8 and community_standing >= 8:
-        jump ending_built_herself
-
-    elif sabra_independence <= 4 and yancey_relationship >= 65:
-        jump ending_his_shadow_chosen
-
-    else:
-        jump ending_his_shadow
+    jump chapter5_summary
 
 
 ## ─── Ending Branch 1 — "She Was His Shadow" ──────────────────────────────────
@@ -634,6 +635,13 @@ label ending_his_shadow:
     "She was thinking about the morning of the Run, when he had sat on that horse and the sky had been so wide it was almost incomprehensible, and she had looked at him and thought: {i}Whatever this is, I am in it.{/i}"
 
     "She had been right. She was in it still."
+
+    if congress_issue == "indian":
+        "The reservation reform bill was in committee. She had done that."
+    elif congress_issue == "oil_law":
+        "Two provisions in the federal oil revision. She had done that, in the margins of what was otherwise Yancey's story."
+    elif congress_issue == "education":
+        "The Indian school provisions were federal policy now. Small, important. She had done that."
 
     scene bg_journal with dissolve
 
@@ -680,6 +688,13 @@ label ending_his_shadow_chosen:
 
     "That this was enough. That she was enough."
 
+    if congress_issue == "indian":
+        "The reservation reform bill was in committee. She had named the injustice on the record. She had done that, in between everything else."
+    elif congress_issue == "oil_law":
+        "The oil law revision had her provisions in it, somewhere under the committee amendments. She had done that."
+    elif congress_issue == "education":
+        "The Indian school provisions were federal policy now. Three things had actually changed. She had done that, in between missing him."
+
     scene bg_journal with dissolve
 
     sabra "{i}1931.{/i}"
@@ -712,6 +727,13 @@ label ending_built_herself:
     "Not the whole story. Not even the most important part of the story."
 
     "She knew what she had built. This state knew it too. The paper. The school board. The water commission. The twenty-three years of editorial positions taken when it was easier to stay quiet. The oil rights hearings. The congressional seat."
+
+    if congress_issue == "indian":
+        "The Indian reservation reform bill. The mineral rights language she had read into the Congressional Record, senator by uncomfortable senator. That was hers."
+    elif congress_issue == "oil_law":
+        "The oil law revision, two provisions of which had her language in them — absorbed through four committees, stripped of her name, but there. Doing what good law does."
+    elif congress_issue == "education":
+        "The Indian school provisions. The senator from Massachusetts who had come home troubled. The three things that had actually changed. Those were hers."
 
     show sabra ch5 proud at right with dissolve
     "The crowd was watching her. She turned and spoke to the Senators, the editors, the oil men, the women who had come from the federation."
@@ -776,6 +798,18 @@ label ending_land_belongs:
 
     "Sabra looked at the statue again. She had not seen it that way before."
 
+    if ruby_welcomed:
+        show ruby neutral at center with dissolve
+        "Ruby caught Sabra's eye over the girl's head. A brief nod — the same as that first afternoon in the parlor, when Sabra had taken her hands. Not forgiveness; there had been nothing to forgive. Just: {i}we are here. Both of us. Still.{/i}"
+        hide ruby
+
+    if congress_issue == "indian":
+        "She had spent three years naming the injustice on the floor of Congress. It was still here. It would take longer than three years. She would keep naming it."
+    elif congress_issue == "oil_law":
+        "The law she had revised was already being tested in the new fields south of Bowlegs. She would need to go back to Washington."
+    elif congress_issue == "education":
+        "Cim and Ruby's daughter would attend whatever school she chose. Sabra intended to make sure those schools were worth choosing."
+
     scene bg_journal with dissolve
 
     sabra "{i}1931.{/i}"
@@ -791,3 +825,58 @@ label ending_land_belongs:
     "— THE END —"
 
     return
+
+
+## ─── Chapter 5 Summary ────────────────────────────────────────────────────────
+
+label chapter5_summary:
+
+    scene bg_journal with dissolve
+
+    play music "audio/kihekah_parlor.ogg" fadein 1.5 loop
+
+    "CHAPTER FIVE — 1910–1931"
+    "Forty years brought to a point."
+
+    if ruby_welcomed:
+        "She had welcomed Ruby into the family — and meant it, or learned to mean it, which amounted to the same thing."
+    elif ruby_time_needed:
+        "She had needed time with Ruby. She had gotten it."
+    else:
+        "She had kept the civil distance that duty required."
+
+    if congress_issue == "indian":
+        "She had gone to Washington and named the injustice plainly. Some senators had been annoyed. Good."
+    elif congress_issue == "oil_law":
+        "She had gone to Washington and fixed what she could fix. The oil law revision bore traces of her work."
+    elif congress_issue == "education":
+        "She had gone to Washington and built coalitions around the Indian school provisions. Three things had actually changed."
+    else:
+        "She had gone to Washington."
+
+    if donna_wedding_advice == "chose_well":
+        "She had told [donna_name] she chose well. [donna_name] had smiled as though she already knew."
+    elif donna_wedding_advice == "cravat_stock":
+        "She had told [donna_name] she was Cravat stock. [donna_name] had said: {i}I know, Mother.{/i}"
+    elif donna_wedding_advice == "be_happy":
+        "She had told [donna_name] she hoped he made her happy. It was the truest thing she had said at a wedding."
+
+    "And then: Bowlegs. The oil field. The canister catching the light on its way down. The crowd parting for her white hair."
+
+    "She had held his head in her lap in the oil-soaked dirt of an Oklahoma field, and that had been the end of Yancey Cravat."
+
+    "Forty-one years since the Run."
+
+    play music "audio/kihekah_parlor.ogg" fadein 1.0 loop
+
+    if indian_sympathy >= 7 and (sabra_independence >= 5 or yancey_relationship >= 50):
+        jump ending_land_belongs
+
+    elif sabra_independence >= 8 and community_standing >= 8:
+        jump ending_built_herself
+
+    elif sabra_independence <= 4 and yancey_relationship >= 65:
+        jump ending_his_shadow_chosen
+
+    else:
+        jump ending_his_shadow
