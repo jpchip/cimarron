@@ -23,7 +23,7 @@ cimarron/
 │   ├── script_chapter2.rpy       ← Scenes 8–13, Chapter 2 summary
 │   ├── script_chapter3.rpy       ← Scenes 14–18, Chapter 3 summary
 │   ├── script_chapter4.rpy       ← Scenes 19–23, Chapter 4 summary
-│   ├── script_chapter5.rpy       ← Scenes 24–28, three ending branches (final chapter)
+│   ├── script_chapter5.rpy       ← Scenes 24–28, four ending branches (final chapter)
 │   ├── characters.rpy            ← All character definitions and colors
 │   ├── variables.rpy             ← Game state (all meters and flags)
 │   ├── options.rpy               ← Project settings (title, screen size, transitions)
@@ -34,20 +34,24 @@ cimarron/
 │   ├── minigame_letters.rpy      ← Scene 16 letters-to-the-editor mini-game
 │   ├── minigame_trial.rpy        ← Scene 20 trial arguments mini-game
 │   ├── minigame_photographs.rpy  ← Scene 28 photograph box mini-game
-│   ├── images/                   ← Backgrounds and character sprites (add files here)
+│   ├── images/                   ← Backgrounds and character sprites
 │   │   └── sprites/
-│   ├── audio/                    ← Music tracks (add .ogg files here)
-│   └── gui/                      ← GUI images (textbox, buttons — add .png files here)
+│   ├── audio/                    ← Music tracks (.ogg) and SFX
+│   │   └── sfx/
+│   ├── fonts/                    ← Playfair Display + IM Fell English (.ttf)
+│   └── gui/                      ← GUI images (textbox, buttons — .png)
 └── README.md                     ← This file
 ```
 
 ---
 
-## Assets You Need to Add
+## Asset Reference
 
-The script references image and audio files that you must source and place in the
-correct folders. The game will run without them (Ren'Py shows a placeholder), but
-adding art and music makes it a real experience.
+All backgrounds, sprites, audio, and fonts the game uses are bundled in `game/images/`,
+`game/images/sprites/`, `game/audio/`, and `game/fonts/`. The tables below describe
+each asset's role and the AI-generation prompt that produced it (for anyone wanting
+to substitute their own art). The game will run with placeholders if any file is
+removed.
 
 ### Background Images
 
@@ -105,14 +109,14 @@ using [Audacity](https://www.audacityteam.org/) (free).
 
 ---
 
-## Fonts (Optional but Recommended)
+## Fonts
 
-Download from **Google Fonts** and place `.ttf` files in `game/fonts/`:
+The game uses two fonts, both already installed in `game/fonts/` and configured in `game/gui.rpy`:
 
-- **Playfair Display** (narration and names) — search "Playfair Display" on fonts.google.com
-- **IM Fell English** (UI menus) — search "IM Fell English" on fonts.google.com
+- **Playfair Display** (Regular + Bold) — narration, character names, dialogue
+- **IM Fell English** (Regular) — UI menus and chrome
 
-Then uncomment the font lines in `game/gui.rpy`.
+Both are licensed under the SIL Open Font License via Google Fonts.
 
 ---
 
@@ -396,13 +400,14 @@ Selecting both **She pays taxes** and **No jurisdiction** together applies a pen
 
 ### Ending Branches
 
-| Branch | Name | Condition | Music |
-|---|---|---|---|
-| 1 | She Was His Shadow | `sabra_independence ≤ 4` AND `yancey_relationship ≥ 65` | `monument_shadow.ogg` |
-| 2 | She Built It Herself | `sabra_independence ≥ 8` AND `community_standing ≥ 8` | `monument_builder.ogg` |
-| 3 | The Land Belongs to All | `indian_sympathy ≥ 7` AND (`sabra_independence ≥ 5` OR `yancey_relationship ≥ 50`) | `monument_land.ogg` |
+Four endings are possible. They are checked in order; the first matching condition wins.
 
-Branches checked in order: 3 → 2 → 1. Branch 1 is the fallback.
+| # | Label | Condition | Music |
+|---|---|---|---|
+| 1 | The Land Belongs to All (`ending_land_belongs`) | `indian_sympathy ≥ 7` AND (`sabra_independence ≥ 5` OR `yancey_relationship ≥ 50`) | `monument_land.ogg` |
+| 2 | She Built It Herself (`ending_built_herself`) | `sabra_independence ≥ 8` AND `community_standing ≥ 8` | `monument_builder.ogg` |
+| 3 | She Chose the Shadow (`ending_his_shadow_chosen`) | `sabra_independence ≤ 4` AND `yancey_relationship ≥ 65` — Sabra reflects on a lifetime of knowingly choosing Yancey | `monument_shadow_chosen.ogg` |
+| 4 | His Shadow (`ending_his_shadow`) | fallback — none of the above; Sabra is remembered simply as Yancey's wife | `monument_shadow.ogg` |
 
 ### Additional Backgrounds
 
@@ -420,9 +425,10 @@ Branches checked in order: 3 → 2 → 1. Branch 1 is the fallback.
 | `kihekah_parlor.ogg` | Scenes 24, 26, 28 (opening) | Warm but autumnal — chamber strings or piano, a well-lived life |
 | `congress_hall.ogg` | Scene 25 | Formal and measured — stately piano or sparse brass |
 | `bowlegs_field.ogg` | Scenes 26 (transition), 27 | Nearly silent — stark industrial drone, grief through absence |
-| `monument_shadow.ogg` | Branch 1 ending | Romantic and swelling — full strings, unambiguously emotional |
-| `monument_builder.ogg` | Branch 2 ending | Resolute and clear — piano-led, forward motion |
-| `monument_land.ogg` | Branch 3 ending | Open and elemental — sparse, wide, hint of Native melodic color |
+| `monument_land.ogg` | Branch 1 (`ending_land_belongs`) | Open and elemental — sparse, wide, hint of Native melodic color |
+| `monument_builder.ogg` | Branch 2 (`ending_built_herself`) | Resolute and clear — piano-led, forward motion |
+| `monument_shadow_chosen.ogg` | Branch 3 (`ending_his_shadow_chosen`) | Reflective and grounded — a chosen love, not a lost one |
+| `monument_shadow.ogg` | Branch 4 (`ending_his_shadow`) | Romantic and swelling — full strings, unambiguously emotional |
 
 ### Additional Sprites
 
@@ -451,9 +457,9 @@ Krbecek asks Sabra for photographs before the monument ceremony. She selects 2 o
 
 | Photos | Ending Nudge |
 |---|---|
-| 1 (Run) + 4 (Rough Rider) | `yancey_relationship +3` — tips toward Branch 1 |
-| 3 (Sabra at press) + 2 (tent church) | `community_standing +2` — tips toward Branch 2 |
-| 5 (Kid's burial) + 6 (Cim/Ruby) | `indian_sympathy +2` — tips toward Branch 3 |
+| 1 (Run) + 4 (Rough Rider) | `yancey_relationship +3` — tips toward Branch 3 (`ending_his_shadow_chosen`) or Branch 4 (`ending_his_shadow`) |
+| 3 (Sabra at press) + 2 (tent church) | `community_standing +2` — tips toward Branch 2 (`ending_built_herself`) |
+| 5 (Kid's burial) + 6 (Cim/Ruby) | `indian_sympathy +2` — tips toward Branch 1 (`ending_land_belongs`) |
 | Any other pair | `yancey_relationship +1` (mild default) |
 
 Implemented in `game/minigame_photographs.rpy`.

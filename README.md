@@ -39,7 +39,7 @@ cimarron/
         ├── script_chapter2.rpy       ← Scenes 8–13
         ├── script_chapter3.rpy       ← Scenes 14–18
         ├── script_chapter4.rpy       ← Scenes 19–23
-        ├── script_chapter5.rpy       ← Scenes 24–28 + three ending branches
+        ├── script_chapter5.rpy       ← Scenes 24–28 + four ending branches
         ├── characters.rpy            ← All character and image definitions
         ├── variables.rpy             ← All game state variables and meters
         ├── backgrounds.rpy           ← Background image definitions
