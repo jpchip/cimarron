@@ -919,6 +919,34 @@ label chapter5_summary:
 
     play music "audio/kihekah_parlor.ogg" fadein 1.0 loop
 
+    if sabra_direction >= 8:
+        "SABRA'S PATH: Frontier Woman. The Wichita girl in the white kid gloves was forty years gone. What stood at the monument in her place was Oklahoma — shingled, decisive, and unsentimental about either of them."
+    elif sabra_direction <= -5:
+        "SABRA'S PATH: Refined Lady. She had carried Wichita across the Cimarron and through forty Oklahoma summers, and she carried it still — the straight back, the careful vowels, the conviction that a thing done properly was a thing half-redeemed."
+    else:
+        "SABRA'S PATH: Her Own. She had stopped, somewhere in those forty years, being the woman her mother raised or the woman the territory tried to make of her. She was, simply and at last, Sabra Cravat."
+
+    if sabra_independence >= 8:
+        "SABRA'S INDEPENDENCE: She had built something that did not require his name to stand. That was the achievement she did not mention in speeches."
+    elif sabra_independence <= 4:
+        "SABRA'S INDEPENDENCE: She had chosen, again and again, the thing that kept them connected. She did not regret it. She knew what she was choosing."
+    else:
+        "SABRA'S INDEPENDENCE: She had found her footing, somewhere in those forty years. It was her own footing, and it held."
+
+    if indian_sympathy >= 7:
+        "SABRA AND THE OSAGE: She had come, in the end, to understand them — not as a cause or a counterargument, but as the oldest Oklahomans. Yancey had known this first. She had taken longer."
+    elif indian_sympathy <= 3:
+        "SABRA AND THE OSAGE: She had kept a professional distance. She had reported the facts. She still was not entirely certain she understood them."
+    else:
+        "SABRA AND THE OSAGE: She had moved, over forty years, from stranger to neighbor. It was not a complete transformation, but it was the only honest one available to her."
+
+    if newspaper_stance >= 5:
+        "THE WIGWAM: She had made enemies with it. She had also made the record. Both, she had decided, were the point."
+    elif newspaper_stance <= -3:
+        "THE WIGWAM: She had kept it steady — trusted, careful, read by people who needed to trust something. In a town that had gone oil-mad twice over, that was its own form of courage."
+    else:
+        "THE WIGWAM: It had done its work. It had told the truth where it could find the truth, and withheld judgment where the truth was not yet clear. That was the best she had managed, and it would have to be enough."
+
     if indian_sympathy >= 7 and (sabra_independence >= 5 or yancey_relationship >= 50):
         jump ending_land_belongs
 

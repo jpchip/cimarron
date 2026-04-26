@@ -96,6 +96,13 @@ label scene19_rough_rider:
     show sabra ch4 proud
     "She watched him and was proud."
 
+    if sabra_direction >= 5:
+        "She watched him work the crowd and felt, against her better judgment, the pull of it — the showman in the saddle, the country at his stirrup. She had married that, once. She had also, in his absence, become it."
+    elif sabra_direction <= -5:
+        "She watched the spectacle as one watches weather: with an interest that did not include approval. Eight months of running the paper had taught her the difference between a headline and a man."
+    else:
+        "She watched, and did not yet know what she felt."
+
     if sabra_cleared_the_office:
         "She had stood at the press when he came back last time — from the Kid, bloody and returned. She had not crossed the floor. She had let him find her there. She did not cross it now."
 
@@ -453,9 +460,19 @@ label scene21_statehood:
 
     sabra "We did."
 
+    if sabra_direction >= 5:
+        "It tasted of dust and powder and printer's ink, the way every honest thing in Oklahoma had ever tasted."
+    elif sabra_direction <= -5:
+        "She accepted the glass with the same composure she had once accepted teacups in her mother's parlor. The composure, she had discovered, traveled."
+
     hide doc
 
     sabra "{i}We made it without him. I didn't say that part aloud. I thought it.{/i}"
+
+    if newspaper_stance >= 5:
+        "The Wigwam had been the closest thing to a conscience the territory had. She did not know yet what it would be to a state."
+    elif newspaper_stance <= -3:
+        "The Wigwam had been the safest paper in the territory — reasonable, trusted, careful. States needed such papers too, she supposed. Someone had to be reasonable."
 
     hide sabra
 
@@ -650,6 +667,11 @@ label scene23_what_yancey_left:
 
     "Sabra looked at her two children and thought: I raised them to leave. That is what raising children is."
 
+    if sabra_independence >= 7:
+        "She noted this without grief. She had raised them on a frontier, and the frontier's first lesson was that staying was not the point."
+    elif sabra_independence <= 3:
+        "She noted this with a complicated feeling she did not have time, yet, to fully sort out."
+
     hide cim
     hide donna
 
@@ -661,6 +683,11 @@ label scene23_what_yancey_left:
     "She was the editor of a newspaper. President of two civic organizations. Mother of two grown children. The most recognizable woman in a hundred miles."
 
     "What she was not: the wife of a man who stayed."
+
+    if sabra_direction >= 5:
+        "She set the ledger down without ceremony. The list was, on balance, a victory; she did not need to dress it up to know it."
+    elif sabra_direction <= -5:
+        "She closed the ledger and aligned its edge with the desk. The list was, by any decent reckoning, a creditable one — and creditable, in her mother's vocabulary, had always been the highest praise."
 
     if sabra_stood_alone:
         "She had brought [donna_name] into the world without him. She had done that, and then kept going."
