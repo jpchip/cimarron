@@ -448,7 +448,9 @@ label scene5_arriving_osage:
 
     "It was not what she had imagined."
 
-    "She had imagined — what? A raw village, certainly. Rough. But she had also imagined something purposeful, something being built. And yes, it was being built — but in the middle of the building it was also drinking, and gambling, and shooting, and cooking over open fires in the street, and hollering across wagon tops, and a brass band playing something unidentifiable under a canvas awning."
+    "She had imagined — what? A raw village, certainly. Rough. But she had also imagined something purposeful, something being built."
+
+    "And yes, it was being built — but in the middle of the building it was also drinking, and gambling, and shooting, and cooking over open fires in the street, and hollering across wagon tops, and a brass band playing something unidentifiable under a canvas awning."
 
     "Mud. Red mud everywhere. Her beautiful high-buttoned shoes disappeared into it at the first step."
 
@@ -688,7 +690,9 @@ label scene6_oklahoma_wigwam:
     "He read her the first editorial aloud, standing in the middle of the tent with the press behind him:"
 
     show yancey passionate
-    yancey "'{i}We come not as conquerors but as builders. We come to a land that has known injustice and knows it still, and we come swearing that this new commonwealth shall be different — that its laws shall be equitable, its courts honest, its press free. The Oklahoma Wigwam will print the truth as it finds it, the whole truth and nothing beside it, so help us God.{/i}'"
+    yancey "'{i}We come not as conquerors but as builders. We come to a land that has known injustice and knows it still, and we come swearing that this new commonwealth shall be different — that its laws shall be equitable, its courts honest, its press free.{/i}'"
+
+    yancey "'{i}The Oklahoma Wigwam will print the truth as it finds it, the whole truth and nothing beside it, so help us God.{/i}'"
 
     "Silence."
 

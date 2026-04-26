@@ -540,7 +540,9 @@ label scene28_monument:
 
     "A year."
 
-    "The monument had been commissioned by the state legislature — five hundred thousand dollars, the papers said, the largest allocation for public sculpture in Oklahoma's history. The sculptor was a Pole named Masja Krbecek, small and snuffy and extremely precise, who had come to Osage the previous winter with a letter of introduction and a portfolio of photographs of his previous work."
+    "The monument had been commissioned by the state legislature — five hundred thousand dollars, the papers said, the largest allocation for public sculpture in Oklahoma's history."
+
+    "The sculptor was a Pole named Masja Krbecek, small and snuffy and extremely precise, who had come to Osage the previous winter with a letter of introduction and a portfolio of photographs of his previous work."
 
     show sabra ch5 neutral at right with dissolve
 
@@ -720,7 +722,9 @@ label ending_his_shadow_chosen:
 
     "Peace."
 
-    "She had spent thirty years angry at him, or trying not to be, or pretending she wasn't. She had spent thirty years keeping the Wigwam alive on her own, raising his children, voting in elections he'd never bothered to show up for, watching the territory become a state while he was somewhere on the Cimarron with a new story she'd never entirely believe."
+    "She had spent thirty years angry at him, or trying not to be, or pretending she wasn't."
+
+    "She had spent thirty years keeping the Wigwam alive on her own, raising his children, voting in elections he'd never bothered to show up for, watching the territory become a state while he was somewhere on the Cimarron with a new story she'd never entirely believe."
 
     "And she had spent thirty years choosing it. Every single time. Every letter she'd answered, every door she'd left unlocked, every night she'd pulled out the photograph from the Run and looked at it for longer than she meant to."
 
