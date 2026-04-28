@@ -1300,7 +1300,7 @@ menu:
 
 ---
 
-### 10. INCONSISTENCY: Ch4 missing journal_scene flags
+### 10. INCONSISTENCY: Ch4 missing journal_scene flags ✅ COMPLETE
 
 Ch1–3 and Ch5 each set `journal_sceneN = True` after calling `journal_entry(...)`. Ch4 calls `journal_entry(...)` five times but never sets the corresponding flags, and those flags are not declared in `variables.rpy`.
 

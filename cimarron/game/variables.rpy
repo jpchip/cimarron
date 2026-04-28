@@ -87,6 +87,13 @@ default letters_spiked  = []
 default dixie_lee_editorial = "none"   # "support" / "oppose" / "neutral"
 default statehood_stance    = "none"   # "single" / "double" / "consult"
 
+# ─── Chapter 4 Journal Flags ──────────────────────────────────────────────────
+default journal_scene19 = False
+default journal_scene20 = False
+default journal_scene21 = False
+default journal_scene22 = False
+default journal_scene23 = False
+
 # ─── Trial Minigame State ─────────────────────────────────────────────────────
 # Reset before calling trial_arguments_minigame screen.
 default trial_sel   = []              # list of selected argument IDs
