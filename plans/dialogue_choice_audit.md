@@ -1198,7 +1198,7 @@ if sabra_stood_alone and yancey_relationship < 50:
 
 ---
 
-### 4. ORPHAN flag: sabra_shielded_cim — add Ch3 scene15 readback
+### 4. ORPHAN flag: sabra_shielded_cim — add Ch3 scene15 readback ✅ COMPLETE
 
 Flag set in Ch2 scene8; only read in Ch5 scene24 (one line). Add a callback when Yancey returns and encounters Cim.
 

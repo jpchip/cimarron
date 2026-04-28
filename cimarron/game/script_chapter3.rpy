@@ -224,6 +224,9 @@ label scene15_the_kid:
 
     "He stayed three weeks. It was not like the old days — it was something else, harder and quieter and more honest."
 
+    if sabra_shielded_cim:
+        "Cim had stepped forward to greet him without hesitation — without the instinctive flinching she had once seen in him. She did not tell Yancey why that was."
+
     "Then he began to itch."
 
     show yancey restless
