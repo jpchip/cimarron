@@ -177,6 +177,9 @@ label scene15_the_kid:
             "He crossed the room and sat heavily in the editor's chair — her chair, she noticed — and said nothing."
             "She made coffee. It was something to do."
 
+    if sabra_stood_firm_danger:
+        "She had stayed at the press before, while worse things happened in the street. That had been her answer then. It was still her answer."
+
     show yancey neutral at left with dissolve
     show yancey weary
 

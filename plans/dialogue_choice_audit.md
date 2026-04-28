@@ -1212,7 +1212,7 @@ if sabra_shielded_cim:
 
 ---
 
-### 5. ORPHAN flag: sabra_stood_firm_danger — add Ch3 scene15 readback
+### 5. ORPHAN flag: sabra_stood_firm_danger — add Ch3 scene15 readback ✅ COMPLETE
 
 Flag set three ways in Ch1 (typesetting minigame, two menu options); only read in Ch2 scene8 (~line 90). Add one more callback.
 
