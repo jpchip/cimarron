@@ -524,6 +524,7 @@ label scene17_isaiah:
             "She told herself she was being practical. She did not fully believe it."
 
         "Buy time — tell Tubbs she'll 'look into it'.":
+            $ community_standing -= 1
             hide horace with dissolve
             "She told Tubbs she would look into it."
             "She did not look into it. Isaiah kept working."

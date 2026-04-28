@@ -64,6 +64,7 @@ label scene1a_mission_visit:
             "There was no discouragement in it. Only the flat evaluation of someone who had seen intentions tested."
 
         "\"I want to do Yancey proud.\" (Marriage first)":
+            $ sabra_direction -= 1
             sabra "I only want to be worthy of it — of him."
             "Mother Bridget looked at her for a long moment without speaking."
             mother_bridget "That's a start."
@@ -100,6 +101,7 @@ label scene1a_mission_visit:
             "Sabra nodded. She understood, even if she didn't want to."
 
         "\"Tell me it will be all right.\"":
+            $ yancey_relationship += 1
             sabra "Just — tell me it will be all right."
             show mother_bridget gentle at center
             mother_bridget "It'll be all right. There's no such thing as a new country for the people who come to it. They bring along their own ways and their own bits of things and make it like the old as fast as they can."
@@ -166,6 +168,7 @@ label scene1_venable_home:
             "She said it only to herself — her lips did not move. But Cousin Dabney Venable, peeling an orange, gave her a sly sidelong look, as if he had heard anyway."
 
         "Polite reserve — she listens without expression, giving nothing away.":
+            $ sabra_direction -= 1
             sabra "Mm."
             "She kept her face smooth as still water. Whatever she thought of Yancey's theatrics, she had learned that the Venables were always watching, always cataloguing, always ready to file a verdict."
 

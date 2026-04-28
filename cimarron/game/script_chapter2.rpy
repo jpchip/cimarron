@@ -520,6 +520,7 @@ label scene12_respectability:
             sol "I know you will. That is why I told you."
 
         "Say nothing — just nod.":
+            $ yancey_mystery = True
             "She looked at the type case. The letters were all there, in their boxes. You just had to know which ones to use."
             "She nodded."
             sol "Good."

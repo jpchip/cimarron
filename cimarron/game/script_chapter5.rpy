@@ -133,6 +133,7 @@ label scene24_cim_ruby:
             "Ruby translated. Big Elk inclined his head. The formality closed like a door, gently."
 
         "\"The formalities are appreciated.\" (Polite, distant)":
+            $ sabra_direction -= 1
             sabra "Please tell him the formalities are appreciated."
 
             "Ruby translated without expression. Big Elk looked at Sabra for a moment, then at Cim, then nodded. Appropriate distance maintained on all sides."
@@ -507,6 +508,7 @@ label scene27_bowlegs:
             "She became, without knowing it, Solveig. The play ended as it must."
 
         "\"I'm here. I'm here.\"":
+            $ yancey_relationship += 2
             sabra "I'm here. I'm here."
 
             "She said it until it was the only true thing left."

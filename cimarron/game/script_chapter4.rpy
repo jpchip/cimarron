@@ -349,6 +349,8 @@ label scene20_post_verdict:
             "Dixie Lee: 'Thank you, Mrs. Cravat.' That was all. It was enough."
 
         "\"Your man won. That's all this is.\"":
+            $ yancey_relationship -= 1
+            $ sabra_direction -= 1
             sabra "Your man won. That's all this is."
             "A closed door."
             "Neutral."
@@ -552,11 +554,13 @@ label scene22_first_oil:
         "Sabra's counsel to her son:"
 
         "\"Finish your degree first.\"":
+            $ sabra_direction -= 1
             sabra "Finish the degree, Cim. The oil will still be there in two years."
             "He listened. He went back to Colorado."
             "She knew, watching him go, that he would not stay in Colorado."
 
         "\"If this is what you want, learn all of it before you commit.\"":
+            $ newspaper_stance -= 1
             sabra "If this is the path, learn everything about it before you sign anything. The men who do well in oil are the ones who understood it before anyone else did."
             cim "Yes, ma'am."
             "He was already making calculations in his head."
@@ -630,6 +634,7 @@ label scene23_what_yancey_left:
             "It was not cruelty. It was accuracy."
 
         "\"Read it to the children. Let them decide how they feel.\"":
+            $ yancey_relationship += 3
             sabra "Come sit down, both of you. Your father has written."
             show cim neutral at left with dissolve
             show donna ch4 neutral at right with dissolve
@@ -705,6 +710,7 @@ label scene23_what_yancey_left:
             "She meant it. The freedom was real, even if it had cost something she hadn't planned to pay."
 
         "\"It is what it is. Don't romanticize it.\"":
+            $ sabra_independence += 1
             show sabra ch4 weary
             sabra "{i}It is what it is. Don't make it a tragedy and don't make it a triumph. It is just what happened. It is a life.{/i}"
             "The most honest thing she could say. She said it to herself and meant it."

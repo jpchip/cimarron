@@ -837,14 +837,14 @@ Each choice option receives one of:
 | Block | Option | Verdict |
 |---|---|---|
 | scene1a M1 | "I want to be one of those women." | OK (`sabra_direction` gates Ch2/3/5 options) |
-| scene1a M1 | "I want to do Yancey proud." | **EMPTY** |
+| scene1a M1 | "I want to do Yancey proud." | OK (`sabra_direction` gates Ch2/3/5 options) |
 | scene1a M1 | "I'm frightened." | THIN (`yancey_relationship` read only in summaries/ending) |
 | scene1a M2 | "Will I see you again?" | THIN |
-| scene1a M2 | "Tell me it will be all right." | **EMPTY** |
+| scene1a M2 | "Tell me it will be all right." | THIN |
 | scene1a M2 | "Thank you." (take blanket) | OK |
 | scene1 M3 | Wide-eyed admiration | OK (`yancey_relationship`, `sabra_admires_yancey`) |
 | scene1 M3 | Quiet skepticism | OK |
-| scene1 M3 | Polite reserve | **EMPTY** |
+| scene1 M3 | Polite reserve | OK (`sabra_direction` gates Ch2/3/5 options) |
 | scene2 | She admires the gesture | OK |
 | scene2 | She finds it reckless | OK |
 | scene2 | Complex mix | THIN |
@@ -889,7 +889,7 @@ Each choice option receives one of:
 | scene11 naming | Donna Yancey Cravat | OK |
 | scene12 Sol | "Is it true, Sol?" | OK |
 | scene12 Sol | "Thank you, I'll manage." | OK |
-| scene12 Sol | Say nothing — just nod | **EMPTY** |
+| scene12 Sol | Say nothing — just nod | THIN (`yancey_mystery` only in Ch5 scene27 + summaries) |
 | scene12 Dixie | Insist she be considered | THIN |
 | scene12 Dixie | Agree to exclusion | THIN |
 | scene12 Dixie | Abstain | THIN |
@@ -926,7 +926,7 @@ Each choice option receives one of:
 | scene17 Isaiah | "I should have asked you long ago" | OK |
 | scene17 Tubbs | "Isaiah stays." | OK (`isaiah_defended` → Ch4 callback) |
 | scene17 Tubbs | Compromise — back entrance | THIN |
-| scene17 Tubbs | Buy time — "look into it" | **EMPTY** |
+| scene17 Tubbs | Buy time — "look into it" | THIN |
 | scene18 war | "Go. But I will not wait." | OK |
 | scene18 war | "I have the paper. Go." | OK |
 | scene18 war | "Don't go. For once." | OK |
@@ -952,7 +952,7 @@ Each choice option receives one of:
 | scene20 editorial | Court has failed | OK |
 | scene20 editorial | Report facts only | OK |
 | scene20 hallway | "I hope you find peace…" | THIN |
-| scene20 hallway | "Your man won." | **EMPTY** |
+| scene20 hallway | "Your man won." | OK (`sabra_direction` gates scene25) |
 | scene20 hallway | Say nothing. Walk past. | THIN |
 | scene21 statehood | Single state | OK (`statehood_stance` → Ch5 reads) |
 | scene21 statehood | Two states | OK |
@@ -963,14 +963,14 @@ Each choice option receives one of:
 | scene22 oil | Cover fully | THIN |
 | scene22 oil | Oil brings wrong people | THIN |
 | scene22 oil | Story of the decade | OK |
-| scene22 Cim | "Finish your degree first." | **EMPTY** |
-| scene22 Cim | "Learn all of it before you commit." | **EMPTY** |
+| scene22 Cim | "Finish your degree first." | OK (`sabra_direction` gates scene25) |
+| scene22 Cim | "Learn all of it before you commit." | THIN |
 | scene22 Cim | "Your father would tell you to stay out…" | THIN |
 | scene23 letter | Write back | THIN |
 | scene23 letter | File it. Don't write back. | OK |
-| scene23 letter | Read it to the children | **EMPTY** |
+| scene23 letter | Read it to the children | THIN |
 | scene23 stock | "I chose this." | THIN |
-| scene23 stock | "It is what it is." | **EMPTY** |
+| scene23 stock | "It is what it is." | THIN |
 | scene23 stock | "I'm still waiting." | OK |
 
 ### Chapter 5 Verdicts
@@ -981,7 +981,7 @@ Each choice option receives one of:
 | scene24 Ruby | "I need time." | OK (`ruby_time_needed`) |
 | scene24 Ruby | "My son chose this. I will be civil." | THIN |
 | scene24 Big Elk | "I hope to know him better." | THIN |
-| scene24 Big Elk | "The formalities are appreciated." | **EMPTY** |
+| scene24 Big Elk | "The formalities are appreciated." | OK (`sabra_direction` gates scene25) |
 | scene24 Big Elk | "He's welcome here." | THIN |
 | scene25 run | "Yes. I'll run." | OK |
 | scene25 run | "Yes. For one term." | OK |
@@ -994,13 +994,13 @@ Each choice option receives one of:
 | scene26 Donna | "I hope he makes you happy." | OK |
 | scene27 Yancey | "You came back." (gate ≥ 50) | **GATE_LOOSE** (default is 50) |
 | scene27 Yancey | "Sleep. You're safe." | THIN |
-| scene27 Yancey | "I'm here. I'm here." | **EMPTY** |
+| scene27 Yancey | "I'm here. I'm here." | THIN |
 
 ---
 
 ## Proposed Corrections
 
-### 1. EMPTY options — bind to a tone-appropriate write
+### 1. EMPTY options — bind to a tone-appropriate write ✅ COMPLETE
 
 #### Ch1 scene1a, "I want to do Yancey proud."
 Tone: marriage-first, conventional. Moves toward Refined Lady without being skeptical of Yancey.
