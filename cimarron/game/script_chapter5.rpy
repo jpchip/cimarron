@@ -404,6 +404,9 @@ label scene26_donnas_wedding:
 
             "[donna_name] looked at her for a moment, and then did something she rarely did: she put her arms around her mother and held on for a second."
 
+    if sabra_confronted_mother:
+        "She had done this herself, once — stood in a parlor and said the thing that changed everything. She had not been forgiven quickly. She did not expect Donna to forgive quickly either."
+
     ## ── Journal Entry 26 ─────────────────────────────────────────────────────
 
     scene bg_journal with dissolve

@@ -1226,7 +1226,7 @@ if sabra_stood_firm_danger:
 
 ---
 
-### 6. ORPHAN flag: yancey_mystery — add Ch4 scene23 readback
+### 6. ORPHAN flag: yancey_mystery — add Ch4 scene23 readback ✅ COMPLETE
 
 Flag set repeatedly across Ch2–4; only one in-scene read (Ch5 scene27 narration). Add a readback while Sabra reads Yancey's letter.
 
@@ -1240,7 +1240,7 @@ if yancey_mystery:
 
 ---
 
-### 7. ORPHAN flag: sabra_confronted_mother — add Ch5 scene26 callback
+### 7. ORPHAN flag: sabra_confronted_mother — add Ch5 scene26 callback ✅ COMPLETE
 
 Flag set Ch1 scene3; read only in Ch1 summary and Ch5 chapter5_summary. Should echo at Donna's wedding.
 

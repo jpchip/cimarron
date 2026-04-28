@@ -615,6 +615,9 @@ label scene23_what_yancey_left:
     show sabra ch4 weary
     "He always said he was coming home soon."
 
+    if yancey_mystery:
+        "She had stopped expecting his letters to explain him. There was a Yancey she had glimpsed, once or twice, that his letters never acknowledged. She read around it, as she always had."
+
     ## ── Choice 1: The Letter ────────────────────────────────────────────────────
 
     menu:
