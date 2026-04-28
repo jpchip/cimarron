@@ -1176,7 +1176,7 @@ if donna_name == "Felice":
 
 ---
 
-### 3. ORPHAN flag: sabra_stood_alone — add readbacks
+### 3. ORPHAN flag: sabra_stood_alone — add readbacks ✅ COMPLETE
 
 Flag is set in Ch2 scene11 ("I am enough") but only appears in chapter summaries. It should surface in the narrative.
 

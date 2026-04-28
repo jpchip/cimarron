@@ -677,6 +677,9 @@ label scene23_what_yancey_left:
     elif sabra_independence <= 3:
         "She noted this with a complicated feeling she did not have time, yet, to fully sort out."
 
+    if sabra_stood_alone and yancey_relationship < 50:
+        "There had been a night she had made herself remember on the harder evenings: the one night she had told them not to send for him. She had been right then. Probably she had been right before that, too."
+
     hide cim
     hide donna
 

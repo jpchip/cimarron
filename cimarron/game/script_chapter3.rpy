@@ -93,6 +93,9 @@ label scene14_five_years:
     if donna_name == "Felice":
         "She thought sometimes of the name she had given the child — her mother's name, not the land's. She was not sure which of them she was proving wrong."
 
+    if sabra_stood_alone:
+        "She had done it alone once, the hardest thing. She had not forgotten that she was capable of it."
+
     show isaiah neutral at left with dissolve
 
     "Isaiah had grown, too. He ran errands, set type, and had — without anyone quite deciding it — become the Wigwam's assistant press operator."
