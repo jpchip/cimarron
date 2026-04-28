@@ -1254,7 +1254,7 @@ if sabra_confronted_mother:
 
 ---
 
-### 8. Meter: community_standing — add in-scene readbacks
+### 8. Meter: community_standing — add in-scene readbacks ✅ COMPLETE
 
 `community_standing` is written by ~14 choices across five chapters but never gates a single in-scene line. Add three minimal readbacks.
 

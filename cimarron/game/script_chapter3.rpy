@@ -498,6 +498,11 @@ label scene17_isaiah:
 
     "He came in on a Wednesday afternoon, hat in hand, with the specific politeness of a man who intends to be impolite."
 
+    if community_standing >= 5:
+        "She had made something here. The women's club knew it. Even Sol knew it. Tubbs, who had been complaining about the Wigwam since the second issue, would know it too."
+    elif community_standing <= 0:
+        "She was not well liked, exactly. But she was known. That was different."
+
     play sound "sfx/door_creak.ogg"
     show horace neutral at left with dissolve
 

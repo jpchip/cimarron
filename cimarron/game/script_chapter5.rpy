@@ -206,6 +206,11 @@ label scene25_congresswoman:
 
     "Sol Levy had written from his shop on Main Street: {i}'Go. The territory owes you this. You have already been doing the work.'  {/i}"
 
+    if community_standing >= 8:
+        "There was a room full of people who had watched her work for thirty years. She had not expected it to feel like this."
+    elif community_standing <= 2:
+        "She was not the obvious choice. She suspected she was not anyone's first choice. She accepted the nomination anyway."
+
     show sabra ch5 worried
     ## ── Choice 1: Whether to Run ──────────────────────────────────────────────
 
