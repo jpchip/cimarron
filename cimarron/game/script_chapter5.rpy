@@ -503,7 +503,7 @@ label scene27_bowlegs:
     menu:
         "He is dying. The crowd has gone silent. She is holding his head."
 
-        "\"You came back.\" (If she can mean it)" if yancey_relationship >= 50:
+        "\"You came back.\" (If she can mean it)" if yancey_relationship >= 65:
             $ yancey_relationship += 5
 
             sabra "You came back."

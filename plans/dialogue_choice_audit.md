@@ -1280,7 +1280,7 @@ elif community_standing <= 2:
 
 ---
 
-### 9. Meter: yancey_relationship — tighten the Ch5 scene27 gate
+### 9. Meter: yancey_relationship — tighten the Ch5 scene27 gate ✅ COMPLETE
 
 The gate `yancey_relationship >= 50` is the default starting value. Almost every playthrough satisfies it, making the gating meaningless. Raise to 65.
 
