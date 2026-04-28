@@ -1154,7 +1154,7 @@ Tone: presence without language — tender, without the complexity of "You came 
 
 ---
 
-### 2. ORPHAN flag: donna_name = "Felice" — add downstream gates
+### 2. ORPHAN flag: donna_name = "Felice" — add downstream gates ✅ COMPLETE
 
 Choosing "Felice — for her mother" names the daughter for Felice Venable (Book Ch XII: *"Your skin! Your hands! Your hair!"*) rather than for the land. This decision deserves two callbacks.
 

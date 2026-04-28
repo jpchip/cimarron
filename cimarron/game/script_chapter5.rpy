@@ -364,6 +364,9 @@ label scene26_donnas_wedding:
 
     "[donna_name] folded it into her hands without ceremony. She had her mother's practicality about gifts."
 
+    if donna_name == "Felice":
+        "[donna_name]. Her mother's name. She had carried it as a kind of argument. Now she was arguing with someone else entirely."
+
     show tracy charming at left with dissolve
 
     ## ── Choice 1: What Sabra Tells Donna ────────────────────────────────────
