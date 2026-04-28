@@ -1334,7 +1334,7 @@ $ journal_scene23 = True
 
 ---
 
-### 11. INCONSISTENCY: donna_wedding_advice default produces silent branch
+### 11. INCONSISTENCY: donna_wedding_advice default produces silent branch ✅ COMPLETE
 
 Ch5 chapter5_summary reads `donna_wedding_advice` with three explicit values but no `else`. If the game is ever reached without scene26 firing (via skip or save-state import), the `"none"` default produces nothing.
 

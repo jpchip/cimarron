@@ -924,6 +924,8 @@ label chapter5_summary:
         "She had told [donna_name] she was Cravat stock. [donna_name] had said: {i}I know, Mother.{/i}"
     elif donna_wedding_advice == "be_happy":
         "She had told [donna_name] she hoped he made her happy. It was the truest thing she had said at a wedding."
+    else:
+        "She had not had the chance to say anything to Donna. Or she had chosen not to."
 
     if sabra_confronted_mother:
         "She had walked out of her mother's parlor in Wichita forty years ago. She had not looked back."
