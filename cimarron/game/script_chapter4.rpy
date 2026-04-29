@@ -176,6 +176,13 @@ label scene20_dixie_trial:
 
     "1899."
 
+    if dixie_warmth == "coffee":
+        "She had sat with Dixie Lee at the composing table once. Three women, one lamp turned low. It had been the most honest evening Sabra could remember. She had not been ready for this to be the next one."
+    elif dixie_warmth == "thanks":
+        "She had thanked Dixie Lee once in a doorway, and meant it. She had stood there a moment after the woman left. She thought of that moment now."
+    elif dixie_warmth == "nod":
+        "She had given Dixie Lee a nod, once, and nothing more. She had not been sure then whether that was honesty or something smaller. She was less sure now."
+
     "Dixie Lee had been charged under a new ordinance pushed by the Philomathean Club and two of the town's three ministers."
 
     "The charge: operating a disorderly house."
@@ -340,6 +347,13 @@ label scene20_post_verdict:
     "In the hallway after the verdict."
 
     "Dixie Lee was wearing dove gray. She looked at Sabra directly. It was the first time she had done so without flinching."
+
+    if dixie_warmth == "coffee":
+        "Sabra remembered the composing table. Dixie Lee, she thought, was remembering it too."
+    elif dixie_warmth == "thanks":
+        "Sabra remembered standing in a doorway, surprised to mean what she had said. Dixie Lee did not look surprised now."
+    elif dixie_warmth == "nod":
+        "Sabra remembered the nod, and the nodding-back, and the not knowing how to feel. She still did not know."
 
     menu:
         "Sabra's response:"

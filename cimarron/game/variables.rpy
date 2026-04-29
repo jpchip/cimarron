@@ -85,6 +85,7 @@ default letters_spiked  = []
 
 # ─── Chapter 4 Flags ──────────────────────────────────────────────────────────
 default dixie_lee_editorial = "none"   # "support" / "oppose" / "neutral"
+default dixie_warmth        = "none"   # "coffee" / "nod" / "thanks" — set in Ch3 scene18, read in Ch4 scene20 + Ch5 monument
 default statehood_stance    = "none"   # "single" / "double" / "consult"
 
 # ─── Chapter 4 Journal Flags ──────────────────────────────────────────────────

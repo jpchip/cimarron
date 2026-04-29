@@ -664,6 +664,7 @@ label scene18_war:
         "\"Come in. We'll have coffee before he goes.\"":
             $ sabra_direction    += 2
             $ community_standing += 1
+            $ dixie_warmth        = "coffee"
             sabra "Come in, Dixie. Sit down."
             "Dixie Lee looked startled. Then she came in."
             "They sat together for an hour — three of them around the composing table — talking about nothing in particular."
@@ -671,6 +672,7 @@ label scene18_war:
 
         "A civil nod. No more.":
             $ sabra_direction -= 1
+            $ dixie_warmth     = "nod"
             "She nodded. She did not invite her in."
             "Dixie Lee seemed to have expected this. She nodded back and walked away."
             "Sabra did not know how to feel about that. She tried not to."
@@ -678,6 +680,7 @@ label scene18_war:
         "\"Thank you. That means something.\"":
             $ sabra_direction     += 1
             $ community_standing  += 1
+            $ dixie_warmth         = "thanks"
             sabra "That means something, Dixie. Thank you."
             "She was surprised to find that she meant it."
             "Dixie Lee went, and Sabra stood in the doorway a moment longer than she needed to."

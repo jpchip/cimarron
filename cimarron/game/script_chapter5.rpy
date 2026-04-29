@@ -676,6 +676,13 @@ label scene28_monument_reveal:
     elif dixie_lee_editorial == "neutral":
         "Dixie Lee was not here. Sabra thought of her briefly, and then let the thought pass, as she had learned to do."
 
+    if dixie_warmth == "coffee":
+        "She thought, briefly, of the composing table. Three women. The lamp turned low. A kind of honesty she had not, in the end, managed to repeat with anyone."
+    elif dixie_warmth == "thanks":
+        "She thought, briefly, of the doorway in 1898. She had thanked Dixie Lee then, and meant it. She wondered, sometimes, whether that small grace had counted for anything. The monument would not say."
+    elif dixie_warmth == "nod":
+        "She thought, briefly, of the nod she had given Dixie Lee, the night before Yancey left for the war. There were small choices she would have made differently, if she had known what they cost."
+
     jump chapter5_summary
 
 
