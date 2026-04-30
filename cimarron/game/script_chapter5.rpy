@@ -596,16 +596,12 @@ label scene28_photos_result:
 
     if 1 in photo_set and 4 in photo_set:
         ## Run + Rough Rider
-        $ yancey_relationship += 3
-
         krbecek "Ah. A man in motion. Always motion. I think I understand now."
 
         "He turned both photographs over and over in his hands, as if the paper itself could tell him something."
 
     elif 2 in photo_set and 3 in photo_set:
         ## Tent church + Sabra at press
-        $ community_standing += 2
-
         krbecek "He is not the center of these. She is. Interesting."
 
         "He looked up at Sabra, not at the photographs."
@@ -618,19 +614,43 @@ label scene28_photos_result:
 
     elif 5 in photo_set and 6 in photo_set:
         ## Kid's burial + Cim/Ruby
-        $ indian_sympathy += 2
-
         krbecek "The land. And the people who came after. Yes. I see what to do."
 
         "He studied the family photograph for a long moment."
 
+    elif (1 in photo_set or 4 in photo_set) and 5 in photo_set:
+        ## Bucket X: "The same hat" — Yancey-public + Yancey-private (1+5, 4+5)
+        krbecek "The same man, in both. In the first, the hat is on his head. In the second, he is holding it."
+
+        sabra "Yes."
+
+        "Krbecek laid the photographs one above the other on the parlor table. He did not put them away for some time."
+
+    elif (1 in photo_set or 4 in photo_set) and 3 in photo_set:
+        ## Bucket Z: "Two desks" — Yancey-public + Sabra at work (1+3, 3+4)
+        krbecek "He is moving. She is sitting. Both of them are working."
+
+        "He looked from one photograph to the other, then up at Sabra, then back down."
+
+        krbecek "The second face will be the harder one to find."
+
+    elif (1 in photo_set or 4 in photo_set) and (2 in photo_set or 6 in photo_set):
+        ## Bucket Y: "What he raised" — Yancey-public + town/family (1+2, 2+4, 1+6, 4+6)
+        krbecek "He is in one. The other is what came of him. A useful pairing, for a sculptor."
+
+        "He set the second photograph upright against the lamp, where the light could fall on it."
+
     else:
-        ## Any other pair
-        $ yancey_relationship += 1
+        ## Bucket W: "Without him" — no Yancey-public photo (2+5, 2+6, 3+5, 3+6)
+        "Krbecek looked at the photographs for some time before he spoke."
 
-        krbecek "Yes. A man of many faces. I will do my best."
+        krbecek "Mrs. Cravat. He is barely in these."
 
-        "He tucked the photographs away carefully."
+        sabra "No. He is not."
+
+        krbecek "Then perhaps the statue is not only of him."
+
+        "He folded the photographs into his breast pocket with great care."
 
     show krbecek neutral at left
 

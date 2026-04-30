@@ -812,7 +812,7 @@ The following options are only offered when a specific variable threshold has be
 
 6. **Letters minigame (scene16) outcome text references letter #8 by ID:** The `if 8 in letters_printed:` conditional in `scene16_letters_result` hard-codes an ID reference. Any future reordering of the letters pool will silently break this narrative beat.
 
-7. **Photograph pairs:** Only three pairs of the fifteen possible trigger distinct narrative outcomes. The remaining twelve fall through to the generic `yancey_relationship += 1` branch. This may feel anticlimactic for players who attempt non-obvious combinations.
+7. **Photograph pairs:** Only three pairs of the fifteen possible trigger distinct narrative outcomes. The remaining twelve fall through to the generic `yancey_relationship += 1` branch. This may feel anticlimactic for players who attempt non-obvious combinations. ✅ ADDRESSED — Replaced single fallback with 4 thematic buckets (X: "The same hat", Z: "Two desks", Y: "What he raised", W: "Without him") covering all 12 previously-pooled pairs; removed all photograph-result meter bumps to make the choice prose-only.
 
 ---
 
